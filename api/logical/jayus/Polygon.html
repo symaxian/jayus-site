@@ -1,0 +1,1164 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <title>Jayus API documentation</title>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">        
+        <script>
+
+			(function()
+			{
+			    var loc = window.location.protocol + '//' + window.location.hostname + window.location.pathname;
+                loc = loc.split('\\');
+                loc = loc.join('/');					    
+			    loc = loc.split('/');
+			    loc.pop();
+			    loc = loc.join('/');
+			    loc += '/' + '../../';
+			
+			    document.write("<base href='" + loc + "'></base>");
+			})();
+         
+        </script>
+
+        <link rel="stylesheet" type="text/css" href="jgdoc.css">
+        <link rel="stylesheet" type="text/css" href="theme.css">
+        	    <script type="text/javascript" src="navTree.js"></script>
+	    <script type="text/javascript" src="jgdoc.js"></script>
+	</head>
+    <body>
+        <div class="startup" id="startup">
+            <div class="banner" id="banner">
+                <h1 class="projectName">
+	               <a href="./index.html">Jayus API documentation</a>   
+                </h1>
+                <div class="bar">
+	                 version alpha
+	            </div>
+	         </div>
+             <div class="content" id="docContent">
+                  <div class="block">
+                        <div id="searchBlock">
+			                <div class="search" >
+			                    <div class="searchLabel">Search:</div>
+			                    <div class="searchBlock" style="height:100%">
+					                <input id="jgsSearchString" type="text" size="60" class="jgdSearchString"/>
+					                <div id="jgsSearchPanel" class="jgsSearchPanel" style="display:none">
+						                <div  class="jgdSearchRect" >
+						                    <div id="jgsSearchResults">
+						                        Loading....
+						                    </div>
+						                </div>
+					                   <div id="jgsInfo" class="jgsInfo" >No selection</div>
+                                    </div>
+                                 </div>
+			                </div>
+		                </div>
+		                <div id="docScroll" class="docScroll">
+		                    <div>
+			                    <hr/>
+						        <div>
+						        						        		<H2>
+        <span class="objType">Class</span> jayus.Polygon
+    </H2>
+        <div class="extends">
+        <span class="descSection">Extends </span>
+                     <a href="logical/jayus/Shape.html">jayus.Shape</a>            </div>                                      
+
+
+    <hr/>
+    <!-- description -->
+    <div>
+       <code>
+            <span class="modifiers"></span>
+            <span class="objType">class</span> 
+            <b>jayus.Polygon</b>
+       </code>
+    </div>
+                <div class="comment">
+Represents a 2d polygon.
+<br> Check the init method for construction options.
+</div>
+                                            <span class="definedIn">Defined in </span>
+        <a href="physical/file-Polygon.js.html">Polygon.js</a>
+        <hr/> 
+    <p />
+    
+            	
+                                
+                                
+    
+                <div class="summaryTable property">
+            <div class="summaryTableHeader">
+                <span class="objType">Property</span> Summary
+            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Array</span>
+        <a href="logical/jayus/Polygon.html#___xPoints"><span class="elementName">xPoints</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	The x coordinates of the vertices.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Array</span>
+        <a href="logical/jayus/Polygon.html#___yPoints"><span class="elementName">yPoints</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	The y coordinates of the vertices.    </div>  
+                            </div>
+                </div>
+        <p/>
+                            
+            
+                <div class="summaryTable function">
+            <div class="summaryTableHeader">
+                <span class="objType">Function</span> Summary
+            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"></span>
+                <a href="logical/jayus/Polygon.html#___Line"><span class="elementName">Line</span></a>
+                (<span class="type">Vec2</span>
+ start, <span class="type">Vec2</span>
+ end)
+            </div>          
+                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"></span>
+                <a href="logical/jayus/Polygon.html#___Line"><span class="elementName">Line</span></a>
+                (<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y, <span class="type">Number</span>
+ width, <span class="type">Number</span>
+ height)
+            </div>          
+                <div class="summaryItemDesc">
+        
+Constructs a Polygon representing a line segment.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"></span>
+                <a href="logical/jayus/Polygon.html#___Rectangle"><span class="elementName">Rectangle</span></a>
+                (<span class="type">Vec2</span>
+ origin, <span class="type">Number</span>
+ width, <span class="type">Number</span>
+ height)
+            </div>          
+                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"></span>
+                <a href="logical/jayus/Polygon.html#___Rectangle"><span class="elementName">Rectangle</span></a>
+                (<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y, <span class="type">Number</span>
+ width, <span class="type">Number</span>
+ height)
+            </div>          
+                <div class="summaryItemDesc">
+        
+Constructs a Polygon representing an axis-aligned rectangle.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"></span>
+                <a href="logical/jayus/Polygon.html#___Regular"><span class="elementName">Regular</span></a>
+                (<span class="type">Number</span>
+ count, <span class="type">Number</span>
+ radius)
+            </div>          
+                <div class="summaryItemDesc">
+        
+Constructs a regular Polygon.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"></span>
+                <a href="logical/jayus/Polygon.html#___Star"><span class="elementName">Star</span></a>
+                (<span class="type">Number</span>
+ count, <span class="type">Number</span>
+ innerRadius, <span class="type">Number</span>
+ outerRadius)
+            </div>          
+                <div class="summaryItemDesc">
+        
+Constructs a Polygon representing a star.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Polygon.html#___addPoint"><span class="elementName">addPoint</span></a>
+                (<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+ point)
+            </div>          
+                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Polygon.html#___addPoint"><span class="elementName">addPoint</span></a>
+                (<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Appends a point to the polygon.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Polygon.html#___addPoints"><span class="elementName">addPoints</span></a>
+                (<span class="type">Array<Point></span>
+ points)
+            </div>          
+                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Polygon.html#___addPoints"><span class="elementName">addPoints</span></a>
+                (<span class="type">Array<Number></span>
+ xPoints, <span class="type">Array<Number></span>
+ yPoints)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Appends multiple points to the polygon.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"></span>
+                <a href="logical/jayus/Polygon.html#___init"><span class="elementName">init</span></a>
+                ()
+            </div>          
+                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"></span>
+                <a href="logical/jayus/Polygon.html#___init"><span class="elementName">init</span></a>
+                (<span class="type">Array<Point></span>
+ points)
+            </div>          
+                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"></span>
+                <a href="logical/jayus/Polygon.html#___init"><span class="elementName">init</span></a>
+                (<span class="type">Array<Number></span>
+ xPoints, <span class="type">Array<Number></span>
+ yPoints)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Initializes the Polygon.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Polygon.html#___insertPoint"><span class="elementName">insertPoint</span></a>
+                (<span class="type">Number</span>
+ index, <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+ point)
+            </div>          
+                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Polygon.html#___insertPoint"><span class="elementName">insertPoint</span></a>
+                (<span class="type">Number</span>
+ index, <span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Inserts a point into the polygon.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Polygon.html#___setClosed"><span class="elementName">setClosed</span></a>
+                (<span class="type">Boolean</span>
+ on)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Sets the closed flag.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Polygon.html#___setPoint"><span class="elementName">setPoint</span></a>
+                (<span class="type">Number</span>
+ index, <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+ point)
+            </div>          
+                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Polygon.html#___setPoint"><span class="elementName">setPoint</span></a>
+                (<span class="type">Number</span>
+ index, <span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Sets a point of the polygon.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Polygon.html#___transform"><span class="elementName">transform</span></a>
+                (<span class="type"><a href="logical/jayus/Matrix.html">Matrix</a></span>
+ matrix)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Transforms the polygon by the given matrix.    </div>  
+                            </div>
+                </div>
+        <p/>
+                                <div class="summaryTable">
+                <div class="summaryTableHeader">
+                   Functions inherited from <a href="logical/jayus/Shape.html">jayus.Shape</a> 
+                </div>
+                <div class="inheritanceSummary">
+                    <a href="logical/jayus/Shape.html#___alignToCanvas">alignToCanvas</a>, <a href="logical/jayus/Shape.html#___clone">clone</a>, <a href="logical/jayus/Shape.html#___cloneOnto">cloneOnto</a>, <a href="logical/jayus/Shape.html#___getScope">getScope</a>, <a href="logical/jayus/Shape.html#___getTransformed">getTransformed</a>, <a href="logical/jayus/Shape.html#___intersectsAt">intersectsAt</a>, <a href="logical/jayus/Shape.html#___paintedWith">paintedWith</a>, <a href="logical/jayus/Shape.html#___translate">translate</a>                </div>
+             </div>
+             <br/>          
+                
+                    <!-- ============== Details coming here =================== -->
+    	    	            <div class="details property">
+            <h2 class="sectionHeader">Property Details</h2>
+                                                            
+            <h3>
+        <a name="___xPoints">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Array</span>
+            <span class="objName">xPoints</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	The x coordinates of the vertices.
+	<br> Do not modify.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___yPoints">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Array</span>
+            <span class="objName">yPoints</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	The y coordinates of the vertices.
+	<br> Do not modify.
+	    </div>    
+                                        <hr />  
+                                    </div>
+    	    	            <div class="details function">
+            <h2 class="sectionHeader">Function Details</h2>
+                                                                    <h3>
+        <a name="___Line">
+            <span class="objType">function</span>
+            <span class="objName">Line</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"></span>
+                    Line(<span class="type">Vec2</span>
+ start, <span class="type">Vec2</span>
+ end)
+                </code> 
+            </div>          
+                    <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"></span>
+                    Line(<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y, <span class="type">Number</span>
+ width, <span class="type">Number</span>
+ height)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+Constructs a Polygon representing a line segment.
+    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"> 1
+</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            start        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            end        </code>
+                    </div>   
+                                        </div>
+                </div>
+                            <div>
+                    <div class="paramset"> 2
+</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            x        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            y        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            width        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            height        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___Rectangle">
+            <span class="objType">function</span>
+            <span class="objName">Rectangle</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"></span>
+                    Rectangle(<span class="type">Vec2</span>
+ origin, <span class="type">Number</span>
+ width, <span class="type">Number</span>
+ height)
+                </code> 
+            </div>          
+                    <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"></span>
+                    Rectangle(<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y, <span class="type">Number</span>
+ width, <span class="type">Number</span>
+ height)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+Constructs a Polygon representing an axis-aligned rectangle.
+    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"> 1
+</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            origin        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            width        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            height        </code>
+                    </div>   
+                                        </div>
+                </div>
+                            <div>
+                    <div class="paramset"> 2
+</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            x        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            y        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            width        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            height        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___Regular">
+            <span class="objType">function</span>
+            <span class="objName">Regular</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"></span>
+                    Regular(<span class="type">Number</span>
+ count, <span class="type">Number</span>
+ radius)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+Constructs a regular Polygon.
+    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            count        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            radius        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___Star">
+            <span class="objType">function</span>
+            <span class="objName">Star</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"></span>
+                    Star(<span class="type">Number</span>
+ count, <span class="type">Number</span>
+ innerRadius, <span class="type">Number</span>
+ outerRadius)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+Constructs a Polygon representing a star.
+    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            count        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            innerRadius        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            outerRadius        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___addPoint">
+            <span class="objType">function</span>
+            <span class="objName">addPoint</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    addPoint(<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+ point)
+                </code> 
+            </div>          
+                    <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    addPoint(<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Appends a point to the polygon.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"> 1
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            point        </code>
+                    </div>   
+                                        </div>
+                </div>
+                            <div>
+                    <div class="paramset"> 2
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            x        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            y        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___addPoints">
+            <span class="objType">function</span>
+            <span class="objName">addPoints</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    addPoints(<span class="type">Array<Point></span>
+ points)
+                </code> 
+            </div>          
+                    <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    addPoints(<span class="type">Array<Number></span>
+ xPoints, <span class="type">Array<Number></span>
+ yPoints)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Appends multiple points to the polygon.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"> 1
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            points        </code>
+                    </div>   
+                                        </div>
+                </div>
+                            <div>
+                    <div class="paramset"> 2
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            xPoints        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            yPoints        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___init">
+            <span class="objType">function</span>
+            <span class="objName">init</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"></span>
+                    init()
+                </code> 
+            </div>          
+                    <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"></span>
+                    init(<span class="type">Array<Point></span>
+ points)
+                </code> 
+            </div>          
+                    <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"></span>
+                    init(<span class="type">Array<Number></span>
+ xPoints, <span class="type">Array<Number></span>
+ yPoints)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Initializes the Polygon.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"> 0
+	</div>
+                    <div>
+                                        </div>
+                </div>
+                            <div>
+                    <div class="paramset"> 1
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            points        </code>
+                    </div>   
+                                        </div>
+                </div>
+                            <div>
+                    <div class="paramset"> 2
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            xPoints        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            yPoints        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___insertPoint">
+            <span class="objType">function</span>
+            <span class="objName">insertPoint</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    insertPoint(<span class="type">Number</span>
+ index, <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+ point)
+                </code> 
+            </div>          
+                    <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    insertPoint(<span class="type">Number</span>
+ index, <span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Inserts a point into the polygon.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"> 1
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            index        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            point        </code>
+                    </div>   
+                                        </div>
+                </div>
+                            <div>
+                    <div class="paramset"> 2
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            index        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            x        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            y        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___setClosed">
+            <span class="objType">function</span>
+            <span class="objName">setClosed</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    setClosed(<span class="type">Boolean</span>
+ on)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Sets the closed flag.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            on        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___setPoint">
+            <span class="objType">function</span>
+            <span class="objName">setPoint</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    setPoint(<span class="type">Number</span>
+ index, <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+ point)
+                </code> 
+            </div>          
+                    <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    setPoint(<span class="type">Number</span>
+ index, <span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Sets a point of the polygon.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"> 1
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            index        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            point        </code>
+                    </div>   
+                                        </div>
+                </div>
+                            <div>
+                    <div class="paramset"> 2
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            index        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            x        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            y        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___transform">
+            <span class="objType">function</span>
+            <span class="objName">transform</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    transform(<span class="type"><a href="logical/jayus/Matrix.html">Matrix</a></span>
+ matrix)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Transforms the polygon by the given matrix.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            matrix        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                    </div>
+    	    	                                    						        </div>
+        		          </div>			                    
+		                </div>
+        	       </div>
+             </div>
+             <div class="navigation" id="navigation">
+    <ul class="navContent">
+        <li>
+            <div class="navTree">
+                <h2 onclick="jgdoc.NavPanel.clicked(event)">
+                    <a href="javascript:jgdoc.NavPanel.dummy()">Navigation</a>
+                </h2>
+                <ul class="navContent2">
+                    <li>
+                        <div>
+                            <a class="openAll" href="javascript:jgdoc.NavTree.onOpenAll()">Open All</a>
+                            <a class="closeAll" href="javascript:jgdoc.NavTree.onCloseAll()">Close All</a>
+                        </div>
+                        <div>
+                            <ul id = "content" class="contents">
+                                Loading...
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+    <ul class="navContent closed">
+        <li>
+            <div class="fileTree">
+                <h2 onclick="jgdoc.NavPanel.clicked(event)">
+                    <a href="javascript:jgdoc.NavPanel.dummy()">Files</a>
+                </h2>
+                <ul class="navContent2">
+                    <li>
+                                                                                <div>
+                                <a href="physical/file-Animator.js.html">Animator.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Box.js.html">Box.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Brush.js.html">Brush.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Circle.js.html">Circle.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Color.js.html">Color.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Dependency.js.html">Dependency.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Display.js.html">Display.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-EditableFrame.js.html">EditableFrame.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Entity/Group.js.html">Entity.Group.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Entity/Rect.js.html">Entity.Rect.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Entity.js.html">Entity.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-FlowLayout.js.html">FlowLayout.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Frame.js.html">Frame.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Gradient.js.html">Gradient.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Grid.js.html">Grid.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Group.js.html">Group.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Image.js.html">Image.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Layer.js.html">Layer.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-List.js.html">List.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Matrix.js.html">Matrix.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-PaintedShape.js.html">PaintedShape.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Path.js.html">Path.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Point.js.html">Point.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Polygon.js.html">Polygon.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-RectEntity.js.html">RectEntity.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Rectangle.js.html">Rectangle.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Responder.js.html">Responder.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Scene.js.html">Scene.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Shape.js.html">Shape.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-SizePolicy.js.html">SizePolicy.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Sprite.js.html">Sprite.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-SpriteSheet.js.html">SpriteSheet.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Stack.js.html">Stack.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Surface.js.html">Surface.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Text.js.html">Text.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-TextBox.js.html">TextBox.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-TiledMap.js.html">TiledMap.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Wrapper.js.html">Wrapper.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-argumentOverloading/min.js.html">argumentOverloading.min.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-easing.js.html">easing.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-images.js.html">images.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-jayus.js.html">jayus.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-keyboard.js.html">keyboard.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-objects.js.html">objects.js</a>
+                            </div>                              
+                                                                        </li>
+                </ul>
+            </div>
+        </li>       
+    </ul>
+    <ul class="navContent closed">
+        <li>
+            <div class="moduleTree">
+                <h2 onclick="jgdoc.NavPanel.clicked(event)">
+                    <a href="javascript:jgdoc.NavPanel.dummy()">Modules</a>
+                </h2>
+                <ul class="navContent2">
+                    <li>
+                                            </li>
+                </ul>
+            </div>
+        </li>       
+    </ul>
+</div>  
+    
+		</div>	
+	</body>
+    <script type="text/javascript">
+        jgdoc.Searcher.start();
+        jgdoc.NavTree.initialize("jayus.Polygon");
+    </script>			
+	<script type="text/javascript" src="jsindex.js">
+    </script>
+</html>

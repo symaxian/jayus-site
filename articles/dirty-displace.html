@@ -1,0 +1,35 @@
+---
+layout: default
+title: Jayus
+---
+
+{% include article_list.html %}
+
+<h2>Dirty</h2>
+
+Every entity in jayus keeps track of whether it's dirty or not. That is, whether it has been modified and needs to be redrawn to the screen again. Every built-in method automatically sets the entity as dirty so it is recommended that you use those. When you set an entity as dirty it also sets its parent as dirty, as it is the parent's responsibility to redraw its child entities.
+
+<br>
+<br>
+<pre class="code prettyprint lang-js">
+// Create an entity
+var myEntity = new jayus.Text('Hello World!').style({ fill: 'red' });
+
+// Modify the entity's style directly
+myEntity.style.fill = 'yellow';
+
+// At this point the text should be drawn in yellow but may still be shown on the screen as red
+// To ensure that the rect is redrawn we set it as dirty
+myEntity.dirty();</pre>
+
+<h2>Displacement</h2>
+
+Along with being marked as dirty, an entity can also be set as displaced, this notifies the entity that its position and/or size have changed, and that it will need to reform itself and its children if applicable. Most types of entities do not need to reform themselves or any children, Widgets are primarily the entities that need to be notified when displaced.
+<br>
+<br>
+The 'displaced' event is fired on an entity whenever it is displaced, you can prevent the entity from reforming or setting itself as dirty by accepting the event.
+<br>
+<br>
+After reforming(if applicable), the entity is marked as dirty.
+
+{% include prettyprint.html %}

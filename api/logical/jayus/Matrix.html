@@ -1,0 +1,1037 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <title>Jayus API documentation</title>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">        
+        <script>
+
+			(function()
+			{
+			    var loc = window.location.protocol + '//' + window.location.hostname + window.location.pathname;
+                loc = loc.split('\\');
+                loc = loc.join('/');					    
+			    loc = loc.split('/');
+			    loc.pop();
+			    loc = loc.join('/');
+			    loc += '/' + '../../';
+			
+			    document.write("<base href='" + loc + "'></base>");
+			})();
+         
+        </script>
+
+        <link rel="stylesheet" type="text/css" href="jgdoc.css">
+        <link rel="stylesheet" type="text/css" href="theme.css">
+        	    <script type="text/javascript" src="navTree.js"></script>
+	    <script type="text/javascript" src="jgdoc.js"></script>
+	</head>
+    <body>
+        <div class="startup" id="startup">
+            <div class="banner" id="banner">
+                <h1 class="projectName">
+	               <a href="./index.html">Jayus API documentation</a>   
+                </h1>
+                <div class="bar">
+	                 version alpha
+	            </div>
+	         </div>
+             <div class="content" id="docContent">
+                  <div class="block">
+                        <div id="searchBlock">
+			                <div class="search" >
+			                    <div class="searchLabel">Search:</div>
+			                    <div class="searchBlock" style="height:100%">
+					                <input id="jgsSearchString" type="text" size="60" class="jgdSearchString"/>
+					                <div id="jgsSearchPanel" class="jgsSearchPanel" style="display:none">
+						                <div  class="jgdSearchRect" >
+						                    <div id="jgsSearchResults">
+						                        Loading....
+						                    </div>
+						                </div>
+					                   <div id="jgsInfo" class="jgsInfo" >No selection</div>
+                                    </div>
+                                 </div>
+			                </div>
+		                </div>
+		                <div id="docScroll" class="docScroll">
+		                    <div>
+			                    <hr/>
+						        <div>
+						        						        		<H2>
+        <span class="objType">Class</span> jayus.Matrix
+    </H2>
+    
+
+    <hr/>
+    <!-- description -->
+    <div>
+       <code>
+            <span class="modifiers"></span>
+            <span class="objType">class</span> 
+            <b>jayus.Matrix</b>
+       </code>
+    </div>
+                <div class="comment">
+A two-dimensional transformation matrix.
+</div>
+                                            <span class="definedIn">Defined in </span>
+        <a href="physical/file-Matrix.js.html">Matrix.js</a>
+        <hr/> 
+    <p />
+    
+            	
+                                
+                    
+    
+                    
+            
+                <div class="summaryTable function">
+            <div class="summaryTableHeader">
+                <span class="objType">Function</span> Summary
+            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"></span>
+                <a href="logical/jayus/Matrix.html#___applyToContext"><span class="elementName">applyToContext</span></a>
+                (<span class="type">Context</span>
+ ctx)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Applies the transformation matrix to the given canvas context.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                           <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"><a href="logical/jayus/Matrix.html">Matrix</a></span>
+                <a href="logical/jayus/Matrix.html#___clone"><span class="elementName">clone</span></a>()
+            </div>
+        <div class="summaryItemDesc">
+        
+	Returns a clone of this matrix.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Boolean</span>
+                <a href="logical/jayus/Matrix.html#___equals"><span class="elementName">equals</span></a>
+                (<span class="type"><a href="logical/jayus/Matrix.html">Matrix</a></span>
+ mat)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Compares against another matrix for equality.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                           <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Number</span>
+                <a href="logical/jayus/Matrix.html#___getDeterminant"><span class="elementName">getDeterminant</span></a>()
+            </div>
+        <div class="summaryItemDesc">
+        
+	Returns the determinant of this matrix.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                           <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Matrix.html#___identity"><span class="elementName">identity</span></a>()
+            </div>
+        <div class="summaryItemDesc">
+        
+	Reverts this matrix to the identity matrix.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"></span>
+                <a href="logical/jayus/Matrix.html#___init"><span class="elementName">init</span></a>
+                (<span class="type">Number</span>
+ a, <span class="type">Number</span>
+ b, <span class="type">Number</span>
+ tx, <span class="type">Number</span>
+ c, <span class="type">Number</span>
+ d, <span class="type">Number</span>
+ ty)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Initializes the matrix.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                <a href="logical/jayus/Matrix.html#___inverseTransformPoint"><span class="elementName">inverseTransformPoint</span></a>
+                (<span class="type">Number</span>
+ point)
+            </div>          
+                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                <a href="logical/jayus/Matrix.html#___inverseTransformPoint"><span class="elementName">inverseTransformPoint</span></a>
+                (<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Inverse transforms the given coordinate.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"></span>
+                <a href="logical/jayus/Matrix.html#___inverseTransformPointOnto"><span class="elementName">inverseTransformPointOnto</span></a>
+                (<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y, <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+ ret)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Inverse transforms the given coordinate, storing the result into the ret parameter.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"><a href="logical/jayus/Matrix.html">Matrix</a></span>
+                <a href="logical/jayus/Matrix.html#___multiply"><span class="elementName">multiply</span></a>
+                (<span class="type"><a href="logical/jayus/Matrix.html">Matrix</a></span>
+ m1)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Returns a new matrix multiplied by this one and the sent one.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Matrix.html#___rotate"><span class="elementName">rotate</span></a>
+                (<span class="type">Number</span>
+ angle)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Rotates the matrix.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Matrix.html#___scale"><span class="elementName">scale</span></a>
+                (<span class="type">Number</span>
+ scale)
+            </div>          
+                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Matrix.html#___scale"><span class="elementName">scale</span></a>
+                (<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Scales the matrix.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                <a href="logical/jayus/Matrix.html#___transformPoint"><span class="elementName">transformPoint</span></a>
+                (<span class="type">Number</span>
+ point)
+            </div>          
+                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                <a href="logical/jayus/Matrix.html#___transformPoint"><span class="elementName">transformPoint</span></a>
+                (<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Transforms the given coordinate.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"></span>
+                <a href="logical/jayus/Matrix.html#___transformPointOnto"><span class="elementName">transformPointOnto</span></a>
+                (<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y, <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+ ret)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Transforms the given coordinate, storing the result into the ret parameter.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Matrix.html#___translate"><span class="elementName">translate</span></a>
+                (<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+ point)
+            </div>          
+                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Matrix.html#___translate"><span class="elementName">translate</span></a>
+                (<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Translates the matrix.    </div>  
+                            </div>
+                </div>
+        <p/>
+                
+                    <!-- ============== Details coming here =================== -->
+    	    	    	    	            <div class="details function">
+            <h2 class="sectionHeader">Function Details</h2>
+                                                                    <h3>
+        <a name="___applyToContext">
+            <span class="objType">function</span>
+            <span class="objName">applyToContext</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"></span>
+                    applyToContext(<span class="type">Context</span>
+ ctx)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Applies the transformation matrix to the given canvas context.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            ctx        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___clone">
+            <span class="objType">function</span>
+            <span class="objName">clone</span>            
+        </a> 
+    </h3>
+                <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"><a href="logical/jayus/Matrix.html">Matrix</a></span>
+                    clone()
+                </code>
+            </div>    
+        <div class="comment">
+        
+	Returns a clone of this matrix.
+	    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___equals">
+            <span class="objType">function</span>
+            <span class="objName">equals</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Boolean</span>
+                    equals(<span class="type"><a href="logical/jayus/Matrix.html">Matrix</a></span>
+ mat)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Compares against another matrix for equality.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            mat        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___getDeterminant">
+            <span class="objType">function</span>
+            <span class="objName">getDeterminant</span>            
+        </a> 
+    </h3>
+                <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Number</span>
+                    getDeterminant()
+                </code>
+            </div>    
+        <div class="comment">
+        
+	Returns the determinant of this matrix.
+	<br> An epsilon of 10e-12 is used.
+	    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___identity">
+            <span class="objType">function</span>
+            <span class="objName">identity</span>            
+        </a> 
+    </h3>
+                <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    identity()
+                </code>
+            </div>    
+        <div class="comment">
+        
+	Reverts this matrix to the identity matrix.
+	    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___init">
+            <span class="objType">function</span>
+            <span class="objName">init</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"></span>
+                    init(<span class="type">Number</span>
+ a, <span class="type">Number</span>
+ b, <span class="type">Number</span>
+ tx, <span class="type">Number</span>
+ c, <span class="type">Number</span>
+ d, <span class="type">Number</span>
+ ty)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Initializes the matrix.
+	<br> Starts off as an identity matrix, unless initial values are specifie.
+	<br> The initial values are optional.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            a        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            b        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            tx        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            c        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            d        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            ty        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___inverseTransformPoint">
+            <span class="objType">function</span>
+            <span class="objName">inverseTransformPoint</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    inverseTransformPoint(<span class="type">Number</span>
+ point)
+                </code> 
+            </div>          
+                    <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    inverseTransformPoint(<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Inverse transforms the given coordinate.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"> Syntax 1
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            point        </code>
+                    </div>   
+                                        </div>
+                </div>
+                            <div>
+                    <div class="paramset"> Syntax 2
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            x        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            y        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___inverseTransformPointOnto">
+            <span class="objType">function</span>
+            <span class="objName">inverseTransformPointOnto</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"></span>
+                    inverseTransformPointOnto(<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y, <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+ ret)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Inverse transforms the given coordinate, storing the result into the ret parameter.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            x        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            y        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            ret        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___multiply">
+            <span class="objType">function</span>
+            <span class="objName">multiply</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"><a href="logical/jayus/Matrix.html">Matrix</a></span>
+                    multiply(<span class="type"><a href="logical/jayus/Matrix.html">Matrix</a></span>
+ m1)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Returns a new matrix multiplied by this one and the sent one.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            m1        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___rotate">
+            <span class="objType">function</span>
+            <span class="objName">rotate</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    rotate(<span class="type">Number</span>
+ angle)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Rotates the matrix.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            angle        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___scale">
+            <span class="objType">function</span>
+            <span class="objName">scale</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    scale(<span class="type">Number</span>
+ scale)
+                </code> 
+            </div>          
+                    <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    scale(<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Scales the matrix.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"> Syntax 1
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            scale        </code>
+                    </div>   
+                                        </div>
+                </div>
+                            <div>
+                    <div class="paramset"> Syntax 2
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            x        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            y        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___transformPoint">
+            <span class="objType">function</span>
+            <span class="objName">transformPoint</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    transformPoint(<span class="type">Number</span>
+ point)
+                </code> 
+            </div>          
+                    <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    transformPoint(<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Transforms the given coordinate.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"> Syntax 1
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            point        </code>
+                    </div>   
+                                        </div>
+                </div>
+                            <div>
+                    <div class="paramset"> Syntax 2
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            x        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            y        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___transformPointOnto">
+            <span class="objType">function</span>
+            <span class="objName">transformPointOnto</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"></span>
+                    transformPointOnto(<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y, <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+ ret)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Transforms the given coordinate, storing the result into the ret parameter.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            x        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            y        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            ret        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___translate">
+            <span class="objType">function</span>
+            <span class="objName">translate</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    translate(<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+ point)
+                </code> 
+            </div>          
+                    <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    translate(<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Translates the matrix.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"> 1
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            point        </code>
+                    </div>   
+                                        </div>
+                </div>
+                            <div>
+                    <div class="paramset"> 2
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            x        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            y        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                    </div>
+    	    	                                    						        </div>
+        		          </div>			                    
+		                </div>
+        	       </div>
+             </div>
+             <div class="navigation" id="navigation">
+    <ul class="navContent">
+        <li>
+            <div class="navTree">
+                <h2 onclick="jgdoc.NavPanel.clicked(event)">
+                    <a href="javascript:jgdoc.NavPanel.dummy()">Navigation</a>
+                </h2>
+                <ul class="navContent2">
+                    <li>
+                        <div>
+                            <a class="openAll" href="javascript:jgdoc.NavTree.onOpenAll()">Open All</a>
+                            <a class="closeAll" href="javascript:jgdoc.NavTree.onCloseAll()">Close All</a>
+                        </div>
+                        <div>
+                            <ul id = "content" class="contents">
+                                Loading...
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+    <ul class="navContent closed">
+        <li>
+            <div class="fileTree">
+                <h2 onclick="jgdoc.NavPanel.clicked(event)">
+                    <a href="javascript:jgdoc.NavPanel.dummy()">Files</a>
+                </h2>
+                <ul class="navContent2">
+                    <li>
+                                                                                <div>
+                                <a href="physical/file-Animator.js.html">Animator.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Box.js.html">Box.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Brush.js.html">Brush.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Circle.js.html">Circle.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Color.js.html">Color.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Dependency.js.html">Dependency.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Display.js.html">Display.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-EditableFrame.js.html">EditableFrame.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Entity/Group.js.html">Entity.Group.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Entity/Rect.js.html">Entity.Rect.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Entity.js.html">Entity.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-FlowLayout.js.html">FlowLayout.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Frame.js.html">Frame.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Gradient.js.html">Gradient.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Grid.js.html">Grid.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Group.js.html">Group.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Image.js.html">Image.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Layer.js.html">Layer.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-List.js.html">List.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Matrix.js.html">Matrix.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-PaintedShape.js.html">PaintedShape.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Path.js.html">Path.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Point.js.html">Point.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Polygon.js.html">Polygon.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-RectEntity.js.html">RectEntity.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Rectangle.js.html">Rectangle.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Responder.js.html">Responder.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Scene.js.html">Scene.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Shape.js.html">Shape.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-SizePolicy.js.html">SizePolicy.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Sprite.js.html">Sprite.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-SpriteSheet.js.html">SpriteSheet.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Stack.js.html">Stack.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Surface.js.html">Surface.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Text.js.html">Text.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-TextBox.js.html">TextBox.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-TiledMap.js.html">TiledMap.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Wrapper.js.html">Wrapper.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-argumentOverloading/min.js.html">argumentOverloading.min.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-easing.js.html">easing.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-images.js.html">images.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-jayus.js.html">jayus.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-keyboard.js.html">keyboard.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-objects.js.html">objects.js</a>
+                            </div>                              
+                                                                        </li>
+                </ul>
+            </div>
+        </li>       
+    </ul>
+    <ul class="navContent closed">
+        <li>
+            <div class="moduleTree">
+                <h2 onclick="jgdoc.NavPanel.clicked(event)">
+                    <a href="javascript:jgdoc.NavPanel.dummy()">Modules</a>
+                </h2>
+                <ul class="navContent2">
+                    <li>
+                                            </li>
+                </ul>
+            </div>
+        </li>       
+    </ul>
+</div>  
+    
+		</div>	
+	</body>
+    <script type="text/javascript">
+        jgdoc.Searcher.start();
+        jgdoc.NavTree.initialize("jayus.Matrix");
+    </script>			
+	<script type="text/javascript" src="jsindex.js">
+    </script>
+</html>

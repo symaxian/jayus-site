@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<head lang="en">
+	<!-- Title, icon -->
+	<title>Jayus Sandbox</title>
+	<link rel="icon" href="../favicon.png" type="image/png">
+
+	<!-- CSS -->
+		<!-- Bootstrap -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/sandbox/assets/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="/sandbox/assets/bootstrap/css/bootstrap-responsive.css">
+		<!-- CodeMirror -->
+	<link rel="stylesheet" href="/sandbox/assets/codemirror-2.36/lib/codemirror.css">
+	<link rel="stylesheet" href="/sandbox/assets/codemirror-2.36/theme/lesser-dark.css">
+		<!-- Sandbox -->
+	<link rel="stylesheet" href="style.css">
+
+	<!-- Javascript -->
+		<!-- jQuery -->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<!-- Bootstrap -->
+	<script type="text/javascript" src="/sandbox/assets/bootstrap/js/bootstrap.min.js"></script>
+		<!-- CodeMirror -->
+	<script type="text/javascript" src="/sandbox/assets/codemirror-2.36/lib/codemirror.js"></script>
+	<script type="text/javascript" src="/sandbox/assets/codemirror-2.36/mode/javascript/javascript.js"></script>
+		<!-- Jayus -->
+	<script type="text/javascript" src="http://symaxian.github.io/jayus-cache/jayus-latest-debug.min.js"></script>
+	<script type="text/javascript" src="http://symaxian.github.io/jayus-cache/Box2dWeb-2.1.a.3.min.js"></script>
+		<!-- Sandbox -->
+	<script type="text/javascript" src="sandbox.js"></script>
+
+</head>
+<body onload="sandbox.init();">
+
+	<div class="navbar" id="header">
+		<div class="container-fluid fill bar">
+			<div class="row-fluid fill">
+				<div class="span6">
+					<h3 class="title">Jayus Sandbox</h3>
+				</div>
+				<div class="span6">
+					<select id="FileSelector">
+						<optgroup label="Shapes">
+							<option>Simple Shapes</option>
+							<option>Polygons</option>
+							<option>Paths</option>
+						</optgroup>
+						<optgroup label="Styling">
+							<option>Linear Gradient</option>
+							<option>Radial Gradient</option>
+						</optgroup>
+						<optgroup label="Text">
+							<option>Text</option>
+							<option>TextBox</option>
+						</optgroup>
+						<optgroup label="Images">
+							<option>Image</option>
+							<option>Transforms</option>
+							<option>Sectioning</option>
+							<option>Manual Animation</option>
+							<option>Sprite Animation</option>
+							<option>Sprite Sheets</option>
+						</optgroup>
+						<optgroup label="Events">
+							<option>Click Events</option>
+							<option>Input Events</option>
+							<option>Focusing</option>
+						</optgroup>
+						<optgroup label="Layouts">
+							<option>Layers</option>
+							<option>FlowLayout</option>
+							<option>Stacks</option>
+							<option>Boxes</option>
+							<!-- <option>Weighting</option> -->
+						</optgroup>
+						<option>Box2D</option>
+					</select>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid fill" id="container">
+		<div class="row-fluid fill" id="row1">
+			<div class="span6">
+				<h4 style="display: inline; float: left">
+					Code
+				</h4>
+				<div style="line-height: 20px; margin: 10px; float: right;">
+					<button class="btn" type="button" id="start">Run</button>&nbsp;&nbsp;&nbsp;<button class="btn" type="button" id="stop">Stop</button>
+				</div>
+			</div>
+			<div class="span6">
+				<div style="line-height: 20px; margin: 10px; float: left">
+					Size: <span id="size"></span>&nbsp;&nbsp;-&nbsp;&nbsp;Framerate: <span id="fps"></span>
+				</div>
+				<h4 style="display: inline; float: right;">
+					Output
+				</h4>
+			</div>
+		</div>
+		<div class="row-fluid fill" id="row2">
+			<div class="span6">
+				<div id="source" class="fill"></div>
+			</div>
+			<div class="span6">
+				<canvas id="output" style="box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.8);"></div>
+			</div>
+		</div>
+	</div>
+
+	<div id="myModal" class="modal large hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			<h3 id="myModalLabel">Error:</h3>
+		</div>
+		<div class="modal-body">
+			<p id="modalBody"></p>
+		</div>
+		<div class="modal-footer">
+			<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+		</div>
+	</div>
+
+</body>
+</html>

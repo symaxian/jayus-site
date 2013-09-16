@@ -1,0 +1,75 @@
+---
+layout: default
+title: Jayus
+---
+
+{% include article_list.html %}
+
+<h2>Sandbox</h2>
+
+<p>
+    The sandbox(linked above) is the quickest way to jump in and play around with some code.
+</p>
+
+<h2>JSFiddle</h2>
+
+<p>
+    JSFiddle is a great tool for working with JavaScript, Jayus included. A blank Fiddle for starting a jayus project can be found <a href="http://jsfiddle.net/symaxian/QZmLQ/" target="_blank">here</a>.
+</p>
+
+<h2>Local Project</h2>
+
+<p>
+    For a local project the small html file below is all you need to get started. It must be placed in the same directory(folder) holding the jayus project folder.
+    <br><br>
+    <pre class="prettyprint linenums">
+&lt;html>
+    &lt;head>
+        &lt;title>New Jayus Project&lt;/title>
+        &lt;script type="text/javascript" src="jayus/jayus.js">&lt;/script>
+        &lt;script type="text/javascript">
+
+            // This function will be called when the page(and jayus) is done loading
+            function init(){
+            
+                // Initialize jayus
+                jayus.init();
+
+                // Create a new display(a visible canvas)
+                var display = new jayus.Display(800, 600);
+
+                // Set the display on the page
+                display.setInto(document.getElementById('jayus'));
+
+                // Set a css border around the display
+                display.canvas.style.border = '1px solid grey';
+
+
+                // Put your initialization code here
+
+
+                // Add an event handler for the frame event
+                jayus.addHandler('frame', function(event){
+
+
+                    // Any code you put here will be executed every frame
+
+
+                });
+
+
+                // Start jayus
+                jayus.start();
+
+            }
+
+        &lt;/script>
+    &lt;/head>
+    &lt;body onload="init()">
+        &lt;center id="jayus"> &lt;!-- Our display container --> &lt;/center>
+    &lt;/body>
+&lt;/html>
+    </pre>
+</p>
+
+<script type="text/javascript">prettyPrint()</script>

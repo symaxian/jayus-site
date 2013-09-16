@@ -1,0 +1,1434 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <title>Jayus API documentation</title>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">        
+        <script>
+
+			(function()
+			{
+			    var loc = window.location.protocol + '//' + window.location.hostname + window.location.pathname;
+                loc = loc.split('\\');
+                loc = loc.join('/');					    
+			    loc = loc.split('/');
+			    loc.pop();
+			    loc = loc.join('/');
+			    loc += '/' + '../../';
+			
+			    document.write("<base href='" + loc + "'></base>");
+			})();
+         
+        </script>
+
+        <link rel="stylesheet" type="text/css" href="jgdoc.css">
+        <link rel="stylesheet" type="text/css" href="theme.css">
+        	    <script type="text/javascript" src="navTree.js"></script>
+	    <script type="text/javascript" src="jgdoc.js"></script>
+	</head>
+    <body>
+        <div class="startup" id="startup">
+            <div class="banner" id="banner">
+                <h1 class="projectName">
+	               <a href="./index.html">Jayus API documentation</a>   
+                </h1>
+                <div class="bar">
+	                 version alpha
+	            </div>
+	         </div>
+             <div class="content" id="docContent">
+                  <div class="block">
+                        <div id="searchBlock">
+			                <div class="search" >
+			                    <div class="searchLabel">Search:</div>
+			                    <div class="searchBlock" style="height:100%">
+					                <input id="jgsSearchString" type="text" size="60" class="jgdSearchString"/>
+					                <div id="jgsSearchPanel" class="jgsSearchPanel" style="display:none">
+						                <div  class="jgdSearchRect" >
+						                    <div id="jgsSearchResults">
+						                        Loading....
+						                    </div>
+						                </div>
+					                   <div id="jgsInfo" class="jgsInfo" >No selection</div>
+                                    </div>
+                                 </div>
+			                </div>
+		                </div>
+		                <div id="docScroll" class="docScroll">
+		                    <div>
+			                    <hr/>
+						        <div>
+						        						        		<H2>
+        <span class="objType">Class</span> jayus.Surface
+    </H2>
+    
+
+    <hr/>
+    <!-- description -->
+    <div>
+       <code>
+            <span class="modifiers"></span>
+            <span class="objType">class</span> 
+            <b>jayus.Surface</b>
+       </code>
+    </div>
+                <div class="comment">
+An Entity that represents an editable image.
+<br> The Surface class acts as a wrapper for a hidden canvas element.
+</div>
+                                            <span class="definedIn">Defined in </span>
+        <a href="physical/file-Surface.js.html">Surface.js</a>
+        <hr/> 
+    <p />
+    
+            	
+                                
+                    
+    
+                <div class="summaryTable property">
+            <div class="summaryTableHeader">
+                <span class="objType">Property</span> Summary
+            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">HTMLCanvasElement</span>
+        <a href="logical/jayus/Surface.html#___canvas"><span class="elementName">canvas</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	The underlying canvas that the surface represents.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">CanvasRenderingContext2D</span>
+        <a href="logical/jayus/Surface.html#___context"><span class="elementName">context</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	The context for the canvas.    </div>  
+                            </div>
+                </div>
+        <p/>
+                
+                <div class="summaryTable constructor">
+            <div class="summaryTableHeader">
+                <span class="objType">Constructor</span> Summary
+            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"></span>
+                <a href="logical/jayus/Surface.html#___init"><span class="elementName">init</span></a>
+                (<span class="type">Number</span>
+ width, <span class="type">Number</span>
+ height)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Initiates the surface.    </div>  
+                            </div>
+                </div>
+        <p/>
+        
+                <div class="summaryTable function">
+            <div class="summaryTableHeader">
+                <span class="objType">Function</span> Summary
+            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Surface.html#___blurImage"><span class="elementName">blurImage</span></a>
+                (<span class="type">Number</span>
+ intensity)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Blurs the image on the surface.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                           <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Surface.html#___clear"><span class="elementName">clear</span></a>()
+            </div>
+        <div class="summaryItemDesc">
+        
+	Clears the surface.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                           <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Surface.html#___exportPNG"><span class="elementName">exportPNG</span></a>()
+            </div>
+        <div class="summaryItemDesc">
+        
+	Export the surface to a png image and open it in a new tab, browser permitting.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Surface.html#___fill"><span class="elementName">fill</span></a>
+                (<span class="type"><a href="logical/jayus/Color.html">Color</a></span>
+ color)
+            </div>          
+                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Surface.html#___fill"><span class="elementName">fill</span></a>
+                (<span class="type"><a href="logical/jayus/Color.html">Color</a></span>
+ color, <span class="type">Number</span>
+ alpha)
+            </div>          
+                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Surface.html#___fill"><span class="elementName">fill</span></a>
+                (<span class="type">Number</span>
+ r, <span class="type">Number</span>
+ g, <span class="type">Number</span>
+ b)
+            </div>          
+                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Surface.html#___fill"><span class="elementName">fill</span></a>
+                (<span class="type">Number</span>
+ r, <span class="type">Number</span>
+ g, <span class="type">Number</span>
+ b, <span class="type">Number</span>
+ a)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Fills the surface with the specified color.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">ImageData</span>
+                <a href="logical/jayus/Surface.html#___getBuffer"><span class="elementName">getBuffer</span></a>
+                ()
+            </div>          
+                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">ImageData</span>
+                <a href="logical/jayus/Surface.html#___getBuffer"><span class="elementName">getBuffer</span></a>
+                (<span class="type">Rectangle</span>
+ rect)
+            </div>          
+                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">ImageData</span>
+                <a href="logical/jayus/Surface.html#___getBuffer"><span class="elementName">getBuffer</span></a>
+                (<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+ origin, <span class="type">Number</span>
+ width, <span class="type">Number</span>
+ height)
+            </div>          
+                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">ImageData</span>
+                <a href="logical/jayus/Surface.html#___getBuffer"><span class="elementName">getBuffer</span></a>
+                (<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y, <span class="type">Number</span>
+ width, <span class="type">Number</span>
+ height)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Returns an ImageData object containing pixel data from the surface.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"><a href="logical/jayus/Color.html">Color</a></span>
+                <a href="logical/jayus/Surface.html#___getPixel"><span class="elementName">getPixel</span></a>
+                (<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+ pixel)
+            </div>          
+                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"><a href="logical/jayus/Color.html">Color</a></span>
+                <a href="logical/jayus/Surface.html#___getPixel"><span class="elementName">getPixel</span></a>
+                (<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Returns the color at a specific pixel.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                <a href="logical/jayus/Surface.html#___getPixelAt"><span class="elementName">getPixelAt</span></a>
+                (<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+ point)
+            </div>          
+                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                <a href="logical/jayus/Surface.html#___getPixelAt"><span class="elementName">getPixelAt</span></a>
+                (<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Returns the pixel on the surface at the given point.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Rectangle</span>
+                <a href="logical/jayus/Surface.html#___getPixelFrame"><span class="elementName">getPixelFrame</span></a>
+                (<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+ pixel)
+            </div>          
+                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Rectangle</span>
+                <a href="logical/jayus/Surface.html#___getPixelFrame"><span class="elementName">getPixelFrame</span></a>
+                (<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Returns the region that the specified pixel encompasses.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Surface.html#___putBuffer"><span class="elementName">putBuffer</span></a>
+                (<span class="type">ImageData</span>
+ buffer)
+            </div>          
+                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Surface.html#___putBuffer"><span class="elementName">putBuffer</span></a>
+                (<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+ position, <span class="type">ImageData</span>
+ buffer)
+            </div>          
+                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Surface.html#___putBuffer"><span class="elementName">putBuffer</span></a>
+                (<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y, <span class="type">ImageData</span>
+ buffer)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Places the image from an ImageData object onto the surface.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Surface.html#___setPixel"><span class="elementName">setPixel</span></a>
+                (<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+ pixel, <span class="type"><a href="logical/jayus/Color.html">Color</a></span>
+ color)
+            </div>          
+                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Surface.html#___setPixel"><span class="elementName">setPixel</span></a>
+                (<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y, <span class="type"><a href="logical/jayus/Color.html">Color</a></span>
+ color)
+            </div>          
+                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Surface.html#___setPixel"><span class="elementName">setPixel</span></a>
+                (<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+ pixel, <span class="type">Number</span>
+ r, <span class="type">Number</span>
+ g, <span class="type">Number</span>
+ b)
+            </div>          
+                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Surface.html#___setPixel"><span class="elementName">setPixel</span></a>
+                (<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y, <span class="type">Number</span>
+ r, <span class="type">Number</span>
+ g, <span class="type">Number</span>
+ b)
+            </div>          
+                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Surface.html#___setPixel"><span class="elementName">setPixel</span></a>
+                (<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y, <span class="type">Number</span>
+ r, <span class="type">Number</span>
+ g, <span class="type">Number</span>
+ b, <span class="type">Number</span>
+ a)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Sets the color of a pixel.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">CanvasPattern</span>
+                <a href="logical/jayus/Surface.html#___toPattern"><span class="elementName">toPattern</span></a>
+                (<span class="type">String</span>
+ repetition)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Returns a CanvasPattern representing the image on the surface.    </div>  
+                            </div>
+                </div>
+        <p/>
+                
+                    <!-- ============== Details coming here =================== -->
+    	    	            <div class="details property">
+            <h2 class="sectionHeader">Property Details</h2>
+                                                            
+            <h3>
+        <a name="___canvas">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">HTMLCanvasElement</span>
+            <span class="objName">canvas</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	The underlying canvas that the surface represents.
+	<br> Do not modify.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___context">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">CanvasRenderingContext2D</span>
+            <span class="objName">context</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	The context for the canvas.
+	<br> Do not modify.
+	    </div>    
+                                        <hr />  
+                                    </div>
+    	            <div class="details constructor">
+            <h2 class="sectionHeader">Constructor Details</h2>
+                                                                    <h3>
+        <a name="___init">
+            <span class="objType">constructor</span>
+            <span class="objName">init</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"></span>
+                    init(<span class="type">Number</span>
+ width, <span class="type">Number</span>
+ height)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Initiates the surface.
+	<br> Default size is 300x150.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            width        </code>
+         Optional            </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            height        </code>
+         Optional            </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                    </div>
+    	            <div class="details function">
+            <h2 class="sectionHeader">Function Details</h2>
+                                                                    <h3>
+        <a name="___blurImage">
+            <span class="objType">function</span>
+            <span class="objName">blurImage</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    blurImage(<span class="type">Number</span>
+ intensity)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Blurs the image on the surface.
+	<br> Performs a gaussian blur with the specified intensity.
+	<br> Blurs the alpha value as well.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            intensity        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___clear">
+            <span class="objType">function</span>
+            <span class="objName">clear</span>            
+        </a> 
+    </h3>
+                <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    clear()
+                </code>
+            </div>    
+        <div class="comment">
+        
+	Clears the surface.
+	<br> Fills the surface with transparent black.
+	    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___exportPNG">
+            <span class="objType">function</span>
+            <span class="objName">exportPNG</span>            
+        </a> 
+    </h3>
+                <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    exportPNG()
+                </code>
+            </div>    
+        <div class="comment">
+        
+	Export the surface to a png image and open it in a new tab, browser permitting.
+	<br> Note that exporting a virtual surface takes longer, as the virtual region must be copied then exported.
+	    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___fill">
+            <span class="objType">function</span>
+            <span class="objName">fill</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    fill(<span class="type"><a href="logical/jayus/Color.html">Color</a></span>
+ color)
+                </code> 
+            </div>          
+                    <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    fill(<span class="type"><a href="logical/jayus/Color.html">Color</a></span>
+ color, <span class="type">Number</span>
+ alpha)
+                </code> 
+            </div>          
+                    <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    fill(<span class="type">Number</span>
+ r, <span class="type">Number</span>
+ g, <span class="type">Number</span>
+ b)
+                </code> 
+            </div>          
+                    <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    fill(<span class="type">Number</span>
+ r, <span class="type">Number</span>
+ g, <span class="type">Number</span>
+ b, <span class="type">Number</span>
+ a)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Fills the surface with the specified color.
+	<br> No blending is used, color values replace the existing color values.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"> Syntax 1
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            color        </code>
+                    </div>   
+                                        </div>
+                </div>
+                            <div>
+                    <div class="paramset"> Syntax 2
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            color        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            alpha        </code>
+                    </div>   
+                                        </div>
+                </div>
+                            <div>
+                    <div class="paramset"> Syntax 3
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            r        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            g        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            b        </code>
+                    </div>   
+                                        </div>
+                </div>
+                            <div>
+                    <div class="paramset"> Syntax 4
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            r        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            g        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            b        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            a        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___getBuffer">
+            <span class="objType">function</span>
+            <span class="objName">getBuffer</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">ImageData</span>
+                    getBuffer()
+                </code> 
+            </div>          
+                    <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">ImageData</span>
+                    getBuffer(<span class="type">Rectangle</span>
+ rect)
+                </code> 
+            </div>          
+                    <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">ImageData</span>
+                    getBuffer(<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+ origin, <span class="type">Number</span>
+ width, <span class="type">Number</span>
+ height)
+                </code> 
+            </div>          
+                    <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">ImageData</span>
+                    getBuffer(<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y, <span class="type">Number</span>
+ width, <span class="type">Number</span>
+ height)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Returns an ImageData object containing pixel data from the surface.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"> Syntax 1 - Entire surface
+	</div>
+                    <div>
+                                        </div>
+                </div>
+                            <div>
+                    <div class="paramset"> Syntax 2 - Specified region
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            rect        </code>
+                    </div>   
+                                        </div>
+                </div>
+                            <div>
+                    <div class="paramset"> Syntax 3 - Specified region
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            origin        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            width        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            height        </code>
+                    </div>   
+                                        </div>
+                </div>
+                            <div>
+                    <div class="paramset"> Syntax 4 - Specified region
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            x        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            y        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            width        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            height        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___getPixel">
+            <span class="objType">function</span>
+            <span class="objName">getPixel</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"><a href="logical/jayus/Color.html">Color</a></span>
+                    getPixel(<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+ pixel)
+                </code> 
+            </div>          
+                    <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"><a href="logical/jayus/Color.html">Color</a></span>
+                    getPixel(<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Returns the color at a specific pixel.
+	<br> If you need to obtain the color values at several pixels, using getBuffer() is much more efficient.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"> Syntax 1
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            pixel        </code>
+                    </div>   
+                                        </div>
+                </div>
+                            <div>
+                    <div class="paramset"> Syntax 2
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            x        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            y        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___getPixelAt">
+            <span class="objType">function</span>
+            <span class="objName">getPixelAt</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    getPixelAt(<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+ point)
+                </code> 
+            </div>          
+                    <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    getPixelAt(<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Returns the pixel on the surface at the given point.
+	<br> Returns null if the specified point is invalid.
+	<br> Includes scaling.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"> Syntax 1
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            point        </code>
+                    </div>   
+                                        </div>
+                </div>
+                            <div>
+                    <div class="paramset"> Syntax 2
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            x        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            y        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___getPixelFrame">
+            <span class="objType">function</span>
+            <span class="objName">getPixelFrame</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Rectangle</span>
+                    getPixelFrame(<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+ pixel)
+                </code> 
+            </div>          
+                    <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Rectangle</span>
+                    getPixelFrame(<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Returns the region that the specified pixel encompasses.
+	<br> Includes scaling.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"> Syntax 1
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            pixel        </code>
+                    </div>   
+                                        </div>
+                </div>
+                            <div>
+                    <div class="paramset"> Syntax 2
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            x        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            y        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___putBuffer">
+            <span class="objType">function</span>
+            <span class="objName">putBuffer</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    putBuffer(<span class="type">ImageData</span>
+ buffer)
+                </code> 
+            </div>          
+                    <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    putBuffer(<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+ position, <span class="type">ImageData</span>
+ buffer)
+                </code> 
+            </div>          
+                    <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    putBuffer(<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y, <span class="type">ImageData</span>
+ buffer)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Places the image from an ImageData object onto the surface.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"> Syntax 1 - At (0, 0)
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            buffer        </code>
+                    </div>   
+                                        </div>
+                </div>
+                            <div>
+                    <div class="paramset"> Syntax 2
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            position        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            buffer        </code>
+                    </div>   
+                                        </div>
+                </div>
+                            <div>
+                    <div class="paramset"> Syntax 3
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            x        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            y        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            buffer        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___setPixel">
+            <span class="objType">function</span>
+            <span class="objName">setPixel</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    setPixel(<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+ pixel, <span class="type"><a href="logical/jayus/Color.html">Color</a></span>
+ color)
+                </code> 
+            </div>          
+                    <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    setPixel(<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y, <span class="type"><a href="logical/jayus/Color.html">Color</a></span>
+ color)
+                </code> 
+            </div>          
+                    <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    setPixel(<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+ pixel, <span class="type">Number</span>
+ r, <span class="type">Number</span>
+ g, <span class="type">Number</span>
+ b)
+                </code> 
+            </div>          
+                    <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    setPixel(<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y, <span class="type">Number</span>
+ r, <span class="type">Number</span>
+ g, <span class="type">Number</span>
+ b)
+                </code> 
+            </div>          
+                    <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    setPixel(<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y, <span class="type">Number</span>
+ r, <span class="type">Number</span>
+ g, <span class="type">Number</span>
+ b, <span class="type">Number</span>
+ a)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Sets the color of a pixel.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"> Syntax 1
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            pixel        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            color        </code>
+                    </div>   
+                                        </div>
+                </div>
+                            <div>
+                    <div class="paramset"> Syntax 2
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            x        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            y        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            color        </code>
+                    </div>   
+                                        </div>
+                </div>
+                            <div>
+                    <div class="paramset"> Syntax 3
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            pixel        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            r        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            g        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            b        </code>
+                    </div>   
+                                        </div>
+                </div>
+                            <div>
+                    <div class="paramset"> Syntax 4
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            x        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            y        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            r        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            g        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            b        </code>
+                    </div>   
+                                        </div>
+                </div>
+                            <div>
+                    <div class="paramset"> Syntax 5
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            x        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            y        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            r        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            g        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            b        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            a        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___toPattern">
+            <span class="objType">function</span>
+            <span class="objName">toPattern</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">CanvasPattern</span>
+                    toPattern(<span class="type">String</span>
+ repetition)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Returns a CanvasPattern representing the image on the surface.
+	<br> The repetition string is optional and may be 'repeat', 'repeat-x', 'repeat-y', or 'no-repeat'.
+	<br> The default repptition mode is 'repeat'.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            repetition        </code>
+         Optional            </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                    </div>
+    	    	                                    						        </div>
+        		          </div>			                    
+		                </div>
+        	       </div>
+             </div>
+             <div class="navigation" id="navigation">
+    <ul class="navContent">
+        <li>
+            <div class="navTree">
+                <h2 onclick="jgdoc.NavPanel.clicked(event)">
+                    <a href="javascript:jgdoc.NavPanel.dummy()">Navigation</a>
+                </h2>
+                <ul class="navContent2">
+                    <li>
+                        <div>
+                            <a class="openAll" href="javascript:jgdoc.NavTree.onOpenAll()">Open All</a>
+                            <a class="closeAll" href="javascript:jgdoc.NavTree.onCloseAll()">Close All</a>
+                        </div>
+                        <div>
+                            <ul id = "content" class="contents">
+                                Loading...
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+    <ul class="navContent closed">
+        <li>
+            <div class="fileTree">
+                <h2 onclick="jgdoc.NavPanel.clicked(event)">
+                    <a href="javascript:jgdoc.NavPanel.dummy()">Files</a>
+                </h2>
+                <ul class="navContent2">
+                    <li>
+                                                                                <div>
+                                <a href="physical/file-Animator.js.html">Animator.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Box.js.html">Box.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Brush.js.html">Brush.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Circle.js.html">Circle.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Color.js.html">Color.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Dependency.js.html">Dependency.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Display.js.html">Display.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-EditableFrame.js.html">EditableFrame.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Entity/Group.js.html">Entity.Group.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Entity/Rect.js.html">Entity.Rect.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Entity.js.html">Entity.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-FlowLayout.js.html">FlowLayout.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Frame.js.html">Frame.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Gradient.js.html">Gradient.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Grid.js.html">Grid.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Group.js.html">Group.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Image.js.html">Image.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Layer.js.html">Layer.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-List.js.html">List.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Matrix.js.html">Matrix.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-PaintedShape.js.html">PaintedShape.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Path.js.html">Path.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Point.js.html">Point.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Polygon.js.html">Polygon.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-RectEntity.js.html">RectEntity.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Rectangle.js.html">Rectangle.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Responder.js.html">Responder.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Scene.js.html">Scene.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Shape.js.html">Shape.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-SizePolicy.js.html">SizePolicy.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Sprite.js.html">Sprite.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-SpriteSheet.js.html">SpriteSheet.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Stack.js.html">Stack.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Surface.js.html">Surface.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Text.js.html">Text.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-TextBox.js.html">TextBox.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-TiledMap.js.html">TiledMap.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Wrapper.js.html">Wrapper.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-argumentOverloading/min.js.html">argumentOverloading.min.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-easing.js.html">easing.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-images.js.html">images.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-jayus.js.html">jayus.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-keyboard.js.html">keyboard.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-objects.js.html">objects.js</a>
+                            </div>                              
+                                                                        </li>
+                </ul>
+            </div>
+        </li>       
+    </ul>
+    <ul class="navContent closed">
+        <li>
+            <div class="moduleTree">
+                <h2 onclick="jgdoc.NavPanel.clicked(event)">
+                    <a href="javascript:jgdoc.NavPanel.dummy()">Modules</a>
+                </h2>
+                <ul class="navContent2">
+                    <li>
+                                            </li>
+                </ul>
+            </div>
+        </li>       
+    </ul>
+</div>  
+    
+		</div>	
+	</body>
+    <script type="text/javascript">
+        jgdoc.Searcher.start();
+        jgdoc.NavTree.initialize("jayus.Surface");
+    </script>			
+	<script type="text/javascript" src="jsindex.js">
+    </script>
+</html>

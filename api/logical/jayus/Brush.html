@@ -1,0 +1,1419 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <title>Jayus API documentation</title>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">        
+        <script>
+
+			(function()
+			{
+			    var loc = window.location.protocol + '//' + window.location.hostname + window.location.pathname;
+                loc = loc.split('\\');
+                loc = loc.join('/');					    
+			    loc = loc.split('/');
+			    loc.pop();
+			    loc = loc.join('/');
+			    loc += '/' + '../../';
+			
+			    document.write("<base href='" + loc + "'></base>");
+			})();
+         
+        </script>
+
+        <link rel="stylesheet" type="text/css" href="jgdoc.css">
+        <link rel="stylesheet" type="text/css" href="theme.css">
+        	    <script type="text/javascript" src="navTree.js"></script>
+	    <script type="text/javascript" src="jgdoc.js"></script>
+	</head>
+    <body>
+        <div class="startup" id="startup">
+            <div class="banner" id="banner">
+                <h1 class="projectName">
+	               <a href="./index.html">Jayus API documentation</a>   
+                </h1>
+                <div class="bar">
+	                 version alpha
+	            </div>
+	         </div>
+             <div class="content" id="docContent">
+                  <div class="block">
+                        <div id="searchBlock">
+			                <div class="search" >
+			                    <div class="searchLabel">Search:</div>
+			                    <div class="searchBlock" style="height:100%">
+					                <input id="jgsSearchString" type="text" size="60" class="jgdSearchString"/>
+					                <div id="jgsSearchPanel" class="jgsSearchPanel" style="display:none">
+						                <div  class="jgdSearchRect" >
+						                    <div id="jgsSearchResults">
+						                        Loading....
+						                    </div>
+						                </div>
+					                   <div id="jgsInfo" class="jgsInfo" >No selection</div>
+                                    </div>
+                                 </div>
+			                </div>
+		                </div>
+		                <div id="docScroll" class="docScroll">
+		                    <div>
+			                    <hr/>
+						        <div>
+						        						        		<H2>
+        <span class="objType">Class</span> jayus.Brush
+    </H2>
+    
+
+    <hr/>
+    <!-- description -->
+    <div>
+       <code>
+            <span class="modifiers"></span>
+            <span class="objType">class</span> 
+            <b>jayus.Brush</b>
+       </code>
+    </div>
+                <div class="comment">
+Contains styling information to describe how entities will draw their components.
+</div>
+                                            <span class="definedIn">Defined in </span>
+        <a href="physical/file-Brush.js.html">Brush.js</a>
+        <hr/> 
+    <p />
+    
+            	
+                                
+                    
+    
+                <div class="summaryTable property">
+            <div class="summaryTableHeader">
+                <span class="objType">Property</span> Summary
+            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Number</span>
+        <a href="logical/jayus/Brush.html#___alpha"><span class="elementName">alpha</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	The opacity of the brush.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">String|jayus.Color</span>
+        <a href="logical/jayus/Brush.html#___fill"><span class="elementName">fill</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	How to fill the shape.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">String</span>
+        <a href="logical/jayus/Brush.html#___lineCap"><span class="elementName">lineCap</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	How line endings are drawn.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Array|null</span>
+        <a href="logical/jayus/Brush.html#___lineDash"><span class="elementName">lineDash</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	The lineDash property.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Number</span>
+        <a href="logical/jayus/Brush.html#___lineDashOffset"><span class="elementName">lineDashOffset</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	The lineDashOffset property.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">String</span>
+        <a href="logical/jayus/Brush.html#___lineJoin"><span class="elementName">lineJoin</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	How line segments are joined.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Number</span>
+        <a href="logical/jayus/Brush.html#___lineWidth"><span class="elementName">lineWidth</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	The line width(in pixels) of stroked paths.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Number</span>
+        <a href="logical/jayus/Brush.html#___miterLimit"><span class="elementName">miterLimit</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	The miter limit property of stroked paths.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">String</span>
+        <a href="logical/jayus/Brush.html#___shadow"><span class="elementName">shadow</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	The color of the shadow to be drawn under the shape.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Number</span>
+        <a href="logical/jayus/Brush.html#___shadowBlur"><span class="elementName">shadowBlur</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	The amount by which to blur the shadow drawn under the shape.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Number</span>
+        <a href="logical/jayus/Brush.html#___shadowOffsetX"><span class="elementName">shadowOffsetX</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	The horizontal offset of the shadow drawn under the shape.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Number</span>
+        <a href="logical/jayus/Brush.html#___shadowOffsetY"><span class="elementName">shadowOffsetY</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	The vertical offset of the shadow drawn under the shape.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">String|jayus.Color</span>
+        <a href="logical/jayus/Brush.html#___stroke"><span class="elementName">stroke</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	How to stroke the shape.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Boolean</span>
+        <a href="logical/jayus/Brush.html#___strokeFirst"><span class="elementName">strokeFirst</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	Whether to stroke or fill the shape first.    </div>  
+                            </div>
+                </div>
+        <p/>
+                
+            
+                <div class="summaryTable function">
+            <div class="summaryTableHeader">
+                <span class="objType">Function</span> Summary
+            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"></span>
+                <a href="logical/jayus/Brush.html#___apply"><span class="elementName">apply</span></a>
+                (<span class="type">Object</span>
+ styling)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Applies the given styling properties to the brush.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"></span>
+                <a href="logical/jayus/Brush.html#___applyTo"><span class="elementName">applyTo</span></a>
+                (<span class="type">Context</span>
+ ctx)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Applies the styling to the given context.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"></span>
+                <a href="logical/jayus/Brush.html#___paintRect"><span class="elementName">paintRect</span></a>
+                (<span class="type">Context</span>
+ ctx, <span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y, <span class="type">Number</span>
+ width, <span class="type">Number</span>
+ height)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Draws a rectangle onto the given canvas context.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"></span>
+                <a href="logical/jayus/Brush.html#___paintShape"><span class="elementName">paintShape</span></a>
+                (<span class="type">Context</span>
+ ctx)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Draws the current path on the given canvas context.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"></span>
+                <a href="logical/jayus/Brush.html#___setAlpha"><span class="elementName">setAlpha</span></a>
+                (<span class="type">Number</span>
+ alpha)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Sets the alpha property.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"></span>
+                <a href="logical/jayus/Brush.html#___setFill"><span class="elementName">setFill</span></a>
+                (<span class="type">*</span>
+ style)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Sets the fill property.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"></span>
+                <a href="logical/jayus/Brush.html#___setLineCap"><span class="elementName">setLineCap</span></a>
+                (<span class="type">String</span>
+ lineCap)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Sets the lineCap property.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"></span>
+                <a href="logical/jayus/Brush.html#___setLineDash"><span class="elementName">setLineDash</span></a>
+                (<span class="type">Array</span>
+ lineDash)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Sets the lineDash property.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"></span>
+                <a href="logical/jayus/Brush.html#___setLineDashOffset"><span class="elementName">setLineDashOffset</span></a>
+                (<span class="type">Number</span>
+ lineDashOffset)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Sets the lineDashOffset property.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"></span>
+                <a href="logical/jayus/Brush.html#___setLineJoin"><span class="elementName">setLineJoin</span></a>
+                (<span class="type">String</span>
+ lineJoin)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Sets the lineJoin property.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"></span>
+                <a href="logical/jayus/Brush.html#___setLineWidth"><span class="elementName">setLineWidth</span></a>
+                (<span class="type">Number</span>
+ lineWidth)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Sets the lineWidth property.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"></span>
+                <a href="logical/jayus/Brush.html#___setMiterLimit"><span class="elementName">setMiterLimit</span></a>
+                (<span class="type">Number</span>
+ miterLimit)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Sets the miterLimit property.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"></span>
+                <a href="logical/jayus/Brush.html#___setShadow"><span class="elementName">setShadow</span></a>
+                (<span class="type">*</span>
+ shadow)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Sets the shadow property.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"></span>
+                <a href="logical/jayus/Brush.html#___setShadowBlur"><span class="elementName">setShadowBlur</span></a>
+                (<span class="type">Number</span>
+ shadowBlur)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Sets the shadowBlur property.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"></span>
+                <a href="logical/jayus/Brush.html#___setShadowOffsetX"><span class="elementName">setShadowOffsetX</span></a>
+                (<span class="type">Number</span>
+ shadowOffsetX)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Sets the shadowOffsetX property.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"></span>
+                <a href="logical/jayus/Brush.html#___setShadowOffsetY"><span class="elementName">setShadowOffsetY</span></a>
+                (<span class="type">Number</span>
+ shadowOffsetY)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Sets the shadowOffsetY property.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"></span>
+                <a href="logical/jayus/Brush.html#___setStroke"><span class="elementName">setStroke</span></a>
+                (<span class="type">*</span>
+ style)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Sets the stroke property.    </div>  
+                            </div>
+                </div>
+        <p/>
+                
+                    <!-- ============== Details coming here =================== -->
+    	    	            <div class="details property">
+            <h2 class="sectionHeader">Property Details</h2>
+                                                            
+            <h3>
+        <a name="___alpha">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Number</span>
+            <span class="objName">alpha</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	The opacity of the brush.
+	<br> Default is 1.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___fill">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">String|jayus.Color</span>
+            <span class="objName">fill</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	How to fill the shape.
+	<br> Default is null.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___lineCap">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">String</span>
+            <span class="objName">lineCap</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	How line endings are drawn.
+	<br> Translates directly to the <a target="_blank" href="http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html#dom-context-2d-linecap">context.lineCap</a> property.
+	<br> The values 'butt', 'square', and 'round' are valid.
+	<br> Default is null.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___lineDash">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Array|null</span>
+            <span class="objName">lineDash</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	The lineDash property.
+	<br> How to draw dashed lines.
+	<br> Default is null.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___lineDashOffset">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Number</span>
+            <span class="objName">lineDashOffset</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	The lineDashOffset property.
+	<br> The offset from which dashed lines are drawn.
+	<br> Default is null.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___lineJoin">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">String</span>
+            <span class="objName">lineJoin</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	How line segments are joined.
+	<br> Translates directly to the <a target="_blank" href="http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html#dom-context-2d-linejoin">context.lineJoin</a> property.
+	<br> The values 'bevel', 'round', and 'miter' are valid.
+	<br> Default is null.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___lineWidth">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Number</span>
+            <span class="objName">lineWidth</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	The line width(in pixels) of stroked paths.
+	<br> Default is null.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___miterLimit">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Number</span>
+            <span class="objName">miterLimit</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	The miter limit property of stroked paths.
+	<br> Translates directly to the <a target="_blank" href="http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html#dom-context-2d-miterlimit">context.miterLimit</a> property.
+	<br> Limits how far out the miter of two line's joining may be drawn.
+	<br> Only applies if the lineJoin property is set to 'miter'.
+	<br> Default is null.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___shadow">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">String</span>
+            <span class="objName">shadow</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	The color of the shadow to be drawn under the shape.
+	<br> Default is null.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___shadowBlur">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Number</span>
+            <span class="objName">shadowBlur</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	The amount by which to blur the shadow drawn under the shape.
+	<br> Default is null.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___shadowOffsetX">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Number</span>
+            <span class="objName">shadowOffsetX</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	The horizontal offset of the shadow drawn under the shape.
+	<br> Default is null.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___shadowOffsetY">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Number</span>
+            <span class="objName">shadowOffsetY</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	The vertical offset of the shadow drawn under the shape.
+	<br> Default is null.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___stroke">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">String|jayus.Color</span>
+            <span class="objName">stroke</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	How to stroke the shape.
+	<br> Default is null.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___strokeFirst">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Boolean</span>
+            <span class="objName">strokeFirst</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	Whether to stroke or fill the shape first.
+	<br> Default is false.
+	    </div>    
+                                        <hr />  
+                                    </div>
+    	    	            <div class="details function">
+            <h2 class="sectionHeader">Function Details</h2>
+                                                                    <h3>
+        <a name="___apply">
+            <span class="objType">function</span>
+            <span class="objName">apply</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"></span>
+                    apply(<span class="type">Object</span>
+ styling)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Applies the given styling properties to the brush.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            styling        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___applyTo">
+            <span class="objType">function</span>
+            <span class="objName">applyTo</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"></span>
+                    applyTo(<span class="type">Context</span>
+ ctx)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Applies the styling to the given context.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            ctx        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___paintRect">
+            <span class="objType">function</span>
+            <span class="objName">paintRect</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"></span>
+                    paintRect(<span class="type">Context</span>
+ ctx, <span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y, <span class="type">Number</span>
+ width, <span class="type">Number</span>
+ height)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Draws a rectangle onto the given canvas context.
+	<br> The context state is saved and restored within this method.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            ctx        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            x        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            y        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            width        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            height        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___paintShape">
+            <span class="objType">function</span>
+            <span class="objName">paintShape</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"></span>
+                    paintShape(<span class="type">Context</span>
+ ctx)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Draws the current path on the given canvas context.
+	<br> The context state is not saved and restored within the method.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            ctx        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___setAlpha">
+            <span class="objType">function</span>
+            <span class="objName">setAlpha</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"></span>
+                    setAlpha(<span class="type">Number</span>
+ alpha)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Sets the alpha property.
+	<br> Send null to clear the property.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            alpha        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___setFill">
+            <span class="objType">function</span>
+            <span class="objName">setFill</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"></span>
+                    setFill(<span class="type">*</span>
+ style)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Sets the fill property.
+	<br> Send null to clear the property.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            style        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___setLineCap">
+            <span class="objType">function</span>
+            <span class="objName">setLineCap</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"></span>
+                    setLineCap(<span class="type">String</span>
+ lineCap)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Sets the lineCap property.
+	<br> Send null to clear the property.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            lineCap        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___setLineDash">
+            <span class="objType">function</span>
+            <span class="objName">setLineDash</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"></span>
+                    setLineDash(<span class="type">Array</span>
+ lineDash)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Sets the lineDash property.
+	<br> Send null to clear the property.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            lineDash        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___setLineDashOffset">
+            <span class="objType">function</span>
+            <span class="objName">setLineDashOffset</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"></span>
+                    setLineDashOffset(<span class="type">Number</span>
+ lineDashOffset)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Sets the lineDashOffset property.
+	<br> Send null to clear the property.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            lineDashOffset        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___setLineJoin">
+            <span class="objType">function</span>
+            <span class="objName">setLineJoin</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"></span>
+                    setLineJoin(<span class="type">String</span>
+ lineJoin)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Sets the lineJoin property.
+	<br> Send null to clear the property.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            lineJoin        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___setLineWidth">
+            <span class="objType">function</span>
+            <span class="objName">setLineWidth</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"></span>
+                    setLineWidth(<span class="type">Number</span>
+ lineWidth)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Sets the lineWidth property.
+	<br> Send null to clear the property.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            lineWidth        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___setMiterLimit">
+            <span class="objType">function</span>
+            <span class="objName">setMiterLimit</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"></span>
+                    setMiterLimit(<span class="type">Number</span>
+ miterLimit)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Sets the miterLimit property.
+	<br> Send null to clear the property.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            miterLimit        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___setShadow">
+            <span class="objType">function</span>
+            <span class="objName">setShadow</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"></span>
+                    setShadow(<span class="type">*</span>
+ shadow)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Sets the shadow property.
+	<br> Send null to clear the property.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            shadow        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___setShadowBlur">
+            <span class="objType">function</span>
+            <span class="objName">setShadowBlur</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"></span>
+                    setShadowBlur(<span class="type">Number</span>
+ shadowBlur)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Sets the shadowBlur property.
+	<br> Send null to clear the property.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            shadowBlur        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___setShadowOffsetX">
+            <span class="objType">function</span>
+            <span class="objName">setShadowOffsetX</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"></span>
+                    setShadowOffsetX(<span class="type">Number</span>
+ shadowOffsetX)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Sets the shadowOffsetX property.
+	<br> Send null to clear the property.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            shadowOffsetX        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___setShadowOffsetY">
+            <span class="objType">function</span>
+            <span class="objName">setShadowOffsetY</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"></span>
+                    setShadowOffsetY(<span class="type">Number</span>
+ shadowOffsetY)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Sets the shadowOffsetY property.
+	<br> Send null to clear the property.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            shadowOffsetY        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___setStroke">
+            <span class="objType">function</span>
+            <span class="objName">setStroke</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"></span>
+                    setStroke(<span class="type">*</span>
+ style)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Sets the stroke property.
+	<br> Send null to clear the property.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            style        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                    </div>
+    	    	                                    						        </div>
+        		          </div>			                    
+		                </div>
+        	       </div>
+             </div>
+             <div class="navigation" id="navigation">
+    <ul class="navContent">
+        <li>
+            <div class="navTree">
+                <h2 onclick="jgdoc.NavPanel.clicked(event)">
+                    <a href="javascript:jgdoc.NavPanel.dummy()">Navigation</a>
+                </h2>
+                <ul class="navContent2">
+                    <li>
+                        <div>
+                            <a class="openAll" href="javascript:jgdoc.NavTree.onOpenAll()">Open All</a>
+                            <a class="closeAll" href="javascript:jgdoc.NavTree.onCloseAll()">Close All</a>
+                        </div>
+                        <div>
+                            <ul id = "content" class="contents">
+                                Loading...
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+    <ul class="navContent closed">
+        <li>
+            <div class="fileTree">
+                <h2 onclick="jgdoc.NavPanel.clicked(event)">
+                    <a href="javascript:jgdoc.NavPanel.dummy()">Files</a>
+                </h2>
+                <ul class="navContent2">
+                    <li>
+                                                                                <div>
+                                <a href="physical/file-Animator.js.html">Animator.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Box.js.html">Box.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Brush.js.html">Brush.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Circle.js.html">Circle.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Color.js.html">Color.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Dependency.js.html">Dependency.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Display.js.html">Display.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-EditableFrame.js.html">EditableFrame.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Entity/Group.js.html">Entity.Group.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Entity/Rect.js.html">Entity.Rect.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Entity.js.html">Entity.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-FlowLayout.js.html">FlowLayout.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Frame.js.html">Frame.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Gradient.js.html">Gradient.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Grid.js.html">Grid.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Group.js.html">Group.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Image.js.html">Image.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Layer.js.html">Layer.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-List.js.html">List.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Matrix.js.html">Matrix.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-PaintedShape.js.html">PaintedShape.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Path.js.html">Path.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Point.js.html">Point.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Polygon.js.html">Polygon.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-RectEntity.js.html">RectEntity.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Rectangle.js.html">Rectangle.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Responder.js.html">Responder.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Scene.js.html">Scene.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Shape.js.html">Shape.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-SizePolicy.js.html">SizePolicy.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Sprite.js.html">Sprite.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-SpriteSheet.js.html">SpriteSheet.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Stack.js.html">Stack.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Surface.js.html">Surface.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Text.js.html">Text.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-TextBox.js.html">TextBox.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-TiledMap.js.html">TiledMap.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Wrapper.js.html">Wrapper.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-argumentOverloading/min.js.html">argumentOverloading.min.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-easing.js.html">easing.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-images.js.html">images.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-jayus.js.html">jayus.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-keyboard.js.html">keyboard.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-objects.js.html">objects.js</a>
+                            </div>                              
+                                                                        </li>
+                </ul>
+            </div>
+        </li>       
+    </ul>
+    <ul class="navContent closed">
+        <li>
+            <div class="moduleTree">
+                <h2 onclick="jgdoc.NavPanel.clicked(event)">
+                    <a href="javascript:jgdoc.NavPanel.dummy()">Modules</a>
+                </h2>
+                <ul class="navContent2">
+                    <li>
+                                            </li>
+                </ul>
+            </div>
+        </li>       
+    </ul>
+</div>  
+    
+		</div>	
+	</body>
+    <script type="text/javascript">
+        jgdoc.Searcher.start();
+        jgdoc.NavTree.initialize("jayus.Brush");
+    </script>			
+	<script type="text/javascript" src="jsindex.js">
+    </script>
+</html>

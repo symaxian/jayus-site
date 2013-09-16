@@ -1,0 +1,599 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <title>Jayus API documentation</title>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">        
+        <script>
+
+			(function()
+			{
+			    var loc = window.location.protocol + '//' + window.location.hostname + window.location.pathname;
+                loc = loc.split('\\');
+                loc = loc.join('/');					    
+			    loc = loc.split('/');
+			    loc.pop();
+			    loc = loc.join('/');
+			    loc += '/' + '../../';
+			
+			    document.write("<base href='" + loc + "'></base>");
+			})();
+         
+        </script>
+
+        <link rel="stylesheet" type="text/css" href="jgdoc.css">
+        <link rel="stylesheet" type="text/css" href="theme.css">
+        	    <script type="text/javascript" src="navTree.js"></script>
+	    <script type="text/javascript" src="jgdoc.js"></script>
+	</head>
+    <body>
+        <div class="startup" id="startup">
+            <div class="banner" id="banner">
+                <h1 class="projectName">
+	               <a href="./index.html">Jayus API documentation</a>   
+                </h1>
+                <div class="bar">
+	                 version alpha
+	            </div>
+	         </div>
+             <div class="content" id="docContent">
+                  <div class="block">
+                        <div id="searchBlock">
+			                <div class="search" >
+			                    <div class="searchLabel">Search:</div>
+			                    <div class="searchBlock" style="height:100%">
+					                <input id="jgsSearchString" type="text" size="60" class="jgdSearchString"/>
+					                <div id="jgsSearchPanel" class="jgsSearchPanel" style="display:none">
+						                <div  class="jgdSearchRect" >
+						                    <div id="jgsSearchResults">
+						                        Loading....
+						                    </div>
+						                </div>
+					                   <div id="jgsInfo" class="jgsInfo" >No selection</div>
+                                    </div>
+                                 </div>
+			                </div>
+		                </div>
+		                <div id="docScroll" class="docScroll">
+		                    <div>
+			                    <hr/>
+						        <div>
+						        						        		<H2>
+        <span class="objType">Class</span> jayus.PaintedShape
+    </H2>
+        <div class="extends">
+        <span class="descSection">Extends </span>
+                     <a href="logical/jayus/Entity.html">jayus.Entity</a>            </div>                                      
+
+
+    <hr/>
+    <!-- description -->
+    <div>
+       <code>
+            <span class="modifiers"></span>
+            <span class="objType">class</span> 
+            <b>jayus.PaintedShape</b>
+       </code>
+    </div>
+                <div class="comment">
+An Entity that holds a Shape and allows it to be added to the scenegraph.
+<br> Adds position, transformation, and styling to the rendered shape.
+</div>
+                                            <span class="definedIn">Defined in </span>
+        <a href="physical/file-PaintedShape.js.html">PaintedShape.js</a>
+        <hr/> 
+    <p />
+    
+            	
+                                
+                                                                    
+    
+                <div class="summaryTable property">
+            <div class="summaryTableHeader">
+                <span class="objType">Property</span> Summary
+            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type"><a href="logical/jayus/Brush.html">Brush</a></span>
+        <a href="logical/jayus/PaintedShape.html#___brush"><span class="elementName">brush</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	How to draw the shape.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Boolean</span>
+        <a href="logical/jayus/PaintedShape.html#___hasBrush"><span class="elementName">hasBrush</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	Whether a brush is set or not.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type"><a href="logical/jayus/Shape.html">Shape</a></span>
+        <a href="logical/jayus/PaintedShape.html#___shape"><span class="elementName">shape</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	The shape to style/draw.    </div>  
+                            </div>
+                </div>
+        <p/>
+                                <div class="summaryTable">
+                <div class="summaryTableHeader">
+                   Properties inherited from <a href="logical/jayus/Entity.html">jayus.Entity</a> 
+                </div>
+                <div class="inheritanceSummary">
+                    <a href="logical/jayus/Entity.html#___canAcceptCursor">canAcceptCursor</a>, <a href="logical/jayus/Entity.html#___canReleaseCursor">canReleaseCursor</a>, <a href="logical/jayus/Entity.html#___dirtied">dirtied</a>, <a href="logical/jayus/Entity.html#___dragButton">dragButton</a>, <a href="logical/jayus/Entity.html#___draggable">draggable</a>, <a href="logical/jayus/Entity.html#___dragging">dragging</a>, <a href="logical/jayus/Entity.html#___frozen">frozen</a>, <a href="logical/jayus/Entity.html#___hasCursor">hasCursor</a>, <a href="logical/jayus/Entity.html#___hasParent">hasParent</a>, <a href="logical/jayus/Entity.html#___id">id</a>, <a href="logical/jayus/Entity.html#___isEntity">isEntity</a>, <a href="logical/jayus/Entity.html#___isParent">isParent</a>, <a href="logical/jayus/Entity.html#___isRect">isRect</a>, <a href="logical/jayus/Entity.html#___isTransformed">isTransformed</a>, <a href="logical/jayus/Entity.html#___parent">parent</a>, <a href="logical/jayus/Entity.html#___trackCursor">trackCursor</a>, <a href="logical/jayus/Entity.html#___underCursor">underCursor</a>, <a href="logical/jayus/Entity.html#___visible">visible</a>                </div>
+             </div>
+             <br/>          
+                                <div class="summaryTable">
+                <div class="summaryTableHeader">
+                   Properties inherited from <a href="logical/jayus/Dependency.html">jayus.Dependency</a> 
+                </div>
+                <div class="inheritanceSummary">
+                    <a href="logical/jayus/Dependency.html#___dependentCount">dependentCount</a>, <a href="logical/jayus/Dependency.html#___dependents">dependents</a>                </div>
+             </div>
+             <br/>          
+                                <div class="summaryTable">
+                <div class="summaryTableHeader">
+                   Properties inherited from <a href="logical/jayus/Responder.html">jayus.Responder</a> 
+                </div>
+                <div class="inheritanceSummary">
+                    <a href="logical/jayus/Responder.html#___handlers">handlers</a>, <a href="logical/jayus/Responder.html#___hasHandlers">hasHandlers</a>, <a href="logical/jayus/Responder.html#___isHandler">isHandler</a>                </div>
+             </div>
+             <br/>          
+                            
+            
+                <div class="summaryTable function">
+            <div class="summaryTableHeader">
+                <span class="objType">Function</span> Summary
+            </div>
+                    <div class="summaryItem">
+                                                           <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/PaintedShape.html#___clearBrush"><span class="elementName">clearBrush</span></a>()
+            </div>
+        <div class="summaryItemDesc">
+        
+	Removes the brush.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"></span>
+                <a href="logical/jayus/PaintedShape.html#___init"><span class="elementName">init</span></a>
+                (<span class="type"><a href="logical/jayus/Shape.html">Shape</a></span>
+ shape, <span class="type">Object</span>
+ brush)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Initiates the painted shape.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/PaintedShape.html#___setBrush"><span class="elementName">setBrush</span></a>
+                (<span class="type"><a href="logical/jayus/Brush.html">Brush</a></span>
+ brush)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Sets the brush used to draw the shape.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/PaintedShape.html#___setShape"><span class="elementName">setShape</span></a>
+                (<span class="type"><a href="logical/jayus/Shape.html">Shape</a></span>
+ shape)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Sets the shape to paint.    </div>  
+                            </div>
+                </div>
+        <p/>
+                                <div class="summaryTable">
+                <div class="summaryTableHeader">
+                   Functions inherited from <a href="logical/jayus/Entity.html">jayus.Entity</a> 
+                </div>
+                <div class="inheritanceSummary">
+                    <a href="logical/jayus/Entity.html#___applyTransforms">applyTransforms</a>, <a href="logical/jayus/Entity.html#___drawOnto">drawOnto</a>, <a href="logical/jayus/Entity.html#___drawOntoContext">drawOntoContext</a>, <a href="logical/jayus/Entity.html#___getAbsoluteParent">getAbsoluteParent</a>, <a href="logical/jayus/Entity.html#___getMatrix">getMatrix</a>, <a href="logical/jayus/Entity.html#___hide">hide</a>, <a href="logical/jayus/Entity.html#___intersectCount">intersectCount</a>, <a href="logical/jayus/Entity.html#___intersects">intersects</a>, <a href="logical/jayus/Entity.html#___intersectsAll">intersectsAll</a>, <a href="logical/jayus/Entity.html#___intersectsAny">intersectsAny</a>, <a href="logical/jayus/Entity.html#___intersectsAt">intersectsAt</a>, <a href="logical/jayus/Entity.html#___intersectsWhich">intersectsWhich</a>, <a href="logical/jayus/Entity.html#___localToParent">localToParent</a>, <a href="logical/jayus/Entity.html#___localToScreen">localToScreen</a>, <a href="logical/jayus/Entity.html#___parentToLocal">parentToLocal</a>, <a href="logical/jayus/Entity.html#___rasterize">rasterize</a>, <a href="logical/jayus/Entity.html#___rotate">rotate</a>, <a href="logical/jayus/Entity.html#___scale">scale</a>, <a href="logical/jayus/Entity.html#___screenToLocal">screenToLocal</a>, <a href="logical/jayus/Entity.html#___setAlpha">setAlpha</a>, <a href="logical/jayus/Entity.html#___setAnchor">setAnchor</a>, <a href="logical/jayus/Entity.html#___setAngle">setAngle</a>, <a href="logical/jayus/Entity.html#___setDraggable">setDraggable</a>, <a href="logical/jayus/Entity.html#___setId">setId</a>, <a href="logical/jayus/Entity.html#___setScale">setScale</a>, <a href="logical/jayus/Entity.html#___setVisible">setVisible</a>, <a href="logical/jayus/Entity.html#___show">show</a>, <a href="logical/jayus/Entity.html#___tick">tick</a>                </div>
+             </div>
+             <br/>          
+                                <div class="summaryTable">
+                <div class="summaryTableHeader">
+                   Functions inherited from <a href="logical/jayus/Dependency.html">jayus.Dependency</a> 
+                </div>
+                <div class="inheritanceSummary">
+                    <a href="logical/jayus/Dependency.html#___attach">attach</a>, <a href="logical/jayus/Dependency.html#___detach">detach</a>, <a href="logical/jayus/Dependency.html#___dirty">dirty</a>, <a href="logical/jayus/Dependency.html#___informDependents">informDependents</a>                </div>
+             </div>
+             <br/>          
+                                <div class="summaryTable">
+                <div class="summaryTableHeader">
+                   Functions inherited from <a href="logical/jayus/Responder.html">jayus.Responder</a> 
+                </div>
+                <div class="inheritanceSummary">
+                    <a href="logical/jayus/Responder.html#___addHandler">addHandler</a>, <a href="logical/jayus/Responder.html#___fire">fire</a>, <a href="logical/jayus/Responder.html#___handle">handle</a>, <a href="logical/jayus/Responder.html#___interceptNextEvent">interceptNextEvent</a>, <a href="logical/jayus/Responder.html#___removeAllHandlers">removeAllHandlers</a>, <a href="logical/jayus/Responder.html#___removeHandler">removeHandler</a>, <a href="logical/jayus/Responder.html#___removeHandlers">removeHandlers</a>                </div>
+             </div>
+             <br/>          
+                                <div class="summaryTable">
+                <div class="summaryTableHeader">
+                   Functions inherited from <a href="logical/jayus/Animatable.html">jayus.Animatable</a> 
+                </div>
+                <div class="inheritanceSummary">
+                    <a href="logical/jayus/Animatable.html#___animate">animate</a>                </div>
+             </div>
+             <br/>          
+                
+                    <!-- ============== Details coming here =================== -->
+    	    	            <div class="details property">
+            <h2 class="sectionHeader">Property Details</h2>
+                                                            
+            <h3>
+        <a name="___brush">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type"><a href="logical/jayus/Brush.html">Brush</a></span>
+            <span class="objName">brush</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	How to draw the shape.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___hasBrush">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Boolean</span>
+            <span class="objName">hasBrush</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	Whether a brush is set or not.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___shape">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type"><a href="logical/jayus/Shape.html">Shape</a></span>
+            <span class="objName">shape</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	The shape to style/draw.
+	<br> Do not modify.
+	    </div>    
+                                        <hr />  
+                                    </div>
+    	    	            <div class="details function">
+            <h2 class="sectionHeader">Function Details</h2>
+                                                                    <h3>
+        <a name="___clearBrush">
+            <span class="objType">function</span>
+            <span class="objName">clearBrush</span>            
+        </a> 
+    </h3>
+                <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    clearBrush()
+                </code>
+            </div>    
+        <div class="comment">
+        
+	Removes the brush.
+	    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___init">
+            <span class="objType">function</span>
+            <span class="objName">init</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"></span>
+                    init(<span class="type"><a href="logical/jayus/Shape.html">Shape</a></span>
+ shape, <span class="type">Object</span>
+ brush)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Initiates the painted shape.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            shape        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            brush        </code>
+         Optional            </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___setBrush">
+            <span class="objType">function</span>
+            <span class="objName">setBrush</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    setBrush(<span class="type"><a href="logical/jayus/Brush.html">Brush</a></span>
+ brush)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Sets the brush used to draw the shape.
+	<br> Sets the entity as dirty.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            brush        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___setShape">
+            <span class="objType">function</span>
+            <span class="objName">setShape</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    setShape(<span class="type"><a href="logical/jayus/Shape.html">Shape</a></span>
+ shape)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Sets the shape to paint.
+	<br> Sets the entity as dirty.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            shape        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                    </div>
+    	    	                                    						        </div>
+        		          </div>			                    
+		                </div>
+        	       </div>
+             </div>
+             <div class="navigation" id="navigation">
+    <ul class="navContent">
+        <li>
+            <div class="navTree">
+                <h2 onclick="jgdoc.NavPanel.clicked(event)">
+                    <a href="javascript:jgdoc.NavPanel.dummy()">Navigation</a>
+                </h2>
+                <ul class="navContent2">
+                    <li>
+                        <div>
+                            <a class="openAll" href="javascript:jgdoc.NavTree.onOpenAll()">Open All</a>
+                            <a class="closeAll" href="javascript:jgdoc.NavTree.onCloseAll()">Close All</a>
+                        </div>
+                        <div>
+                            <ul id = "content" class="contents">
+                                Loading...
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+    <ul class="navContent closed">
+        <li>
+            <div class="fileTree">
+                <h2 onclick="jgdoc.NavPanel.clicked(event)">
+                    <a href="javascript:jgdoc.NavPanel.dummy()">Files</a>
+                </h2>
+                <ul class="navContent2">
+                    <li>
+                                                                                <div>
+                                <a href="physical/file-Animator.js.html">Animator.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Box.js.html">Box.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Brush.js.html">Brush.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Circle.js.html">Circle.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Color.js.html">Color.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Dependency.js.html">Dependency.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Display.js.html">Display.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-EditableFrame.js.html">EditableFrame.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Entity/Group.js.html">Entity.Group.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Entity/Rect.js.html">Entity.Rect.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Entity.js.html">Entity.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-FlowLayout.js.html">FlowLayout.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Frame.js.html">Frame.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Gradient.js.html">Gradient.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Grid.js.html">Grid.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Group.js.html">Group.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Image.js.html">Image.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Layer.js.html">Layer.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-List.js.html">List.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Matrix.js.html">Matrix.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-PaintedShape.js.html">PaintedShape.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Path.js.html">Path.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Point.js.html">Point.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Polygon.js.html">Polygon.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-RectEntity.js.html">RectEntity.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Rectangle.js.html">Rectangle.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Responder.js.html">Responder.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Scene.js.html">Scene.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Shape.js.html">Shape.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-SizePolicy.js.html">SizePolicy.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Sprite.js.html">Sprite.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-SpriteSheet.js.html">SpriteSheet.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Stack.js.html">Stack.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Surface.js.html">Surface.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Text.js.html">Text.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-TextBox.js.html">TextBox.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-TiledMap.js.html">TiledMap.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Wrapper.js.html">Wrapper.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-argumentOverloading/min.js.html">argumentOverloading.min.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-easing.js.html">easing.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-images.js.html">images.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-jayus.js.html">jayus.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-keyboard.js.html">keyboard.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-objects.js.html">objects.js</a>
+                            </div>                              
+                                                                        </li>
+                </ul>
+            </div>
+        </li>       
+    </ul>
+    <ul class="navContent closed">
+        <li>
+            <div class="moduleTree">
+                <h2 onclick="jgdoc.NavPanel.clicked(event)">
+                    <a href="javascript:jgdoc.NavPanel.dummy()">Modules</a>
+                </h2>
+                <ul class="navContent2">
+                    <li>
+                                            </li>
+                </ul>
+            </div>
+        </li>       
+    </ul>
+</div>  
+    
+		</div>	
+	</body>
+    <script type="text/javascript">
+        jgdoc.Searcher.start();
+        jgdoc.NavTree.initialize("jayus.PaintedShape");
+    </script>			
+	<script type="text/javascript" src="jsindex.js">
+    </script>
+</html>

@@ -1,0 +1,951 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <title>Jayus API documentation</title>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">        
+        <script>
+
+			(function()
+			{
+			    var loc = window.location.protocol + '//' + window.location.hostname + window.location.pathname;
+                loc = loc.split('\\');
+                loc = loc.join('/');					    
+			    loc = loc.split('/');
+			    loc.pop();
+			    loc = loc.join('/');
+			    loc += '/' + '../../';
+			
+			    document.write("<base href='" + loc + "'></base>");
+			})();
+         
+        </script>
+
+        <link rel="stylesheet" type="text/css" href="jgdoc.css">
+        <link rel="stylesheet" type="text/css" href="theme.css">
+        	    <script type="text/javascript" src="navTree.js"></script>
+	    <script type="text/javascript" src="jgdoc.js"></script>
+	</head>
+    <body>
+        <div class="startup" id="startup">
+            <div class="banner" id="banner">
+                <h1 class="projectName">
+	               <a href="./index.html">Jayus API documentation</a>   
+                </h1>
+                <div class="bar">
+	                 version alpha
+	            </div>
+	         </div>
+             <div class="content" id="docContent">
+                  <div class="block">
+                        <div id="searchBlock">
+			                <div class="search" >
+			                    <div class="searchLabel">Search:</div>
+			                    <div class="searchBlock" style="height:100%">
+					                <input id="jgsSearchString" type="text" size="60" class="jgdSearchString"/>
+					                <div id="jgsSearchPanel" class="jgsSearchPanel" style="display:none">
+						                <div  class="jgdSearchRect" >
+						                    <div id="jgsSearchResults">
+						                        Loading....
+						                    </div>
+						                </div>
+					                   <div id="jgsInfo" class="jgsInfo" >No selection</div>
+                                    </div>
+                                 </div>
+			                </div>
+		                </div>
+		                <div id="docScroll" class="docScroll">
+		                    <div>
+			                    <hr/>
+						        <div>
+						        						        		<H2>
+        <span class="objType">Class</span> jayus.SpriteSheet
+    </H2>
+    
+
+    <hr/>
+    <!-- description -->
+    <div>
+       <code>
+            <span class="modifiers"></span>
+            <span class="objType">class</span> 
+            <b>jayus.SpriteSheet</b>
+       </code>
+    </div>
+                <div class="comment">
+An entity that describes a number of sprites and animations for an image.
+</div>
+                                            <span class="definedIn">Defined in </span>
+        <a href="physical/file-SpriteSheet.js.html">SpriteSheet.js</a>
+        <hr/> 
+    <p />
+    
+            	
+                                
+                    
+    
+                <div class="summaryTable property">
+            <div class="summaryTableHeader">
+                <span class="objType">Property</span> Summary
+            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+        <a href="logical/jayus/SpriteSheet.html#___margin"><span class="elementName">margin</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	Initial offset from where the sprites begin.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Number</span>
+        <a href="logical/jayus/SpriteSheet.html#___marginX"><span class="elementName">marginX</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	The initial vertical space before the sprites begin.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Number</span>
+        <a href="logical/jayus/SpriteSheet.html#___marginY"><span class="elementName">marginY</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	The initial horizontal space before the sprites begin.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Number</span>
+        <a href="logical/jayus/SpriteSheet.html#___spacingX"><span class="elementName">spacingX</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	The horizontal spacing between each sprite.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Number</span>
+        <a href="logical/jayus/SpriteSheet.html#___spacingY"><span class="elementName">spacingY</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	The vertical spacing between each sprite.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Number</span>
+        <a href="logical/jayus/SpriteSheet.html#___spriteHeight"><span class="elementName">spriteHeight</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	The height of each sprite.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Number</span>
+        <a href="logical/jayus/SpriteSheet.html#___spriteWidth"><span class="elementName">spriteWidth</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	The width of each sprite.    </div>  
+                            </div>
+                </div>
+        <p/>
+                
+                <div class="summaryTable constructor">
+            <div class="summaryTableHeader">
+                <span class="objType">Constructor</span> Summary
+            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"></span>
+                <a href="logical/jayus/SpriteSheet.html#___init"><span class="elementName">init</span></a>
+                (<span class="type">String</span>
+ filepath)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Initiates the sprite sheet.    </div>  
+                            </div>
+                </div>
+        <p/>
+        
+                <div class="summaryTable function">
+            <div class="summaryTableHeader">
+                <span class="objType">Function</span> Summary
+            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/SpriteSheet.html#___addAnimation"><span class="elementName">addAnimation</span></a>
+                (<span class="type">String</span>
+ name, <span class="type">Array</span>
+ sprites, <span class="type">Number</span>
+ duration)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Defines a named animation using sprites within the spritesheet.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Boolean</span>
+                <a href="logical/jayus/SpriteSheet.html#___hasAnimation"><span class="elementName">hasAnimation</span></a>
+                (<span class="type">String</span>
+ name)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Reteurns whether the spritesheet has the given animation.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/SpriteSheet.html#___setAnimationDuration"><span class="elementName">setAnimationDuration</span></a>
+                (<span class="type">String</span>
+ animation, <span class="type">Number</span>
+ duration)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Sets the duration of a named animation.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/SpriteSheet.html#___setAnimationFlipping"><span class="elementName">setAnimationFlipping</span></a>
+                (<span class="type">String</span>
+ animation, <span class="type">Boolean</span>
+ flipX, <span class="type">Boolean</span>
+ flipY)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Sets the flipped properties of an animation.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/SpriteSheet.html#___setMargin"><span class="elementName">setMargin</span></a>
+                (<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+ point)
+            </div>          
+                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/SpriteSheet.html#___setMargin"><span class="elementName">setMargin</span></a>
+                (<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Sets the margin property.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/SpriteSheet.html#___setSpacing"><span class="elementName">setSpacing</span></a>
+                (<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+ point)
+            </div>          
+                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/SpriteSheet.html#___setSpacing"><span class="elementName">setSpacing</span></a>
+                (<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Sets the spacing property.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/SpriteSheet.html#___setSpriteSize"><span class="elementName">setSpriteSize</span></a>
+                (<span class="type">Rectangle|Entity</span>
+ size)
+            </div>          
+                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/SpriteSheet.html#___setSpriteSize"><span class="elementName">setSpriteSize</span></a>
+                (<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Sets the spriteSize property.    </div>  
+                            </div>
+                </div>
+        <p/>
+                
+                    <!-- ============== Details coming here =================== -->
+    	    	            <div class="details property">
+            <h2 class="sectionHeader">Property Details</h2>
+                                                            
+            <h3>
+        <a name="___margin">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+            <span class="objName">margin</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	Initial offset from where the sprites begin.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___marginX">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Number</span>
+            <span class="objName">marginX</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	The initial vertical space before the sprites begin.
+	<br> Default is 0.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___marginY">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Number</span>
+            <span class="objName">marginY</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	The initial horizontal space before the sprites begin.
+	<br> Default is 0.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___spacingX">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Number</span>
+            <span class="objName">spacingX</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	The horizontal spacing between each sprite.
+	<br> Default is 0.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___spacingY">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Number</span>
+            <span class="objName">spacingY</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	The vertical spacing between each sprite.
+	<br> Default is 0.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___spriteHeight">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Number</span>
+            <span class="objName">spriteHeight</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	The height of each sprite.
+	<br> Default is 32.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___spriteWidth">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Number</span>
+            <span class="objName">spriteWidth</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	The width of each sprite.
+	<br> Default is 32.
+	    </div>    
+                                        <hr />  
+                                    </div>
+    	            <div class="details constructor">
+            <h2 class="sectionHeader">Constructor Details</h2>
+                                                                    <h3>
+        <a name="___init">
+            <span class="objType">constructor</span>
+            <span class="objName">init</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"></span>
+                    init(<span class="type">String</span>
+ filepath)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Initiates the sprite sheet.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            filepath        </code>
+         Optional            </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                    </div>
+    	            <div class="details function">
+            <h2 class="sectionHeader">Function Details</h2>
+                                                                    <h3>
+        <a name="___addAnimation">
+            <span class="objType">function</span>
+            <span class="objName">addAnimation</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    addAnimation(<span class="type">String</span>
+ name, <span class="type">Array</span>
+ sprites, <span class="type">Number</span>
+ duration)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Defines a named animation using sprites within the spritesheet.
+	<br> Default duration is 1 second.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            name        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            sprites        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            duration        </code>
+         Optional            </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___hasAnimation">
+            <span class="objType">function</span>
+            <span class="objName">hasAnimation</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Boolean</span>
+                    hasAnimation(<span class="type">String</span>
+ name)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Reteurns whether the spritesheet has the given animation.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            name        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___setAnimationDuration">
+            <span class="objType">function</span>
+            <span class="objName">setAnimationDuration</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    setAnimationDuration(<span class="type">String</span>
+ animation, <span class="type">Number</span>
+ duration)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Sets the duration of a named animation.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            animation        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            duration        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___setAnimationFlipping">
+            <span class="objType">function</span>
+            <span class="objName">setAnimationFlipping</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    setAnimationFlipping(<span class="type">String</span>
+ animation, <span class="type">Boolean</span>
+ flipX, <span class="type">Boolean</span>
+ flipY)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Sets the flipped properties of an animation.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            animation        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            flipX        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            flipY        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___setMargin">
+            <span class="objType">function</span>
+            <span class="objName">setMargin</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    setMargin(<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+ point)
+                </code> 
+            </div>          
+                    <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    setMargin(<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Sets the margin property.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"> 1
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            point        </code>
+                    </div>   
+                                        </div>
+                </div>
+                            <div>
+                    <div class="paramset"> 2
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            x        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            y        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___setSpacing">
+            <span class="objType">function</span>
+            <span class="objName">setSpacing</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    setSpacing(<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+ point)
+                </code> 
+            </div>          
+                    <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    setSpacing(<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Sets the spacing property.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"> 1
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            point        </code>
+                    </div>   
+                                        </div>
+                </div>
+                            <div>
+                    <div class="paramset"> 2
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            x        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            y        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___setSpriteSize">
+            <span class="objType">function</span>
+            <span class="objName">setSpriteSize</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    setSpriteSize(<span class="type">Rectangle|Entity</span>
+ size)
+                </code> 
+            </div>          
+                    <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    setSpriteSize(<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Sets the spriteSize property.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"> 1
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            size        </code>
+                    </div>   
+                                        </div>
+                </div>
+                            <div>
+                    <div class="paramset"> 2
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            x        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            y        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                    </div>
+    	    	                                    						        </div>
+        		          </div>			                    
+		                </div>
+        	       </div>
+             </div>
+             <div class="navigation" id="navigation">
+    <ul class="navContent">
+        <li>
+            <div class="navTree">
+                <h2 onclick="jgdoc.NavPanel.clicked(event)">
+                    <a href="javascript:jgdoc.NavPanel.dummy()">Navigation</a>
+                </h2>
+                <ul class="navContent2">
+                    <li>
+                        <div>
+                            <a class="openAll" href="javascript:jgdoc.NavTree.onOpenAll()">Open All</a>
+                            <a class="closeAll" href="javascript:jgdoc.NavTree.onCloseAll()">Close All</a>
+                        </div>
+                        <div>
+                            <ul id = "content" class="contents">
+                                Loading...
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+    <ul class="navContent closed">
+        <li>
+            <div class="fileTree">
+                <h2 onclick="jgdoc.NavPanel.clicked(event)">
+                    <a href="javascript:jgdoc.NavPanel.dummy()">Files</a>
+                </h2>
+                <ul class="navContent2">
+                    <li>
+                                                                                <div>
+                                <a href="physical/file-Animator.js.html">Animator.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Box.js.html">Box.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Brush.js.html">Brush.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Circle.js.html">Circle.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Color.js.html">Color.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Dependency.js.html">Dependency.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Display.js.html">Display.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-EditableFrame.js.html">EditableFrame.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Entity/Group.js.html">Entity.Group.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Entity/Rect.js.html">Entity.Rect.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Entity.js.html">Entity.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-FlowLayout.js.html">FlowLayout.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Frame.js.html">Frame.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Gradient.js.html">Gradient.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Grid.js.html">Grid.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Group.js.html">Group.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Image.js.html">Image.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Layer.js.html">Layer.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-List.js.html">List.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Matrix.js.html">Matrix.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-PaintedShape.js.html">PaintedShape.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Path.js.html">Path.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Point.js.html">Point.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Polygon.js.html">Polygon.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-RectEntity.js.html">RectEntity.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Rectangle.js.html">Rectangle.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Responder.js.html">Responder.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Scene.js.html">Scene.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Shape.js.html">Shape.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-SizePolicy.js.html">SizePolicy.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Sprite.js.html">Sprite.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-SpriteSheet.js.html">SpriteSheet.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Stack.js.html">Stack.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Surface.js.html">Surface.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Text.js.html">Text.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-TextBox.js.html">TextBox.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-TiledMap.js.html">TiledMap.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Wrapper.js.html">Wrapper.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-argumentOverloading/min.js.html">argumentOverloading.min.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-easing.js.html">easing.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-images.js.html">images.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-jayus.js.html">jayus.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-keyboard.js.html">keyboard.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-objects.js.html">objects.js</a>
+                            </div>                              
+                                                                        </li>
+                </ul>
+            </div>
+        </li>       
+    </ul>
+    <ul class="navContent closed">
+        <li>
+            <div class="moduleTree">
+                <h2 onclick="jgdoc.NavPanel.clicked(event)">
+                    <a href="javascript:jgdoc.NavPanel.dummy()">Modules</a>
+                </h2>
+                <ul class="navContent2">
+                    <li>
+                                            </li>
+                </ul>
+            </div>
+        </li>       
+    </ul>
+</div>  
+    
+		</div>	
+	</body>
+    <script type="text/javascript">
+        jgdoc.Searcher.start();
+        jgdoc.NavTree.initialize("jayus.SpriteSheet");
+    </script>			
+	<script type="text/javascript" src="jsindex.js">
+    </script>
+</html>

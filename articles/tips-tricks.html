@@ -1,0 +1,102 @@
+---
+layout: default
+title: Jayus
+---
+
+{% include article_list.html %}
+
+<h2>Chaining Method Calls</h2>
+
+<p>
+    Most of the methods on entities return a reference to themselves. This allows you to chain together method calls such as below. In the API reference a return value of "Self" denotes that the method returns a reference to the entity and can be chained together with other function calls. Chaining together method calls produces code that is smaller and possibly more readable, and as such it is usually encouraged. For readability, you can also split up many method calls onto multiple indented lines.
+</p>
+
+<pre class="prettyprint linenums">
+myDisplay.setSize(800, 600);
+myDisplay.setBg({ fill: 'aqua' });
+myDisplay.setInto(displayContainer);
+
+// VS
+
+myDisplay.setSize(800, 600).setBg({ fill: 'aqua' }).setInto(displayContainer);
+
+// VS
+
+myDisplay.
+	setSize(800, 600).
+	setBg({ fill: 'aqua' }).
+	setInto(displayContainer);
+</pre>
+
+<h2>Sharing Styles</h2>
+
+<p>
+    In entities that accept a Style object(such as to render a path) the style is kept as an object in the entity. Due to the referential nature of objects in JavaScript, you can reuse the same style object across multiple entities.
+</p>
+
+<pre class="prettyprint linenums">
+rect1.setBg({ stroke: 'red', lineWidth: 3 });
+rect2.setBg({ stroke: 'red', lineWidth: 3 });
+rect3.setBg({ stroke: 'red', lineWidth: 3 });
+
+// VS
+
+redStyle = new jayus.Style(({ stroke: 'red', lineWidth: 3 });
+rect1.setBg(redStyle);
+rect2.setBg(redStyle);
+rect3.setBg(redStyle);
+</pre>
+
+<p>
+    Remember that this means all entites who were given that style now share the same styling object, if the styling is changed on one entity then the changes are also reflected on every other entity that uses that style. This can lead to hard to diagnose bugs but may also be the desired behavior.
+</p>
+
+<h2>Caching</h2>
+<p>
+	One very important feature of the <a href="api/logical/jayus/RectEntity.html" target="new">RectEntity</a> class is caching. It can keep a cached version of its contents, possibly reducing the number of times it must re-draw the entirety of it's contents. This can serve as a very significant performance boost whenever the contents of any rect-like entity are not often modifified but involve a heavy amount of rendering.
+</p>
+<p>
+	A good example of this is the <a href="api/logical/jayus/TiledMap.html" target="new">TiledMap</a> class, the TiledMap class has caching enabled by default, and for very good reason. A game map is often composed of many(up to thousands) of smaller images, the map tiles. And the game world on a whole very rarely changes, resulting in maps that act as a single static image. Being that a game map can require a heavy amount of rendering(many tiles) and does not often change, it makes sense to prerender the entire world just once, and from then on just draw pieces of the cached image. The world will often include many animated objects, but these are usually handled in a separate manner.
+</p>
+
+<div style="display: none">
+
+<h2>Freezing</h2>
+<p>
+	<p><span class="label label-warning">Warning: The contents of this section may change in the future</span></p>
+	In critical sections of code, modifying entities multiple times may degrade performance as the entity must run its displacement and/or dirty routines when modified. To prevent this you can increment and decrement the frozen property of the entity.
+</p>
+
+<pre class="prettyprint linenums">
+myEntity.move(x,y).setSize(48,32).setScale(2);
+
+// VS
+
+myEntity.frozen++;                              // Freeze the entity
+myEntity.move(x,y).setSize(48,32).setScale(2);    // Modify it
+myEntity.frozen--;                              // Unfreeeze it
+myEntity.displace();                            // Displace it, so it will update itself and it's parent
+</pre>
+
+<p>
+	One thing to watch out for is that because the entity is not displaced and therefore may not have been reformed, its geometry may not be accurate. This technique is not recommended, usually 1 of two cases will occur: Either the displacement of the entity will be negligible(as is usually the case outside of very complex scenes, or it will be easier and faster to modify the entities properties directly. Just always remember to set the entity as displaced or dirty afterwards.
+</p>
+
+<h2>Other Performance Tweaks</h2>
+
+<!-- TODO: Move into 3 columns: description, slow version, fast version -->
+
+<pre class="prettyprint linenums">
+myGroup.children.add(entity1);
+myGroup.children.add(entity2);
+// VS
+myGroup.children.add(entity1, entity2);			// Smaller and slightly faster
+
+someText.setBg({ fill: undefined, stroke:undefined })   // Removes the styling properties
+// VS
+someText.clearBg()                               // Removes the actual style object, smaller and faster
+</pre>
+
+</div>
+
+{% include prettyprint.html %}

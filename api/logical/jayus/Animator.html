@@ -1,0 +1,941 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <title>Jayus API documentation</title>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">        
+        <script>
+
+			(function()
+			{
+			    var loc = window.location.protocol + '//' + window.location.hostname + window.location.pathname;
+                loc = loc.split('\\');
+                loc = loc.join('/');					    
+			    loc = loc.split('/');
+			    loc.pop();
+			    loc = loc.join('/');
+			    loc += '/' + '../../';
+			
+			    document.write("<base href='" + loc + "'></base>");
+			})();
+         
+        </script>
+
+        <link rel="stylesheet" type="text/css" href="jgdoc.css">
+        <link rel="stylesheet" type="text/css" href="theme.css">
+        	    <script type="text/javascript" src="navTree.js"></script>
+	    <script type="text/javascript" src="jgdoc.js"></script>
+	</head>
+    <body>
+        <div class="startup" id="startup">
+            <div class="banner" id="banner">
+                <h1 class="projectName">
+	               <a href="./index.html">Jayus API documentation</a>   
+                </h1>
+                <div class="bar">
+	                 version alpha
+	            </div>
+	         </div>
+             <div class="content" id="docContent">
+                  <div class="block">
+                        <div id="searchBlock">
+			                <div class="search" >
+			                    <div class="searchLabel">Search:</div>
+			                    <div class="searchBlock" style="height:100%">
+					                <input id="jgsSearchString" type="text" size="60" class="jgdSearchString"/>
+					                <div id="jgsSearchPanel" class="jgsSearchPanel" style="display:none">
+						                <div  class="jgdSearchRect" >
+						                    <div id="jgsSearchResults">
+						                        Loading....
+						                    </div>
+						                </div>
+					                   <div id="jgsInfo" class="jgsInfo" >No selection</div>
+                                    </div>
+                                 </div>
+			                </div>
+		                </div>
+		                <div id="docScroll" class="docScroll">
+		                    <div>
+			                    <hr/>
+						        <div>
+						        						        		<H2>
+        <span class="objType">Class</span> jayus.Animator
+    </H2>
+        <div class="extends">
+        <span class="descSection">Extends </span>
+                     <a href="logical/jayus/Responder.html">jayus.Responder</a>            </div>                                      
+
+    <div class="subclasses">
+        <div class="descSection">
+            Direct Known Subclasses:        </div>
+        <div class="paddedDetails">
+            <a href="logical/jayus/Animator/Discrete.html">jayus.Animator.Discrete</a>, <a href="logical/jayus/Animator/Sequence.html">jayus.Animator.Sequence</a>, <a href="logical/jayus/MethodAnimator.html">jayus.MethodAnimator</a>        </div>
+    </div>                                      
+
+    <hr/>
+    <!-- description -->
+    <div>
+       <code>
+            <span class="modifiers"></span>
+            <span class="objType">class</span> 
+            <b>jayus.Animator</b>
+       </code>
+    </div>
+                <div class="comment">
+An abstract class for an animator, an object that performs an animation.
+<br> Animators should rarely be created manually.
+<br> many Entity methods can be animated, in which case the method returns an Animator to perform the action rather than actually performing the action itself.
+<br> Such as calling myRect.animate().translate(30, 30).setDuration(1000) returns an animator which will move then Entity 30x30 pixels over a period of one second after being started.
+</div>
+                                            <span class="definedIn">Defined in </span>
+        <a href="physical/file-Animator.js.html">Animator.js</a>
+        <hr/> 
+    <p />
+    
+            	
+                <div class="summaryTable class">
+            <div class="summaryTableHeader">
+                <span class="objType">Nested Class</span> Summary
+            </div>
+                    <div class="summaryItem">
+                                        <div class="summaryItemDef">
+        <span class="elementName">
+            <a href="logical/jayus/Animator/Discrete.html">jayus.Animator.Discrete</a>
+        </span>
+    </div>
+    <div class="summaryItemDesc">
+        
+A small extension to the Animator class that sends a discrete value(an integer) to a custom updater function.    </div>
+                            </div>
+                    <div class="summaryItem">
+                                        <div class="summaryItemDef">
+        <span class="elementName">
+            <a href="logical/jayus/Animator/Sequence.html">jayus.Animator.Sequence</a>
+        </span>
+    </div>
+    <div class="summaryItemDesc">
+        
+Keeps a list of animators and can run them in sequence.    </div>
+                            </div>
+                </div>
+        <p/>
+                            
+                                
+    
+                <div class="summaryTable property">
+            <div class="summaryTableHeader">
+                <span class="objType">Property</span> Summary
+            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Number</span>
+        <a href="logical/jayus/Animator.html#___duration"><span class="elementName">duration</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	The duration of the animation, in milliseconds.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Function</span>
+        <a href="logical/jayus/Animator.html#___easing"><span class="elementName">easing</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	The animator's easing function.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Boolean</span>
+        <a href="logical/jayus/Animator.html#___looped"><span class="elementName">looped</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	Whether or not to loop the animation continually.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Boolean</span>
+        <a href="logical/jayus/Animator.html#___oscillate"><span class="elementName">oscillate</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	Whether or not the animation is oscillatory.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Boolean</span>
+        <a href="logical/jayus/Animator.html#___running"><span class="elementName">running</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	Whether or not the animation is running.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Number</span>
+        <a href="logical/jayus/Animator.html#___startTime"><span class="elementName">startTime</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	The point in time when the animation was started, in milliseconds.    </div>  
+                            </div>
+                </div>
+        <p/>
+                                <div class="summaryTable">
+                <div class="summaryTableHeader">
+                   Properties inherited from <a href="logical/jayus/Responder.html">jayus.Responder</a> 
+                </div>
+                <div class="inheritanceSummary">
+                    <a href="logical/jayus/Responder.html#___handlers">handlers</a>, <a href="logical/jayus/Responder.html#___hasHandlers">hasHandlers</a>, <a href="logical/jayus/Responder.html#___isHandler">isHandler</a>                </div>
+             </div>
+             <br/>          
+                
+                <div class="summaryTable constructor">
+            <div class="summaryTableHeader">
+                <span class="objType">Constructor</span> Summary
+            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"></span>
+                <a href="logical/jayus/Animator.html#___init"><span class="elementName">init</span></a>
+                (<span class="type">Function</span>
+ updater)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Initiates the animator with the given updater function.    </div>  
+                            </div>
+                </div>
+        <p/>
+        
+                <div class="summaryTable function">
+            <div class="summaryTableHeader">
+                <span class="objType">Function</span> Summary
+            </div>
+                    <div class="summaryItem">
+                                                           <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Animator.html#___finish"><span class="elementName">finish</span></a>()
+            </div>
+        <div class="summaryItemDesc">
+        
+	Finishes the animation.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Animator.html#___setDuration"><span class="elementName">setDuration</span></a>
+                (<span class="type">Number</span>
+ duration)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Sets the duration(in milliseconds).    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Animator.html#___setEasing"><span class="elementName">setEasing</span></a>
+                (<span class="type">String</span>
+ easing)
+            </div>          
+                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Animator.html#___setEasing"><span class="elementName">setEasing</span></a>
+                (<span class="type">Function</span>
+ easing)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Sets the easing function
+	<br> The easing names correspond to the functions in jayus.easing.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Animator.html#___setLooped"><span class="elementName">setLooped</span></a>
+                (<span class="type">Boolean</span>
+ on)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Sets the looped flag.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Animator.html#___setOscillate"><span class="elementName">setOscillate</span></a>
+                (<span class="type">Boolean</span>
+ on)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Sets the oscillate flag.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                           <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Animator.html#___start"><span class="elementName">start</span></a>()
+            </div>
+        <div class="summaryItemDesc">
+        
+	Starts the animator.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                           <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Animator.html#___stop"><span class="elementName">stop</span></a>()
+            </div>
+        <div class="summaryItemDesc">
+        
+	Stops the animator.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Animator.html#___tick"><span class="elementName">tick</span></a>
+                (<span class="type">Number</span>
+ time)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Updates the animation to the specified epoch time(in milliseconds).    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Animator.html#___update"><span class="elementName">update</span></a>
+                (<span class="type">Number</span>
+ pos)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Updates the animation to the specified position.    </div>  
+                            </div>
+                </div>
+        <p/>
+                                <div class="summaryTable">
+                <div class="summaryTableHeader">
+                   Functions inherited from <a href="logical/jayus/Responder.html">jayus.Responder</a> 
+                </div>
+                <div class="inheritanceSummary">
+                    <a href="logical/jayus/Responder.html#___addHandler">addHandler</a>, <a href="logical/jayus/Responder.html#___fire">fire</a>, <a href="logical/jayus/Responder.html#___handle">handle</a>, <a href="logical/jayus/Responder.html#___interceptNextEvent">interceptNextEvent</a>, <a href="logical/jayus/Responder.html#___removeAllHandlers">removeAllHandlers</a>, <a href="logical/jayus/Responder.html#___removeHandler">removeHandler</a>, <a href="logical/jayus/Responder.html#___removeHandlers">removeHandlers</a>                </div>
+             </div>
+             <br/>          
+                
+                    <!-- ============== Details coming here =================== -->
+    	    	            <div class="details property">
+            <h2 class="sectionHeader">Property Details</h2>
+                                                            
+            <h3>
+        <a name="___duration">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Number</span>
+            <span class="objName">duration</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	The duration of the animation, in milliseconds.
+	<br> Default is 1000(one second).
+	<br> Do not modify.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___easing">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Function</span>
+            <span class="objName">easing</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	The animator's easing function.
+	<br> The easing function modifies the speed of the animation along its duration.
+	<br> The default easing function is linear, with the animation keeping a consistent speed.
+	<br> Can be replaced by any of the functions in jayus.easing or a custom one.
+	<br> Default is jayus.easing.linear
+	<br> Do not modify.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___looped">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Boolean</span>
+            <span class="objName">looped</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	Whether or not to loop the animation continually.
+	<br> Default is false.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___oscillate">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Boolean</span>
+            <span class="objName">oscillate</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	Whether or not the animation is oscillatory.
+	<br> Default is false.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___running">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Boolean</span>
+            <span class="objName">running</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	Whether or not the animation is running.
+	<br> Do not modify.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___startTime">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Number</span>
+            <span class="objName">startTime</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	The point in time when the animation was started, in milliseconds.
+	<br> Do not modify.
+	    </div>    
+                                        <hr />  
+                                    </div>
+    	            <div class="details constructor">
+            <h2 class="sectionHeader">Constructor Details</h2>
+                                                                    <h3>
+        <a name="___init">
+            <span class="objType">constructor</span>
+            <span class="objName">init</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"></span>
+                    init(<span class="type">Function</span>
+ updater)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Initiates the animator with the given updater function.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            updater        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                    </div>
+    	            <div class="details function">
+            <h2 class="sectionHeader">Function Details</h2>
+                                                                    <h3>
+        <a name="___finish">
+            <span class="objType">function</span>
+            <span class="objName">finish</span>            
+        </a> 
+    </h3>
+                <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    finish()
+                </code>
+            </div>    
+        <div class="comment">
+        
+	Finishes the animation.
+	<br> This method does set the target[s] to its final state
+	<br> Also fires the "finished" event.
+	    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___setDuration">
+            <span class="objType">function</span>
+            <span class="objName">setDuration</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    setDuration(<span class="type">Number</span>
+ duration)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Sets the duration(in milliseconds).
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            duration        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___setEasing">
+            <span class="objType">function</span>
+            <span class="objName">setEasing</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    setEasing(<span class="type">String</span>
+ easing)
+                </code> 
+            </div>          
+                    <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    setEasing(<span class="type">Function</span>
+ easing)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Sets the easing function
+	<br> The easing names correspond to the functions in jayus.easing.
+	<br> A custom easing function may also be given.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"> 1
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            easing        </code>
+                    </div>   
+                                        </div>
+                </div>
+                            <div>
+                    <div class="paramset"> 2
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            easing        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___setLooped">
+            <span class="objType">function</span>
+            <span class="objName">setLooped</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    setLooped(<span class="type">Boolean</span>
+ on)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Sets the looped flag.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            on        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___setOscillate">
+            <span class="objType">function</span>
+            <span class="objName">setOscillate</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    setOscillate(<span class="type">Boolean</span>
+ on)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Sets the oscillate flag.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            on        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___start">
+            <span class="objType">function</span>
+            <span class="objName">start</span>            
+        </a> 
+    </h3>
+                <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    start()
+                </code>
+            </div>    
+        <div class="comment">
+        
+	Starts the animator.
+	<br> Also fires the "started" event.
+	    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___stop">
+            <span class="objType">function</span>
+            <span class="objName">stop</span>            
+        </a> 
+    </h3>
+                <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    stop()
+                </code>
+            </div>    
+        <div class="comment">
+        
+	Stops the animator.
+	<br> This method does not set the target[s] to its final state.
+	<br> Also fires the "stopped" event.
+	    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___tick">
+            <span class="objType">function</span>
+            <span class="objName">tick</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    tick(<span class="type">Number</span>
+ time)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Updates the animation to the specified epoch time(in milliseconds).
+	<br> Finishes the animation if the elapsed time has exceeded the duration.
+	<br> Called by jayus.step().
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            time        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___update">
+            <span class="objType">function</span>
+            <span class="objName">update</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    update(<span class="type">Number</span>
+ pos)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Updates the animation to the specified position.
+	<br> Does not check if the animation is running or finished.
+	<br> The position argument represents the position of the animation's effect from start to finish, from 0 to 1.
+	<br> Such that updating the position to 0 will remove the animation's effect and updating the position to 1 will set the target[s] to the animation's final state.
+	<br> Must be implemented by a subclass.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            pos        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                    </div>
+    	    	                                    						        </div>
+        		          </div>			                    
+		                </div>
+        	       </div>
+             </div>
+             <div class="navigation" id="navigation">
+    <ul class="navContent">
+        <li>
+            <div class="navTree">
+                <h2 onclick="jgdoc.NavPanel.clicked(event)">
+                    <a href="javascript:jgdoc.NavPanel.dummy()">Navigation</a>
+                </h2>
+                <ul class="navContent2">
+                    <li>
+                        <div>
+                            <a class="openAll" href="javascript:jgdoc.NavTree.onOpenAll()">Open All</a>
+                            <a class="closeAll" href="javascript:jgdoc.NavTree.onCloseAll()">Close All</a>
+                        </div>
+                        <div>
+                            <ul id = "content" class="contents">
+                                Loading...
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+    <ul class="navContent closed">
+        <li>
+            <div class="fileTree">
+                <h2 onclick="jgdoc.NavPanel.clicked(event)">
+                    <a href="javascript:jgdoc.NavPanel.dummy()">Files</a>
+                </h2>
+                <ul class="navContent2">
+                    <li>
+                                                                                <div>
+                                <a href="physical/file-Animator.js.html">Animator.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Box.js.html">Box.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Brush.js.html">Brush.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Circle.js.html">Circle.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Color.js.html">Color.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Dependency.js.html">Dependency.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Display.js.html">Display.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-EditableFrame.js.html">EditableFrame.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Entity/Group.js.html">Entity.Group.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Entity/Rect.js.html">Entity.Rect.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Entity.js.html">Entity.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-FlowLayout.js.html">FlowLayout.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Frame.js.html">Frame.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Gradient.js.html">Gradient.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Grid.js.html">Grid.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Group.js.html">Group.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Image.js.html">Image.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Layer.js.html">Layer.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-List.js.html">List.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Matrix.js.html">Matrix.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-PaintedShape.js.html">PaintedShape.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Path.js.html">Path.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Point.js.html">Point.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Polygon.js.html">Polygon.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-RectEntity.js.html">RectEntity.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Rectangle.js.html">Rectangle.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Responder.js.html">Responder.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Scene.js.html">Scene.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Shape.js.html">Shape.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-SizePolicy.js.html">SizePolicy.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Sprite.js.html">Sprite.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-SpriteSheet.js.html">SpriteSheet.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Stack.js.html">Stack.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Surface.js.html">Surface.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Text.js.html">Text.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-TextBox.js.html">TextBox.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-TiledMap.js.html">TiledMap.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Wrapper.js.html">Wrapper.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-argumentOverloading/min.js.html">argumentOverloading.min.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-easing.js.html">easing.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-images.js.html">images.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-jayus.js.html">jayus.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-keyboard.js.html">keyboard.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-objects.js.html">objects.js</a>
+                            </div>                              
+                                                                        </li>
+                </ul>
+            </div>
+        </li>       
+    </ul>
+    <ul class="navContent closed">
+        <li>
+            <div class="moduleTree">
+                <h2 onclick="jgdoc.NavPanel.clicked(event)">
+                    <a href="javascript:jgdoc.NavPanel.dummy()">Modules</a>
+                </h2>
+                <ul class="navContent2">
+                    <li>
+                                            </li>
+                </ul>
+            </div>
+        </li>       
+    </ul>
+</div>  
+    
+		</div>	
+	</body>
+    <script type="text/javascript">
+        jgdoc.Searcher.start();
+        jgdoc.NavTree.initialize("jayus.Animator");
+    </script>			
+	<script type="text/javascript" src="jsindex.js">
+    </script>
+</html>

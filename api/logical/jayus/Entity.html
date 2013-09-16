@@ -1,0 +1,2298 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <title>Jayus API documentation</title>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">        
+        <script>
+
+			(function()
+			{
+			    var loc = window.location.protocol + '//' + window.location.hostname + window.location.pathname;
+                loc = loc.split('\\');
+                loc = loc.join('/');					    
+			    loc = loc.split('/');
+			    loc.pop();
+			    loc = loc.join('/');
+			    loc += '/' + '../../';
+			
+			    document.write("<base href='" + loc + "'></base>");
+			})();
+         
+        </script>
+
+        <link rel="stylesheet" type="text/css" href="jgdoc.css">
+        <link rel="stylesheet" type="text/css" href="theme.css">
+        	    <script type="text/javascript" src="navTree.js"></script>
+	    <script type="text/javascript" src="jgdoc.js"></script>
+	</head>
+    <body>
+        <div class="startup" id="startup">
+            <div class="banner" id="banner">
+                <h1 class="projectName">
+	               <a href="./index.html">Jayus API documentation</a>   
+                </h1>
+                <div class="bar">
+	                 version alpha
+	            </div>
+	         </div>
+             <div class="content" id="docContent">
+                  <div class="block">
+                        <div id="searchBlock">
+			                <div class="search" >
+			                    <div class="searchLabel">Search:</div>
+			                    <div class="searchBlock" style="height:100%">
+					                <input id="jgsSearchString" type="text" size="60" class="jgdSearchString"/>
+					                <div id="jgsSearchPanel" class="jgsSearchPanel" style="display:none">
+						                <div  class="jgdSearchRect" >
+						                    <div id="jgsSearchResults">
+						                        Loading....
+						                    </div>
+						                </div>
+					                   <div id="jgsInfo" class="jgsInfo" >No selection</div>
+                                    </div>
+                                 </div>
+			                </div>
+		                </div>
+		                <div id="docScroll" class="docScroll">
+		                    <div>
+			                    <hr/>
+						        <div>
+						        						        		<H2>
+        <span class="objType">Class</span> jayus.Entity
+    </H2>
+        <div class="extends">
+        <span class="descSection">Extends </span>
+                     <a href="logical/jayus/Dependency.html">jayus.Dependency</a>                    ,  <a href="logical/jayus/Responder.html">jayus.Responder</a>                    ,  <a href="logical/jayus/Animatable.html">jayus.Animatable</a>            </div>                                      
+
+    <div class="subclasses">
+        <div class="descSection">
+            Direct Known Subclasses:        </div>
+        <div class="paddedDetails">
+            <a href="logical/jayus/Layer.html">jayus.Layer</a>, <a href="logical/jayus/PaintedShape.html">jayus.PaintedShape</a>, <a href="logical/jayus/RectEntity.html">jayus.RectEntity</a>        </div>
+    </div>                                      
+
+    <hr/>
+    <!-- description -->
+    <div>
+       <code>
+            <span class="modifiers"></span>
+            <span class="objType">class</span> 
+            <b>jayus.Entity</b>
+       </code>
+    </div>
+                <div class="comment">
+The base class for any drawable object.
+</div>
+                                            <span class="definedIn">Defined in </span>
+        <a href="physical/file-Entity.js.html">Entity.js</a>
+        <hr/> 
+    <p />
+    
+            	
+                                
+                                                        
+    
+                <div class="summaryTable property">
+            <div class="summaryTableHeader">
+                <span class="objType">Property</span> Summary
+            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Boolean</span>
+        <a href="logical/jayus/Entity.html#___canAcceptCursor"><span class="elementName">canAcceptCursor</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	Whether or not the entity can accept the cursor, firing the cursorEnter event and becoming the cursor focus.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Boolean</span>
+        <a href="logical/jayus/Entity.html#___canReleaseCursor"><span class="elementName">canReleaseCursor</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	Whether or not the entity can release the cursor.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Boolean</span>
+        <a href="logical/jayus/Entity.html#___dirtied"><span class="elementName">dirtied</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	A flag determining whether or not the entity has changed since it was last drawn onto the screen.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Boolean</span>
+        <a href="logical/jayus/Entity.html#___dragButton"><span class="elementName">dragButton</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	The mouse button used to drag the entity.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Boolean</span>
+        <a href="logical/jayus/Entity.html#___draggable"><span class="elementName">draggable</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	Whether the object can be moved by dragging it with the cursor.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Boolean</span>
+        <a href="logical/jayus/Entity.html#___dragging"><span class="elementName">dragging</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	Whether the object is currently being dragged.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Number</span>
+        <a href="logical/jayus/Entity.html#___frozen"><span class="elementName">frozen</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	The number of functions in the callstack that have "locked" this entity from reforming itself after being displaced.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Boolean</span>
+        <a href="logical/jayus/Entity.html#___hasCursor"><span class="elementName">hasCursor</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	Whether or not the entity has the cursor focus.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Boolean</span>
+        <a href="logical/jayus/Entity.html#___hasParent"><span class="elementName">hasParent</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	Whether or not the entity has a parent.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">String</span>
+        <a href="logical/jayus/Entity.html#___id"><span class="elementName">id</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	The entity's id.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Boolean</span>
+        <a href="logical/jayus/Entity.html#___isEntity"><span class="elementName">isEntity</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	Denotes this object as an entity.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Boolean</span>
+        <a href="logical/jayus/Entity.html#___isParent"><span class="elementName">isParent</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	Whether the Entity is a parent.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Boolean</span>
+        <a href="logical/jayus/Entity.html#___isRect"><span class="elementName">isRect</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	Denotes this object as a rect-like entity.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Boolean</span>
+        <a href="logical/jayus/Entity.html#___isTransformed"><span class="elementName">isTransformed</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	Whether the entity has an attached transforms object.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type"><a href="logical/jayus/Entity.html">Entity</a></span>
+        <a href="logical/jayus/Entity.html#___parent"><span class="elementName">parent</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	The entity's parent.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Boolean</span>
+        <a href="logical/jayus/Entity.html#___trackCursor"><span class="elementName">trackCursor</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	Whether or not this entity will be kept aware of cursor events.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Boolean</span>
+        <a href="logical/jayus/Entity.html#___underCursor"><span class="elementName">underCursor</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	Whether or not the cursor is over the entity.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Boolean</span>
+        <a href="logical/jayus/Entity.html#___visible"><span class="elementName">visible</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	Whether or not the entity is visible.    </div>  
+                            </div>
+                </div>
+        <p/>
+                                <div class="summaryTable">
+                <div class="summaryTableHeader">
+                   Properties inherited from <a href="logical/jayus/Dependency.html">jayus.Dependency</a> 
+                </div>
+                <div class="inheritanceSummary">
+                    <a href="logical/jayus/Dependency.html#___dependentCount">dependentCount</a>, <a href="logical/jayus/Dependency.html#___dependents">dependents</a>                </div>
+             </div>
+             <br/>          
+                                <div class="summaryTable">
+                <div class="summaryTableHeader">
+                   Properties inherited from <a href="logical/jayus/Responder.html">jayus.Responder</a> 
+                </div>
+                <div class="inheritanceSummary">
+                    <a href="logical/jayus/Responder.html#___handlers">handlers</a>, <a href="logical/jayus/Responder.html#___hasHandlers">hasHandlers</a>, <a href="logical/jayus/Responder.html#___isHandler">isHandler</a>                </div>
+             </div>
+             <br/>          
+                            
+                <div class="summaryTable constructor">
+            <div class="summaryTableHeader">
+                <span class="objType">Constructor</span> Summary
+            </div>
+                    <div class="summaryItem">
+                                                           <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"></span>
+                <a href="logical/jayus/Entity.html#___init"><span class="elementName">init</span></a>()
+            </div>
+        <div class="summaryItemDesc">
+        
+	Initiates the Entity.    </div>  
+                            </div>
+                </div>
+        <p/>
+        
+                <div class="summaryTable function">
+            <div class="summaryTableHeader">
+                <span class="objType">Function</span> Summary
+            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Entity.html#___applyTransforms"><span class="elementName">applyTransforms</span></a>
+                (<span class="type">CanvasRenderingContext2D|Matrix</span>
+ ctx)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Applies the entities transforms to the given context or matrix.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                           <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Entity.html#___drawOnto"><span class="elementName">drawOnto</span></a>()
+            </div>
+        <div class="summaryItemDesc">
+        
+	Draws the entity onto the sent Surface.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Entity.html#___drawOntoContext"><span class="elementName">drawOntoContext</span></a>
+                (<span class="type">CanvasRenderingContext2D</span>
+ ctx)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Draws the entity onto the sent canvas context.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                           <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"><a href="logical/jayus/Entity.html">Entity</a></span>
+                <a href="logical/jayus/Entity.html#___getAbsoluteParent"><span class="elementName">getAbsoluteParent</span></a>()
+            </div>
+        <div class="summaryItemDesc">
+        
+	Returns the absolute parent of the entity.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                           <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"><a href="logical/jayus/Matrix.html">Matrix</a></span>
+                <a href="logical/jayus/Entity.html#___getMatrix"><span class="elementName">getMatrix</span></a>()
+            </div>
+        <div class="summaryItemDesc">
+        
+	Returns a new matrix with the entities transforms applied.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                           <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Entity.html#___hide"><span class="elementName">hide</span></a>()
+            </div>
+        <div class="summaryItemDesc">
+        
+	Sets the object as hidden.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Number</span>
+                <a href="logical/jayus/Entity.html#___intersectCount"><span class="elementName">intersectCount</span></a>
+                (<span class="type">Array</span>
+ entities)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Returns the number of entities in the sent array that intersect this one.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Boolean</span>
+                <a href="logical/jayus/Entity.html#___intersects"><span class="elementName">intersects</span></a>
+                (<span class="type">Object</span>
+ object)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Returns whether the entity intersects the given entity.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Boolean</span>
+                <a href="logical/jayus/Entity.html#___intersectsAll"><span class="elementName">intersectsAll</span></a>
+                (<span class="type">Array</span>
+ entities)
+            </div>          
+                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Boolean</span>
+                <a href="logical/jayus/Entity.html#___intersectsAll"><span class="elementName">intersectsAll</span></a>
+                (<span class="type"><a href="logical/jayus/List.html">List</a></span>
+ entities)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Returns true if every entity in the sent array intersects this one.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Boolean</span>
+                <a href="logical/jayus/Entity.html#___intersectsAny"><span class="elementName">intersectsAny</span></a>
+                (<span class="type">Array</span>
+ entities)
+            </div>          
+                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Boolean</span>
+                <a href="logical/jayus/Entity.html#___intersectsAny"><span class="elementName">intersectsAny</span></a>
+                (<span class="type"><a href="logical/jayus/List.html">List</a></span>
+ entities)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Returns true if any entity in the sent array intersects this one.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Boolean</span>
+                <a href="logical/jayus/Entity.html#___intersectsAt"><span class="elementName">intersectsAt</span></a>
+                (<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Returns whether the entity intersects the given point.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Array</span>
+                <a href="logical/jayus/Entity.html#___intersectsWhich"><span class="elementName">intersectsWhich</span></a>
+                (<span class="type">Array</span>
+ entities)
+            </div>          
+                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Array</span>
+                <a href="logical/jayus/Entity.html#___intersectsWhich"><span class="elementName">intersectsWhich</span></a>
+                (<span class="type"><a href="logical/jayus/List.html">List</a></span>
+ entities)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Returns the entites of the sent entities that intersect this one.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                <a href="logical/jayus/Entity.html#___localToParent"><span class="elementName">localToParent</span></a>
+                (<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+ point)
+            </div>          
+                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                <a href="logical/jayus/Entity.html#___localToParent"><span class="elementName">localToParent</span></a>
+                (<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Converts the given point from local to parent coordinate space.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                <a href="logical/jayus/Entity.html#___localToScreen"><span class="elementName">localToScreen</span></a>
+                (<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+ point)
+            </div>          
+                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                <a href="logical/jayus/Entity.html#___localToScreen"><span class="elementName">localToScreen</span></a>
+                (<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Converts the given point from local to absolute coordinate space.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                <a href="logical/jayus/Entity.html#___parentToLocal"><span class="elementName">parentToLocal</span></a>
+                (<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+ point)
+            </div>          
+                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                <a href="logical/jayus/Entity.html#___parentToLocal"><span class="elementName">parentToLocal</span></a>
+                (<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Converts the given point from parent to local coordinate space.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                           <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"><a href="logical/jayus/Surface.html">Surface</a></span>
+                <a href="logical/jayus/Entity.html#___rasterize"><span class="elementName">rasterize</span></a>()
+            </div>
+        <div class="summaryItemDesc">
+        
+	Draws the entity onto a new Surface and returns it.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Entity.html#___rotate"><span class="elementName">rotate</span></a>
+                (<span class="type">Number</span>
+ angle)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Rotates the entity by the specified amount.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Entity.html#___scale"><span class="elementName">scale</span></a>
+                (<span class="type">Number</span>
+ scale)
+            </div>          
+                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Entity.html#___scale"><span class="elementName">scale</span></a>
+                (<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Scales the entity by the given amount.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                <a href="logical/jayus/Entity.html#___screenToLocal"><span class="elementName">screenToLocal</span></a>
+                (<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+ point)
+            </div>          
+                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                <a href="logical/jayus/Entity.html#___screenToLocal"><span class="elementName">screenToLocal</span></a>
+                (<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Converts the given point from absolute to local coordinate space.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Entity.html#___setAlpha"><span class="elementName">setAlpha</span></a>
+                (<span class="type">Number</span>
+ alpha)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Sets the entity's opacity.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Entity.html#___setAnchor"><span class="elementName">setAnchor</span></a>
+                (<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+ point)
+            </div>          
+                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Entity.html#___setAnchor"><span class="elementName">setAnchor</span></a>
+                (<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Sets the transformation anchor point.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Entity.html#___setAngle"><span class="elementName">setAngle</span></a>
+                (<span class="type">Number</span>
+ angle)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Sets the entity's angle.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Entity.html#___setDraggable"><span class="elementName">setDraggable</span></a>
+                (<span class="type">Boolean</span>
+ on)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Sets the draggable flag on the entity.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Entity.html#___setId"><span class="elementName">setId</span></a>
+                (<span class="type">*</span>
+ id)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Sets the entity's id.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Entity.html#___setScale"><span class="elementName">setScale</span></a>
+                (<span class="type">Number</span>
+ scale)
+            </div>          
+                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Entity.html#___setScale"><span class="elementName">setScale</span></a>
+                (<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Sets the scale of the entity.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Entity.html#___setVisible"><span class="elementName">setVisible</span></a>
+                (<span class="type">Boolean</span>
+ on)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Sets the visible flag.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                           <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Entity.html#___show"><span class="elementName">show</span></a>()
+            </div>
+        <div class="summaryItemDesc">
+        
+	Sets the object as visible.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"></span>
+                <a href="logical/jayus/Entity.html#___tick"><span class="elementName">tick</span></a>
+                (<span class="type">Number</span>
+ time, <span class="type">Number</span>
+ elapsed)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Ticks the point.    </div>  
+                            </div>
+                </div>
+        <p/>
+                                <div class="summaryTable">
+                <div class="summaryTableHeader">
+                   Functions inherited from <a href="logical/jayus/Dependency.html">jayus.Dependency</a> 
+                </div>
+                <div class="inheritanceSummary">
+                    <a href="logical/jayus/Dependency.html#___attach">attach</a>, <a href="logical/jayus/Dependency.html#___detach">detach</a>, <a href="logical/jayus/Dependency.html#___dirty">dirty</a>, <a href="logical/jayus/Dependency.html#___informDependents">informDependents</a>                </div>
+             </div>
+             <br/>          
+                                <div class="summaryTable">
+                <div class="summaryTableHeader">
+                   Functions inherited from <a href="logical/jayus/Responder.html">jayus.Responder</a> 
+                </div>
+                <div class="inheritanceSummary">
+                    <a href="logical/jayus/Responder.html#___addHandler">addHandler</a>, <a href="logical/jayus/Responder.html#___fire">fire</a>, <a href="logical/jayus/Responder.html#___handle">handle</a>, <a href="logical/jayus/Responder.html#___interceptNextEvent">interceptNextEvent</a>, <a href="logical/jayus/Responder.html#___removeAllHandlers">removeAllHandlers</a>, <a href="logical/jayus/Responder.html#___removeHandler">removeHandler</a>, <a href="logical/jayus/Responder.html#___removeHandlers">removeHandlers</a>                </div>
+             </div>
+             <br/>          
+                                <div class="summaryTable">
+                <div class="summaryTableHeader">
+                   Functions inherited from <a href="logical/jayus/Animatable.html">jayus.Animatable</a> 
+                </div>
+                <div class="inheritanceSummary">
+                    <a href="logical/jayus/Animatable.html#___animate">animate</a>                </div>
+             </div>
+             <br/>          
+                
+                    <!-- ============== Details coming here =================== -->
+    	    	            <div class="details property">
+            <h2 class="sectionHeader">Property Details</h2>
+                                                            
+            <h3>
+        <a name="___canAcceptCursor">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Boolean</span>
+            <span class="objName">canAcceptCursor</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	Whether or not the entity can accept the cursor, firing the cursorEnter event and becoming the cursor focus.
+	<br> If an entity does not accept the cursor, it cannot be given the cursorEnter and cursorLeave events.
+	<br> Default is true.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___canReleaseCursor">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Boolean</span>
+            <span class="objName">canReleaseCursor</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	Whether or not the entity can release the cursor.
+	<br> Until an entity releases the cursor, no other entity can become the cursor focus.
+	<br> This is primarily used to prevent the cursor focusing on a "closer" entity than the one currently being dragged.
+	<br> Default is true.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___dirtied">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Boolean</span>
+            <span class="objName">dirtied</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	A flag determining whether or not the entity has changed since it was last drawn onto the screen.
+	<br> Do not modify.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___dragButton">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Boolean</span>
+            <span class="objName">dragButton</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	The mouse button used to drag the entity.
+	<br> Applies only when draggable is set to true.
+	<br> Can be 'left', 'middle', or 'right'.
+	<br> Default is 'left'.
+	<br> Do not modify.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___draggable">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Boolean</span>
+            <span class="objName">draggable</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	Whether the object can be moved by dragging it with the cursor.
+	<br> Default is false.
+	<br> Do not modify.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___dragging">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Boolean</span>
+            <span class="objName">dragging</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	Whether the object is currently being dragged.
+	<br> Do not modify.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___frozen">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Number</span>
+            <span class="objName">frozen</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	The number of functions in the callstack that have "locked" this entity from reforming itself after being displaced.
+	<br> Used internally to avoid unnecessary displacements, and endless loops.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___hasCursor">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Boolean</span>
+            <span class="objName">hasCursor</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	Whether or not the entity has the cursor focus.
+	<br> This property corresponds to the cursorEnter and cursorLeave events.
+	<br> Do not modify.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___hasParent">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Boolean</span>
+            <span class="objName">hasParent</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	Whether or not the entity has a parent.
+	<br> Do not modify.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___id">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">String</span>
+            <span class="objName">id</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	The entity's id.
+	<br> Default is ''.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___isEntity">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Boolean</span>
+            <span class="objName">isEntity</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	Denotes this object as an entity.
+	<br> Do not modify.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___isParent">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Boolean</span>
+            <span class="objName">isParent</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	Whether the Entity is a parent.
+	<br> Do not modify.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___isRect">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Boolean</span>
+            <span class="objName">isRect</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	Denotes this object as a rect-like entity.
+	<br> Do not modify.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___isTransformed">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Boolean</span>
+            <span class="objName">isTransformed</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	Whether the entity has an attached transforms object.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___parent">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type"><a href="logical/jayus/Entity.html">Entity</a></span>
+            <span class="objName">parent</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	The entity's parent.
+	<br> null if the Entity does not have a parent.
+	<br> The parent is responsible for updating/rendering the child.
+	<br> Each entity can only have one parent.
+	<br> Do not modify.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___trackCursor">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Boolean</span>
+            <span class="objName">trackCursor</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	Whether or not this entity will be kept aware of cursor events.
+	<br> If false then the underCursor and hasCursor flags will not be updated and no cursor events will be fired.
+	<br> Default is true.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___underCursor">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Boolean</span>
+            <span class="objName">underCursor</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	Whether or not the cursor is over the entity.
+	<br> This property corresponds to the cursorOver and cursorOut events.
+	<br> Do not modify.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___visible">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Boolean</span>
+            <span class="objName">visible</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	Whether or not the entity is visible.
+	<br> Technically this is more like whether or not the entity will be drawn by its parent.
+	<br> Default is true.
+	<br> Do not modify, use <a href="logical/jayus/Entity.html#___setVisible">Entity.setVisible()</a>.
+	    </div>    
+                                        <hr />  
+                                    </div>
+    	            <div class="details constructor">
+            <h2 class="sectionHeader">Constructor Details</h2>
+                                                                    <h3>
+        <a name="___init">
+            <span class="objType">constructor</span>
+            <span class="objName">init</span>            
+        </a> 
+    </h3>
+                <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"></span>
+                    init()
+                </code>
+            </div>    
+        <div class="comment">
+        
+	Initiates the Entity.
+	    </div>
+                                                    <hr/>       
+                                    </div>
+    	            <div class="details function">
+            <h2 class="sectionHeader">Function Details</h2>
+                                                                    <h3>
+        <a name="___applyTransforms">
+            <span class="objType">function</span>
+            <span class="objName">applyTransforms</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    applyTransforms(<span class="type">CanvasRenderingContext2D|Matrix</span>
+ ctx)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Applies the entities transforms to the given context or matrix.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            ctx        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___drawOnto">
+            <span class="objType">function</span>
+            <span class="objName">drawOnto</span>            
+        </a> 
+    </h3>
+                <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    drawOnto()
+                </code>
+            </div>    
+        <div class="comment">
+        
+	Draws the entity onto the sent Surface.
+	<br> Does not respect the visible flag.
+	    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___drawOntoContext">
+            <span class="objType">function</span>
+            <span class="objName">drawOntoContext</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    drawOntoContext(<span class="type">CanvasRenderingContext2D</span>
+ ctx)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Draws the entity onto the sent canvas context.
+	<br> Does not respect the visible flag.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            ctx        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___getAbsoluteParent">
+            <span class="objType">function</span>
+            <span class="objName">getAbsoluteParent</span>            
+        </a> 
+    </h3>
+                <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"><a href="logical/jayus/Entity.html">Entity</a></span>
+                    getAbsoluteParent()
+                </code>
+            </div>    
+        <div class="comment">
+        
+	Returns the absolute parent of the entity.
+	<br> Returns itself if the entity has no parent.
+	    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___getMatrix">
+            <span class="objType">function</span>
+            <span class="objName">getMatrix</span>            
+        </a> 
+    </h3>
+                <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"><a href="logical/jayus/Matrix.html">Matrix</a></span>
+                    getMatrix()
+                </code>
+            </div>    
+        <div class="comment">
+        
+	Returns a new matrix with the entities transforms applied.
+	<br> Uses Entity.applyTransforms().
+	    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___hide">
+            <span class="objType">function</span>
+            <span class="objName">hide</span>            
+        </a> 
+    </h3>
+                <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    hide()
+                </code>
+            </div>    
+        <div class="comment">
+        
+	Sets the object as hidden.
+	<br> An alias for setVisible(false).
+	<br> Sets the entity as dirty.
+	    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___intersectCount">
+            <span class="objType">function</span>
+            <span class="objName">intersectCount</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Number</span>
+                    intersectCount(<span class="type">Array</span>
+ entities)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Returns the number of entities in the sent array that intersect this one.
+	<br> If you plan on performing any actions with the intersecting entities, it is much more efficient to use intersectsWhat() and check the length of the returned array.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            entities        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___intersects">
+            <span class="objType">function</span>
+            <span class="objName">intersects</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Boolean</span>
+                    intersects(<span class="type">Object</span>
+ object)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Returns whether the entity intersects the given entity.
+	<br> Bounds are used to test for intersection.
+	<br> If the sent entity gives an array of bounding paths then the intersection of any of them will return true.
+	<br> Shorthand for using jayus.intersectTest().
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            object        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___intersectsAll">
+            <span class="objType">function</span>
+            <span class="objName">intersectsAll</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Boolean</span>
+                    intersectsAll(<span class="type">Array</span>
+ entities)
+                </code> 
+            </div>          
+                    <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Boolean</span>
+                    intersectsAll(<span class="type"><a href="logical/jayus/List.html">List</a></span>
+ entities)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Returns true if every entity in the sent array intersects this one.
+	<br> Returns true with an empty array.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"> 1
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            entities        </code>
+                    </div>   
+                                        </div>
+                </div>
+                            <div>
+                    <div class="paramset"> 2
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            entities        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___intersectsAny">
+            <span class="objType">function</span>
+            <span class="objName">intersectsAny</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Boolean</span>
+                    intersectsAny(<span class="type">Array</span>
+ entities)
+                </code> 
+            </div>          
+                    <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Boolean</span>
+                    intersectsAny(<span class="type"><a href="logical/jayus/List.html">List</a></span>
+ entities)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Returns true if any entity in the sent array intersects this one.
+	<br> Returns false with an empty array.
+	<br> Be wary of including the entity your checking against the array in the array, as any entity will always intersect itself.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"> 1
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            entities        </code>
+                    </div>   
+                                        </div>
+                </div>
+                            <div>
+                    <div class="paramset"> 2
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            entities        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___intersectsAt">
+            <span class="objType">function</span>
+            <span class="objName">intersectsAt</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Boolean</span>
+                    intersectsAt(<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Returns whether the entity intersects the given point.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            x        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            y        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___intersectsWhich">
+            <span class="objType">function</span>
+            <span class="objName">intersectsWhich</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Array</span>
+                    intersectsWhich(<span class="type">Array</span>
+ entities)
+                </code> 
+            </div>          
+                    <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Array</span>
+                    intersectsWhich(<span class="type"><a href="logical/jayus/List.html">List</a></span>
+ entities)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Returns the entites of the sent entities that intersect this one.
+	<br> Bounds are used to test for intersection.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"> 1
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            entities        </code>
+                    </div>   
+                                        </div>
+                </div>
+                            <div>
+                    <div class="paramset"> 2
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            entities        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___localToParent">
+            <span class="objType">function</span>
+            <span class="objName">localToParent</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    localToParent(<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+ point)
+                </code> 
+            </div>          
+                    <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    localToParent(<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Converts the given point from local to parent coordinate space.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"> Syntax 1
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            point        </code>
+                    </div>   
+                                        </div>
+                </div>
+                            <div>
+                    <div class="paramset"> Syntax 2
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            x        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            y        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___localToScreen">
+            <span class="objType">function</span>
+            <span class="objName">localToScreen</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    localToScreen(<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+ point)
+                </code> 
+            </div>          
+                    <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    localToScreen(<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Converts the given point from local to absolute coordinate space.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"> Syntax 1
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            point        </code>
+                    </div>   
+                                        </div>
+                </div>
+                            <div>
+                    <div class="paramset"> Syntax 2
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            x        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            y        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___parentToLocal">
+            <span class="objType">function</span>
+            <span class="objName">parentToLocal</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    parentToLocal(<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+ point)
+                </code> 
+            </div>          
+                    <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    parentToLocal(<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Converts the given point from parent to local coordinate space.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"> Syntax 1
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            point        </code>
+                    </div>   
+                                        </div>
+                </div>
+                            <div>
+                    <div class="paramset"> Syntax 2
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            x        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            y        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___rasterize">
+            <span class="objType">function</span>
+            <span class="objName">rasterize</span>            
+        </a> 
+    </h3>
+                <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"><a href="logical/jayus/Surface.html">Surface</a></span>
+                    rasterize()
+                </code>
+            </div>    
+        <div class="comment">
+        
+	Draws the entity onto a new Surface and returns it.
+	<br> Does not respect the visible flag.
+	<br> The returned surface has a size equal to the entity's scope.
+	    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___rotate">
+            <span class="objType">function</span>
+            <span class="objName">rotate</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    rotate(<span class="type">Number</span>
+ angle)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Rotates the entity by the specified amount.
+	<br> Can be animated.
+	<br> Sets the entity as dirty.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            angle        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___scale">
+            <span class="objType">function</span>
+            <span class="objName">scale</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    scale(<span class="type">Number</span>
+ scale)
+                </code> 
+            </div>          
+                    <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    scale(<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Scales the entity by the given amount.
+	<br> Can be animated.
+	<br> Sets the entity as dirty.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"> Syntax 1
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            scale        </code>
+                    </div>   
+                                        </div>
+                </div>
+                            <div>
+                    <div class="paramset"> Syntax 2
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            x        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            y        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___screenToLocal">
+            <span class="objType">function</span>
+            <span class="objName">screenToLocal</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    screenToLocal(<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+ point)
+                </code> 
+            </div>          
+                    <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    screenToLocal(<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Converts the given point from absolute to local coordinate space.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"> Syntax 1
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            point        </code>
+                    </div>   
+                                        </div>
+                </div>
+                            <div>
+                    <div class="paramset"> Syntax 2
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            x        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            y        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___setAlpha">
+            <span class="objType">function</span>
+            <span class="objName">setAlpha</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    setAlpha(<span class="type">Number</span>
+ alpha)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Sets the entity's opacity.
+	<br> Can be animated.
+	<br> Sets the entity as dirty.
+	<br> In the display class this method sets the opacity of the canvas.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            alpha        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___setAnchor">
+            <span class="objType">function</span>
+            <span class="objName">setAnchor</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    setAnchor(<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+ point)
+                </code> 
+            </div>          
+                    <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    setAnchor(<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Sets the transformation anchor point.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"> Syntax 1
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            point        </code>
+                    </div>   
+                                        </div>
+                </div>
+                            <div>
+                    <div class="paramset"> Syntax 2
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            x        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            y        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___setAngle">
+            <span class="objType">function</span>
+            <span class="objName">setAngle</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    setAngle(<span class="type">Number</span>
+ angle)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Sets the entity's angle.
+	<br> Can be animated.
+	<br> Sets the entity as dirty.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            angle        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___setDraggable">
+            <span class="objType">function</span>
+            <span class="objName">setDraggable</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    setDraggable(<span class="type">Boolean</span>
+ on)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Sets the draggable flag on the entity.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            on        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___setId">
+            <span class="objType">function</span>
+            <span class="objName">setId</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    setId(<span class="type">*</span>
+ id)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Sets the entity's id.
+	<br> Using strings(or numbers) for id's is recommended.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            id        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___setScale">
+            <span class="objType">function</span>
+            <span class="objName">setScale</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    setScale(<span class="type">Number</span>
+ scale)
+                </code> 
+            </div>          
+                    <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    setScale(<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Sets the scale of the entity.
+	<br> Can be animated.
+	<br> Sets the entity as dirty.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"> Syntax 1
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            scale        </code>
+                    </div>   
+                                        </div>
+                </div>
+                            <div>
+                    <div class="paramset"> Syntax 2
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            x        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            y        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___setVisible">
+            <span class="objType">function</span>
+            <span class="objName">setVisible</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    setVisible(<span class="type">Boolean</span>
+ on)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Sets the visible flag.
+	<br> Sets the entity as dirty.
+	<br> In the display class this method sets the display as hidden.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            on        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___show">
+            <span class="objType">function</span>
+            <span class="objName">show</span>            
+        </a> 
+    </h3>
+                <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    show()
+                </code>
+            </div>    
+        <div class="comment">
+        
+	Sets the object as visible.
+	<br> An alias for setVisible(true).
+	<br> Sets the entity as dirty.
+	    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___tick">
+            <span class="objType">function</span>
+            <span class="objName">tick</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"></span>
+                    tick(<span class="type">Number</span>
+ time, <span class="type">Number</span>
+ elapsed)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Ticks the point.
+	<br> Updates the entity's position from its velocity.
+	<br> Used only by jayus.step.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            time        </code>
+         Current epoch time            </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            elapsed        </code>
+         Seconds elapsed since last frame            </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                    </div>
+    	    	                                    						        </div>
+        		          </div>			                    
+		                </div>
+        	       </div>
+             </div>
+             <div class="navigation" id="navigation">
+    <ul class="navContent">
+        <li>
+            <div class="navTree">
+                <h2 onclick="jgdoc.NavPanel.clicked(event)">
+                    <a href="javascript:jgdoc.NavPanel.dummy()">Navigation</a>
+                </h2>
+                <ul class="navContent2">
+                    <li>
+                        <div>
+                            <a class="openAll" href="javascript:jgdoc.NavTree.onOpenAll()">Open All</a>
+                            <a class="closeAll" href="javascript:jgdoc.NavTree.onCloseAll()">Close All</a>
+                        </div>
+                        <div>
+                            <ul id = "content" class="contents">
+                                Loading...
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+    <ul class="navContent closed">
+        <li>
+            <div class="fileTree">
+                <h2 onclick="jgdoc.NavPanel.clicked(event)">
+                    <a href="javascript:jgdoc.NavPanel.dummy()">Files</a>
+                </h2>
+                <ul class="navContent2">
+                    <li>
+                                                                                <div>
+                                <a href="physical/file-Animator.js.html">Animator.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Box.js.html">Box.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Brush.js.html">Brush.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Circle.js.html">Circle.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Color.js.html">Color.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Dependency.js.html">Dependency.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Display.js.html">Display.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-EditableFrame.js.html">EditableFrame.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Entity/Group.js.html">Entity.Group.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Entity/Rect.js.html">Entity.Rect.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Entity.js.html">Entity.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-FlowLayout.js.html">FlowLayout.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Frame.js.html">Frame.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Gradient.js.html">Gradient.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Grid.js.html">Grid.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Group.js.html">Group.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Image.js.html">Image.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Layer.js.html">Layer.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-List.js.html">List.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Matrix.js.html">Matrix.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-PaintedShape.js.html">PaintedShape.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Path.js.html">Path.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Point.js.html">Point.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Polygon.js.html">Polygon.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-RectEntity.js.html">RectEntity.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Rectangle.js.html">Rectangle.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Responder.js.html">Responder.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Scene.js.html">Scene.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Shape.js.html">Shape.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-SizePolicy.js.html">SizePolicy.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Sprite.js.html">Sprite.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-SpriteSheet.js.html">SpriteSheet.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Stack.js.html">Stack.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Surface.js.html">Surface.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Text.js.html">Text.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-TextBox.js.html">TextBox.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-TiledMap.js.html">TiledMap.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Wrapper.js.html">Wrapper.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-argumentOverloading/min.js.html">argumentOverloading.min.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-easing.js.html">easing.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-images.js.html">images.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-jayus.js.html">jayus.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-keyboard.js.html">keyboard.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-objects.js.html">objects.js</a>
+                            </div>                              
+                                                                        </li>
+                </ul>
+            </div>
+        </li>       
+    </ul>
+    <ul class="navContent closed">
+        <li>
+            <div class="moduleTree">
+                <h2 onclick="jgdoc.NavPanel.clicked(event)">
+                    <a href="javascript:jgdoc.NavPanel.dummy()">Modules</a>
+                </h2>
+                <ul class="navContent2">
+                    <li>
+                                            </li>
+                </ul>
+            </div>
+        </li>       
+    </ul>
+</div>  
+    
+		</div>	
+	</body>
+    <script type="text/javascript">
+        jgdoc.Searcher.start();
+        jgdoc.NavTree.initialize("jayus.Entity");
+    </script>			
+	<script type="text/javascript" src="jsindex.js">
+    </script>
+</html>

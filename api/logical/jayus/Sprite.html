@@ -1,0 +1,732 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <title>Jayus API documentation</title>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">        
+        <script>
+
+			(function()
+			{
+			    var loc = window.location.protocol + '//' + window.location.hostname + window.location.pathname;
+                loc = loc.split('\\');
+                loc = loc.join('/');					    
+			    loc = loc.split('/');
+			    loc.pop();
+			    loc = loc.join('/');
+			    loc += '/' + '../../';
+			
+			    document.write("<base href='" + loc + "'></base>");
+			})();
+         
+        </script>
+
+        <link rel="stylesheet" type="text/css" href="jgdoc.css">
+        <link rel="stylesheet" type="text/css" href="theme.css">
+        	    <script type="text/javascript" src="navTree.js"></script>
+	    <script type="text/javascript" src="jgdoc.js"></script>
+	</head>
+    <body>
+        <div class="startup" id="startup">
+            <div class="banner" id="banner">
+                <h1 class="projectName">
+	               <a href="./index.html">Jayus API documentation</a>   
+                </h1>
+                <div class="bar">
+	                 version alpha
+	            </div>
+	         </div>
+             <div class="content" id="docContent">
+                  <div class="block">
+                        <div id="searchBlock">
+			                <div class="search" >
+			                    <div class="searchLabel">Search:</div>
+			                    <div class="searchBlock" style="height:100%">
+					                <input id="jgsSearchString" type="text" size="60" class="jgdSearchString"/>
+					                <div id="jgsSearchPanel" class="jgsSearchPanel" style="display:none">
+						                <div  class="jgdSearchRect" >
+						                    <div id="jgsSearchResults">
+						                        Loading....
+						                    </div>
+						                </div>
+					                   <div id="jgsInfo" class="jgsInfo" >No selection</div>
+                                    </div>
+                                 </div>
+			                </div>
+		                </div>
+		                <div id="docScroll" class="docScroll">
+		                    <div>
+			                    <hr/>
+						        <div>
+						        						        		<H2>
+        <span class="objType">Class</span> jayus.Sprite
+    </H2>
+        <div class="extends">
+        <span class="descSection">Extends </span>
+                     <a href="logical/jayus/Image.html">jayus.Image</a>            </div>                                      
+
+
+    <hr/>
+    <!-- description -->
+    <div>
+       <code>
+            <span class="modifiers"></span>
+            <span class="objType">class</span> 
+            <b>jayus.Sprite</b>
+       </code>
+    </div>
+                <div class="comment">
+An enhanced version of the Image entity that can be easily animated.
+<br> Sprites are animated by attaching a SpriteSheet to either the source image or the Sprite entity that describes some animations.
+<br> Then just call the playAnimation or loopAnimation methods with the animation name.
+</div>
+                                            <span class="definedIn">Defined in </span>
+        <a href="physical/file-Sprite.js.html">Sprite.js</a>
+        <hr/> 
+    <p />
+    
+            	
+                                
+                                                                                            
+    
+                <div class="summaryTable property">
+            <div class="summaryTableHeader">
+                <span class="objType">Property</span> Summary
+            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">String</span>
+        <a href="logical/jayus/Sprite.html#___animation"><span class="elementName">animation</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	The name of the current animation.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Number</span>
+        <a href="logical/jayus/Sprite.html#___spriteIndexX"><span class="elementName">spriteIndexX</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	The current sprite index.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Number</span>
+        <a href="logical/jayus/Sprite.html#___spriteIndexY"><span class="elementName">spriteIndexY</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	The current sprite index.    </div>  
+                            </div>
+                </div>
+        <p/>
+                                <div class="summaryTable">
+                <div class="summaryTableHeader">
+                   Properties inherited from <a href="logical/jayus/Image.html">jayus.Image</a> 
+                </div>
+                <div class="inheritanceSummary">
+                    <a href="logical/jayus/Image.html#___hasSection">hasSection</a>, <a href="logical/jayus/Image.html#___image">image</a>, <a href="logical/jayus/Image.html#___keepAligned">keepAligned</a>, <a href="logical/jayus/Image.html#___loaded">loaded</a>, <a href="logical/jayus/Image.html#___section">section</a>                </div>
+             </div>
+             <br/>          
+                                <div class="summaryTable">
+                <div class="summaryTableHeader">
+                   Properties inherited from <a href="logical/jayus/RectEntity.html">jayus.RectEntity</a> 
+                </div>
+                <div class="inheritanceSummary">
+                    <a href="logical/jayus/RectEntity.html#___bg">bg</a>, <a href="logical/jayus/RectEntity.html#___body">body</a>, <a href="logical/jayus/RectEntity.html#___bounds">bounds</a>, <a href="logical/jayus/RectEntity.html#___hasBg">hasBg</a>, <a href="logical/jayus/RectEntity.html#___height">height</a>, <a href="logical/jayus/RectEntity.html#___width">width</a>, <a href="logical/jayus/RectEntity.html#___x">x</a>, <a href="logical/jayus/RectEntity.html#___y">y</a>                </div>
+             </div>
+             <br/>          
+                                <div class="summaryTable">
+                <div class="summaryTableHeader">
+                   Properties inherited from <a href="logical/jayus/Entity.html">jayus.Entity</a> 
+                </div>
+                <div class="inheritanceSummary">
+                    <a href="logical/jayus/Entity.html#___canAcceptCursor">canAcceptCursor</a>, <a href="logical/jayus/Entity.html#___canReleaseCursor">canReleaseCursor</a>, <a href="logical/jayus/Entity.html#___dirtied">dirtied</a>, <a href="logical/jayus/Entity.html#___dragButton">dragButton</a>, <a href="logical/jayus/Entity.html#___draggable">draggable</a>, <a href="logical/jayus/Entity.html#___dragging">dragging</a>, <a href="logical/jayus/Entity.html#___frozen">frozen</a>, <a href="logical/jayus/Entity.html#___hasCursor">hasCursor</a>, <a href="logical/jayus/Entity.html#___hasParent">hasParent</a>, <a href="logical/jayus/Entity.html#___id">id</a>, <a href="logical/jayus/Entity.html#___isEntity">isEntity</a>, <a href="logical/jayus/Entity.html#___isParent">isParent</a>, <a href="logical/jayus/Entity.html#___isRect">isRect</a>, <a href="logical/jayus/Entity.html#___isTransformed">isTransformed</a>, <a href="logical/jayus/Entity.html#___parent">parent</a>, <a href="logical/jayus/Entity.html#___trackCursor">trackCursor</a>, <a href="logical/jayus/Entity.html#___underCursor">underCursor</a>, <a href="logical/jayus/Entity.html#___visible">visible</a>                </div>
+             </div>
+             <br/>          
+                                <div class="summaryTable">
+                <div class="summaryTableHeader">
+                   Properties inherited from <a href="logical/jayus/Dependency.html">jayus.Dependency</a> 
+                </div>
+                <div class="inheritanceSummary">
+                    <a href="logical/jayus/Dependency.html#___dependentCount">dependentCount</a>, <a href="logical/jayus/Dependency.html#___dependents">dependents</a>                </div>
+             </div>
+             <br/>          
+                                <div class="summaryTable">
+                <div class="summaryTableHeader">
+                   Properties inherited from <a href="logical/jayus/Responder.html">jayus.Responder</a> 
+                </div>
+                <div class="inheritanceSummary">
+                    <a href="logical/jayus/Responder.html#___handlers">handlers</a>, <a href="logical/jayus/Responder.html#___hasHandlers">hasHandlers</a>, <a href="logical/jayus/Responder.html#___isHandler">isHandler</a>                </div>
+             </div>
+             <br/>          
+                            
+            
+                <div class="summaryTable function">
+            <div class="summaryTableHeader">
+                <span class="objType">Function</span> Summary
+            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Sprite.html#___loopAnimation"><span class="elementName">loopAnimation</span></a>
+                (<span class="type">String</span>
+ name)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Plays the specified named animation in an endless loop, according to the attached spritesheet.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Sprite.html#___playAnimation"><span class="elementName">playAnimation</span></a>
+                (<span class="type">String</span>
+ name, <span class="type">Function</span>
+ callback)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Plays the specified named animation, according to the attached spritesheet.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Sprite.html#___setAnimation"><span class="elementName">setAnimation</span></a>
+                (<span class="type">String</span>
+ name, <span class="type">Boolean</span>
+ looped)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Sets the playing animation for the sprite.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Sprite.html#___setSprite"><span class="elementName">setSprite</span></a>
+                (<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+ point)
+            </div>          
+                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Sprite.html#___setSprite"><span class="elementName">setSprite</span></a>
+                (<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Sets the index of the sprite represented by this sheet.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Sprite.html#___setSpriteSheet"><span class="elementName">setSpriteSheet</span></a>
+                (<span class="type"><a href="logical/jayus/SpriteSheet.html">SpriteSheet</a></span>
+ sheet)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Sets the spritesheet for this sprite.    </div>  
+                            </div>
+                </div>
+        <p/>
+                                <div class="summaryTable">
+                <div class="summaryTableHeader">
+                   Functions inherited from <a href="logical/jayus/Image.html">jayus.Image</a> 
+                </div>
+                <div class="inheritanceSummary">
+                    <a href="logical/jayus/Image.html#___clearSection">clearSection</a>, <a href="logical/jayus/Image.html#___setSection">setSection</a>, <a href="logical/jayus/Image.html#___setSource">setSource</a>, <a href="logical/jayus/Image.html#___toPattern">toPattern</a>                </div>
+             </div>
+             <br/>          
+                                <div class="summaryTable">
+                <div class="summaryTableHeader">
+                   Functions inherited from <a href="logical/jayus/RectEntity.html">jayus.RectEntity</a> 
+                </div>
+                <div class="inheritanceSummary">
+                    <a href="logical/jayus/RectEntity.html#___clearBg">clearBg</a>, <a href="logical/jayus/RectEntity.html#___clearBounds">clearBounds</a>, <a href="logical/jayus/RectEntity.html#___getBottom">getBottom</a>, <a href="logical/jayus/RectEntity.html#___getBounds">getBounds</a>, <a href="logical/jayus/RectEntity.html#___getFrame">getFrame</a>, <a href="logical/jayus/RectEntity.html#___getLeft">getLeft</a>, <a href="logical/jayus/RectEntity.html#___getOrigin">getOrigin</a>, <a href="logical/jayus/RectEntity.html#___getPosAt">getPosAt</a>, <a href="logical/jayus/RectEntity.html#___getRight">getRight</a>, <a href="logical/jayus/RectEntity.html#___getTop">getTop</a>, <a href="logical/jayus/RectEntity.html#___removeBody">removeBody</a>, <a href="logical/jayus/RectEntity.html#___setBg">setBg</a>, <a href="logical/jayus/RectEntity.html#___setBody">setBody</a>, <a href="logical/jayus/RectEntity.html#___setBottom">setBottom</a>, <a href="logical/jayus/RectEntity.html#___setBounds">setBounds</a>, <a href="logical/jayus/RectEntity.html#___setBuffering">setBuffering</a>, <a href="logical/jayus/RectEntity.html#___setHeight">setHeight</a>, <a href="logical/jayus/RectEntity.html#___setLeft">setLeft</a>, <a href="logical/jayus/RectEntity.html#___setOrigin">setOrigin</a>, <a href="logical/jayus/RectEntity.html#___setPosAt">setPosAt</a>, <a href="logical/jayus/RectEntity.html#___setRight">setRight</a>, <a href="logical/jayus/RectEntity.html#___setSize">setSize</a>, <a href="logical/jayus/RectEntity.html#___setTop">setTop</a>, <a href="logical/jayus/RectEntity.html#___setWidth">setWidth</a>, <a href="logical/jayus/RectEntity.html#___setX">setX</a>, <a href="logical/jayus/RectEntity.html#___setY">setY</a>, <a href="logical/jayus/RectEntity.html#___translate">translate</a>, <a href="logical/jayus/RectEntity.html#___updateFromBody">updateFromBody</a>                </div>
+             </div>
+             <br/>          
+                                <div class="summaryTable">
+                <div class="summaryTableHeader">
+                   Functions inherited from <a href="logical/jayus/Entity.html">jayus.Entity</a> 
+                </div>
+                <div class="inheritanceSummary">
+                    <a href="logical/jayus/Entity.html#___applyTransforms">applyTransforms</a>, <a href="logical/jayus/Entity.html#___drawOnto">drawOnto</a>, <a href="logical/jayus/Entity.html#___drawOntoContext">drawOntoContext</a>, <a href="logical/jayus/Entity.html#___getAbsoluteParent">getAbsoluteParent</a>, <a href="logical/jayus/Entity.html#___getMatrix">getMatrix</a>, <a href="logical/jayus/Entity.html#___hide">hide</a>, <a href="logical/jayus/Entity.html#___intersectCount">intersectCount</a>, <a href="logical/jayus/Entity.html#___intersects">intersects</a>, <a href="logical/jayus/Entity.html#___intersectsAll">intersectsAll</a>, <a href="logical/jayus/Entity.html#___intersectsAny">intersectsAny</a>, <a href="logical/jayus/Entity.html#___intersectsAt">intersectsAt</a>, <a href="logical/jayus/Entity.html#___intersectsWhich">intersectsWhich</a>, <a href="logical/jayus/Entity.html#___localToParent">localToParent</a>, <a href="logical/jayus/Entity.html#___localToScreen">localToScreen</a>, <a href="logical/jayus/Entity.html#___parentToLocal">parentToLocal</a>, <a href="logical/jayus/Entity.html#___rasterize">rasterize</a>, <a href="logical/jayus/Entity.html#___rotate">rotate</a>, <a href="logical/jayus/Entity.html#___scale">scale</a>, <a href="logical/jayus/Entity.html#___screenToLocal">screenToLocal</a>, <a href="logical/jayus/Entity.html#___setAlpha">setAlpha</a>, <a href="logical/jayus/Entity.html#___setAnchor">setAnchor</a>, <a href="logical/jayus/Entity.html#___setAngle">setAngle</a>, <a href="logical/jayus/Entity.html#___setDraggable">setDraggable</a>, <a href="logical/jayus/Entity.html#___setId">setId</a>, <a href="logical/jayus/Entity.html#___setScale">setScale</a>, <a href="logical/jayus/Entity.html#___setVisible">setVisible</a>, <a href="logical/jayus/Entity.html#___show">show</a>, <a href="logical/jayus/Entity.html#___tick">tick</a>                </div>
+             </div>
+             <br/>          
+                                <div class="summaryTable">
+                <div class="summaryTableHeader">
+                   Functions inherited from <a href="logical/jayus/Dependency.html">jayus.Dependency</a> 
+                </div>
+                <div class="inheritanceSummary">
+                    <a href="logical/jayus/Dependency.html#___attach">attach</a>, <a href="logical/jayus/Dependency.html#___detach">detach</a>, <a href="logical/jayus/Dependency.html#___dirty">dirty</a>, <a href="logical/jayus/Dependency.html#___informDependents">informDependents</a>                </div>
+             </div>
+             <br/>          
+                                <div class="summaryTable">
+                <div class="summaryTableHeader">
+                   Functions inherited from <a href="logical/jayus/Responder.html">jayus.Responder</a> 
+                </div>
+                <div class="inheritanceSummary">
+                    <a href="logical/jayus/Responder.html#___addHandler">addHandler</a>, <a href="logical/jayus/Responder.html#___fire">fire</a>, <a href="logical/jayus/Responder.html#___handle">handle</a>, <a href="logical/jayus/Responder.html#___interceptNextEvent">interceptNextEvent</a>, <a href="logical/jayus/Responder.html#___removeAllHandlers">removeAllHandlers</a>, <a href="logical/jayus/Responder.html#___removeHandler">removeHandler</a>, <a href="logical/jayus/Responder.html#___removeHandlers">removeHandlers</a>                </div>
+             </div>
+             <br/>          
+                                <div class="summaryTable">
+                <div class="summaryTableHeader">
+                   Functions inherited from <a href="logical/jayus/Animatable.html">jayus.Animatable</a> 
+                </div>
+                <div class="inheritanceSummary">
+                    <a href="logical/jayus/Animatable.html#___animate">animate</a>                </div>
+             </div>
+             <br/>          
+                
+                    <!-- ============== Details coming here =================== -->
+    	    	            <div class="details property">
+            <h2 class="sectionHeader">Property Details</h2>
+                                                            
+            <h3>
+        <a name="___animation">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">String</span>
+            <span class="objName">animation</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	The name of the current animation.
+	<br> Do not modify.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___spriteIndexX">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Number</span>
+            <span class="objName">spriteIndexX</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	The current sprite index.
+	<br> Do not modify.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___spriteIndexY">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Number</span>
+            <span class="objName">spriteIndexY</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	The current sprite index.
+	<br> Do not modify.
+	    </div>    
+                                        <hr />  
+                                    </div>
+    	    	            <div class="details function">
+            <h2 class="sectionHeader">Function Details</h2>
+                                                                    <h3>
+        <a name="___loopAnimation">
+            <span class="objType">function</span>
+            <span class="objName">loopAnimation</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    loopAnimation(<span class="type">String</span>
+ name)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Plays the specified named animation in an endless loop, according to the attached spritesheet.
+	<br> Requires that a sheet be set on this sprite or the source image.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            name        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___playAnimation">
+            <span class="objType">function</span>
+            <span class="objName">playAnimation</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    playAnimation(<span class="type">String</span>
+ name, <span class="type">Function</span>
+ callback)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Plays the specified named animation, according to the attached spritesheet.
+	<br> Requires that a sheet be set on this sprite or the source image.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            name        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            callback        </code>
+         Optional, called when finished playing            </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___setAnimation">
+            <span class="objType">function</span>
+            <span class="objName">setAnimation</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    setAnimation(<span class="type">String</span>
+ name, <span class="type">Boolean</span>
+ looped)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Sets the playing animation for the sprite.
+	<br> Requires that a sheet be set on this sprite or the source image.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            name        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            looped        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___setSprite">
+            <span class="objType">function</span>
+            <span class="objName">setSprite</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    setSprite(<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+ point)
+                </code> 
+            </div>          
+                    <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    setSprite(<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Sets the index of the sprite represented by this sheet.
+	<br> Requires that a sheet be set on this sprite or the source image.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"> 1
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            point        </code>
+                    </div>   
+                                        </div>
+                </div>
+                            <div>
+                    <div class="paramset"> 2
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            x        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            y        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___setSpriteSheet">
+            <span class="objType">function</span>
+            <span class="objName">setSpriteSheet</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    setSpriteSheet(<span class="type"><a href="logical/jayus/SpriteSheet.html">SpriteSheet</a></span>
+ sheet)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Sets the spritesheet for this sprite.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            sheet        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                    </div>
+    	    	                                    						        </div>
+        		          </div>			                    
+		                </div>
+        	       </div>
+             </div>
+             <div class="navigation" id="navigation">
+    <ul class="navContent">
+        <li>
+            <div class="navTree">
+                <h2 onclick="jgdoc.NavPanel.clicked(event)">
+                    <a href="javascript:jgdoc.NavPanel.dummy()">Navigation</a>
+                </h2>
+                <ul class="navContent2">
+                    <li>
+                        <div>
+                            <a class="openAll" href="javascript:jgdoc.NavTree.onOpenAll()">Open All</a>
+                            <a class="closeAll" href="javascript:jgdoc.NavTree.onCloseAll()">Close All</a>
+                        </div>
+                        <div>
+                            <ul id = "content" class="contents">
+                                Loading...
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+    <ul class="navContent closed">
+        <li>
+            <div class="fileTree">
+                <h2 onclick="jgdoc.NavPanel.clicked(event)">
+                    <a href="javascript:jgdoc.NavPanel.dummy()">Files</a>
+                </h2>
+                <ul class="navContent2">
+                    <li>
+                                                                                <div>
+                                <a href="physical/file-Animator.js.html">Animator.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Box.js.html">Box.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Brush.js.html">Brush.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Circle.js.html">Circle.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Color.js.html">Color.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Dependency.js.html">Dependency.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Display.js.html">Display.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-EditableFrame.js.html">EditableFrame.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Entity/Group.js.html">Entity.Group.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Entity/Rect.js.html">Entity.Rect.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Entity.js.html">Entity.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-FlowLayout.js.html">FlowLayout.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Frame.js.html">Frame.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Gradient.js.html">Gradient.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Grid.js.html">Grid.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Group.js.html">Group.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Image.js.html">Image.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Layer.js.html">Layer.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-List.js.html">List.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Matrix.js.html">Matrix.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-PaintedShape.js.html">PaintedShape.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Path.js.html">Path.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Point.js.html">Point.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Polygon.js.html">Polygon.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-RectEntity.js.html">RectEntity.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Rectangle.js.html">Rectangle.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Responder.js.html">Responder.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Scene.js.html">Scene.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Shape.js.html">Shape.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-SizePolicy.js.html">SizePolicy.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Sprite.js.html">Sprite.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-SpriteSheet.js.html">SpriteSheet.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Stack.js.html">Stack.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Surface.js.html">Surface.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Text.js.html">Text.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-TextBox.js.html">TextBox.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-TiledMap.js.html">TiledMap.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Wrapper.js.html">Wrapper.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-argumentOverloading/min.js.html">argumentOverloading.min.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-easing.js.html">easing.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-images.js.html">images.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-jayus.js.html">jayus.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-keyboard.js.html">keyboard.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-objects.js.html">objects.js</a>
+                            </div>                              
+                                                                        </li>
+                </ul>
+            </div>
+        </li>       
+    </ul>
+    <ul class="navContent closed">
+        <li>
+            <div class="moduleTree">
+                <h2 onclick="jgdoc.NavPanel.clicked(event)">
+                    <a href="javascript:jgdoc.NavPanel.dummy()">Modules</a>
+                </h2>
+                <ul class="navContent2">
+                    <li>
+                                            </li>
+                </ul>
+            </div>
+        </li>       
+    </ul>
+</div>  
+    
+		</div>	
+	</body>
+    <script type="text/javascript">
+        jgdoc.Searcher.start();
+        jgdoc.NavTree.initialize("jayus.Sprite");
+    </script>			
+	<script type="text/javascript" src="jsindex.js">
+    </script>
+</html>

@@ -1,0 +1,29 @@
+---
+layout: default
+title: Jayus
+---
+
+{% include article_list.html %}
+
+<h2>Compilation</h2>
+
+<p>
+	As Jayus executes within the browser, it must exist within a web page, and when creating a web page the size of the page is kept small as possible. Jayus is counteractive to this, it exists as a large number of source files that include plenty of whitespace and comments that help to make it human-readable. This is where the Closure Compiler comes in. The Closure Compiler will condense multiple JavaScript files into one, removing those useless sections of whitespace and comments as well.
+</p>
+
+<h2>Compiled Versions</h2>
+	
+<p>
+	
+</p>
+
+<h2>jayusLoader.js</h2>
+<p>
+	The "jayusLoader.js" file is a small script that will include each Jayus source file onto the webpage. To use it just include it like you would any other JavaScript source file.
+
+	<pre class="prettyprint linenums">
+&lt;script type="text/javascript" src="myServer/myProject/jayusLoader.js">&lt;/script></pre>
+
+</p>
+
+<script type="text/javascript">prettyPrint()</script>

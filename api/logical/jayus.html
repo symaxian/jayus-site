@@ -1,0 +1,1757 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <title>Jayus API documentation</title>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">        
+        <script>
+
+			(function()
+			{
+			    var loc = window.location.protocol + '//' + window.location.hostname + window.location.pathname;
+                loc = loc.split('\\');
+                loc = loc.join('/');					    
+			    loc = loc.split('/');
+			    loc.pop();
+			    loc = loc.join('/');
+			    loc += '/' + '../';
+			
+			    document.write("<base href='" + loc + "'></base>");
+			})();
+         
+        </script>
+
+        <link rel="stylesheet" type="text/css" href="jgdoc.css">
+        <link rel="stylesheet" type="text/css" href="theme.css">
+        	    <script type="text/javascript" src="navTree.js"></script>
+	    <script type="text/javascript" src="jgdoc.js"></script>
+	</head>
+    <body>
+        <div class="startup" id="startup">
+            <div class="banner" id="banner">
+                <h1 class="projectName">
+	               <a href="./index.html">Jayus API documentation</a>   
+                </h1>
+                <div class="bar">
+	                 version alpha
+	            </div>
+	         </div>
+             <div class="content" id="docContent">
+                  <div class="block">
+                        <div id="searchBlock">
+			                <div class="search" >
+			                    <div class="searchLabel">Search:</div>
+			                    <div class="searchBlock" style="height:100%">
+					                <input id="jgsSearchString" type="text" size="60" class="jgdSearchString"/>
+					                <div id="jgsSearchPanel" class="jgsSearchPanel" style="display:none">
+						                <div  class="jgdSearchRect" >
+						                    <div id="jgsSearchResults">
+						                        Loading....
+						                    </div>
+						                </div>
+					                   <div id="jgsInfo" class="jgsInfo" >No selection</div>
+                                    </div>
+                                 </div>
+			                </div>
+		                </div>
+		                <div id="docScroll" class="docScroll">
+		                    <div>
+			                    <hr/>
+						        <div>
+						        						        		<H2>
+        <span class="objType">Namespace</span> jayus
+    </H2>
+    
+
+    <hr/>
+    <!-- description -->
+    <div>
+       <code>
+            <span class="modifiers"></span>
+            <span class="objType">namespace</span> 
+            <b>jayus</b>
+       </code>
+    </div>
+                <div class="comment">
+The global jayus object.
+</div>
+                                        <hr/> 
+    <p />
+    
+            	
+                <div class="summaryTable class">
+            <div class="summaryTableHeader">
+                <span class="objType"> Class</span> Summary
+            </div>
+                    <div class="summaryItem">
+                                        <div class="summaryItemDef">
+        <span class="elementName">
+            <a href="logical/jayus/Animatable.html">jayus.Animatable</a>
+        </span>
+    </div>
+    <div class="summaryItemDesc">
+        
+An abstract class for objects that can be animated.    </div>
+                            </div>
+                    <div class="summaryItem">
+                                        <div class="summaryItemDef">
+        <span class="elementName">
+            <a href="logical/jayus/Animator.html">jayus.Animator</a>
+        </span>
+    </div>
+    <div class="summaryItemDesc">
+        
+An abstract class for an animator, an object that performs an animation.    </div>
+                            </div>
+                    <div class="summaryItem">
+                                        <div class="summaryItemDef">
+        <span class="elementName">
+            <a href="logical/jayus/Box.html">jayus.Box</a>
+        </span>
+    </div>
+    <div class="summaryItemDesc">
+        
+Base class for the hBox and vBox entities.    </div>
+                            </div>
+                    <div class="summaryItem">
+                                        <div class="summaryItemDef">
+        <span class="elementName">
+            <a href="logical/jayus/Brush.html">jayus.Brush</a>
+        </span>
+    </div>
+    <div class="summaryItemDesc">
+        
+Contains styling information to describe how entities will draw their components.    </div>
+                            </div>
+                    <div class="summaryItem">
+                                        <div class="summaryItemDef">
+        <span class="elementName">
+            <a href="logical/jayus/Circle.html">jayus.Circle</a>
+        </span>
+    </div>
+    <div class="summaryItemDesc">
+        
+Standard Circle shape.    </div>
+                            </div>
+                    <div class="summaryItem">
+                                        <div class="summaryItemDef">
+        <span class="elementName">
+            <a href="logical/jayus/Color.html">jayus.Color</a>
+        </span>
+    </div>
+    <div class="summaryItemDesc">
+        
+Represents a 32 bit RGBA color.    </div>
+                            </div>
+                    <div class="summaryItem">
+                                        <div class="summaryItemDef">
+        <span class="elementName">
+            <a href="logical/jayus/Dependency.html">jayus.Dependency</a>
+        </span>
+    </div>
+    <div class="summaryItemDesc">
+        
+An abstract class for helper objects that Entities depend on, such as styling and geometry.    </div>
+                            </div>
+                    <div class="summaryItem">
+                                        <div class="summaryItemDef">
+        <span class="elementName">
+            <a href="logical/jayus/Display.html">jayus.Display</a>
+        </span>
+    </div>
+    <div class="summaryItemDesc">
+        
+A Scene that can be placed onto the page.    </div>
+                            </div>
+                    <div class="summaryItem">
+                                        <div class="summaryItemDef">
+        <span class="elementName">
+            <a href="logical/jayus/EditableFrame.html">jayus.EditableFrame</a>
+        </span>
+    </div>
+    <div class="summaryItemDesc">
+        
+Allows a framed entity to be dragged and resized with the cursor.    </div>
+                            </div>
+                    <div class="summaryItem">
+                                        <div class="summaryItemDef">
+        <span class="elementName">
+            <a href="logical/jayus/Entity.html">jayus.Entity</a>
+        </span>
+    </div>
+    <div class="summaryItemDesc">
+        
+The base class for any drawable object.    </div>
+                            </div>
+                    <div class="summaryItem">
+                                        <div class="summaryItemDef">
+        <span class="elementName">
+            <a href="logical/jayus/FlowLayout.html">jayus.FlowLayout</a>
+        </span>
+    </div>
+    <div class="summaryItemDesc">
+        
+Arranges children in a manner similar to that of word-wrapped text.    </div>
+                            </div>
+                    <div class="summaryItem">
+                                        <div class="summaryItemDef">
+        <span class="elementName">
+            <a href="logical/jayus/Frame.html">jayus.Frame</a>
+        </span>
+    </div>
+    <div class="summaryItemDesc">
+        
+Represents padded border around an Entity.    </div>
+                            </div>
+                    <div class="summaryItem">
+                                        <div class="summaryItemDef">
+        <span class="elementName">
+            <a href="logical/jayus/Gradient.html">jayus.Gradient</a>
+        </span>
+    </div>
+    <div class="summaryItemDesc">
+        
+An abstract class representing a linear or radial gradient.    </div>
+                            </div>
+                    <div class="summaryItem">
+                                        <div class="summaryItemDef">
+        <span class="elementName">
+            <a href="logical/jayus/Grid.html">jayus.Grid</a>
+        </span>
+    </div>
+    <div class="summaryItemDesc">
+        
+A container that arranges it's children into a grid.    </div>
+                            </div>
+                    <div class="summaryItem">
+                                        <div class="summaryItemDef">
+        <span class="elementName">
+            <a href="logical/jayus/Group.html">jayus.Group</a>
+        </span>
+    </div>
+    <div class="summaryItemDesc">
+        
+An abstract class inherited by entities that hold and manage multiple children.    </div>
+                            </div>
+                    <div class="summaryItem">
+                                        <div class="summaryItemDef">
+        <span class="elementName">
+            <a href="logical/jayus/Image.html">jayus.Image</a>
+        </span>
+    </div>
+    <div class="summaryItemDesc">
+        
+An entity that represents a single image.    </div>
+                            </div>
+                    <div class="summaryItem">
+                                        <div class="summaryItemDef">
+        <span class="elementName">
+            <a href="logical/jayus/Layer.html">jayus.Layer</a>
+        </span>
+    </div>
+    <div class="summaryItemDesc">
+        
+A entity for manipulating and rendering child entities within a fixed area.    </div>
+                            </div>
+                    <div class="summaryItem">
+                                        <div class="summaryItemDef">
+        <span class="elementName">
+            <a href="logical/jayus/LinearGradient.html">jayus.LinearGradient</a>
+        </span>
+    </div>
+    <div class="summaryItemDesc">
+        
+Represents a standard linear gradient, for use as a brush style.    </div>
+                            </div>
+                    <div class="summaryItem">
+                                        <div class="summaryItemDef">
+        <span class="elementName">
+            <a href="logical/jayus/List.html">jayus.List</a>
+        </span>
+    </div>
+    <div class="summaryItemDesc">
+        
+Represents a list of some objects.    </div>
+                            </div>
+                    <div class="summaryItem">
+                                        <div class="summaryItemDef">
+        <span class="elementName">
+            <a href="logical/jayus/Matrix.html">jayus.Matrix</a>
+        </span>
+    </div>
+    <div class="summaryItemDesc">
+        
+A two-dimensional transformation matrix.    </div>
+                            </div>
+                    <div class="summaryItem">
+                                        <div class="summaryItemDef">
+        <span class="elementName">
+            <a href="logical/jayus/MethodAnimator.html">jayus.MethodAnimator</a>
+        </span>
+    </div>
+    <div class="summaryItemDesc">
+        
+An animator that continually calls a method on an object with numeric properties.    </div>
+                            </div>
+                    <div class="summaryItem">
+                                        <div class="summaryItemDef">
+        <span class="elementName">
+            <a href="logical/jayus/PaintedShape.html">jayus.PaintedShape</a>
+        </span>
+    </div>
+    <div class="summaryItemDesc">
+        
+An Entity that holds a Shape and allows it to be added to the scenegraph.    </div>
+                            </div>
+                    <div class="summaryItem">
+                                        <div class="summaryItemDef">
+        <span class="elementName">
+            <a href="logical/jayus/Path.html">jayus.Path</a>
+        </span>
+    </div>
+    <div class="summaryItemDesc">
+        
+Represents a path.    </div>
+                            </div>
+                    <div class="summaryItem">
+                                        <div class="summaryItemDef">
+        <span class="elementName">
+            <a href="logical/jayus/Point.html">jayus.Point</a>
+        </span>
+    </div>
+    <div class="summaryItemDesc">
+        
+Represents a point in two dimensional space.    </div>
+                            </div>
+                    <div class="summaryItem">
+                                        <div class="summaryItemDef">
+        <span class="elementName">
+            <a href="logical/jayus/Polygon.html">jayus.Polygon</a>
+        </span>
+    </div>
+    <div class="summaryItemDesc">
+        
+Represents a 2d polygon.    </div>
+                            </div>
+                    <div class="summaryItem">
+                                        <div class="summaryItemDef">
+        <span class="elementName">
+            <a href="logical/jayus/RadialGradient.html">jayus.RadialGradient</a>
+        </span>
+    </div>
+    <div class="summaryItemDesc">
+        
+Represents a radial gradient, for use as a brush style.    </div>
+                            </div>
+                    <div class="summaryItem">
+                                        <div class="summaryItemDef">
+        <span class="elementName">
+            <a href="logical/jayus/RectEntity.html">jayus.RectEntity</a>
+        </span>
+    </div>
+    <div class="summaryItemDesc">
+        
+The base class for an entity that is enclosed in a rectangular frame.    </div>
+                            </div>
+                    <div class="summaryItem">
+                                        <div class="summaryItemDef">
+        <span class="elementName">
+            <a href="logical/jayus/Rectangle.html">jayus.Rectangle</a>
+        </span>
+    </div>
+    <div class="summaryItemDesc">
+        
+Represents an axis-aligned rectangle.    </div>
+                            </div>
+                    <div class="summaryItem">
+                                        <div class="summaryItemDef">
+        <span class="elementName">
+            <a href="logical/jayus/Responder.html">jayus.Responder</a>
+        </span>
+    </div>
+    <div class="summaryItemDesc">
+        
+The base class for an object that uses the jayus event system.    </div>
+                            </div>
+                    <div class="summaryItem">
+                                        <div class="summaryItemDef">
+        <span class="elementName">
+            <a href="logical/jayus/Scene.html">jayus.Scene</a>
+        </span>
+    </div>
+    <div class="summaryItemDesc">
+        
+A entity for manipulating and rendering child entities within a fixed area.    </div>
+                            </div>
+                    <div class="summaryItem">
+                                        <div class="summaryItemDef">
+        <span class="elementName">
+            <a href="logical/jayus/Shape.html">jayus.Shape</a>
+        </span>
+    </div>
+    <div class="summaryItemDesc">
+        
+An abstract class that represents a geometric shape.    </div>
+                            </div>
+                    <div class="summaryItem">
+                                        <div class="summaryItemDef">
+        <span class="elementName">
+            <a href="logical/jayus/SizePolicy.html">jayus.SizePolicy</a>
+        </span>
+    </div>
+    <div class="summaryItemDesc">
+        
+Used to describe a Rect entity's minimum and preferred size.    </div>
+                            </div>
+                    <div class="summaryItem">
+                                        <div class="summaryItemDef">
+        <span class="elementName">
+            <a href="logical/jayus/Sprite.html">jayus.Sprite</a>
+        </span>
+    </div>
+    <div class="summaryItemDesc">
+        
+An enhanced version of the Image entity that can be easily animated.    </div>
+                            </div>
+                    <div class="summaryItem">
+                                        <div class="summaryItemDef">
+        <span class="elementName">
+            <a href="logical/jayus/SpriteSheet.html">jayus.SpriteSheet</a>
+        </span>
+    </div>
+    <div class="summaryItemDesc">
+        
+An entity that describes a number of sprites and animations for an image.    </div>
+                            </div>
+                    <div class="summaryItem">
+                                        <div class="summaryItemDef">
+        <span class="elementName">
+            <a href="logical/jayus/Stack.html">jayus.Stack</a>
+        </span>
+    </div>
+    <div class="summaryItemDesc">
+        
+Base class for the hStack and vStack entities.    </div>
+                            </div>
+                    <div class="summaryItem">
+                                        <div class="summaryItemDef">
+        <span class="elementName">
+            <a href="logical/jayus/Surface.html">jayus.Surface</a>
+        </span>
+    </div>
+    <div class="summaryItemDesc">
+        
+An Entity that represents an editable image.    </div>
+                            </div>
+                    <div class="summaryItem">
+                                        <div class="summaryItemDef">
+        <span class="elementName">
+            <a href="logical/jayus/Text.html">jayus.Text</a>
+        </span>
+    </div>
+    <div class="summaryItemDesc">
+        
+Represents a single line of text.    </div>
+                            </div>
+                    <div class="summaryItem">
+                                        <div class="summaryItemDef">
+        <span class="elementName">
+            <a href="logical/jayus/TextBox.html">jayus.TextBox</a>
+        </span>
+    </div>
+    <div class="summaryItemDesc">
+        
+Represents multiple lines of text with word wrapping.    </div>
+                            </div>
+                    <div class="summaryItem">
+                                        <div class="summaryItemDef">
+        <span class="elementName">
+            <a href="logical/jayus/TiledMap.html">jayus.TiledMap</a>
+        </span>
+    </div>
+    <div class="summaryItemDesc">
+        
+A class that loads and displays a Tiled map editor map.    </div>
+                            </div>
+                    <div class="summaryItem">
+                                        <div class="summaryItemDef">
+        <span class="elementName">
+            <a href="logical/jayus/Wrapper.html">jayus.Wrapper</a>
+        </span>
+    </div>
+    <div class="summaryItemDesc">
+        
+An abstract class, inherited by entities that hold and manage one child.    </div>
+                            </div>
+                    <div class="summaryItem">
+                                        <div class="summaryItemDef">
+        <span class="elementName">
+            <a href="logical/jayus/hBox.html">jayus.hBox</a>
+        </span>
+    </div>
+    <div class="summaryItemDesc">
+        
+An Entity that organizes its children into a horizontal row.    </div>
+                            </div>
+                    <div class="summaryItem">
+                                        <div class="summaryItemDef">
+        <span class="elementName">
+            <a href="logical/jayus/hStack.html">jayus.hStack</a>
+        </span>
+    </div>
+    <div class="summaryItemDesc">
+        
+An Entity that organizes child widgets into a horizontal row.    </div>
+                            </div>
+                    <div class="summaryItem">
+                                        <div class="summaryItemDef">
+        <span class="elementName">
+            <a href="logical/jayus/vBox.html">jayus.vBox</a>
+        </span>
+    </div>
+    <div class="summaryItemDesc">
+        
+A widget that organizes its children into a vertical column.    </div>
+                            </div>
+                    <div class="summaryItem">
+                                        <div class="summaryItemDef">
+        <span class="elementName">
+            <a href="logical/jayus/vStack.html">jayus.vStack</a>
+        </span>
+    </div>
+    <div class="summaryItemDesc">
+        
+A widget that organizes child widgets into a vertical column.    </div>
+                            </div>
+                </div>
+        <p/>
+                            
+                    
+    
+                <div class="summaryTable property">
+            <div class="summaryTableHeader">
+                <span class="objType">Property</span> Summary
+            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Array</span>
+        <a href="logical/jayus.html#___animators"><span class="elementName">animators</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	An array of running animators.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type"><a href="logical/jayus/Entity.html">Entity</a></span>
+        <a href="logical/jayus.html#___cursorFocus"><span class="elementName">cursorFocus</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	The Entity that has cursor focus.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Array<Display></span>
+        <a href="logical/jayus.html#___displays"><span class="elementName">displays</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	An array of the jayus displays on the page.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type"><a href="logical/jayus/Display.html">Display</a></span>
+        <a href="logical/jayus.html#___focusedDisplay"><span class="elementName">focusedDisplay</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	The focused display, or null.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Object</span>
+        <a href="logical/jayus.html#___fontCache"><span class="elementName">fontCache</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	Font cache storage.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Number</span>
+        <a href="logical/jayus.html#___fontCacheMaxChar"><span class="elementName">fontCacheMaxChar</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	The upper bound for the codepoints of characters that will be cached when caching a font.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Boolean</span>
+        <a href="logical/jayus.html#___frameIntervalRunning"><span class="elementName">frameIntervalRunning</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	Whether an upcoming call to jayus.step() is expected.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Number</span>
+        <a href="logical/jayus.html#___framerate"><span class="elementName">framerate</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	The desired framerate.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Boolean</span>
+        <a href="logical/jayus.html#___hasFocus"><span class="elementName">hasFocus</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	Whether or not a jayus Display is the focused page element.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Number</span>
+        <a href="logical/jayus.html#___interval"><span class="elementName">interval</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	The id for the main frame loop interval.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Number</span>
+        <a href="logical/jayus.html#___lastFrameTime"><span class="elementName">lastFrameTime</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	The time(in epoch time) when the previous frame began, used in calculating frames per second.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Boolean</span>
+        <a href="logical/jayus.html#___running"><span class="elementName">running</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	Whether jayus is runnning or not.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Boolean</span>
+        <a href="logical/jayus.html#___useReqAnimFrame"><span class="elementName">useReqAnimFrame</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	Whether to use the requestAnimationFrame function if available.    </div>  
+                            </div>
+                </div>
+        <p/>
+                
+            
+                <div class="summaryTable function">
+            <div class="summaryTableHeader">
+                <span class="objType">Function</span> Summary
+            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Object</span>
+                <a href="logical/jayus.html#___applyObject"><span class="elementName">applyObject</span></a>
+                (<span class="type">Object</span>
+ src, <span class="type">Object</span>
+ dest)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Applies the properties of the source object to the destination object.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"></span>
+                <a href="logical/jayus.html#___cacheFont"><span class="elementName">cacheFont</span></a>
+                (<span class="type">String</span>
+ font)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Caches the dimensions of text in the specified font for quicker text measuring(and thus rendering).    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"></span>
+                <a href="logical/jayus.html#___cacheFonts"><span class="elementName">cacheFonts</span></a>
+                (<span class="type">Array</span>
+ fonts)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Caches the given fonts.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Object</span>
+                <a href="logical/jayus.html#___copyObject"><span class="elementName">copyObject</span></a>
+                (<span class="type">Object</span>
+ src)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Returns a shallow copy of the given object.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Function</span>
+                <a href="logical/jayus.html#___createClass"><span class="elementName">createClass</span></a>
+                (<span class="type">Object</span>
+ props)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Creates a constructor function, which in JavaScript is essentially a class.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                           <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Object</span>
+                <a href="logical/jayus.html#___detectBrowser"><span class="elementName">detectBrowser</span></a>()
+            </div>
+        <div class="summaryItemDesc">
+        
+	Returns browser and OS info.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Number</span>
+                <a href="logical/jayus.html#___distance"><span class="elementName">distance</span></a>
+                (<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+ a, <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+ b)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Returns the distance between the points a and b.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                           <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Context</span>
+                <a href="logical/jayus.html#___getContext"><span class="elementName">getContext</span></a>()
+            </div>
+        <div class="summaryItemDesc">
+        
+	Returns a canvas 2d Context object.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"></span>
+                <a href="logical/jayus.html#___getFontDescriptor"><span class="elementName">getFontDescriptor</span></a>
+                (<span class="type">String</span>
+ font)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Returns the font descriptor for the specified font.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"></span>
+                <a href="logical/jayus.html#___getVerticalFontMetrics"><span class="elementName">getVerticalFontMetrics</span></a>
+                (<span class="type">String</span>
+ font)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Returns an object holding the vertical dimensions of the specified font.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                           <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus.html#___init"><span class="elementName">init</span></a>()
+            </div>
+        <div class="summaryItemDesc">
+        
+	Initializes Jayus.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Boolean</span>
+                <a href="logical/jayus.html#___isFontCached"><span class="elementName">isFontCached</span></a>
+                (<span class="type">String</span>
+ font)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Returns whether or not the specified font is cached.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"></span>
+                <a href="logical/jayus.html#___measureText"><span class="elementName">measureText</span></a>
+                (<span class="type">String</span>
+ text, <span class="type">String</span>
+ font)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Returns an object holding the dimensions of the given text in the given font.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                           <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"></span>
+                <a href="logical/jayus.html#___start"><span class="elementName">start</span></a>()
+            </div>
+        <div class="summaryItemDesc">
+        
+	Starts jayus.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                           <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"></span>
+                <a href="logical/jayus.html#___step"><span class="elementName">step</span></a>()
+            </div>
+        <div class="summaryItemDesc">
+        
+	Calls the main client function, updates any running animations, and refreshes the displays.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                           <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"></span>
+                <a href="logical/jayus.html#___stop"><span class="elementName">stop</span></a>()
+            </div>
+        <div class="summaryItemDesc">
+        
+	Stops jayus.    </div>  
+                            </div>
+                </div>
+        <p/>
+                
+                    <!-- ============== Details coming here =================== -->
+    	    	            <div class="details property">
+            <h2 class="sectionHeader">Property Details</h2>
+                                                            
+            <h3>
+        <a name="___animators">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Array</span>
+            <span class="objName">animators</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	An array of running animators.
+	<br> Only animators in this array will be ticked(updated) by jayus.
+	<br> Each animator adds itself to this array when started and is removed when finished.
+	<br> Do not modify.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___cursorFocus">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type"><a href="logical/jayus/Entity.html">Entity</a></span>
+            <span class="objName">cursorFocus</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	The Entity that has cursor focus.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___displays">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Array<Display></span>
+            <span class="objName">displays</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	An array of the jayus displays on the page.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___focusedDisplay">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type"><a href="logical/jayus/Display.html">Display</a></span>
+            <span class="objName">focusedDisplay</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	The focused display, or null.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___fontCache">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Object</span>
+            <span class="objName">fontCache</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	Font cache storage.
+	<br> Holds the character widths for each cached font.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___fontCacheMaxChar">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Number</span>
+            <span class="objName">fontCacheMaxChar</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	The upper bound for the codepoints of characters that will be cached when caching a font.
+	<br> The characters cached are those with a codepoint between fontCacheMinChar and this property.
+	<br> Default is 255.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___frameIntervalRunning">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Boolean</span>
+            <span class="objName">frameIntervalRunning</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	Whether an upcoming call to jayus.step() is expected.
+	<br> Do not modify.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___framerate">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Number</span>
+            <span class="objName">framerate</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	The desired framerate.
+	<br> Default is 60
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___hasFocus">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Boolean</span>
+            <span class="objName">hasFocus</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	Whether or not a jayus Display is the focused page element.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___interval">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Number</span>
+            <span class="objName">interval</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	The id for the main frame loop interval.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___lastFrameTime">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Number</span>
+            <span class="objName">lastFrameTime</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	The time(in epoch time) when the previous frame began, used in calculating frames per second.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___running">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Boolean</span>
+            <span class="objName">running</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	Whether jayus is runnning or not.
+	<br> Do not modify, use jayus.start() and jayus.stop().
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___useReqAnimFrame">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Boolean</span>
+            <span class="objName">useReqAnimFrame</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	Whether to use the requestAnimationFrame function if available.
+	<br> If set to false or the requestAnimationFrame function is not available then then jayus will attempt to maintain the framerate found in jayus.framerate.
+	    </div>    
+                                        <hr />  
+                                    </div>
+    	    	            <div class="details function">
+            <h2 class="sectionHeader">Function Details</h2>
+                                                                    <h3>
+        <a name="___applyObject">
+            <span class="objType">function</span>
+            <span class="objName">applyObject</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Object</span>
+                    applyObject(<span class="type">Object</span>
+ src, <span class="type">Object</span>
+ dest)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Applies the properties of the source object to the destination object.
+	<br> Returns the destination object.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            src        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            dest        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___cacheFont">
+            <span class="objType">function</span>
+            <span class="objName">cacheFont</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"></span>
+                    cacheFont(<span class="type">String</span>
+ font)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Caches the dimensions of text in the specified font for quicker text measuring(and thus rendering).
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            font        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___cacheFonts">
+            <span class="objType">function</span>
+            <span class="objName">cacheFonts</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"></span>
+                    cacheFonts(<span class="type">Array</span>
+ fonts)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Caches the given fonts.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            fonts        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___copyObject">
+            <span class="objType">function</span>
+            <span class="objName">copyObject</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Object</span>
+                    copyObject(<span class="type">Object</span>
+ src)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Returns a shallow copy of the given object.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            src        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___createClass">
+            <span class="objType">function</span>
+            <span class="objName">createClass</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Function</span>
+                    createClass(<span class="type">Object</span>
+ props)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Creates a constructor function, which in JavaScript is essentially a class.
+	<br> The returned constructor function calls the init method with any arguments passed to it.
+	<br> Any number of superclasses may be sent, the new constructor function will have inherited from all of them, in order.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            props        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___detectBrowser">
+            <span class="objType">function</span>
+            <span class="objName">detectBrowser</span>            
+        </a> 
+    </h3>
+                <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Object</span>
+                    detectBrowser()
+                </code>
+            </div>    
+        <div class="comment">
+        
+	Returns browser and OS info.
+	<br> The returned object's properties(strings) are 'browser', 'version', and 'os'.
+	<br> The value "unknown" is used if unable to detect a property.
+	<br> Adapted from QuirkMode's detect browser script.
+	    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___distance">
+            <span class="objType">function</span>
+            <span class="objName">distance</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Number</span>
+                    distance(<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+ a, <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+ b)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Returns the distance between the points a and b.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            a        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            b        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___getContext">
+            <span class="objType">function</span>
+            <span class="objName">getContext</span>            
+        </a> 
+    </h3>
+                <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Context</span>
+                    getContext()
+                </code>
+            </div>    
+        <div class="comment">
+        
+	Returns a canvas 2d Context object.
+	<br> The context is not new nor guranteed to be "clean" in any way.
+	<br> The context of the first display will be given, else a new context will be created.
+	    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___getFontDescriptor">
+            <span class="objType">function</span>
+            <span class="objName">getFontDescriptor</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"></span>
+                    getFontDescriptor(<span class="type">String</span>
+ font)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Returns the font descriptor for the specified font.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            font        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___getVerticalFontMetrics">
+            <span class="objType">function</span>
+            <span class="objName">getVerticalFontMetrics</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"></span>
+                    getVerticalFontMetrics(<span class="type">String</span>
+ font)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Returns an object holding the vertical dimensions of the specified font.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            font        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+            	<div class="returns">
+	        <span class="descSection">Returns:</span><br/>
+	        <div class="paddedDetails">
+	            	             {Object}
+		            	                <ul class="paramoption">
+	                    	                            <li>
+        <code>
+                        <span class="modifiers"></span>
+            <span class="type">Number</span>
+            height
+                    </code> 
+            </li>
+	                    	                            <li>
+        <code>
+                        <span class="modifiers"></span>
+            <span class="type">Number</span>
+            ascent
+                    </code> 
+            </li>
+	                    	                            <li>
+        <code>
+                        <span class="modifiers"></span>
+            <span class="type">Number</span>
+            descent
+                    </code> 
+            </li>
+	                    	                </ul>
+	            	        </div>
+        </div>      
+                                                <hr/>       
+                                                                                    <h3>
+        <a name="___init">
+            <span class="objType">function</span>
+            <span class="objName">init</span>            
+        </a> 
+    </h3>
+                <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    init()
+                </code>
+            </div>    
+        <div class="comment">
+        
+	Initializes Jayus.
+	<br> Note that this method does not start jayus, the display canvas will appear on the page but will be blank until jayus is started.
+	<br> Jayus does not need to be running to accept input, input events should be tracked and fired from this point on.
+	    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___isFontCached">
+            <span class="objType">function</span>
+            <span class="objName">isFontCached</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Boolean</span>
+                    isFontCached(<span class="type">String</span>
+ font)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Returns whether or not the specified font is cached.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            font        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___measureText">
+            <span class="objType">function</span>
+            <span class="objName">measureText</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"></span>
+                    measureText(<span class="type">String</span>
+ text, <span class="type">String</span>
+ font)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Returns an object holding the dimensions of the given text in the given font.
+	<br> The font dimensions are cached if not already.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            text        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            font        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+            	<div class="returns">
+	        <span class="descSection">Returns:</span><br/>
+	        <div class="paddedDetails">
+	            	             {Object}
+		            	                <ul class="paramoption">
+	                    	                            <li>
+        <code>
+                        <span class="modifiers"></span>
+            <span class="type">Number</span>
+            width
+                    </code> 
+            </li>
+	                    	                            <li>
+        <code>
+                        <span class="modifiers"></span>
+            <span class="type">Number</span>
+            height
+                    </code> 
+            </li>
+	                    	                            <li>
+        <code>
+                        <span class="modifiers"></span>
+            <span class="type">Number</span>
+            ascent
+                    </code> 
+            </li>
+	                    	                            <li>
+        <code>
+                        <span class="modifiers"></span>
+            <span class="type">Number</span>
+            descent
+                    </code> 
+            </li>
+	                    	                </ul>
+	            	        </div>
+        </div>      
+                                                <hr/>       
+                                                                                    <h3>
+        <a name="___start">
+            <span class="objType">function</span>
+            <span class="objName">start</span>            
+        </a> 
+    </h3>
+                <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"></span>
+                    start()
+                </code>
+            </div>    
+        <div class="comment">
+        
+	Starts jayus.
+	    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___step">
+            <span class="objType">function</span>
+            <span class="objName">step</span>            
+        </a> 
+    </h3>
+                <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"></span>
+                    step()
+                </code>
+            </div>    
+        <div class="comment">
+        
+	Calls the main client function, updates any running animations, and refreshes the displays.
+	<br> Procedure:
+	<br> - Fire the frame event
+	<br> - Update the fps
+	<br> - Process any pending events
+	<br> - Tick the running animators
+	<br> - Step Box2D, if enabled
+	<br> - Refresh the displays
+	    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___stop">
+            <span class="objType">function</span>
+            <span class="objName">stop</span>            
+        </a> 
+    </h3>
+                <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"></span>
+                    stop()
+                </code>
+            </div>    
+        <div class="comment">
+        
+	Stops jayus.
+	<br> Input events are still received and handled.
+	    </div>
+                                                    <hr/>       
+                                    </div>
+    	    	                                    						        </div>
+        		          </div>			                    
+		                </div>
+        	       </div>
+             </div>
+             <div class="navigation" id="navigation">
+    <ul class="navContent">
+        <li>
+            <div class="navTree">
+                <h2 onclick="jgdoc.NavPanel.clicked(event)">
+                    <a href="javascript:jgdoc.NavPanel.dummy()">Navigation</a>
+                </h2>
+                <ul class="navContent2">
+                    <li>
+                        <div>
+                            <a class="openAll" href="javascript:jgdoc.NavTree.onOpenAll()">Open All</a>
+                            <a class="closeAll" href="javascript:jgdoc.NavTree.onCloseAll()">Close All</a>
+                        </div>
+                        <div>
+                            <ul id = "content" class="contents">
+                                Loading...
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+    <ul class="navContent closed">
+        <li>
+            <div class="fileTree">
+                <h2 onclick="jgdoc.NavPanel.clicked(event)">
+                    <a href="javascript:jgdoc.NavPanel.dummy()">Files</a>
+                </h2>
+                <ul class="navContent2">
+                    <li>
+                                                                                <div>
+                                <a href="physical/file-Animator.js.html">Animator.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Box.js.html">Box.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Brush.js.html">Brush.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Circle.js.html">Circle.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Color.js.html">Color.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Dependency.js.html">Dependency.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Display.js.html">Display.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-EditableFrame.js.html">EditableFrame.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Entity/Group.js.html">Entity.Group.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Entity/Rect.js.html">Entity.Rect.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Entity.js.html">Entity.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-FlowLayout.js.html">FlowLayout.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Frame.js.html">Frame.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Gradient.js.html">Gradient.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Grid.js.html">Grid.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Group.js.html">Group.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Image.js.html">Image.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Layer.js.html">Layer.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-List.js.html">List.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Matrix.js.html">Matrix.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-PaintedShape.js.html">PaintedShape.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Path.js.html">Path.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Point.js.html">Point.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Polygon.js.html">Polygon.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-RectEntity.js.html">RectEntity.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Rectangle.js.html">Rectangle.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Responder.js.html">Responder.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Scene.js.html">Scene.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Shape.js.html">Shape.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-SizePolicy.js.html">SizePolicy.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Sprite.js.html">Sprite.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-SpriteSheet.js.html">SpriteSheet.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Stack.js.html">Stack.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Surface.js.html">Surface.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Text.js.html">Text.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-TextBox.js.html">TextBox.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-TiledMap.js.html">TiledMap.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Wrapper.js.html">Wrapper.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-argumentOverloading/min.js.html">argumentOverloading.min.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-easing.js.html">easing.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-images.js.html">images.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-jayus.js.html">jayus.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-keyboard.js.html">keyboard.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-objects.js.html">objects.js</a>
+                            </div>                              
+                                                                        </li>
+                </ul>
+            </div>
+        </li>       
+    </ul>
+    <ul class="navContent closed">
+        <li>
+            <div class="moduleTree">
+                <h2 onclick="jgdoc.NavPanel.clicked(event)">
+                    <a href="javascript:jgdoc.NavPanel.dummy()">Modules</a>
+                </h2>
+                <ul class="navContent2">
+                    <li>
+                                            </li>
+                </ul>
+            </div>
+        </li>       
+    </ul>
+</div>  
+    
+		</div>	
+	</body>
+    <script type="text/javascript">
+        jgdoc.Searcher.start();
+        jgdoc.NavTree.initialize("jayus");
+    </script>			
+	<script type="text/javascript" src="jsindex.js">
+    </script>
+</html>

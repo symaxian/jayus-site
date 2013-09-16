@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<head lang="en">
+
+	<title>Jayus Sandbox</title>
+
+	<!-- Jayus -->
+	<script type='text/javascript' src='../../jayusLoader.js'></script>
+
+	<script type="text/javascript" src="util/jQuery.js"></script>
+	<script type="text/javascript" src="util/peg-0.7.0.js"></script>
+	<script type="text/javascript" src="Torch.js"></script>
+
+	<link rel="icon" href="favicon.png" type="image/png">
+
+	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap-responsive.css">
+
+	<script src="assets/codemirror-2.36/lib/codemirror.js"></script>
+	<script src="assets/codemirror-2.36/mode/javascript/javascript.js"></script>
+	<link rel="stylesheet" href="assets/codemirror-2.36/lib/codemirror.css">
+	<link rel="stylesheet" href="assets/codemirror-2.36/theme/lesser-dark.css">
+
+	<link rel="stylesheet" href="assets/style.css">
+
+</head>
+<body onload="sandbox.init();">
+
+	<div class="navbar" id="header">
+		<div class="navbar-inner">
+			<div class="container-fluid" style="line-height: 4em">
+				<div class="span6">
+					<h3 class="title">Jayus Sandbox</h3>
+				</div>
+				<div class="span6" align="right">
+					<select id="FileSelector">
+						<optgroup label="Examples" id="ExamplesOptgroup">
+							<option value="SimpleShapes">Simple Shapes</option>
+							<option value="Paths">Paths</option>
+						</optgroup>
+					</select>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid fill" id="container">
+		<div class="row-fluid fill" id="row1">
+			<div class="span6">
+				<h4 style="display: inline; float: left">
+					Code
+				</h4>
+				<div style="line-height: 20px; margin: 10px; float: right;">
+					<button class="btn" type="button" id="start">Run</button>&nbsp;&nbsp;&nbsp;<button class="btn" type="button" id="stop">Stop</button>
+				</div>
+			</div>
+			<div class="span6">
+				<div style="line-height: 20px; margin: 10px; float: left">
+					Size: <span id="size"></span>&nbsp;&nbsp;-&nbsp;&nbsp;Framerate: <span id="fps"></span>
+				</div>
+				<h4 style="display: inline; float: right;">
+					Output
+				</h4>
+			</div>
+		</div>
+		<div class="row-fluid fill" id="row2">
+			<div class="span6">
+				<div id="source" class="fill"></div>
+			</div>
+			<div class="span6">
+				<canvas id="output" style="box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.8);"></div>
+			</div>
+		</div>
+	</div>
+
+	<div id="myModal" class="modal large hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			<h3 id="myModalLabel">Error:</h3>
+		</div>
+		<div class="modal-body">
+			<p id="modalBody"></p>
+		</div>
+		<div class="modal-footer">
+			<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+		</div>
+	</div>
+
+</body>
+</html>

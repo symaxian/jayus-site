@@ -1,0 +1,43 @@
+---
+layout: default
+title: Jayus
+---
+
+{% include article_list.html %}
+
+<h2>Subclassing</h2>
+
+You may find yourself wishing for another type of Entity specially suited towards your program. Luckily it's not hard at all to create a custom entity class. This is done by subclassing the entity class and implementing a few required functions. The easiest approach to creating a new class with jayus is through the built-in createClass() function, which neatly conceals the messy parts of prototypal inheritance and such. Below is an example of how to create a rudimentary entity that represents a single Particle.
+
+<pre class="prettyprint linenums">
+Particle = jayus.Entity.extend({
+
+    // Our particle needs a color, we'll set it to null at first
+    color: null,
+
+    // When a new Particle object is created, the init method on the class is called as the constructor
+    // With this init method, a new particle is constructed like:
+    //      myParticle = new Particle(12, 17, 'blue');
+    init: function(x, y, color){
+        // If you replace the original init method, make sure you call the original Entity constructor on the new object
+        jayus.Entity.prototype.init.call(this);
+        this.x = x;
+        this.y = y;
+        this.color = color;
+    },
+
+        // Render
+
+    // Here we draw the particle on to the sent canvas context
+    drawOntoContext: function(context){
+        // The context given will be placed into the Entity's coordinate space
+        // So we need to draw the particle at (0, 0)
+        context.fillStyle = this.color;
+        context.fillRect(0, 0, 0.5, 0.5);
+    }
+
+});
+
+</pre>
+
+{% include prettyprint.html %}

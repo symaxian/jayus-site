@@ -1,0 +1,51 @@
+---
+layout: default
+title: Jayus
+---
+
+{% include article_list.html %}
+
+<h2>Intro</h2>
+<p>
+	&nbsp;&nbsp;&nbsp;&nbsp;Displays in jayus are scenegraphs, in essence this means that the image on the screen is composed of a number of individual objects that each make up a small part of the image. These objects are referred to in jayus as Entities. Entities are often grouped within other entities such as a <a href="api/logical/jayus/Scene.html">Scene</a> or <a href="api/logical/jayus/Grid.html">Grid</a>. These objects are also called Nodes.
+</p>
+
+<h2>A Graph</h2>
+<p>
+	&nbsp;&nbsp;&nbsp;&nbsp;The reason it is called a scenegraph is due to the fact that the scene composed of entities are ordered into a type of graph known as a tree. A tree is a collection of nodes, each of which have one parent and any number of child nodes that descend from it. The exception to this rule is the root node which has no parent, in Jayus(and all scenegraphs) the root node is represented by the actual display surface, a canvas element. The primary relation between parent and child nodes is spatial, each child is a visible component of its parent, and is moved, transformed, and animated along with its parent. In jayus, a parent node is responsible for drawing its children, firing cursor events on them, and possible managing their position/geometry.
+	<br><br>
+	Shown below is a very simple scene where a display has two child entities, a rectangle and a scene, and the scene has two child entities as well, two circles.
+	<ul>
+		<li>Display</li>
+		<ul>
+			<li>Rect</li>
+			<li>Scene</li>
+			<ul>
+				<li>Circle1</li>
+				<li>Circle2</li>
+			</ul>
+		</ul>
+	</ul>
+</p>
+
+<blockquote>
+	<img src="/images/scene.png">
+</blockquote>
+
+<h2>Systems</h2>
+<p>
+	&nbsp;&nbsp;&nbsp;&nbsp;The articles below explain some of the systems built in to the Entity class.
+	<ul>
+		<li><a href="articles/geometry.html" class="dead">Geometry</a></li>
+		<li><a href="articles/transformation.html" class="dead">Transformation</a></li>
+		<li><a href="articles/events.html">Events</a></li>
+		<li><a href="articles/animation.html" class="dead">Animation</a></li>
+	</ul>
+</p>
+
+<h2>Groups</h2>
+<p>
+	&nbsp;&nbsp;&nbsp;&nbsp;Only certain entities can hold children; nearly all of these inherit from the <a href="/api/logical/jayus/Group.html">Group</a> class. A entity that contains children must perform extra work of handling rendering, transformation, and events correctly.
+</p>
+
+{% include prettyprint.html %}

@@ -1,0 +1,1856 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <title>Jayus API documentation</title>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">        
+        <script>
+
+			(function()
+			{
+			    var loc = window.location.protocol + '//' + window.location.hostname + window.location.pathname;
+                loc = loc.split('\\');
+                loc = loc.join('/');					    
+			    loc = loc.split('/');
+			    loc.pop();
+			    loc = loc.join('/');
+			    loc += '/' + '../../';
+			
+			    document.write("<base href='" + loc + "'></base>");
+			})();
+         
+        </script>
+
+        <link rel="stylesheet" type="text/css" href="jgdoc.css">
+        <link rel="stylesheet" type="text/css" href="theme.css">
+        	    <script type="text/javascript" src="navTree.js"></script>
+	    <script type="text/javascript" src="jgdoc.js"></script>
+	</head>
+    <body>
+        <div class="startup" id="startup">
+            <div class="banner" id="banner">
+                <h1 class="projectName">
+	               <a href="./index.html">Jayus API documentation</a>   
+                </h1>
+                <div class="bar">
+	                 version alpha
+	            </div>
+	         </div>
+             <div class="content" id="docContent">
+                  <div class="block">
+                        <div id="searchBlock">
+			                <div class="search" >
+			                    <div class="searchLabel">Search:</div>
+			                    <div class="searchBlock" style="height:100%">
+					                <input id="jgsSearchString" type="text" size="60" class="jgdSearchString"/>
+					                <div id="jgsSearchPanel" class="jgsSearchPanel" style="display:none">
+						                <div  class="jgdSearchRect" >
+						                    <div id="jgsSearchResults">
+						                        Loading....
+						                    </div>
+						                </div>
+					                   <div id="jgsInfo" class="jgsInfo" >No selection</div>
+                                    </div>
+                                 </div>
+			                </div>
+		                </div>
+		                <div id="docScroll" class="docScroll">
+		                    <div>
+			                    <hr/>
+						        <div>
+						        						        		<H2>
+        <span class="objType">Class</span> jayus.Path
+    </H2>
+        <div class="extends">
+        <span class="descSection">Extends </span>
+                     <a href="logical/jayus/Shape.html">jayus.Shape</a>            </div>                                      
+
+
+    <hr/>
+    <!-- description -->
+    <div>
+       <code>
+            <span class="modifiers"></span>
+            <span class="objType">class</span> 
+            <b>jayus.Path</b>
+       </code>
+    </div>
+                <div class="comment">
+Represents a path.
+<br> Check the init method for construction options.
+</div>
+                                            <span class="definedIn">Defined in </span>
+        <a href="physical/file-Path.js.html">Path.js</a>
+        <hr/> 
+    <p />
+    
+            	
+                                
+                                
+    
+                <div class="summaryTable property">
+            <div class="summaryTableHeader">
+                <span class="objType">Property</span> Summary
+            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Array</span>
+        <a href="logical/jayus/Path.html#___segments"><span class="elementName">segments</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	An array of the path segments.    </div>  
+                            </div>
+                </div>
+        <p/>
+                            
+            
+                <div class="summaryTable function">
+            <div class="summaryTableHeader">
+                <span class="objType">Function</span> Summary
+            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"><a href="logical/jayus/Path.html">Path</a></span>
+                <a href="logical/jayus/Path.html#___Circle"><span class="elementName">Circle</span></a>
+                (<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+ center, <span class="type">Number</span>
+ radius)
+            </div>          
+                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"><a href="logical/jayus/Path.html">Path</a></span>
+                <a href="logical/jayus/Path.html#___Circle"><span class="elementName">Circle</span></a>
+                (<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y, <span class="type">Number</span>
+ radius)
+            </div>          
+                <div class="summaryItemDesc">
+        
+Returns a path comprised of the specified circle.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"><a href="logical/jayus/Path.html">Path</a></span>
+                <a href="logical/jayus/Path.html#___Rectangle"><span class="elementName">Rectangle</span></a>
+                (<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+ origin, <span class="type">Number</span>
+ width, <span class="type">Number</span>
+ height)
+            </div>          
+                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"><a href="logical/jayus/Path.html">Path</a></span>
+                <a href="logical/jayus/Path.html#___Rectangle"><span class="elementName">Rectangle</span></a>
+                (<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y, <span class="type">Number</span>
+ width, <span class="type">Number</span>
+ height)
+            </div>          
+                <div class="summaryItemDesc">
+        
+Returns a path comprised of the specified rectangle.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Path.html#___addSVG"><span class="elementName">addSVG</span></a>
+                (<span class="type">String</span>
+ path)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Adds the segments described by the given SVG pathstring to the path.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Path.html#___arc"><span class="elementName">arc</span></a>
+                (<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y, <span class="type">Number</span>
+ radius, <span class="type">Number</span>
+ startAngle, <span class="type">Number</span>
+ endAngle, <span class="type">Boolean</span>
+ anticlockwise)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Adds an arc to the path.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Path.html#___arcBy"><span class="elementName">arcBy</span></a>
+                (<span class="type">Number</span>
+ x1, <span class="type">Number</span>
+ y1, <span class="type">Number</span>
+ x2, <span class="type">Number</span>
+ y2, <span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Adds an arc to the path.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Path.html#___arcTo"><span class="elementName">arcTo</span></a>
+                (<span class="type">Number</span>
+ x1, <span class="type">Number</span>
+ y1, <span class="type">Number</span>
+ x2, <span class="type">Number</span>
+ y2, <span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Adds an arc to the path.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Path.html#___bezierCurveBy"><span class="elementName">bezierCurveBy</span></a>
+                (<span class="type">Number</span>
+ cp1x, <span class="type">Number</span>
+ cp1y, <span class="type">Number</span>
+ cp2x, <span class="type">Number</span>
+ cp2y, <span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Adds a bezier curve to the path.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Path.html#___bezierCurveTo"><span class="elementName">bezierCurveTo</span></a>
+                (<span class="type">Number</span>
+ cp1x, <span class="type">Number</span>
+ cp1y, <span class="type">Number</span>
+ cp2x, <span class="type">Number</span>
+ cp2y, <span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Adds a bezier curve to the path.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                           <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Path.html#___closePath"><span class="elementName">closePath</span></a>()
+            </div>
+        <div class="summaryItemDesc">
+        
+	Closes the path.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Path.html#___ellipse"><span class="elementName">ellipse</span></a>
+                (<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y, <span class="type">Number</span>
+ radiusX, <span class="type">Number</span>
+ radiusY, <span class="type">Number</span>
+ rotation, <span class="type">Number</span>
+ startAngle, <span class="type">Number</span>
+ endAngle, <span class="type">Boolean</span>
+ anticlockwise)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	UNIMPLEMENTED<br>
+	Adds an ellipse to the path.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                           <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                <a href="logical/jayus/Path.html#___getCurrentPoint"><span class="elementName">getCurrentPoint</span></a>()
+            </div>
+        <div class="summaryItemDesc">
+        
+	Returns the ending point of the last segment.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                           <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                <a href="logical/jayus/Path.html#___getInitialPoint"><span class="elementName">getInitialPoint</span></a>()
+            </div>
+        <div class="summaryItemDesc">
+        
+	Returns the initial point of the first segment.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                <a href="logical/jayus/Path.html#___getPoint"><span class="elementName">getPoint</span></a>
+                (<span class="type">Number</span>
+ index)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Returns the ending point of the given segment.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                           <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Number</span>
+                <a href="logical/jayus/Path.html#___getSegmentCount"><span class="elementName">getSegmentCount</span></a>()
+            </div>
+        <div class="summaryItemDesc">
+        
+	Returns the number of segments in the path.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                           <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Boolean</span>
+                <a href="logical/jayus/Path.html#___hasPointIndex"><span class="elementName">hasPointIndex</span></a>()
+            </div>
+        <div class="summaryItemDesc">
+        
+	Returns whether the specified point index is valid.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Path.html#___horizontalLineBy"><span class="elementName">horizontalLineBy</span></a>
+                (<span class="type">Number</span>
+ x)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Adds a horizontal line to the path.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Path.html#___horizontalLineTo"><span class="elementName">horizontalLineTo</span></a>
+                (<span class="type">Number</span>
+ x)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Adds a horizontal line to the path.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"></span>
+                <a href="logical/jayus/Path.html#___init"><span class="elementName">init</span></a>
+                (<span class="type">String</span>
+ pathString)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Initiates the path.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                           <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Boolean</span>
+                <a href="logical/jayus/Path.html#___isClosed"><span class="elementName">isClosed</span></a>()
+            </div>
+        <div class="summaryItemDesc">
+        
+	Returns whether the path is closed.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Path.html#___lineBy"><span class="elementName">lineBy</span></a>
+                (<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Adds a line to the path.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Path.html#___lineTo"><span class="elementName">lineTo</span></a>
+                (<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Adds a line to the path.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Path.html#___moveBy"><span class="elementName">moveBy</span></a>
+                (<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Sets the current point on the path.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Path.html#___moveTo"><span class="elementName">moveTo</span></a>
+                (<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Sets the current point on the path.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Path.html#___quadraticCurveBy"><span class="elementName">quadraticCurveBy</span></a>
+                (<span class="type">Number</span>
+ cp1, <span class="type">Number</span>
+ cp1, <span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Adds a quadratic curve to the path.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Path.html#___quadraticCurveTo"><span class="elementName">quadraticCurveTo</span></a>
+                (<span class="type">Number</span>
+ cp1, <span class="type">Number</span>
+ cp1, <span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Adds a quadratic curve to the path.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Path.html#___rect"><span class="elementName">rect</span></a>
+                (<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y, <span class="type">Number</span>
+ width, <span class="type">Number</span>
+ height)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Adds a rectangle to the path.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Path.html#___verticalLineBy"><span class="elementName">verticalLineBy</span></a>
+                (<span class="type">Number</span>
+ y)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Adds a vertical line to the path.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Path.html#___verticalLineTo"><span class="elementName">verticalLineTo</span></a>
+                (<span class="type">Number</span>
+ y)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Adds a vertical line to the path.    </div>  
+                            </div>
+                </div>
+        <p/>
+                                <div class="summaryTable">
+                <div class="summaryTableHeader">
+                   Functions inherited from <a href="logical/jayus/Shape.html">jayus.Shape</a> 
+                </div>
+                <div class="inheritanceSummary">
+                    <a href="logical/jayus/Shape.html#___alignToCanvas">alignToCanvas</a>, <a href="logical/jayus/Shape.html#___clone">clone</a>, <a href="logical/jayus/Shape.html#___cloneOnto">cloneOnto</a>, <a href="logical/jayus/Shape.html#___getScope">getScope</a>, <a href="logical/jayus/Shape.html#___getTransformed">getTransformed</a>, <a href="logical/jayus/Shape.html#___intersectsAt">intersectsAt</a>, <a href="logical/jayus/Shape.html#___paintedWith">paintedWith</a>, <a href="logical/jayus/Shape.html#___translate">translate</a>                </div>
+             </div>
+             <br/>          
+                
+                    <!-- ============== Details coming here =================== -->
+    	    	            <div class="details property">
+            <h2 class="sectionHeader">Property Details</h2>
+                                                            
+            <h3>
+        <a name="___segments">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Array</span>
+            <span class="objName">segments</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	An array of the path segments.
+	<br> Each segment is represented by an array, containing the command name followed by its arguments.
+	<br> Do not modify.
+	    </div>    
+                                        <hr />  
+                                    </div>
+    	    	            <div class="details function">
+            <h2 class="sectionHeader">Function Details</h2>
+                                                                    <h3>
+        <a name="___Circle">
+            <span class="objType">function</span>
+            <span class="objName">Circle</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"><a href="logical/jayus/Path.html">Path</a></span>
+                    Circle(<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+ center, <span class="type">Number</span>
+ radius)
+                </code> 
+            </div>          
+                    <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"><a href="logical/jayus/Path.html">Path</a></span>
+                    Circle(<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y, <span class="type">Number</span>
+ radius)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+Returns a path comprised of the specified circle.
+    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"> 1
+</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            center        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            radius        </code>
+                    </div>   
+                                        </div>
+                </div>
+                            <div>
+                    <div class="paramset"> 2
+</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            x        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            y        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            radius        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___Rectangle">
+            <span class="objType">function</span>
+            <span class="objName">Rectangle</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"><a href="logical/jayus/Path.html">Path</a></span>
+                    Rectangle(<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+ origin, <span class="type">Number</span>
+ width, <span class="type">Number</span>
+ height)
+                </code> 
+            </div>          
+                    <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"><a href="logical/jayus/Path.html">Path</a></span>
+                    Rectangle(<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y, <span class="type">Number</span>
+ width, <span class="type">Number</span>
+ height)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+Returns a path comprised of the specified rectangle.
+    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"> 1
+</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            origin        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            width        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            height        </code>
+                    </div>   
+                                        </div>
+                </div>
+                            <div>
+                    <div class="paramset"> 2
+</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            x        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            y        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            width        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            height        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___addSVG">
+            <span class="objType">function</span>
+            <span class="objName">addSVG</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    addSVG(<span class="type">String</span>
+ path)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Adds the segments described by the given SVG pathstring to the path.
+	<br> Some commands are not implemented yet.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            path        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___arc">
+            <span class="objType">function</span>
+            <span class="objName">arc</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    arc(<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y, <span class="type">Number</span>
+ radius, <span class="type">Number</span>
+ startAngle, <span class="type">Number</span>
+ endAngle, <span class="type">Boolean</span>
+ anticlockwise)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Adds an arc to the path.
+	<br> The arc is defined by its center, radius, and start/end angle.
+	<br> A line is drawn from the current point to the starting point of the arc if they are not equivalent.
+	<br> Sets the current point as the ending point on the arc.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            x        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            y        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            radius        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            startAngle        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            endAngle        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            anticlockwise        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___arcBy">
+            <span class="objType">function</span>
+            <span class="objName">arcBy</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    arcBy(<span class="type">Number</span>
+ x1, <span class="type">Number</span>
+ y1, <span class="type">Number</span>
+ x2, <span class="type">Number</span>
+ y2, <span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Adds an arc to the path.
+	<br> The curve is defined by its two control points and the end point.
+	<br> The control points and the end point are positioned relative to the current point.
+	<br> A line is drawn from the current point to the starting point of the arc if they are not equivalent.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            x1        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            y1        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            x2        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            y2        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            x        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            y        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___arcTo">
+            <span class="objType">function</span>
+            <span class="objName">arcTo</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    arcTo(<span class="type">Number</span>
+ x1, <span class="type">Number</span>
+ y1, <span class="type">Number</span>
+ x2, <span class="type">Number</span>
+ y2, <span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Adds an arc to the path.
+	<br> The curve is defined by its two control points and the end point.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            x1        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            y1        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            x2        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            y2        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            x        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            y        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___bezierCurveBy">
+            <span class="objType">function</span>
+            <span class="objName">bezierCurveBy</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    bezierCurveBy(<span class="type">Number</span>
+ cp1x, <span class="type">Number</span>
+ cp1y, <span class="type">Number</span>
+ cp2x, <span class="type">Number</span>
+ cp2y, <span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Adds a bezier curve to the path.
+	<br> The curve is defined by its two control points and the end point.
+	<br> The control points and the end point are positioned relative to the current point.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            cp1x        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            cp1y        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            cp2x        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            cp2y        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            x        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            y        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___bezierCurveTo">
+            <span class="objType">function</span>
+            <span class="objName">bezierCurveTo</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    bezierCurveTo(<span class="type">Number</span>
+ cp1x, <span class="type">Number</span>
+ cp1y, <span class="type">Number</span>
+ cp2x, <span class="type">Number</span>
+ cp2y, <span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Adds a bezier curve to the path.
+	<br> The curve is defined by its two control points and the end point.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            cp1x        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            cp1y        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            cp2x        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            cp2y        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            x        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            y        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___closePath">
+            <span class="objType">function</span>
+            <span class="objName">closePath</span>            
+        </a> 
+    </h3>
+                <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    closePath()
+                </code>
+            </div>    
+        <div class="comment">
+        
+	Closes the path.
+	    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___ellipse">
+            <span class="objType">function</span>
+            <span class="objName">ellipse</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    ellipse(<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y, <span class="type">Number</span>
+ radiusX, <span class="type">Number</span>
+ radiusY, <span class="type">Number</span>
+ rotation, <span class="type">Number</span>
+ startAngle, <span class="type">Number</span>
+ endAngle, <span class="type">Boolean</span>
+ anticlockwise)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	UNIMPLEMENTED<br>
+	Adds an ellipse to the path.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            x        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            y        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            radiusX        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            radiusY        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            rotation        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            startAngle        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            endAngle        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            anticlockwise        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___getCurrentPoint">
+            <span class="objType">function</span>
+            <span class="objName">getCurrentPoint</span>            
+        </a> 
+    </h3>
+                <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    getCurrentPoint()
+                </code>
+            </div>    
+        <div class="comment">
+        
+	Returns the ending point of the last segment.
+	    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___getInitialPoint">
+            <span class="objType">function</span>
+            <span class="objName">getInitialPoint</span>            
+        </a> 
+    </h3>
+                <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    getInitialPoint()
+                </code>
+            </div>    
+        <div class="comment">
+        
+	Returns the initial point of the first segment.
+	    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___getPoint">
+            <span class="objType">function</span>
+            <span class="objName">getPoint</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    getPoint(<span class="type">Number</span>
+ index)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Returns the ending point of the given segment.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            index        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___getSegmentCount">
+            <span class="objType">function</span>
+            <span class="objName">getSegmentCount</span>            
+        </a> 
+    </h3>
+                <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Number</span>
+                    getSegmentCount()
+                </code>
+            </div>    
+        <div class="comment">
+        
+	Returns the number of segments in the path.
+	    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___hasPointIndex">
+            <span class="objType">function</span>
+            <span class="objName">hasPointIndex</span>            
+        </a> 
+    </h3>
+                <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Boolean</span>
+                    hasPointIndex()
+                </code>
+            </div>    
+        <div class="comment">
+        
+	Returns whether the specified point index is valid.
+	    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___horizontalLineBy">
+            <span class="objType">function</span>
+            <span class="objName">horizontalLineBy</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    horizontalLineBy(<span class="type">Number</span>
+ x)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Adds a horizontal line to the path.
+	<br> The line is traced from the current point to the given end point.
+	<br> The end point is positioned relative to the current point.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            x        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___horizontalLineTo">
+            <span class="objType">function</span>
+            <span class="objName">horizontalLineTo</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    horizontalLineTo(<span class="type">Number</span>
+ x)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Adds a horizontal line to the path.
+	<br> The line is traced from the current point to the given end point.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            x        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___init">
+            <span class="objType">function</span>
+            <span class="objName">init</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"></span>
+                    init(<span class="type">String</span>
+ pathString)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Initiates the path.
+	<br> An SVG path string may also be specified.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            pathString        </code>
+         Optional            </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___isClosed">
+            <span class="objType">function</span>
+            <span class="objName">isClosed</span>            
+        </a> 
+    </h3>
+                <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Boolean</span>
+                    isClosed()
+                </code>
+            </div>    
+        <div class="comment">
+        
+	Returns whether the path is closed.
+	<br> A path is deemed to be closed if its beginning and end points are equivalent.
+	    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___lineBy">
+            <span class="objType">function</span>
+            <span class="objName">lineBy</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    lineBy(<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Adds a line to the path.
+	<br> The line is traced from the current point to the given end point.
+	<br> The end point is positioned relative to the current point.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            x        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            y        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___lineTo">
+            <span class="objType">function</span>
+            <span class="objName">lineTo</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    lineTo(<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Adds a line to the path.
+	<br> The line is traced from the current point to the given end point.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            x        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            y        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___moveBy">
+            <span class="objType">function</span>
+            <span class="objName">moveBy</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    moveBy(<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Sets the current point on the path.
+	<br> The new current point is positioned relative to the current point.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            x        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            y        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___moveTo">
+            <span class="objType">function</span>
+            <span class="objName">moveTo</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    moveTo(<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Sets the current point on the path.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            x        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            y        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___quadraticCurveBy">
+            <span class="objType">function</span>
+            <span class="objName">quadraticCurveBy</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    quadraticCurveBy(<span class="type">Number</span>
+ cp1, <span class="type">Number</span>
+ cp1, <span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Adds a quadratic curve to the path.
+	<br> The curve is defined by its control point and the end point.
+	<br> The control and end points are positioned relative to the current point.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            cp1        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            cp1        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            x        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            y        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___quadraticCurveTo">
+            <span class="objType">function</span>
+            <span class="objName">quadraticCurveTo</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    quadraticCurveTo(<span class="type">Number</span>
+ cp1, <span class="type">Number</span>
+ cp1, <span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Adds a quadratic curve to the path.
+	<br> The curve is defined by its control point and the end point.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            cp1        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            cp1        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            x        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            y        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___rect">
+            <span class="objType">function</span>
+            <span class="objName">rect</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    rect(<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y, <span class="type">Number</span>
+ width, <span class="type">Number</span>
+ height)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Adds a rectangle to the path.
+	<br> The arc is defined by its origin and size.
+	<br> A line is drawn from the current point to the origin of the rect if they are not equivalent.
+	<br> Sets the current point as the origin of the rectangle.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            x        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            y        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            width        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            height        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___verticalLineBy">
+            <span class="objType">function</span>
+            <span class="objName">verticalLineBy</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    verticalLineBy(<span class="type">Number</span>
+ y)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Adds a vertical line to the path.
+	<br> The line is traced from the current point to the given end point.
+	<br> The end point is positioned relative to the current point.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            y        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___verticalLineTo">
+            <span class="objType">function</span>
+            <span class="objName">verticalLineTo</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    verticalLineTo(<span class="type">Number</span>
+ y)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Adds a vertical line to the path.
+	<br> The line is traced from the current point to the given end point.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            y        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                    </div>
+    	    	                                    						        </div>
+        		          </div>			                    
+		                </div>
+        	       </div>
+             </div>
+             <div class="navigation" id="navigation">
+    <ul class="navContent">
+        <li>
+            <div class="navTree">
+                <h2 onclick="jgdoc.NavPanel.clicked(event)">
+                    <a href="javascript:jgdoc.NavPanel.dummy()">Navigation</a>
+                </h2>
+                <ul class="navContent2">
+                    <li>
+                        <div>
+                            <a class="openAll" href="javascript:jgdoc.NavTree.onOpenAll()">Open All</a>
+                            <a class="closeAll" href="javascript:jgdoc.NavTree.onCloseAll()">Close All</a>
+                        </div>
+                        <div>
+                            <ul id = "content" class="contents">
+                                Loading...
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+    <ul class="navContent closed">
+        <li>
+            <div class="fileTree">
+                <h2 onclick="jgdoc.NavPanel.clicked(event)">
+                    <a href="javascript:jgdoc.NavPanel.dummy()">Files</a>
+                </h2>
+                <ul class="navContent2">
+                    <li>
+                                                                                <div>
+                                <a href="physical/file-Animator.js.html">Animator.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Box.js.html">Box.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Brush.js.html">Brush.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Circle.js.html">Circle.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Color.js.html">Color.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Dependency.js.html">Dependency.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Display.js.html">Display.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-EditableFrame.js.html">EditableFrame.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Entity/Group.js.html">Entity.Group.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Entity/Rect.js.html">Entity.Rect.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Entity.js.html">Entity.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-FlowLayout.js.html">FlowLayout.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Frame.js.html">Frame.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Gradient.js.html">Gradient.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Grid.js.html">Grid.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Group.js.html">Group.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Image.js.html">Image.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Layer.js.html">Layer.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-List.js.html">List.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Matrix.js.html">Matrix.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-PaintedShape.js.html">PaintedShape.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Path.js.html">Path.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Point.js.html">Point.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Polygon.js.html">Polygon.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-RectEntity.js.html">RectEntity.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Rectangle.js.html">Rectangle.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Responder.js.html">Responder.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Scene.js.html">Scene.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Shape.js.html">Shape.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-SizePolicy.js.html">SizePolicy.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Sprite.js.html">Sprite.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-SpriteSheet.js.html">SpriteSheet.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Stack.js.html">Stack.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Surface.js.html">Surface.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Text.js.html">Text.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-TextBox.js.html">TextBox.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-TiledMap.js.html">TiledMap.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-Wrapper.js.html">Wrapper.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-argumentOverloading/min.js.html">argumentOverloading.min.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-easing.js.html">easing.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-images.js.html">images.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-jayus.js.html">jayus.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-keyboard.js.html">keyboard.js</a>
+                            </div>                              
+                                                                                                            <div>
+                                <a href="physical/file-objects.js.html">objects.js</a>
+                            </div>                              
+                                                                        </li>
+                </ul>
+            </div>
+        </li>       
+    </ul>
+    <ul class="navContent closed">
+        <li>
+            <div class="moduleTree">
+                <h2 onclick="jgdoc.NavPanel.clicked(event)">
+                    <a href="javascript:jgdoc.NavPanel.dummy()">Modules</a>
+                </h2>
+                <ul class="navContent2">
+                    <li>
+                                            </li>
+                </ul>
+            </div>
+        </li>       
+    </ul>
+</div>  
+    
+		</div>	
+	</body>
+    <script type="text/javascript">
+        jgdoc.Searcher.start();
+        jgdoc.NavTree.initialize("jayus.Path");
+    </script>			
+	<script type="text/javascript" src="jsindex.js">
+    </script>
+</html>

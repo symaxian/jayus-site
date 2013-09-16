@@ -1,0 +1,38 @@
+html {
+  height: 100%;
+  max-width: 100%;
+}
+
+body {
+  max-width: 100%;
+  background: #AAA;
+}
+
+.title {
+  color: black;
+}
+
+.navbar {
+  margin-bottom: 4px;
+}
+
+@media (min-width: 1200px) { 
+.modal{
+  width: 1360px;
+  margin-left: -680px;}
+}
+
+#FileSelector {
+  margin: 10px;
+  font-size: 12pt;
+}
+
+/*
+.XXX_CodeMirror-scroll {
+  overflow: auto;
+  height: auto; overflow: visible;
+  position: relative;
+  outline: none;
+  min-height: 300px;
+}
+*/

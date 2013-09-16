@@ -1,0 +1,195 @@
+<p>
+	The jayus display below allows some primitive objects to be moved, scaled, and rotated.
+	Left-drag to move the object, scroll to scale, and right-drag to rotate.
+	<br>
+	By checking the "Show geometry" checkbox below you can see the geometry associated with each entity.
+</p>
+<div id="jayus"></div>
+<p>
+	<p>
+		<label><input type="checkbox" id="toggleDebug"> Show geometry</label>
+	</p>
+	<dl class="dl-horizontal">
+		<dt>Orange shape</dt>
+		<dd>
+			The bounds, this is the "physical" region taken up by the entity, and what is tested against for a cursor hit.
+		</dd>
+		<dt>Yellow rectangle</dt>
+		<dd>
+			The frame, this is the axis-aligned rectangle that encompasses the entity's bounds.
+		</dd>
+		<dt>Green rectangle</dt>
+		<dd>
+			The scope, this is the axis-aligned rectangle that encompasses every pixel modified by rendering the shape.
+			<br>Most developers will not use this.
+		</dd>
+		<dt>Red dot</dt>
+		<dd>
+			The anchor point, this point is the global position of the entity the point at which the entity's transformations are anchored.
+			<br>The anchor point is most often specified as a position relative to the frame, with (0,0) being at the top-left, and (1,1) at the bottom-right.
+		</dd>
+	</dl>
+</p>
+
+<script type='text/javascript'>
+
+		showGeometry = false;
+		$('#toggleDebug').change(function(){
+			showGeometry = this.checked;
+			var renderer;
+			if(showGeometry){
+				renderer = jayus.debug.defaultDebugRenderer;
+			}
+			else{
+				renderer = null;
+			}
+			for(var i=0;i<items.length;i++){
+				items[i].debugRenderer = renderer;
+			}
+			display.dirty();
+		});
+
+		// Initialize jayus
+
+		jayus.init();
+
+		// Create and set the display
+
+		display = new jayus.Display(600,400);
+		display.setInto(document.getElementById('jayus'));
+		display.getCanvas().style.border = "1px solid black";
+
+		// Create items to move around the display
+
+		var style = { stroke: 'black', lineWidth: 3 };
+
+		var starShape = new jayus.Polygon.Star(5,20,40);
+		starShape.move(starShape.getWidth()/2, starShape.getHeight()/2);
+		star = new jayus.StyledShape(starShape,style).setId('star');
+		star.rotate(jayus.math.toRadians(90));
+		star.setAnchor(0.5,0.5).setPos(145,190);
+
+		var rectShape = new jayus.Rectangle(0,0,100,60);
+		rect = new jayus.StyledShape(rectShape,style).setId('rect');;
+		rect.setAnchor(0.5,0.5).setPos(425,100);
+
+		text = new jayus.Text('Hello!',56).style(style).setId('text');
+		text.setAnchor(0.5,0.5).setPos(370,290);
+
+		items = [star, rect, text];
+
+		draggingAnchor = false;
+
+		rotatingEntity = null;
+
+		overAnchor = false;
+
+		for(var i=0;i<items.length;i++){
+
+			display.addChild(items[i]);
+
+			items[i].handle({
+
+				cursorEnter: function(){
+					this.style({ strokeFirst: false, fill: 'grey' });
+				},
+
+				cursorMove: function(e){
+					console.log('move');
+					if(showGeometry){
+						if(this.getPos().subtract(e.x,e.y).getMagnitude() < 5){
+							overAnchor = true;
+							display.setCursor('crosshair');
+						}
+						else{
+							overAnchor = false;
+							display.resetCursor();
+						}
+					}
+				},
+
+				cursorLeave: function(){
+					this.style({ strokeFirst: false, fill: null });
+					if(draggingAnchor){
+						draggingAnchor = false;
+						display.resetCursor();
+					}
+				},
+
+				scroll: function(e){
+					if(e.yScroll < 0){
+						if(this.animator && this.animator.playing){
+							this.animator.stop();
+						}
+						this.animator = this.animate().scale(2).setDuration(0.8).start();
+					}
+					else if(e.yScroll > 0){
+						if(this.animator && this.animator.playing){
+							this.animator.stop();
+						}
+						this.animator = this.animate().scale(1/3).setDuration(0.8).start();
+					}
+					return true;
+				},
+
+				leftDragStart: function(e){
+					console.log('start');
+					if(overAnchor){
+
+					}
+					else{
+						display.setCursor('move');
+					}
+				},
+
+				leftDrag: function(e){
+					console.log('drag');
+					if(overAnchor){
+						this.setAnchorAt(e.x,e.y);
+					}
+					else{
+						this.move(e.deltaX, e.deltaY);
+					}
+					this.dirty();
+					return true;
+				},
+
+				leftDragEnd: function(e){
+					console.log('end');
+					display.resetCursor();
+				},
+
+				rightPress: function(e){
+					console.log('RIGHT PRESS');
+					rotatingEntity = this;
+					// this.startRotation = this.getAngle();
+					this.startCursorRotation = Math.atan2(e.y-this.getY(),e.x-this.getX());
+					// console.log(jayus.math.toDegrees(this.startCursorRotation));
+
+					jayus.interceptNextEvent('rightRelease',function(){
+						rotatingEntity = null;
+					});
+
+					return true;
+				},
+
+				middlePress: function(e){
+					this.setAnchorAt(e.x-this.getLeft(),e.y-this.getTop());
+					return true;
+				}
+
+			});
+		}
+
+		display.addHandler('cursorMove',function(e){
+			// Check if were rotating an entity
+			if(rotatingEntity !== null){
+				var diff = new jayus.Vec2(e.y-rotatingEntity.getY(),e.x-rotatingEntity.getX());
+				var rot = Math.atan2(diff.x,diff.y);
+				rotatingEntity.setAngle(rotatingEntity.startCursorRotation+rot);
+			}
+		});
+
+		jayus.start();
+	
+</script>
