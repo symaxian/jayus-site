@@ -1,6 +1,6 @@
 display.setBg({ fill: 'white' });
 
-player = new jayus.Sprite('deathknight.png');
+player = new jayus.Sprite('assets/deathknight.png');
 player.setOrigin(40, 40);
 player.keepAligned = true;
 
@@ -89,7 +89,7 @@ jayus.addHandler('keyPress', function(e){
 				refresh();
 			});
 			attacking = true;
-			player.origin.clearVelocity();
+			player.clearVelocity();
 		}
 		else{
 			refresh();

@@ -1,4 +1,4 @@
-sprite = new jayus.Sprite('item-redsword.png');
+sprite = new jayus.Sprite('assets/item-redsword.png');
 sprite.setOrigin(40, 40);
 
 sheet = new jayus.SpriteSheet();
@@ -17,7 +17,7 @@ sprite.setSpriteSheet(sheet);
 sprite.loopAnimation('float');
 sprite.animator.setEasing('easeInOutQuad');
 
-key = new jayus.Image('item-redsword.png');
+key = new jayus.Image('assets/item-redsword.png');
 key.setOrigin(40, 120);
 
 display.children.add(sprite, key);

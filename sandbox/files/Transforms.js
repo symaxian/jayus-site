@@ -1,4 +1,4 @@
-image = new jayus.Image('chest.png');
+image = new jayus.Image('assets/chest.png');
 image.setOrigin(80, 80);
 
 image.rotate(jayus.math.toRadians(45));

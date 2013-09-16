@@ -1,9 +1,9 @@
 display.setBg({ fill: 'white' });
 
-sprite = new jayus.Image('item-bluesword.png');
+sprite = new jayus.Image('assets/item-bluesword.png');
 sprite.setOrigin(40, 40);
 
-fullImage = new jayus.Image('item-bluesword.png');
+fullImage = new jayus.Image('assets/item-bluesword.png');
 fullImage.setOrigin(40, 120);
 
 display.children.add(sprite, fullImage);
