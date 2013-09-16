@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>{{ page.title }}</title>
+		<meta name="viewport" content="width=device-width">
+
+		<!-- syntax highlighting CSS -->
+		<!-- <link rel="stylesheet" href="/css/syntax.css"> -->
+
+		<!-- Custom CSS -->
+		<!-- <link rel="stylesheet" href="/css/main.css"> -->
+
+		<link rel="stylesheet" type="text/css" href="../style.css">
+		<link rel="icon" type="image/png" href="../favicon.png">
+		<meta http-equiv="cache-control" content="no-store">
+		<!-- jQuery -->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<!-- Bootstrap -->
+		<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+		<script type="text/javascript" src="../bootstrap/prettify.js"></script>
+		<link rel="stylesheet" type="text/css" href="../bootstrap/prettify.css">
+		<link rel="stylesheet" type="text/css" href="../bootstrap/custom.css">
+
+	</head>
+
+	<body>
+
+		<div id="headerContainer">
+			<div class="row" id="header">
+				<div class="span4">
+					<a id="logo" href="index.html">
+						<img src="../images/vortex_100.png">
+						<span id="name">Jayus</span>
+					</a>
+				</div>
+				<div class="span8">
+					<div id="linkBar">
+						<a class="btn btn-warning btn-small" href="api/" target="_blank" title="Opens in a new tab">
+							API Documentation <strong>»</strong>
+						</a>
+						&nbsp;
+						<a class="btn btn-warning btn-small" href="http://github.com/symaxian/jayus" target="_blank" title="Opens in a new tab">
+							Github Project <strong>»</strong>
+						</a>
+						&nbsp;
+						<a class="btn btn-warning btn-small" href="sandbox/" target="_blank" title="Opens in a new tab">
+							Sandbox <strong>»</strong>
+						</a>
+					</div>
+					<div id="navBar" class="btn-group">
+						<a class="btn btn-info btn-large" href="index.html">Home</a>
+						<a class="btn btn-info btn-large" href="articles.html">Articles</a>
+						<a class="btn btn-info btn-large" href="examples.html">Examples</a>
+						<a class="btn btn-info btn-large" href="download.html">Download</a>
+						<a class="btn btn-info btn-large" href="about.html">About</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container" id="block">
+
+			{% include article_list.html %}
+			
+			{{ content }}
+		
+		</div>
+
+	</body>
+
+</html>
