@@ -61,9 +61,25 @@
 			</div>
 		</div>
 		<div class="container" id="block">
-
-			{% include article_list.html %}
 			
+			<div id="sidebar" class="well">
+				<div id="sidebarTitle">Articles</div>
+				<ul class="nav nav-list" id="sidebarList">
+					<li class="nav-header">Jayus Core</li>
+					<li><a href="classes.html">Class Hierarchy</a></li>
+					<li><a href="entities.html">Entities &amp; Groups</a></li>
+					<li><a href="entity.html">Entity Overview</a></li>
+					<li><a href="events.html">Event System</a></li>
+					<li><a href="subclassing.html">Custom Entities</a></li>
+					<li class="nav-header">Misc</li>
+					<li><a href="new-project.html">Starting a Project</a></li>
+					<li><a href="tips-tricks.html">Tips &amp; Tricks</a></li>
+					<li><a href="terms.html">Terminology</a></li>
+					<li class="nav-header">Advanced</li>
+					<li><a href="compilation.html">Compilation</a></li></ul>
+				</ul>
+			</div>
+
 			{{ content }}
 		
 		</div>
