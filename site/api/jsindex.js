@@ -3944,6 +3944,15 @@
            elementType : "function"
        } ,         
        {
+           localName : "SHAPES",
+           fullName : "jayus.SHAPES",
+           summary : "property Object SHAPES",
+           ref : "logical/jayus.html#___SHAPES",
+           parent : "jayus",
+           type : "property",
+           elementType : "variable"
+       } ,         
+       {
            localName : "Scene",
            fullName : "jayus.Scene",
            summary : "class Scene",
@@ -4500,6 +4509,15 @@
            parent : "jayus.Surface",
            type : "function",
            elementType : "function"
+       } ,         
+       {
+           localName : "TYPES",
+           fullName : "jayus.TYPES",
+           summary : "property Object TYPES",
+           ref : "logical/jayus.html#___TYPES",
+           parent : "jayus",
+           type : "property",
+           elementType : "variable"
        } ,         
        {
            localName : "Text",
@@ -5586,6 +5604,15 @@
            fullName : "jayus.init",
            summary : "function Self init()",
            ref : "logical/jayus.html#___init",
+           parent : "jayus",
+           type : "function",
+           elementType : "function"
+       } ,         
+       {
+           localName : "intersectTest",
+           fullName : "jayus.intersectTest",
+           summary : "function Boolean intersectTest()",
+           ref : "logical/jayus.html#___intersectTest",
            parent : "jayus",
            type : "function",
            elementType : "function"

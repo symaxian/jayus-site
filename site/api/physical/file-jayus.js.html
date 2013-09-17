@@ -88,6 +88,26 @@ Defines the global jayus object.
                     <div class="summaryItem">
                                                 <div class="summaryItemDef">
         <span class="modifiers"></span>
+        <span class="type">Object</span>
+        <a href="logical/jayus.html#___SHAPES"><span class="elementName">SHAPES</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	An enumeration of the types that the jayus.intersectTest() method can check against.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Object</span>
+        <a href="logical/jayus.html#___TYPES"><span class="elementName">TYPES</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	An enumeration of the types that the jayus.debug.is() method can check against.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
         <span class="type">Array</span>
         <a href="logical/jayus.html#___animators"><span class="elementName">animators</span></a>
     </div> 
@@ -511,6 +531,16 @@ Defines the global jayus object.
 	Initializes Jayus.    </div>  
                             </div>
                     <div class="summaryItem">
+                                                           <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Boolean</span>
+                <a href="logical/jayus.html#___intersectTest"><span class="elementName">intersectTest</span></a>()
+            </div>
+        <div class="summaryItemDesc">
+        
+	Tests for the intersection of two Entities or Shape objects.    </div>  
+                            </div>
+                    <div class="summaryItem">
                                                                     <div class="summaryItemDef">
                 <span class="modifiers"></span>
                 <span class="type">Boolean</span>
@@ -721,6 +751,66 @@ Defines the global jayus object.
     	    	            <div class="details property">
             <h2 class="sectionHeader">Property Details</h2>
                                                             
+            <h3>
+        <a name="___SHAPES">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Object</span>
+            <span class="objName">SHAPES</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	An enumeration of the types that the jayus.intersectTest() method can check against.
+	<br> Values are:
+		LIST,
+		CUSTOM,
+		POINT,
+		CIRCLE,
+		RECTANGLE,
+		POLYGON,
+		PATH.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___TYPES">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Object</span>
+            <span class="objName">TYPES</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	An enumeration of the types that the jayus.debug.is() method can check against.
+	<br> Only found in the "debug" versions of jayus.
+	<br> Values are:
+		DEFINED,
+		BOOLEAN,
+		STRING,
+		FUNCTION,
+		NUMBER,
+		OBJECT,
+		ARRAY,
+		CONTEXT,
+		COLOR,
+		BRUSH,
+		MATRIX,
+		LIST,
+		ENTITY,
+		POINT,
+		CIRCLE,
+		POLYGON,
+		PATH,
+		SURFACE,
+		SCENE,
+		SHAPE,
+		RECTANGLE,
+		BUFFER,
+		ANIMATOR,
+		CANVAS.
+	    </div>    
+                                        <hr />  
+                                                                            
             <h3>
         <a name="___animators">
             <span class="objType">property</span> <span class="modifiers"></span>
@@ -942,6 +1032,7 @@ Defines the global jayus object.
         
 	Font cache storage.
 	<br> Holds the character widths for each cached font.
+	<br> Do not modify.
 	    </div>    
                                         <hr />  
                                                                             
@@ -1562,6 +1653,25 @@ Defines the global jayus object.
 	Initializes Jayus.
 	<br> Note that this method does not start jayus, the display canvas will appear on the page but will be blank until jayus is started.
 	<br> Jayus does not need to be running to accept input, input events should be tracked and fired from this point on.
+	    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___intersectTest">
+            <span class="objType">function</span>
+            <span class="objName">intersectTest</span>            
+        </a> 
+    </h3>
+                <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Boolean</span>
+                    intersectTest()
+                </code>
+            </div>    
+        <div class="comment">
+        
+	Tests for the intersection of two Entities or Shape objects.
+	<br> Each object must have a shapeType property corresponding to one found in jayus.SHAPES.
 	    </div>
                                                     <hr/>       
                                                                                     <h3>
