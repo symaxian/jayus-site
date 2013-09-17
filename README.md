@@ -1,4 +1,6 @@
-jayus-site
-==========
+Jayus
+=====
 
-The website for the Jayus scenegraph. http://symaxian.github.io/jayus-site/
+A fast, elegant, HTML5 canvas scenegraph.
+
+See http://symaxian.github.io/jayus-site/site/ for more information.
