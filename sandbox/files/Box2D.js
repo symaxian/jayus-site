@@ -108,10 +108,12 @@ display.addHandler('leftPress', function(e){
 		body.SetAwake(true);
 		paintedLine.shape.setPoint(1, e.x, e.y);
 		paintedLine.show();
-		body.entity.addHandler('moved', function(){
-			var pos = this.getUnFrame().getOrigin();
-			pos.translate(this.width/2, this.height/2);
-			paintedLine.shape.setPoint(0, pos);
+		body.entity.addHandler('dirty', function(type){
+			if(type & jayus.DIRTY.POSITION){
+				var pos = this.getUnFrame().getOrigin();
+				pos.translate(this.width/2, this.height/2);
+				paintedLine.shape.setPoint(0, pos);
+			}
 		});
 		draggedBody = body;
 	}
@@ -131,7 +133,7 @@ display.addHandler('rightPress', function(e){
 
 display.addHandler('leftRelease', function(e){
 	if(mouseJoint){
-		draggedBody.entity.removeHandlers('moved');
+		draggedBody.entity.removeHandlers('dirty');
 		paintedLine.hide();
 		world.DestroyJoint(mouseJoint);
 		mouseJoint = null;
