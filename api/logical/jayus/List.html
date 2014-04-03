@@ -95,7 +95,7 @@ Represents a list of some objects.
                                                            <div class="summaryItemDef">
                 <span class="modifiers"></span>
                 <span class="type"></span>
-                <a href="logical/jayus/List.html#___init"><span class="elementName">init</span></a>()
+                <a href="logical/jayus/List.html#___List"><span class="elementName">List</span></a>()
             </div>
         <div class="summaryItemDesc">
         
@@ -113,7 +113,7 @@ Represents a list of some objects.
                 <span class="modifiers"></span>
                 <span class="type">Self</span>
                 <a href="logical/jayus/List.html#___add"><span class="elementName">add</span></a>
-                (<span class="type"><a href="logical/jayus/Entity.html">Entity</a></span>
+                (<span class="type">Entity</span>
  item)
             </div>          
                 <div class="summaryItemDesc">
@@ -135,7 +135,7 @@ Represents a list of some objects.
                     <div class="summaryItem">
                                                                     <div class="summaryItemDef">
                 <span class="modifiers"></span>
-                <span class="type"><a href="logical/jayus/Entity.html">Entity</a></span>
+                <span class="type">Entity</span>
                 <a href="logical/jayus/List.html#___at"><span class="elementName">at</span></a>
                 (<span class="type">Number</span>
  index)
@@ -170,6 +170,19 @@ Represents a list of some objects.
                     <div class="summaryItem">
                                                                     <div class="summaryItemDef">
                 <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/List.html#___forEvery"><span class="elementName">forEvery</span></a>
+                (<span class="type">Function</span>
+ func, <span class="type">Array</span>
+ args)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Calls the given function on all items under the collection with the given arguments.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
                 <span class="type">Boolean</span>
                 <a href="logical/jayus/List.html#___get"><span class="elementName">get</span></a>
                 (<span class="type">*</span>
@@ -184,7 +197,7 @@ Represents a list of some objects.
                 <span class="modifiers"></span>
                 <span class="type">Boolean</span>
                 <a href="logical/jayus/List.html#___has"><span class="elementName">has</span></a>
-                (<span class="type"><a href="logical/jayus/Entity.html">Entity</a></span>
+                (<span class="type">Entity</span>
  item)
             </div>          
                 <div class="summaryItemDesc">
@@ -201,14 +214,14 @@ Represents a list of some objects.
             </div>          
                 <div class="summaryItemDesc">
         
-	Returns index of the sent element.    </div>  
+	Returns the index of the sent element.    </div>  
                             </div>
                     <div class="summaryItem">
                                                                     <div class="summaryItemDef">
                 <span class="modifiers"></span>
                 <span class="type">Self</span>
                 <a href="logical/jayus/List.html#___insert"><span class="elementName">insert</span></a>
-                (<span class="type"><a href="logical/jayus/Entity.html">Entity</a></span>
+                (<span class="type">Entity</span>
  item, <span class="type">Number</span>
  index)
             </div>          
@@ -221,8 +234,8 @@ Represents a list of some objects.
                 <span class="modifiers"></span>
                 <span class="type">Self</span>
                 <a href="logical/jayus/List.html#___insertAfter"><span class="elementName">insertAfter</span></a>
-                (<span class="type"><a href="logical/jayus/Entity.html">Entity</a></span>
- item, <span class="type"><a href="logical/jayus/Entity.html">Entity</a></span>
+                (<span class="type">Entity</span>
+ item, <span class="type">Entity</span>
  pivot)
             </div>          
                 <div class="summaryItemDesc">
@@ -234,8 +247,8 @@ Represents a list of some objects.
                 <span class="modifiers"></span>
                 <span class="type">Self</span>
                 <a href="logical/jayus/List.html#___insertBefore"><span class="elementName">insertBefore</span></a>
-                (<span class="type"><a href="logical/jayus/Entity.html">Entity</a></span>
- item, <span class="type"><a href="logical/jayus/Entity.html">Entity</a></span>
+                (<span class="type">Entity</span>
+ item, <span class="type">Entity</span>
  pivot)
             </div>          
                 <div class="summaryItemDesc">
@@ -327,6 +340,18 @@ Represents a list of some objects.
                                                                     <div class="summaryItemDef">
                 <span class="modifiers"></span>
                 <span class="type">Self</span>
+                <a href="logical/jayus/List.html#___sort"><span class="elementName">sort</span></a>
+                (<span class="type">Function</span>
+ comparator)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Sorts each child in the list using the given comparator function.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
                 <a href="logical/jayus/List.html#___update"><span class="elementName">update</span></a>
                 (<span class="type">String</span>
  oldId, <span class="type">Object</span>
@@ -351,16 +376,16 @@ Represents a list of some objects.
     	    	    	            <div class="details constructor">
             <h2 class="sectionHeader">Constructor Details</h2>
                                                                     <h3>
-        <a name="___init">
+        <a name="___List">
             <span class="objType">constructor</span>
-            <span class="objName">init</span>            
+            <span class="objName">List</span>            
         </a> 
     </h3>
                 <div>
                 <code>
                     <span class="modifiers"></span>
                     <span class="type"></span>
-                    init()
+                    List()
                 </code>
             </div>    
         <div class="comment">
@@ -381,7 +406,7 @@ Represents a list of some objects.
                 <code>
                     <span class="modifiers"></span>
                     <span class="type">Self</span>
-                    add(<span class="type"><a href="logical/jayus/Entity.html">Entity</a></span>
+                    add(<span class="type">Entity</span>
  item)
                 </code> 
             </div>          
@@ -443,7 +468,7 @@ Represents a list of some objects.
                         <div>
                 <code>
                     <span class="modifiers"></span>
-                    <span class="type"><a href="logical/jayus/Entity.html">Entity</a></span>
+                    <span class="type">Entity</span>
                     at(<span class="type">Number</span>
  index)
                 </code> 
@@ -522,6 +547,43 @@ Represents a list of some objects.
                     </div>
                                                     <hr/>       
                                                                                     <h3>
+        <a name="___forEvery">
+            <span class="objType">function</span>
+            <span class="objName">forEvery</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    forEvery(<span class="type">Function</span>
+ func, <span class="type">Array</span>
+ args)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Calls the given function on all items under the collection with the given arguments.
+	<br> The argument array is optional.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            func        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            args        </code>
+         Optional            </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
         <a name="___get">
             <span class="objType">function</span>
             <span class="objName">get</span>            
@@ -562,7 +624,7 @@ Represents a list of some objects.
                 <code>
                     <span class="modifiers"></span>
                     <span class="type">Boolean</span>
-                    has(<span class="type"><a href="logical/jayus/Entity.html">Entity</a></span>
+                    has(<span class="type">Entity</span>
  item)
                 </code> 
             </div>          
@@ -599,7 +661,7 @@ Represents a list of some objects.
             </div>          
                 <div class="comment">
         
-	Returns index of the sent element.
+	Returns the index of the sent element.
 	<br> Returns -1 if the element is not in the list.
 	    </div>
         	<div class="parameters">
@@ -625,7 +687,7 @@ Represents a list of some objects.
                 <code>
                     <span class="modifiers"></span>
                     <span class="type">Self</span>
-                    insert(<span class="type"><a href="logical/jayus/Entity.html">Entity</a></span>
+                    insert(<span class="type">Entity</span>
  item, <span class="type">Number</span>
  index)
                 </code> 
@@ -661,8 +723,8 @@ Represents a list of some objects.
                 <code>
                     <span class="modifiers"></span>
                     <span class="type">Self</span>
-                    insertAfter(<span class="type"><a href="logical/jayus/Entity.html">Entity</a></span>
- item, <span class="type"><a href="logical/jayus/Entity.html">Entity</a></span>
+                    insertAfter(<span class="type">Entity</span>
+ item, <span class="type">Entity</span>
  pivot)
                 </code> 
             </div>          
@@ -697,8 +759,8 @@ Represents a list of some objects.
                 <code>
                     <span class="modifiers"></span>
                     <span class="type">Self</span>
-                    insertBefore(<span class="type"><a href="logical/jayus/Entity.html">Entity</a></span>
- item, <span class="type"><a href="logical/jayus/Entity.html">Entity</a></span>
+                    insertBefore(<span class="type">Entity</span>
+ item, <span class="type">Entity</span>
  pivot)
                 </code> 
             </div>          
@@ -940,6 +1002,37 @@ Represents a list of some objects.
                     </div>
                                                     <hr/>       
                                                                                     <h3>
+        <a name="___sort">
+            <span class="objType">function</span>
+            <span class="objName">sort</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    sort(<span class="type">Function</span>
+ comparator)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Sorts each child in the list using the given comparator function.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            comparator        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
         <a name="___update">
             <span class="objType">function</span>
             <span class="objName">update</span>            
@@ -1061,9 +1154,6 @@ Represents a list of some objects.
                                 <a href="physical/file-EditableFrame.js.html">EditableFrame.js</a>
                             </div>                              
                                                                                                             <div>
-                                <a href="physical/file-Entity/Group.js.html">Entity.Group.js</a>
-                            </div>                              
-                                                                                                            <div>
                                 <a href="physical/file-Entity/Rect.js.html">Entity.Rect.js</a>
                             </div>                              
                                                                                                             <div>
@@ -1149,9 +1239,6 @@ Represents a list of some objects.
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-Wrapper.js.html">Wrapper.js</a>
-                            </div>                              
-                                                                                                            <div>
-                                <a href="physical/file-argumentOverloading/min.js.html">argumentOverloading.min.js</a>
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-easing.js.html">easing.js</a>

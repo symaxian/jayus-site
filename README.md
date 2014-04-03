@@ -1,6 +1,6 @@
 Jayus
 =====
 
-A fast, elegant, HTML5 canvas scenegraph.
+The website for jayus, an HTML5 scenegraph library.
 
-See http://symaxian.github.io/jayus-site/site/ for more information.
+See http://symaxian.github.io/jayus-site/ for more information.

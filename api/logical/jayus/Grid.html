@@ -87,7 +87,7 @@ A container that arranges it's children into a grid.
     
             	
                                 
-                                                                                
+                                                                    
     
                 <div class="summaryTable property">
             <div class="summaryTableHeader">
@@ -150,7 +150,7 @@ A container that arranges it's children into a grid.
                    Properties inherited from <a href="logical/jayus/RectEntity.html">jayus.RectEntity</a> 
                 </div>
                 <div class="inheritanceSummary">
-                    <a href="logical/jayus/RectEntity.html#___bg">bg</a>, <a href="logical/jayus/RectEntity.html#___body">body</a>, <a href="logical/jayus/RectEntity.html#___bounds">bounds</a>, <a href="logical/jayus/RectEntity.html#___hasBg">hasBg</a>, <a href="logical/jayus/RectEntity.html#___height">height</a>, <a href="logical/jayus/RectEntity.html#___width">width</a>, <a href="logical/jayus/RectEntity.html#___x">x</a>, <a href="logical/jayus/RectEntity.html#___y">y</a>                </div>
+                    <a href="logical/jayus/RectEntity.html#___bg">bg</a>, <a href="logical/jayus/RectEntity.html#___body">body</a>, <a href="logical/jayus/RectEntity.html#___bounds">bounds</a>, <a href="logical/jayus/RectEntity.html#___canvas">canvas</a>, <a href="logical/jayus/RectEntity.html#___context">context</a>, <a href="logical/jayus/RectEntity.html#___height">height</a>, <a href="logical/jayus/RectEntity.html#___negateBlur">negateBlur</a>, <a href="logical/jayus/RectEntity.html#___roundX">roundX</a>, <a href="logical/jayus/RectEntity.html#___roundY">roundY</a>, <a href="logical/jayus/RectEntity.html#___width">width</a>, <a href="logical/jayus/RectEntity.html#___x">x</a>, <a href="logical/jayus/RectEntity.html#___y">y</a>                </div>
              </div>
              <br/>          
                                 <div class="summaryTable">
@@ -158,7 +158,7 @@ A container that arranges it's children into a grid.
                    Properties inherited from <a href="logical/jayus/Entity.html">jayus.Entity</a> 
                 </div>
                 <div class="inheritanceSummary">
-                    <a href="logical/jayus/Entity.html#___canAcceptCursor">canAcceptCursor</a>, <a href="logical/jayus/Entity.html#___canReleaseCursor">canReleaseCursor</a>, <a href="logical/jayus/Entity.html#___dirtied">dirtied</a>, <a href="logical/jayus/Entity.html#___dragButton">dragButton</a>, <a href="logical/jayus/Entity.html#___draggable">draggable</a>, <a href="logical/jayus/Entity.html#___dragging">dragging</a>, <a href="logical/jayus/Entity.html#___frozen">frozen</a>, <a href="logical/jayus/Entity.html#___hasCursor">hasCursor</a>, <a href="logical/jayus/Entity.html#___hasParent">hasParent</a>, <a href="logical/jayus/Entity.html#___id">id</a>, <a href="logical/jayus/Entity.html#___isEntity">isEntity</a>, <a href="logical/jayus/Entity.html#___isParent">isParent</a>, <a href="logical/jayus/Entity.html#___isRect">isRect</a>, <a href="logical/jayus/Entity.html#___isTransformed">isTransformed</a>, <a href="logical/jayus/Entity.html#___parent">parent</a>, <a href="logical/jayus/Entity.html#___trackCursor">trackCursor</a>, <a href="logical/jayus/Entity.html#___underCursor">underCursor</a>, <a href="logical/jayus/Entity.html#___visible">visible</a>                </div>
+                    <a href="logical/jayus/Entity.html#___angle">angle</a>, <a href="logical/jayus/Entity.html#___canAcceptCursor">canAcceptCursor</a>, <a href="logical/jayus/Entity.html#___canReleaseCursor">canReleaseCursor</a>, <a href="logical/jayus/Entity.html#___cursorX">cursorX</a>, <a href="logical/jayus/Entity.html#___cursorY">cursorY</a>, <a href="logical/jayus/Entity.html#___dragButton">dragButton</a>, <a href="logical/jayus/Entity.html#___dragging">dragging</a>, <a href="logical/jayus/Entity.html#___flipX">flipX</a>, <a href="logical/jayus/Entity.html#___flipY">flipY</a>, <a href="logical/jayus/Entity.html#___hasCursor">hasCursor</a>, <a href="logical/jayus/Entity.html#___included">included</a>, <a href="logical/jayus/Entity.html#___isParent">isParent</a>, <a href="logical/jayus/Entity.html#___parent">parent</a>, <a href="logical/jayus/Entity.html#___parentDisplay">parentDisplay</a>, <a href="logical/jayus/Entity.html#___underCursor">underCursor</a>, <a href="logical/jayus/Entity.html#___visible">visible</a>, <a href="logical/jayus/Entity.html#___xAnchor">xAnchor</a>, <a href="logical/jayus/Entity.html#___xScale">xScale</a>, <a href="logical/jayus/Entity.html#___yAnchor">yAnchor</a>, <a href="logical/jayus/Entity.html#___yScale">yScale</a>                </div>
              </div>
              <br/>          
                                 <div class="summaryTable">
@@ -166,7 +166,7 @@ A container that arranges it's children into a grid.
                    Properties inherited from <a href="logical/jayus/Dependency.html">jayus.Dependency</a> 
                 </div>
                 <div class="inheritanceSummary">
-                    <a href="logical/jayus/Dependency.html#___dependentCount">dependentCount</a>, <a href="logical/jayus/Dependency.html#___dependents">dependents</a>                </div>
+                    <a href="logical/jayus/Dependency.html#___dependentCount">dependentCount</a>, <a href="logical/jayus/Dependency.html#___dependents">dependents</a>, <a href="logical/jayus/Dependency.html#___frozen">frozen</a>, <a href="logical/jayus/Dependency.html#___id">id</a>                </div>
              </div>
              <br/>          
                                 <div class="summaryTable">
@@ -177,7 +177,7 @@ A container that arranges it's children into a grid.
                     <a href="logical/jayus/Responder.html#___handlers">handlers</a>, <a href="logical/jayus/Responder.html#___hasHandlers">hasHandlers</a>, <a href="logical/jayus/Responder.html#___isHandler">isHandler</a>                </div>
              </div>
              <br/>          
-                            
+                
             
                 <div class="summaryTable function">
             <div class="summaryTableHeader">
@@ -301,40 +301,45 @@ A container that arranges it's children into a grid.
                 <span class="modifiers"></span>
                 <span class="type">Entity|null</span>
                 <a href="logical/jayus/Grid.html#___getChild"><span class="elementName">getChild</span></a>
-                (<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
- index)
-            </div>          
-                    <div class="summaryItemDef">
-                <span class="modifiers"></span>
-                <span class="type">Entity|null</span>
-                <a href="logical/jayus/Grid.html#___getChild"><span class="elementName">getChild</span></a>
-                (<span class="type">Number</span>
- x, <span class="type">Number</span>
- y)
-            </div>          
-                    <div class="summaryItemDef">
-                <span class="modifiers"></span>
-                <span class="type">Entity|null</span>
-                <a href="logical/jayus/Grid.html#___getChild"><span class="elementName">getChild</span></a>
                 (<span class="type">String</span>
  id)
             </div>          
                 <div class="summaryItemDesc">
         
-	Returns the specified item.    </div>  
+	Returns the child with the specified id.    </div>  
                             </div>
                     <div class="summaryItem">
                                                                     <div class="summaryItemDef">
                 <span class="modifiers"></span>
                 <span class="type">Entity|null</span>
                 <a href="logical/jayus/Grid.html#___getChildAt"><span class="elementName">getChildAt</span></a>
-                (<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
- position)
+                (<span class="type">Point</span>
+ index)
             </div>          
                     <div class="summaryItemDef">
                 <span class="modifiers"></span>
                 <span class="type">Entity|null</span>
                 <a href="logical/jayus/Grid.html#___getChildAt"><span class="elementName">getChildAt</span></a>
+                (<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Returns the child at the given index.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Entity|null</span>
+                <a href="logical/jayus/Grid.html#___getChildUnder"><span class="elementName">getChildUnder</span></a>
+                (<span class="type">Point</span>
+ position)
+            </div>          
+                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Entity|null</span>
+                <a href="logical/jayus/Grid.html#___getChildUnder"><span class="elementName">getChildUnder</span></a>
                 (<span class="type">Number</span>
  x, <span class="type">Number</span>
  y)
@@ -366,29 +371,9 @@ A container that arranges it's children into a grid.
                     <div class="summaryItem">
                                                                     <div class="summaryItemDef">
                 <span class="modifiers"></span>
-                <span class="type">Slot</span>
-                <a href="logical/jayus/Grid.html#___getSlotAt"><span class="elementName">getSlotAt</span></a>
-                (<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
- pos)
-            </div>          
-                    <div class="summaryItemDef">
-                <span class="modifiers"></span>
-                <span class="type">Slot</span>
-                <a href="logical/jayus/Grid.html#___getSlotAt"><span class="elementName">getSlotAt</span></a>
-                (<span class="type">Number</span>
- x, <span class="type">Number</span>
- y)
-            </div>          
-                <div class="summaryItemDesc">
-        
-	Returns the index of the slot under the given position.    </div>  
-                            </div>
-                    <div class="summaryItem">
-                                                                    <div class="summaryItemDef">
-                <span class="modifiers"></span>
                 <span class="type">Rect|null</span>
                 <a href="logical/jayus/Grid.html#___getSlotFrame"><span class="elementName">getSlotFrame</span></a>
-                (<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                (<span class="type">Point</span>
  index)
             </div>          
                     <div class="summaryItemDef">
@@ -406,9 +391,29 @@ A container that arranges it's children into a grid.
                     <div class="summaryItem">
                                                                     <div class="summaryItemDef">
                 <span class="modifiers"></span>
+                <span class="type">Slot</span>
+                <a href="logical/jayus/Grid.html#___getSlotUnder"><span class="elementName">getSlotUnder</span></a>
+                (<span class="type">Point</span>
+ pos)
+            </div>          
+                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Slot</span>
+                <a href="logical/jayus/Grid.html#___getSlotUnder"><span class="elementName">getSlotUnder</span></a>
+                (<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Returns the index of the slot under the given position.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
                 <span class="type">Boolean</span>
                 <a href="logical/jayus/Grid.html#___hasChild"><span class="elementName">hasChild</span></a>
-                (<span class="type"><a href="logical/jayus/Entity.html">Entity</a></span>
+                (<span class="type">Entity</span>
  item)
             </div>          
                     <div class="summaryItemDef">
@@ -420,7 +425,27 @@ A container that arranges it's children into a grid.
             </div>          
                 <div class="summaryItemDesc">
         
-	Returns whether the given object is in the grid.    </div>  
+	Returns whether the given entity is in the grid.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Boolean</span>
+                <a href="logical/jayus/Grid.html#___hasChildAt"><span class="elementName">hasChildAt</span></a>
+                (<span class="type">Point</span>
+ index)
+            </div>          
+                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Boolean</span>
+                <a href="logical/jayus/Grid.html#___hasChildAt"><span class="elementName">hasChildAt</span></a>
+                (<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Returns whether or not there is an entity in the specified slot.    </div>  
                             </div>
                     <div class="summaryItem">
                                                                     <div class="summaryItemDef">
@@ -451,7 +476,7 @@ A container that arranges it's children into a grid.
                 <span class="modifiers"></span>
                 <span class="type">Boolean</span>
                 <a href="logical/jayus/Grid.html#___hasSlot"><span class="elementName">hasSlot</span></a>
-                (<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                (<span class="type">Point</span>
  index)
             </div>          
                     <div class="summaryItemDef">
@@ -464,14 +489,14 @@ A container that arranges it's children into a grid.
             </div>          
                 <div class="summaryItemDesc">
         
-	Returns whether or not the given row/col pair is valid.    </div>  
+	Returns whether or not there is a slot in the grid with the given index.    </div>  
                             </div>
                     <div class="summaryItem">
                                                                     <div class="summaryItemDef">
                 <span class="modifiers"></span>
                 <span class="type">Object|null</span>
                 <a href="logical/jayus/Grid.html#___indexOf"><span class="elementName">indexOf</span></a>
-                (<span class="type"><a href="logical/jayus/Entity.html">Entity</a></span>
+                (<span class="type">Entity</span>
  item)
             </div>          
                     <div class="summaryItemDef">
@@ -503,7 +528,7 @@ A container that arranges it's children into a grid.
                 <span class="modifiers"></span>
                 <span class="type">Self</span>
                 <a href="logical/jayus/Grid.html#___removeChild"><span class="elementName">removeChild</span></a>
-                (<span class="type"><a href="logical/jayus/Entity.html">Entity</a></span>
+                (<span class="type">Entity</span>
  item)
             </div>          
                     <div class="summaryItemDef">
@@ -513,17 +538,29 @@ A container that arranges it's children into a grid.
                 (<span class="type">String</span>
  id)
             </div>          
-                    <div class="summaryItemDef">
-                <span class="modifiers"></span>
-                <span class="type">Self</span>
-                <a href="logical/jayus/Grid.html#___removeChild"><span class="elementName">removeChild</span></a>
-                (<span class="type">Number</span>
- row, <span class="type">Number</span>
- col)
-            </div>          
                 <div class="summaryItemDesc">
         
 	Removes the specified entity from the grid, replacing it with null in that slot.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Grid.html#___removeChildAt"><span class="elementName">removeChildAt</span></a>
+                (<span class="type">Point</span>
+ index)
+            </div>          
+                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Grid.html#___removeChildAt"><span class="elementName">removeChildAt</span></a>
+                (<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Removes the child from the specified slot in the grid.    </div>  
                             </div>
                     <div class="summaryItem">
                                                                     <div class="summaryItemDef">
@@ -554,8 +591,8 @@ A container that arranges it's children into a grid.
                 <span class="modifiers"></span>
                 <span class="type">Self</span>
                 <a href="logical/jayus/Grid.html#___setChild"><span class="elementName">setChild</span></a>
-                (<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
- index, <span class="type"><a href="logical/jayus/Entity.html">Entity</a></span>
+                (<span class="type">Point</span>
+ index, <span class="type">Entity</span>
  child)
             </div>          
                     <div class="summaryItemDef">
@@ -564,7 +601,7 @@ A container that arranges it's children into a grid.
                 <a href="logical/jayus/Grid.html#___setChild"><span class="elementName">setChild</span></a>
                 (<span class="type">Number</span>
  x, <span class="type">Number</span>
- y, <span class="type"><a href="logical/jayus/Entity.html">Entity</a></span>
+ y, <span class="type">Entity</span>
  child)
             </div>          
                 <div class="summaryItemDesc">
@@ -601,7 +638,7 @@ A container that arranges it's children into a grid.
                 <span class="modifiers"></span>
                 <span class="type">Self</span>
                 <a href="logical/jayus/Grid.html#___setPadding"><span class="elementName">setPadding</span></a>
-                (<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                (<span class="type">Point</span>
  padding)
             </div>          
                     <div class="summaryItemDef">
@@ -689,7 +726,7 @@ A container that arranges it's children into a grid.
                    Functions inherited from <a href="logical/jayus/RectEntity.html">jayus.RectEntity</a> 
                 </div>
                 <div class="inheritanceSummary">
-                    <a href="logical/jayus/RectEntity.html#___clearBg">clearBg</a>, <a href="logical/jayus/RectEntity.html#___clearBounds">clearBounds</a>, <a href="logical/jayus/RectEntity.html#___getBottom">getBottom</a>, <a href="logical/jayus/RectEntity.html#___getBounds">getBounds</a>, <a href="logical/jayus/RectEntity.html#___getFrame">getFrame</a>, <a href="logical/jayus/RectEntity.html#___getLeft">getLeft</a>, <a href="logical/jayus/RectEntity.html#___getOrigin">getOrigin</a>, <a href="logical/jayus/RectEntity.html#___getPosAt">getPosAt</a>, <a href="logical/jayus/RectEntity.html#___getRight">getRight</a>, <a href="logical/jayus/RectEntity.html#___getTop">getTop</a>, <a href="logical/jayus/RectEntity.html#___removeBody">removeBody</a>, <a href="logical/jayus/RectEntity.html#___setBg">setBg</a>, <a href="logical/jayus/RectEntity.html#___setBody">setBody</a>, <a href="logical/jayus/RectEntity.html#___setBottom">setBottom</a>, <a href="logical/jayus/RectEntity.html#___setBounds">setBounds</a>, <a href="logical/jayus/RectEntity.html#___setBuffering">setBuffering</a>, <a href="logical/jayus/RectEntity.html#___setHeight">setHeight</a>, <a href="logical/jayus/RectEntity.html#___setLeft">setLeft</a>, <a href="logical/jayus/RectEntity.html#___setOrigin">setOrigin</a>, <a href="logical/jayus/RectEntity.html#___setPosAt">setPosAt</a>, <a href="logical/jayus/RectEntity.html#___setRight">setRight</a>, <a href="logical/jayus/RectEntity.html#___setSize">setSize</a>, <a href="logical/jayus/RectEntity.html#___setTop">setTop</a>, <a href="logical/jayus/RectEntity.html#___setWidth">setWidth</a>, <a href="logical/jayus/RectEntity.html#___setX">setX</a>, <a href="logical/jayus/RectEntity.html#___setY">setY</a>, <a href="logical/jayus/RectEntity.html#___translate">translate</a>, <a href="logical/jayus/RectEntity.html#___updateFromBody">updateFromBody</a>                </div>
+                    <a href="logical/jayus/RectEntity.html#___clearBg">clearBg</a>, <a href="logical/jayus/RectEntity.html#___clearBounds">clearBounds</a>, <a href="logical/jayus/RectEntity.html#___getBottom">getBottom</a>, <a href="logical/jayus/RectEntity.html#___getBounds">getBounds</a>, <a href="logical/jayus/RectEntity.html#___getFrame">getFrame</a>, <a href="logical/jayus/RectEntity.html#___getLeft">getLeft</a>, <a href="logical/jayus/RectEntity.html#___getOrigin">getOrigin</a>, <a href="logical/jayus/RectEntity.html#___getPosAt">getPosAt</a>, <a href="logical/jayus/RectEntity.html#___getRight">getRight</a>, <a href="logical/jayus/RectEntity.html#___getTop">getTop</a>, <a href="logical/jayus/RectEntity.html#___removeBody">removeBody</a>, <a href="logical/jayus/RectEntity.html#___setBg">setBg</a>, <a href="logical/jayus/RectEntity.html#___setBody">setBody</a>, <a href="logical/jayus/RectEntity.html#___setBottom">setBottom</a>, <a href="logical/jayus/RectEntity.html#___setBounds">setBounds</a>, <a href="logical/jayus/RectEntity.html#___setBuffering">setBuffering</a>, <a href="logical/jayus/RectEntity.html#___setHeight">setHeight</a>, <a href="logical/jayus/RectEntity.html#___setLeft">setLeft</a>, <a href="logical/jayus/RectEntity.html#___setOrigin">setOrigin</a>, <a href="logical/jayus/RectEntity.html#___setPosAt">setPosAt</a>, <a href="logical/jayus/RectEntity.html#___setRelativeAnchor">setRelativeAnchor</a>, <a href="logical/jayus/RectEntity.html#___setRight">setRight</a>, <a href="logical/jayus/RectEntity.html#___setRounding">setRounding</a>, <a href="logical/jayus/RectEntity.html#___setSize">setSize</a>, <a href="logical/jayus/RectEntity.html#___setTop">setTop</a>, <a href="logical/jayus/RectEntity.html#___setWidth">setWidth</a>, <a href="logical/jayus/RectEntity.html#___setX">setX</a>, <a href="logical/jayus/RectEntity.html#___setY">setY</a>, <a href="logical/jayus/RectEntity.html#___translate">translate</a>, <a href="logical/jayus/RectEntity.html#___updateFromBody">updateFromBody</a>                </div>
              </div>
              <br/>          
                                 <div class="summaryTable">
@@ -697,7 +734,7 @@ A container that arranges it's children into a grid.
                    Functions inherited from <a href="logical/jayus/Entity.html">jayus.Entity</a> 
                 </div>
                 <div class="inheritanceSummary">
-                    <a href="logical/jayus/Entity.html#___applyTransforms">applyTransforms</a>, <a href="logical/jayus/Entity.html#___drawOnto">drawOnto</a>, <a href="logical/jayus/Entity.html#___drawOntoContext">drawOntoContext</a>, <a href="logical/jayus/Entity.html#___getAbsoluteParent">getAbsoluteParent</a>, <a href="logical/jayus/Entity.html#___getMatrix">getMatrix</a>, <a href="logical/jayus/Entity.html#___hide">hide</a>, <a href="logical/jayus/Entity.html#___intersectCount">intersectCount</a>, <a href="logical/jayus/Entity.html#___intersects">intersects</a>, <a href="logical/jayus/Entity.html#___intersectsAll">intersectsAll</a>, <a href="logical/jayus/Entity.html#___intersectsAny">intersectsAny</a>, <a href="logical/jayus/Entity.html#___intersectsAt">intersectsAt</a>, <a href="logical/jayus/Entity.html#___intersectsWhich">intersectsWhich</a>, <a href="logical/jayus/Entity.html#___localToParent">localToParent</a>, <a href="logical/jayus/Entity.html#___localToScreen">localToScreen</a>, <a href="logical/jayus/Entity.html#___parentToLocal">parentToLocal</a>, <a href="logical/jayus/Entity.html#___rasterize">rasterize</a>, <a href="logical/jayus/Entity.html#___rotate">rotate</a>, <a href="logical/jayus/Entity.html#___scale">scale</a>, <a href="logical/jayus/Entity.html#___screenToLocal">screenToLocal</a>, <a href="logical/jayus/Entity.html#___setAlpha">setAlpha</a>, <a href="logical/jayus/Entity.html#___setAnchor">setAnchor</a>, <a href="logical/jayus/Entity.html#___setAngle">setAngle</a>, <a href="logical/jayus/Entity.html#___setDraggable">setDraggable</a>, <a href="logical/jayus/Entity.html#___setId">setId</a>, <a href="logical/jayus/Entity.html#___setScale">setScale</a>, <a href="logical/jayus/Entity.html#___setVisible">setVisible</a>, <a href="logical/jayus/Entity.html#___show">show</a>, <a href="logical/jayus/Entity.html#___tick">tick</a>                </div>
+                    <a href="logical/jayus/Entity.html#___animate">animate</a>, <a href="logical/jayus/Entity.html#___applyTransforms">applyTransforms</a>, <a href="logical/jayus/Entity.html#___clearVelocity">clearVelocity</a>, <a href="logical/jayus/Entity.html#___drawOnto">drawOnto</a>, <a href="logical/jayus/Entity.html#___drawOntoContext">drawOntoContext</a>, <a href="logical/jayus/Entity.html#___exclude">exclude</a>, <a href="logical/jayus/Entity.html#___getAbsoluteParent">getAbsoluteParent</a>, <a href="logical/jayus/Entity.html#___getMatrix">getMatrix</a>, <a href="logical/jayus/Entity.html#___hide">hide</a>, <a href="logical/jayus/Entity.html#___include">include</a>, <a href="logical/jayus/Entity.html#___intersectCount">intersectCount</a>, <a href="logical/jayus/Entity.html#___intersects">intersects</a>, <a href="logical/jayus/Entity.html#___intersectsAll">intersectsAll</a>, <a href="logical/jayus/Entity.html#___intersectsAny">intersectsAny</a>, <a href="logical/jayus/Entity.html#___intersectsAt">intersectsAt</a>, <a href="logical/jayus/Entity.html#___intersectsWhich">intersectsWhich</a>, <a href="logical/jayus/Entity.html#___localToParent">localToParent</a>, <a href="logical/jayus/Entity.html#___localToScreen">localToScreen</a>, <a href="logical/jayus/Entity.html#___parentToLocal">parentToLocal</a>, <a href="logical/jayus/Entity.html#___rasterize">rasterize</a>, <a href="logical/jayus/Entity.html#___rotate">rotate</a>, <a href="logical/jayus/Entity.html#___scale">scale</a>, <a href="logical/jayus/Entity.html#___screenToLocal">screenToLocal</a>, <a href="logical/jayus/Entity.html#___setAlpha">setAlpha</a>, <a href="logical/jayus/Entity.html#___setAnchor">setAnchor</a>, <a href="logical/jayus/Entity.html#___setAngle">setAngle</a>, <a href="logical/jayus/Entity.html#___setConstraint">setConstraint</a>, <a href="logical/jayus/Entity.html#___setConstraints">setConstraints</a>, <a href="logical/jayus/Entity.html#___setDragButton">setDragButton</a>, <a href="logical/jayus/Entity.html#___setFlipX">setFlipX</a>, <a href="logical/jayus/Entity.html#___setFlipY">setFlipY</a>, <a href="logical/jayus/Entity.html#___setFlipping">setFlipping</a>, <a href="logical/jayus/Entity.html#___setIncluded">setIncluded</a>, <a href="logical/jayus/Entity.html#___setScale">setScale</a>, <a href="logical/jayus/Entity.html#___setVelocity">setVelocity</a>, <a href="logical/jayus/Entity.html#___setVisible">setVisible</a>, <a href="logical/jayus/Entity.html#___setXScale">setXScale</a>, <a href="logical/jayus/Entity.html#___setXVelocity">setXVelocity</a>, <a href="logical/jayus/Entity.html#___setYScale">setYScale</a>, <a href="logical/jayus/Entity.html#___setYVelocity">setYVelocity</a>, <a href="logical/jayus/Entity.html#___show">show</a>                </div>
              </div>
              <br/>          
                                 <div class="summaryTable">
@@ -705,7 +742,7 @@ A container that arranges it's children into a grid.
                    Functions inherited from <a href="logical/jayus/Dependency.html">jayus.Dependency</a> 
                 </div>
                 <div class="inheritanceSummary">
-                    <a href="logical/jayus/Dependency.html#___attach">attach</a>, <a href="logical/jayus/Dependency.html#___detach">detach</a>, <a href="logical/jayus/Dependency.html#___dirty">dirty</a>, <a href="logical/jayus/Dependency.html#___informDependents">informDependents</a>                </div>
+                    <a href="logical/jayus/Dependency.html#___attach">attach</a>, <a href="logical/jayus/Dependency.html#___clearDependents">clearDependents</a>, <a href="logical/jayus/Dependency.html#___detach">detach</a>, <a href="logical/jayus/Dependency.html#___dirty">dirty</a>, <a href="logical/jayus/Dependency.html#___informDependents">informDependents</a>, <a href="logical/jayus/Dependency.html#___setId">setId</a>                </div>
              </div>
              <br/>          
                                 <div class="summaryTable">
@@ -713,15 +750,7 @@ A container that arranges it's children into a grid.
                    Functions inherited from <a href="logical/jayus/Responder.html">jayus.Responder</a> 
                 </div>
                 <div class="inheritanceSummary">
-                    <a href="logical/jayus/Responder.html#___addHandler">addHandler</a>, <a href="logical/jayus/Responder.html#___fire">fire</a>, <a href="logical/jayus/Responder.html#___handle">handle</a>, <a href="logical/jayus/Responder.html#___interceptNextEvent">interceptNextEvent</a>, <a href="logical/jayus/Responder.html#___removeAllHandlers">removeAllHandlers</a>, <a href="logical/jayus/Responder.html#___removeHandler">removeHandler</a>, <a href="logical/jayus/Responder.html#___removeHandlers">removeHandlers</a>                </div>
-             </div>
-             <br/>          
-                                <div class="summaryTable">
-                <div class="summaryTableHeader">
-                   Functions inherited from <a href="logical/jayus/Animatable.html">jayus.Animatable</a> 
-                </div>
-                <div class="inheritanceSummary">
-                    <a href="logical/jayus/Animatable.html#___animate">animate</a>                </div>
+                    <a href="logical/jayus/Responder.html#___addHandler">addHandler</a>, <a href="logical/jayus/Responder.html#___fire">fire</a>, <a href="logical/jayus/Responder.html#___handle">handle</a>, <a href="logical/jayus/Responder.html#___removeAllHandlers">removeAllHandlers</a>, <a href="logical/jayus/Responder.html#___removeHandler">removeHandler</a>, <a href="logical/jayus/Responder.html#___removeHandlers">removeHandlers</a>                </div>
              </div>
              <br/>          
                 
@@ -1100,7 +1129,7 @@ A container that arranges it's children into a grid.
                 <div class="comment">
         
 	Calls the given function on each slot in the grid.
-	<br> The arguments passed to the function are the rowIndex, columnIndex, and value at the slot(or null).
+	<br> The arguments passed to the function are the columnIndex, rowIndex, and entity in the slot(or null).
 	    </div>
         	<div class="parameters">
         <span class="descSection">Parameters:</span><br/>
@@ -1125,7 +1154,39 @@ A container that arranges it's children into a grid.
                 <code>
                     <span class="modifiers"></span>
                     <span class="type">Entity|null</span>
-                    getChild(<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    getChild(<span class="type">String</span>
+ id)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Returns the child with the specified id.
+	<br> Returns null if the child was not found.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            id        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___getChildAt">
+            <span class="objType">function</span>
+            <span class="objName">getChildAt</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Entity|null</span>
+                    getChildAt(<span class="type">Point</span>
  index)
                 </code> 
             </div>          
@@ -1133,23 +1194,14 @@ A container that arranges it's children into a grid.
                 <code>
                     <span class="modifiers"></span>
                     <span class="type">Entity|null</span>
-                    getChild(<span class="type">Number</span>
+                    getChildAt(<span class="type">Number</span>
  x, <span class="type">Number</span>
  y)
                 </code> 
             </div>          
-                    <div>
-                <code>
-                    <span class="modifiers"></span>
-                    <span class="type">Entity|null</span>
-                    getChild(<span class="type">String</span>
- id)
-                </code> 
-            </div>          
                 <div class="comment">
         
-	Returns the specified item.
-	<br> Returns null if the slot is empty.
+	Returns the child at the given index.
 	    </div>
         	<div class="parameters">
         <span class="descSection">Parameters:</span><br/>
@@ -1177,29 +1229,19 @@ A container that arranges it's children into a grid.
                     </div>   
                                         </div>
                 </div>
-                            <div>
-                    <div class="paramset"> Syntax 3
-	</div>
-                    <div>
-                                                <div class="param paddedDetails">
-        <code>
-            id        </code>
-                    </div>   
-                                        </div>
-                </div>
                     </div>
                                                     <hr/>       
                                                                                     <h3>
-        <a name="___getChildAt">
+        <a name="___getChildUnder">
             <span class="objType">function</span>
-            <span class="objName">getChildAt</span>            
+            <span class="objName">getChildUnder</span>            
         </a> 
     </h3>
                         <div>
                 <code>
                     <span class="modifiers"></span>
                     <span class="type">Entity|null</span>
-                    getChildAt(<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    getChildUnder(<span class="type">Point</span>
  position)
                 </code> 
             </div>          
@@ -1207,7 +1249,7 @@ A container that arranges it's children into a grid.
                 <code>
                     <span class="modifiers"></span>
                     <span class="type">Entity|null</span>
-                    getChildAt(<span class="type">Number</span>
+                    getChildUnder(<span class="type">Number</span>
  x, <span class="type">Number</span>
  y)
                 </code> 
@@ -1281,62 +1323,6 @@ A container that arranges it's children into a grid.
 	    </div>
                                                     <hr/>       
                                                                                     <h3>
-        <a name="___getSlotAt">
-            <span class="objType">function</span>
-            <span class="objName">getSlotAt</span>            
-        </a> 
-    </h3>
-                        <div>
-                <code>
-                    <span class="modifiers"></span>
-                    <span class="type">Slot</span>
-                    getSlotAt(<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
- pos)
-                </code> 
-            </div>          
-                    <div>
-                <code>
-                    <span class="modifiers"></span>
-                    <span class="type">Slot</span>
-                    getSlotAt(<span class="type">Number</span>
- x, <span class="type">Number</span>
- y)
-                </code> 
-            </div>          
-                <div class="comment">
-        
-	Returns the index of the slot under the given position.
-	<br> An array consisting of [row,col] is returned.
-	    </div>
-        	<div class="parameters">
-        <span class="descSection">Parameters:</span><br/>
-                            <div>
-                    <div class="paramset"> Syntax 1
-	</div>
-                    <div>
-                                                <div class="param paddedDetails">
-        <code>
-            pos        </code>
-                    </div>   
-                                        </div>
-                </div>
-                            <div>
-                    <div class="paramset"> Syntax 2
-	</div>
-                    <div>
-                                                <div class="param paddedDetails">
-        <code>
-            x        </code>
-                    </div>   
-                                                <div class="param paddedDetails">
-        <code>
-            y        </code>
-                    </div>   
-                                        </div>
-                </div>
-                    </div>
-                                                    <hr/>       
-                                                                                    <h3>
         <a name="___getSlotFrame">
             <span class="objType">function</span>
             <span class="objName">getSlotFrame</span>            
@@ -1346,7 +1332,7 @@ A container that arranges it's children into a grid.
                 <code>
                     <span class="modifiers"></span>
                     <span class="type">Rect|null</span>
-                    getSlotFrame(<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    getSlotFrame(<span class="type">Point</span>
  index)
                 </code> 
             </div>          
@@ -1393,6 +1379,62 @@ A container that arranges it's children into a grid.
                     </div>
                                                     <hr/>       
                                                                                     <h3>
+        <a name="___getSlotUnder">
+            <span class="objType">function</span>
+            <span class="objName">getSlotUnder</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Slot</span>
+                    getSlotUnder(<span class="type">Point</span>
+ pos)
+                </code> 
+            </div>          
+                    <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Slot</span>
+                    getSlotUnder(<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Returns the index of the slot under the given position.
+	<br> WARNING: Untested
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"> Syntax 1
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            pos        </code>
+                    </div>   
+                                        </div>
+                </div>
+                            <div>
+                    <div class="paramset"> Syntax 2
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            x        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            y        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
         <a name="___hasChild">
             <span class="objType">function</span>
             <span class="objName">hasChild</span>            
@@ -1402,7 +1444,7 @@ A container that arranges it's children into a grid.
                 <code>
                     <span class="modifiers"></span>
                     <span class="type">Boolean</span>
-                    hasChild(<span class="type"><a href="logical/jayus/Entity.html">Entity</a></span>
+                    hasChild(<span class="type">Entity</span>
  item)
                 </code> 
             </div>          
@@ -1416,7 +1458,7 @@ A container that arranges it's children into a grid.
             </div>          
                 <div class="comment">
         
-	Returns whether the given object is in the grid.
+	Returns whether the given entity is in the grid.
 	    </div>
         	<div class="parameters">
         <span class="descSection">Parameters:</span><br/>
@@ -1437,6 +1479,61 @@ A container that arranges it's children into a grid.
                                                 <div class="param paddedDetails">
         <code>
             id        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___hasChildAt">
+            <span class="objType">function</span>
+            <span class="objName">hasChildAt</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Boolean</span>
+                    hasChildAt(<span class="type">Point</span>
+ index)
+                </code> 
+            </div>          
+                    <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Boolean</span>
+                    hasChildAt(<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Returns whether or not there is an entity in the specified slot.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"> Syntax 1
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            index        </code>
+                    </div>   
+                                        </div>
+                </div>
+                            <div>
+                    <div class="paramset"> Syntax 2
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            x        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            y        </code>
                     </div>   
                                         </div>
                 </div>
@@ -1514,7 +1611,7 @@ A container that arranges it's children into a grid.
                 <code>
                     <span class="modifiers"></span>
                     <span class="type">Boolean</span>
-                    hasSlot(<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    hasSlot(<span class="type">Point</span>
  index)
                 </code> 
             </div>          
@@ -1529,7 +1626,7 @@ A container that arranges it's children into a grid.
             </div>          
                 <div class="comment">
         
-	Returns whether or not the given row/col pair is valid.
+	Returns whether or not there is a slot in the grid with the given index.
 	    </div>
         	<div class="parameters">
         <span class="descSection">Parameters:</span><br/>
@@ -1569,7 +1666,7 @@ A container that arranges it's children into a grid.
                 <code>
                     <span class="modifiers"></span>
                     <span class="type">Object|null</span>
-                    indexOf(<span class="type"><a href="logical/jayus/Entity.html">Entity</a></span>
+                    indexOf(<span class="type">Entity</span>
  item)
                 </code> 
             </div>          
@@ -1657,7 +1754,7 @@ A container that arranges it's children into a grid.
                 <code>
                     <span class="modifiers"></span>
                     <span class="type">Self</span>
-                    removeChild(<span class="type"><a href="logical/jayus/Entity.html">Entity</a></span>
+                    removeChild(<span class="type">Entity</span>
  item)
                 </code> 
             </div>          
@@ -1667,15 +1764,6 @@ A container that arranges it's children into a grid.
                     <span class="type">Self</span>
                     removeChild(<span class="type">String</span>
  id)
-                </code> 
-            </div>          
-                    <div>
-                <code>
-                    <span class="modifiers"></span>
-                    <span class="type">Self</span>
-                    removeChild(<span class="type">Number</span>
- row, <span class="type">Number</span>
- col)
                 </code> 
             </div>          
                 <div class="comment">
@@ -1704,17 +1792,58 @@ A container that arranges it's children into a grid.
                     </div>   
                                         </div>
                 </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___removeChildAt">
+            <span class="objType">function</span>
+            <span class="objName">removeChildAt</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    removeChildAt(<span class="type">Point</span>
+ index)
+                </code> 
+            </div>          
+                    <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    removeChildAt(<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Removes the child from the specified slot in the grid.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
                             <div>
-                    <div class="paramset"> Syntax 3
+                    <div class="paramset"> Syntax 1
 	</div>
                     <div>
                                                 <div class="param paddedDetails">
         <code>
-            row        </code>
+            index        </code>
+                    </div>   
+                                        </div>
+                </div>
+                            <div>
+                    <div class="paramset"> Syntax 2
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            x        </code>
                     </div>   
                                                 <div class="param paddedDetails">
         <code>
-            col        </code>
+            y        </code>
                     </div>   
                                         </div>
                 </div>
@@ -1792,8 +1921,8 @@ A container that arranges it's children into a grid.
                 <code>
                     <span class="modifiers"></span>
                     <span class="type">Self</span>
-                    setChild(<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
- index, <span class="type"><a href="logical/jayus/Entity.html">Entity</a></span>
+                    setChild(<span class="type">Point</span>
+ index, <span class="type">Entity</span>
  child)
                 </code> 
             </div>          
@@ -1803,7 +1932,7 @@ A container that arranges it's children into a grid.
                     <span class="type">Self</span>
                     setChild(<span class="type">Number</span>
  x, <span class="type">Number</span>
- y, <span class="type"><a href="logical/jayus/Entity.html">Entity</a></span>
+ y, <span class="type">Entity</span>
  child)
                 </code> 
             </div>          
@@ -1924,7 +2053,7 @@ A container that arranges it's children into a grid.
                 <code>
                     <span class="modifiers"></span>
                     <span class="type">Self</span>
-                    setPadding(<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    setPadding(<span class="type">Point</span>
  padding)
                 </code> 
             </div>          
@@ -2197,9 +2326,6 @@ A container that arranges it's children into a grid.
                                 <a href="physical/file-EditableFrame.js.html">EditableFrame.js</a>
                             </div>                              
                                                                                                             <div>
-                                <a href="physical/file-Entity/Group.js.html">Entity.Group.js</a>
-                            </div>                              
-                                                                                                            <div>
                                 <a href="physical/file-Entity/Rect.js.html">Entity.Rect.js</a>
                             </div>                              
                                                                                                             <div>
@@ -2285,9 +2411,6 @@ A container that arranges it's children into a grid.
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-Wrapper.js.html">Wrapper.js</a>
-                            </div>                              
-                                                                                                            <div>
-                                <a href="physical/file-argumentOverloading/min.js.html">argumentOverloading.min.js</a>
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-easing.js.html">easing.js</a>

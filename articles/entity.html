@@ -7,14 +7,14 @@ title: Jayus
 <p>
 	The frame of an entity is the rectangular region that the entity's bounds are contained in. In most cases the bounding region for an entity will be its frame. Though an entity's bounding region is treated as its "physical region" and is used to test for intersection, each entity is still often treated as being like a rectangle. This is apparent in the presence of the getter and setter functions for the sides of each entity.
 	<br>
-	<br><img src="/images/frame.png"><br>
+	<br><img src="../images/frame.png"><br>
 	In The image above, the frame of the blue circle is shown in red.
 	<p>
 		API:
 		<p class="block">
-			<a href="http://76.177.45.152/jayus/jayus/site/api/logical/jayus/Entity.html#___getFrame">Entity.getFrame()</a>
+			<a href="../api/logical/jayus/Entity.html#___getFrame">Entity.getFrame()</a>
 			<br>
-			<a href="http://76.177.45.152/jayus/jayus/site/api/logical/jayus/ResizableEntity.html#___getFrame">ResizableEntity.setFrame()</a>
+			<a href="../api/logical/jayus/ResizableEntity.html#___getFrame">ResizableEntity.setFrame()</a>
 		</p>
 	</p>
 	<h4>Base Frame</h4>
@@ -26,12 +26,12 @@ title: Jayus
 <h2>Bounds</h2>
 <p>
 	The "physical" region of the entity, used for distance and collision checking. The frame of an entity is the rectangular region that the entity's bounds are contained in. In most cases the bounding region for an entity will be its frame.
-	<br><img src="/images/bounds.png"><br>
+	<br><img src="../images/bounds.png"><br>
 	In The image above, the bounds for the blue circle are shown in red, which is itself another circle, identical in position and size to the original blue one.
 	<p>
 		API:
 		<p class="block">
-			<a href="/api/logical/jayus/Entity.html#___getBounds">Entity.getBounds()</a>
+			<a href="../api/logical/jayus/Entity.html#___getBounds">Entity.getBounds()</a>
 		</p>
 	</p>
 </p>
@@ -50,12 +50,12 @@ title: Jayus
 <p>
 	The scope of an entity is the rectangular region that fully encompasses the pixels that would modified by rendering the entity. The scope of an entity may be larger or smaller than it's frame that it's frame. The scope of an entity has no "physical" purpose but is used in rendering optimizations. The smaller the scope of an entity, the less rendering needs to take place. The scope is often referred to as the dirtied rectangle, as when the object is drawn onto an image, the area of the image that was modified by rendering the object has been dirtied.
 	<br>
-	<br><img src="/images/scope.png"><br>
+	<br><img src="../images/scope.png"><br>
 	In The image above, the scope of the blue circle is shown in red, it is larger than the frame due to the thick blue stroke and the large green shadow styling on the circle.
 	<p>
 		API:
 		<p class="block">
-			<a href="/api/logical/jayus/Entity.html#___getScope">Entity.getScope()</a>
+			<a href="../api/logical/jayus/Entity.html#___getScope">Entity.getScope()</a>
 		</p>
 	</p>
 </p>

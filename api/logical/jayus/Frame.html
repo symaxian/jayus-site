@@ -68,7 +68,7 @@
         <div class="descSection">
             Direct Known Subclasses:        </div>
         <div class="paddedDetails">
-            <a href="logical/jayus/EditableFrame.html">jayus.EditableFrame</a>        </div>
+            <a href="logical/jayus/EditableFrame.html">jayus.EditableFrame</a>, <a href="logical/jayus/FlexibleFrame.html">jayus.FlexibleFrame</a>        </div>
     </div>                                      
 
     <hr/>
@@ -81,7 +81,9 @@
        </code>
     </div>
                 <div class="comment">
-Represents padded border around an Entity.
+An entity that serves as a padded border around an entity.
+<br> Whenever the frame is resized, it resizes its child to fit.
+<br> Requires a resizable entity for a child.
 </div>
                                             <span class="definedIn">Defined in </span>
         <a href="physical/file-Frame.js.html">Frame.js</a>
@@ -90,32 +92,12 @@ Represents padded border around an Entity.
     
             	
                                 
-                                                                                            
+                                                                                
     
                 <div class="summaryTable property">
             <div class="summaryTableHeader">
                 <span class="objType">Property</span> Summary
             </div>
-                    <div class="summaryItem">
-                                                <div class="summaryItemDef">
-        <span class="modifiers"></span>
-        <span class="type"><a href="logical/jayus/Brush.html">Brush</a></span>
-        <a href="logical/jayus/Frame.html#___brush"><span class="elementName">brush</span></a>
-    </div> 
-    <div class="summaryItemDesc">
-        
-	How to draw the border.    </div>  
-                            </div>
-                    <div class="summaryItem">
-                                                <div class="summaryItemDef">
-        <span class="modifiers"></span>
-        <span class="type">Boolean</span>
-        <a href="logical/jayus/Frame.html#___hasBrush"><span class="elementName">hasBrush</span></a>
-    </div> 
-    <div class="summaryItemDesc">
-        
-	Whether the border brush is set or not.    </div>  
-                            </div>
                     <div class="summaryItem">
                                                 <div class="summaryItemDef">
         <span class="modifiers"></span>
@@ -125,6 +107,16 @@ Represents padded border around an Entity.
     <div class="summaryItemDesc">
         
 	The bottom margin of the frame.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type"><a href="logical/jayus/Brush.html">Brush</a></span>
+        <a href="logical/jayus/Frame.html#___marginBrush"><span class="elementName">marginBrush</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	The brush used to draw the margins of the frame.    </div>  
                             </div>
                     <div class="summaryItem">
                                                 <div class="summaryItemDef">
@@ -163,7 +155,7 @@ Represents padded border around an Entity.
                    Properties inherited from <a href="logical/jayus/RectEntity.html">jayus.RectEntity</a> 
                 </div>
                 <div class="inheritanceSummary">
-                    <a href="logical/jayus/RectEntity.html#___bg">bg</a>, <a href="logical/jayus/RectEntity.html#___body">body</a>, <a href="logical/jayus/RectEntity.html#___bounds">bounds</a>, <a href="logical/jayus/RectEntity.html#___hasBg">hasBg</a>, <a href="logical/jayus/RectEntity.html#___height">height</a>, <a href="logical/jayus/RectEntity.html#___width">width</a>, <a href="logical/jayus/RectEntity.html#___x">x</a>, <a href="logical/jayus/RectEntity.html#___y">y</a>                </div>
+                    <a href="logical/jayus/RectEntity.html#___bg">bg</a>, <a href="logical/jayus/RectEntity.html#___body">body</a>, <a href="logical/jayus/RectEntity.html#___bounds">bounds</a>, <a href="logical/jayus/RectEntity.html#___canvas">canvas</a>, <a href="logical/jayus/RectEntity.html#___context">context</a>, <a href="logical/jayus/RectEntity.html#___height">height</a>, <a href="logical/jayus/RectEntity.html#___negateBlur">negateBlur</a>, <a href="logical/jayus/RectEntity.html#___roundX">roundX</a>, <a href="logical/jayus/RectEntity.html#___roundY">roundY</a>, <a href="logical/jayus/RectEntity.html#___width">width</a>, <a href="logical/jayus/RectEntity.html#___x">x</a>, <a href="logical/jayus/RectEntity.html#___y">y</a>                </div>
              </div>
              <br/>          
                                 <div class="summaryTable">
@@ -171,7 +163,7 @@ Represents padded border around an Entity.
                    Properties inherited from <a href="logical/jayus/Wrapper.html">jayus.Wrapper</a> 
                 </div>
                 <div class="inheritanceSummary">
-                    <a href="logical/jayus/Wrapper.html#___propagateCursor">propagateCursor</a>                </div>
+                    <a href="logical/jayus/Wrapper.html#___child">child</a>, <a href="logical/jayus/Wrapper.html#___propagateCursor">propagateCursor</a>                </div>
              </div>
              <br/>          
                                 <div class="summaryTable">
@@ -179,7 +171,7 @@ Represents padded border around an Entity.
                    Properties inherited from <a href="logical/jayus/Entity.html">jayus.Entity</a> 
                 </div>
                 <div class="inheritanceSummary">
-                    <a href="logical/jayus/Entity.html#___canAcceptCursor">canAcceptCursor</a>, <a href="logical/jayus/Entity.html#___canReleaseCursor">canReleaseCursor</a>, <a href="logical/jayus/Entity.html#___dirtied">dirtied</a>, <a href="logical/jayus/Entity.html#___dragButton">dragButton</a>, <a href="logical/jayus/Entity.html#___draggable">draggable</a>, <a href="logical/jayus/Entity.html#___dragging">dragging</a>, <a href="logical/jayus/Entity.html#___frozen">frozen</a>, <a href="logical/jayus/Entity.html#___hasCursor">hasCursor</a>, <a href="logical/jayus/Entity.html#___hasParent">hasParent</a>, <a href="logical/jayus/Entity.html#___id">id</a>, <a href="logical/jayus/Entity.html#___isEntity">isEntity</a>, <a href="logical/jayus/Entity.html#___isParent">isParent</a>, <a href="logical/jayus/Entity.html#___isRect">isRect</a>, <a href="logical/jayus/Entity.html#___isTransformed">isTransformed</a>, <a href="logical/jayus/Entity.html#___parent">parent</a>, <a href="logical/jayus/Entity.html#___trackCursor">trackCursor</a>, <a href="logical/jayus/Entity.html#___underCursor">underCursor</a>, <a href="logical/jayus/Entity.html#___visible">visible</a>                </div>
+                    <a href="logical/jayus/Entity.html#___angle">angle</a>, <a href="logical/jayus/Entity.html#___canAcceptCursor">canAcceptCursor</a>, <a href="logical/jayus/Entity.html#___canReleaseCursor">canReleaseCursor</a>, <a href="logical/jayus/Entity.html#___cursorX">cursorX</a>, <a href="logical/jayus/Entity.html#___cursorY">cursorY</a>, <a href="logical/jayus/Entity.html#___dragButton">dragButton</a>, <a href="logical/jayus/Entity.html#___dragging">dragging</a>, <a href="logical/jayus/Entity.html#___flipX">flipX</a>, <a href="logical/jayus/Entity.html#___flipY">flipY</a>, <a href="logical/jayus/Entity.html#___hasCursor">hasCursor</a>, <a href="logical/jayus/Entity.html#___included">included</a>, <a href="logical/jayus/Entity.html#___isParent">isParent</a>, <a href="logical/jayus/Entity.html#___parent">parent</a>, <a href="logical/jayus/Entity.html#___parentDisplay">parentDisplay</a>, <a href="logical/jayus/Entity.html#___underCursor">underCursor</a>, <a href="logical/jayus/Entity.html#___visible">visible</a>, <a href="logical/jayus/Entity.html#___xAnchor">xAnchor</a>, <a href="logical/jayus/Entity.html#___xScale">xScale</a>, <a href="logical/jayus/Entity.html#___yAnchor">yAnchor</a>, <a href="logical/jayus/Entity.html#___yScale">yScale</a>                </div>
              </div>
              <br/>          
                                 <div class="summaryTable">
@@ -187,7 +179,7 @@ Represents padded border around an Entity.
                    Properties inherited from <a href="logical/jayus/Dependency.html">jayus.Dependency</a> 
                 </div>
                 <div class="inheritanceSummary">
-                    <a href="logical/jayus/Dependency.html#___dependentCount">dependentCount</a>, <a href="logical/jayus/Dependency.html#___dependents">dependents</a>                </div>
+                    <a href="logical/jayus/Dependency.html#___dependentCount">dependentCount</a>, <a href="logical/jayus/Dependency.html#___dependents">dependents</a>, <a href="logical/jayus/Dependency.html#___frozen">frozen</a>, <a href="logical/jayus/Dependency.html#___id">id</a>                </div>
              </div>
              <br/>          
                                 <div class="summaryTable">
@@ -198,7 +190,7 @@ Represents padded border around an Entity.
                     <a href="logical/jayus/Responder.html#___handlers">handlers</a>, <a href="logical/jayus/Responder.html#___hasHandlers">hasHandlers</a>, <a href="logical/jayus/Responder.html#___isHandler">isHandler</a>                </div>
              </div>
              <br/>          
-                            
+                
                 <div class="summaryTable constructor">
             <div class="summaryTableHeader">
                 <span class="objType">Constructor</span> Summary
@@ -207,8 +199,8 @@ Represents padded border around an Entity.
                                                                     <div class="summaryItemDef">
                 <span class="modifiers"></span>
                 <span class="type"></span>
-                <a href="logical/jayus/Frame.html#___init"><span class="elementName">init</span></a>
-                (<span class="type"><a href="logical/jayus/Entity.html">Entity</a></span>
+                <a href="logical/jayus/Frame.html#___Frame"><span class="elementName">Frame</span></a>
+                (<span class="type">Entity</span>
  child)
             </div>          
                 <div class="summaryItemDesc">
@@ -226,23 +218,23 @@ Represents padded border around an Entity.
                                                            <div class="summaryItemDef">
                 <span class="modifiers"></span>
                 <span class="type">Self</span>
-                <a href="logical/jayus/Frame.html#___clearBrush"><span class="elementName">clearBrush</span></a>()
+                <a href="logical/jayus/Frame.html#___clearMarginBrush"><span class="elementName">clearMarginBrush</span></a>()
             </div>
         <div class="summaryItemDesc">
         
-	Removes the brush.    </div>  
+	Removes the margin brush.    </div>  
                             </div>
                     <div class="summaryItem">
                                                                     <div class="summaryItemDef">
                 <span class="modifiers"></span>
                 <span class="type">Self</span>
-                <a href="logical/jayus/Frame.html#___setBrush"><span class="elementName">setBrush</span></a>
-                (<span class="type">Object</span>
- brush)
+                <a href="logical/jayus/Frame.html#___setChild"><span class="elementName">setChild</span></a>
+                (<span class="type">Entity</span>
+ child)
             </div>          
                 <div class="summaryItemDesc">
         
-	Sets the brush used when drawing the geometric.    </div>  
+	Sets the child.    </div>  
                             </div>
                     <div class="summaryItem">
                                                                     <div class="summaryItemDef">
@@ -264,7 +256,7 @@ Represents padded border around an Entity.
             </div>          
                 <div class="summaryItemDesc">
         
-	Sets the margins on the frame.    </div>  
+	Sets the margins of the frame.    </div>  
                             </div>
                     <div class="summaryItem">
                                                                     <div class="summaryItemDef">
@@ -277,6 +269,18 @@ Represents padded border around an Entity.
                 <div class="summaryItemDesc">
         
 	Sets the marginBottom property.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Frame.html#___setMarginBrush"><span class="elementName">setMarginBrush</span></a>
+                (<span class="type">Object</span>
+ brush)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Sets the brush used when drawing the margins of the frame.    </div>  
                             </div>
                     <div class="summaryItem">
                                                                     <div class="summaryItemDef">
@@ -321,7 +325,7 @@ Represents padded border around an Entity.
                    Functions inherited from <a href="logical/jayus/RectEntity.html">jayus.RectEntity</a> 
                 </div>
                 <div class="inheritanceSummary">
-                    <a href="logical/jayus/RectEntity.html#___clearBg">clearBg</a>, <a href="logical/jayus/RectEntity.html#___clearBounds">clearBounds</a>, <a href="logical/jayus/RectEntity.html#___getBottom">getBottom</a>, <a href="logical/jayus/RectEntity.html#___getBounds">getBounds</a>, <a href="logical/jayus/RectEntity.html#___getFrame">getFrame</a>, <a href="logical/jayus/RectEntity.html#___getLeft">getLeft</a>, <a href="logical/jayus/RectEntity.html#___getOrigin">getOrigin</a>, <a href="logical/jayus/RectEntity.html#___getPosAt">getPosAt</a>, <a href="logical/jayus/RectEntity.html#___getRight">getRight</a>, <a href="logical/jayus/RectEntity.html#___getTop">getTop</a>, <a href="logical/jayus/RectEntity.html#___removeBody">removeBody</a>, <a href="logical/jayus/RectEntity.html#___setBg">setBg</a>, <a href="logical/jayus/RectEntity.html#___setBody">setBody</a>, <a href="logical/jayus/RectEntity.html#___setBottom">setBottom</a>, <a href="logical/jayus/RectEntity.html#___setBounds">setBounds</a>, <a href="logical/jayus/RectEntity.html#___setBuffering">setBuffering</a>, <a href="logical/jayus/RectEntity.html#___setHeight">setHeight</a>, <a href="logical/jayus/RectEntity.html#___setLeft">setLeft</a>, <a href="logical/jayus/RectEntity.html#___setOrigin">setOrigin</a>, <a href="logical/jayus/RectEntity.html#___setPosAt">setPosAt</a>, <a href="logical/jayus/RectEntity.html#___setRight">setRight</a>, <a href="logical/jayus/RectEntity.html#___setSize">setSize</a>, <a href="logical/jayus/RectEntity.html#___setTop">setTop</a>, <a href="logical/jayus/RectEntity.html#___setWidth">setWidth</a>, <a href="logical/jayus/RectEntity.html#___setX">setX</a>, <a href="logical/jayus/RectEntity.html#___setY">setY</a>, <a href="logical/jayus/RectEntity.html#___translate">translate</a>, <a href="logical/jayus/RectEntity.html#___updateFromBody">updateFromBody</a>                </div>
+                    <a href="logical/jayus/RectEntity.html#___clearBg">clearBg</a>, <a href="logical/jayus/RectEntity.html#___clearBounds">clearBounds</a>, <a href="logical/jayus/RectEntity.html#___getBottom">getBottom</a>, <a href="logical/jayus/RectEntity.html#___getBounds">getBounds</a>, <a href="logical/jayus/RectEntity.html#___getFrame">getFrame</a>, <a href="logical/jayus/RectEntity.html#___getLeft">getLeft</a>, <a href="logical/jayus/RectEntity.html#___getOrigin">getOrigin</a>, <a href="logical/jayus/RectEntity.html#___getPosAt">getPosAt</a>, <a href="logical/jayus/RectEntity.html#___getRight">getRight</a>, <a href="logical/jayus/RectEntity.html#___getTop">getTop</a>, <a href="logical/jayus/RectEntity.html#___removeBody">removeBody</a>, <a href="logical/jayus/RectEntity.html#___setBg">setBg</a>, <a href="logical/jayus/RectEntity.html#___setBody">setBody</a>, <a href="logical/jayus/RectEntity.html#___setBottom">setBottom</a>, <a href="logical/jayus/RectEntity.html#___setBounds">setBounds</a>, <a href="logical/jayus/RectEntity.html#___setBuffering">setBuffering</a>, <a href="logical/jayus/RectEntity.html#___setHeight">setHeight</a>, <a href="logical/jayus/RectEntity.html#___setLeft">setLeft</a>, <a href="logical/jayus/RectEntity.html#___setOrigin">setOrigin</a>, <a href="logical/jayus/RectEntity.html#___setPosAt">setPosAt</a>, <a href="logical/jayus/RectEntity.html#___setRelativeAnchor">setRelativeAnchor</a>, <a href="logical/jayus/RectEntity.html#___setRight">setRight</a>, <a href="logical/jayus/RectEntity.html#___setRounding">setRounding</a>, <a href="logical/jayus/RectEntity.html#___setSize">setSize</a>, <a href="logical/jayus/RectEntity.html#___setTop">setTop</a>, <a href="logical/jayus/RectEntity.html#___setWidth">setWidth</a>, <a href="logical/jayus/RectEntity.html#___setX">setX</a>, <a href="logical/jayus/RectEntity.html#___setY">setY</a>, <a href="logical/jayus/RectEntity.html#___translate">translate</a>, <a href="logical/jayus/RectEntity.html#___updateFromBody">updateFromBody</a>                </div>
              </div>
              <br/>          
                                 <div class="summaryTable">
@@ -329,7 +333,7 @@ Represents padded border around an Entity.
                    Functions inherited from <a href="logical/jayus/Wrapper.html">jayus.Wrapper</a> 
                 </div>
                 <div class="inheritanceSummary">
-                    <a href="logical/jayus/Wrapper.html#___findChild">findChild</a>, <a href="logical/jayus/Wrapper.html#___fireOnChildren">fireOnChildren</a>, <a href="logical/jayus/Wrapper.html#___fireOnCursor">fireOnCursor</a>, <a href="logical/jayus/Wrapper.html#___forEachChild">forEachChild</a>, <a href="logical/jayus/Wrapper.html#___getChild">getChild</a>, <a href="logical/jayus/Wrapper.html#___hasChild">hasChild</a>, <a href="logical/jayus/Wrapper.html#___onEachChild">onEachChild</a>, <a href="logical/jayus/Wrapper.html#___removeChild">removeChild</a>, <a href="logical/jayus/Wrapper.html#___setChild">setChild</a>                </div>
+                    <a href="logical/jayus/Wrapper.html#___find">find</a>, <a href="logical/jayus/Wrapper.html#___fireOnChildren">fireOnChildren</a>, <a href="logical/jayus/Wrapper.html#___fireOnCursor">fireOnCursor</a>, <a href="logical/jayus/Wrapper.html#___forEachChild">forEachChild</a>, <a href="logical/jayus/Wrapper.html#___forEveryChild">forEveryChild</a>, <a href="logical/jayus/Wrapper.html#___onEachChild">onEachChild</a>, <a href="logical/jayus/Wrapper.html#___removeChild">removeChild</a>                </div>
              </div>
              <br/>          
                                 <div class="summaryTable">
@@ -337,7 +341,7 @@ Represents padded border around an Entity.
                    Functions inherited from <a href="logical/jayus/Entity.html">jayus.Entity</a> 
                 </div>
                 <div class="inheritanceSummary">
-                    <a href="logical/jayus/Entity.html#___applyTransforms">applyTransforms</a>, <a href="logical/jayus/Entity.html#___drawOnto">drawOnto</a>, <a href="logical/jayus/Entity.html#___drawOntoContext">drawOntoContext</a>, <a href="logical/jayus/Entity.html#___getAbsoluteParent">getAbsoluteParent</a>, <a href="logical/jayus/Entity.html#___getMatrix">getMatrix</a>, <a href="logical/jayus/Entity.html#___hide">hide</a>, <a href="logical/jayus/Entity.html#___intersectCount">intersectCount</a>, <a href="logical/jayus/Entity.html#___intersects">intersects</a>, <a href="logical/jayus/Entity.html#___intersectsAll">intersectsAll</a>, <a href="logical/jayus/Entity.html#___intersectsAny">intersectsAny</a>, <a href="logical/jayus/Entity.html#___intersectsAt">intersectsAt</a>, <a href="logical/jayus/Entity.html#___intersectsWhich">intersectsWhich</a>, <a href="logical/jayus/Entity.html#___localToParent">localToParent</a>, <a href="logical/jayus/Entity.html#___localToScreen">localToScreen</a>, <a href="logical/jayus/Entity.html#___parentToLocal">parentToLocal</a>, <a href="logical/jayus/Entity.html#___rasterize">rasterize</a>, <a href="logical/jayus/Entity.html#___rotate">rotate</a>, <a href="logical/jayus/Entity.html#___scale">scale</a>, <a href="logical/jayus/Entity.html#___screenToLocal">screenToLocal</a>, <a href="logical/jayus/Entity.html#___setAlpha">setAlpha</a>, <a href="logical/jayus/Entity.html#___setAnchor">setAnchor</a>, <a href="logical/jayus/Entity.html#___setAngle">setAngle</a>, <a href="logical/jayus/Entity.html#___setDraggable">setDraggable</a>, <a href="logical/jayus/Entity.html#___setId">setId</a>, <a href="logical/jayus/Entity.html#___setScale">setScale</a>, <a href="logical/jayus/Entity.html#___setVisible">setVisible</a>, <a href="logical/jayus/Entity.html#___show">show</a>, <a href="logical/jayus/Entity.html#___tick">tick</a>                </div>
+                    <a href="logical/jayus/Entity.html#___animate">animate</a>, <a href="logical/jayus/Entity.html#___applyTransforms">applyTransforms</a>, <a href="logical/jayus/Entity.html#___clearVelocity">clearVelocity</a>, <a href="logical/jayus/Entity.html#___drawOnto">drawOnto</a>, <a href="logical/jayus/Entity.html#___drawOntoContext">drawOntoContext</a>, <a href="logical/jayus/Entity.html#___exclude">exclude</a>, <a href="logical/jayus/Entity.html#___getAbsoluteParent">getAbsoluteParent</a>, <a href="logical/jayus/Entity.html#___getMatrix">getMatrix</a>, <a href="logical/jayus/Entity.html#___hide">hide</a>, <a href="logical/jayus/Entity.html#___include">include</a>, <a href="logical/jayus/Entity.html#___intersectCount">intersectCount</a>, <a href="logical/jayus/Entity.html#___intersects">intersects</a>, <a href="logical/jayus/Entity.html#___intersectsAll">intersectsAll</a>, <a href="logical/jayus/Entity.html#___intersectsAny">intersectsAny</a>, <a href="logical/jayus/Entity.html#___intersectsAt">intersectsAt</a>, <a href="logical/jayus/Entity.html#___intersectsWhich">intersectsWhich</a>, <a href="logical/jayus/Entity.html#___localToParent">localToParent</a>, <a href="logical/jayus/Entity.html#___localToScreen">localToScreen</a>, <a href="logical/jayus/Entity.html#___parentToLocal">parentToLocal</a>, <a href="logical/jayus/Entity.html#___rasterize">rasterize</a>, <a href="logical/jayus/Entity.html#___rotate">rotate</a>, <a href="logical/jayus/Entity.html#___scale">scale</a>, <a href="logical/jayus/Entity.html#___screenToLocal">screenToLocal</a>, <a href="logical/jayus/Entity.html#___setAlpha">setAlpha</a>, <a href="logical/jayus/Entity.html#___setAnchor">setAnchor</a>, <a href="logical/jayus/Entity.html#___setAngle">setAngle</a>, <a href="logical/jayus/Entity.html#___setConstraint">setConstraint</a>, <a href="logical/jayus/Entity.html#___setConstraints">setConstraints</a>, <a href="logical/jayus/Entity.html#___setDragButton">setDragButton</a>, <a href="logical/jayus/Entity.html#___setFlipX">setFlipX</a>, <a href="logical/jayus/Entity.html#___setFlipY">setFlipY</a>, <a href="logical/jayus/Entity.html#___setFlipping">setFlipping</a>, <a href="logical/jayus/Entity.html#___setIncluded">setIncluded</a>, <a href="logical/jayus/Entity.html#___setScale">setScale</a>, <a href="logical/jayus/Entity.html#___setVelocity">setVelocity</a>, <a href="logical/jayus/Entity.html#___setVisible">setVisible</a>, <a href="logical/jayus/Entity.html#___setXScale">setXScale</a>, <a href="logical/jayus/Entity.html#___setXVelocity">setXVelocity</a>, <a href="logical/jayus/Entity.html#___setYScale">setYScale</a>, <a href="logical/jayus/Entity.html#___setYVelocity">setYVelocity</a>, <a href="logical/jayus/Entity.html#___show">show</a>                </div>
              </div>
              <br/>          
                                 <div class="summaryTable">
@@ -345,7 +349,7 @@ Represents padded border around an Entity.
                    Functions inherited from <a href="logical/jayus/Dependency.html">jayus.Dependency</a> 
                 </div>
                 <div class="inheritanceSummary">
-                    <a href="logical/jayus/Dependency.html#___attach">attach</a>, <a href="logical/jayus/Dependency.html#___detach">detach</a>, <a href="logical/jayus/Dependency.html#___dirty">dirty</a>, <a href="logical/jayus/Dependency.html#___informDependents">informDependents</a>                </div>
+                    <a href="logical/jayus/Dependency.html#___attach">attach</a>, <a href="logical/jayus/Dependency.html#___clearDependents">clearDependents</a>, <a href="logical/jayus/Dependency.html#___detach">detach</a>, <a href="logical/jayus/Dependency.html#___dirty">dirty</a>, <a href="logical/jayus/Dependency.html#___informDependents">informDependents</a>, <a href="logical/jayus/Dependency.html#___setId">setId</a>                </div>
              </div>
              <br/>          
                                 <div class="summaryTable">
@@ -353,15 +357,7 @@ Represents padded border around an Entity.
                    Functions inherited from <a href="logical/jayus/Responder.html">jayus.Responder</a> 
                 </div>
                 <div class="inheritanceSummary">
-                    <a href="logical/jayus/Responder.html#___addHandler">addHandler</a>, <a href="logical/jayus/Responder.html#___fire">fire</a>, <a href="logical/jayus/Responder.html#___handle">handle</a>, <a href="logical/jayus/Responder.html#___interceptNextEvent">interceptNextEvent</a>, <a href="logical/jayus/Responder.html#___removeAllHandlers">removeAllHandlers</a>, <a href="logical/jayus/Responder.html#___removeHandler">removeHandler</a>, <a href="logical/jayus/Responder.html#___removeHandlers">removeHandlers</a>                </div>
-             </div>
-             <br/>          
-                                <div class="summaryTable">
-                <div class="summaryTableHeader">
-                   Functions inherited from <a href="logical/jayus/Animatable.html">jayus.Animatable</a> 
-                </div>
-                <div class="inheritanceSummary">
-                    <a href="logical/jayus/Animatable.html#___animate">animate</a>                </div>
+                    <a href="logical/jayus/Responder.html#___addHandler">addHandler</a>, <a href="logical/jayus/Responder.html#___fire">fire</a>, <a href="logical/jayus/Responder.html#___handle">handle</a>, <a href="logical/jayus/Responder.html#___removeAllHandlers">removeAllHandlers</a>, <a href="logical/jayus/Responder.html#___removeHandler">removeHandler</a>, <a href="logical/jayus/Responder.html#___removeHandlers">removeHandlers</a>                </div>
              </div>
              <br/>          
                 
@@ -369,32 +365,6 @@ Represents padded border around an Entity.
     	    	            <div class="details property">
             <h2 class="sectionHeader">Property Details</h2>
                                                             
-            <h3>
-        <a name="___brush">
-            <span class="objType">property</span> <span class="modifiers"></span>
-            <span class="type"><a href="logical/jayus/Brush.html">Brush</a></span>
-            <span class="objName">brush</span>         
-        </a>
-    </h3>
-    <div class="comment">
-        
-	How to draw the border.
-	    </div>    
-                                        <hr />  
-                                                                            
-            <h3>
-        <a name="___hasBrush">
-            <span class="objType">property</span> <span class="modifiers"></span>
-            <span class="type">Boolean</span>
-            <span class="objName">hasBrush</span>         
-        </a>
-    </h3>
-    <div class="comment">
-        
-	Whether the border brush is set or not.
-	    </div>    
-                                        <hr />  
-                                                                            
             <h3>
         <a name="___marginBottom">
             <span class="objType">property</span> <span class="modifiers"></span>
@@ -407,6 +377,19 @@ Represents padded border around an Entity.
 	The bottom margin of the frame.
 	<br> Default is 6.
 	<br> Do not modify.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___marginBrush">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type"><a href="logical/jayus/Brush.html">Brush</a></span>
+            <span class="objName">marginBrush</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	The brush used to draw the margins of the frame.
 	    </div>    
                                         <hr />  
                                                                             
@@ -458,16 +441,16 @@ Represents padded border around an Entity.
     	            <div class="details constructor">
             <h2 class="sectionHeader">Constructor Details</h2>
                                                                     <h3>
-        <a name="___init">
+        <a name="___Frame">
             <span class="objType">constructor</span>
-            <span class="objName">init</span>            
+            <span class="objName">Frame</span>            
         </a> 
     </h3>
                         <div>
                 <code>
                     <span class="modifiers"></span>
                     <span class="type"></span>
-                    init(<span class="type"><a href="logical/jayus/Entity.html">Entity</a></span>
+                    Frame(<span class="type">Entity</span>
  child)
                 </code> 
             </div>          
@@ -478,13 +461,12 @@ Represents padded border around an Entity.
         	<div class="parameters">
         <span class="descSection">Parameters:</span><br/>
                             <div>
-                    <div class="paramset"> Syntax 1
-	</div>
+                    <div class="paramset"></div>
                     <div>
                                                 <div class="param paddedDetails">
         <code>
             child        </code>
-                    </div>   
+         Optional            </div>   
                                         </div>
                 </div>
                     </div>
@@ -493,41 +475,40 @@ Represents padded border around an Entity.
     	            <div class="details function">
             <h2 class="sectionHeader">Function Details</h2>
                                                                     <h3>
-        <a name="___clearBrush">
+        <a name="___clearMarginBrush">
             <span class="objType">function</span>
-            <span class="objName">clearBrush</span>            
+            <span class="objName">clearMarginBrush</span>            
         </a> 
     </h3>
                 <div>
                 <code>
                     <span class="modifiers"></span>
                     <span class="type">Self</span>
-                    clearBrush()
+                    clearMarginBrush()
                 </code>
             </div>    
         <div class="comment">
         
-	Removes the brush.
+	Removes the margin brush.
 	    </div>
                                                     <hr/>       
                                                                                     <h3>
-        <a name="___setBrush">
+        <a name="___setChild">
             <span class="objType">function</span>
-            <span class="objName">setBrush</span>            
+            <span class="objName">setChild</span>            
         </a> 
     </h3>
                         <div>
                 <code>
                     <span class="modifiers"></span>
                     <span class="type">Self</span>
-                    setBrush(<span class="type">Object</span>
- brush)
+                    setChild(<span class="type">Entity</span>
+ child)
                 </code> 
             </div>          
                 <div class="comment">
         
-	Sets the brush used when drawing the geometric.
-	<br> Sets the entity as dirty.
+	Sets the child.
 	    </div>
         	<div class="parameters">
         <span class="descSection">Parameters:</span><br/>
@@ -536,7 +517,7 @@ Represents padded border around an Entity.
                     <div>
                                                 <div class="param paddedDetails">
         <code>
-            brush        </code>
+            child        </code>
                     </div>   
                                         </div>
                 </div>
@@ -569,7 +550,7 @@ Represents padded border around an Entity.
             </div>          
                 <div class="comment">
         
-	Sets the margins on the frame.
+	Sets the margins of the frame.
 	    </div>
         	<div class="parameters">
         <span class="descSection">Parameters:</span><br/>
@@ -634,6 +615,38 @@ Represents padded border around an Entity.
                                                 <div class="param paddedDetails">
         <code>
             margin        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___setMarginBrush">
+            <span class="objType">function</span>
+            <span class="objName">setMarginBrush</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    setMarginBrush(<span class="type">Object</span>
+ brush)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Sets the brush used when drawing the margins of the frame.
+	<br> Sets the entity as dirty.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            brush        </code>
                     </div>   
                                         </div>
                 </div>
@@ -797,9 +810,6 @@ Represents padded border around an Entity.
                                 <a href="physical/file-EditableFrame.js.html">EditableFrame.js</a>
                             </div>                              
                                                                                                             <div>
-                                <a href="physical/file-Entity/Group.js.html">Entity.Group.js</a>
-                            </div>                              
-                                                                                                            <div>
                                 <a href="physical/file-Entity/Rect.js.html">Entity.Rect.js</a>
                             </div>                              
                                                                                                             <div>
@@ -885,9 +895,6 @@ Represents padded border around an Entity.
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-Wrapper.js.html">Wrapper.js</a>
-                            </div>                              
-                                                                                                            <div>
-                                <a href="physical/file-argumentOverloading/min.js.html">argumentOverloading.min.js</a>
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-easing.js.html">easing.js</a>

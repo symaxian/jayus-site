@@ -24,7 +24,7 @@ title: Jayus
 &lt;html>
     &lt;head>
         &lt;title>New Jayus Project&lt;/title>
-        &lt;script type="text/javascript" src="jayus/jayus.js">&lt;/script>
+        &lt;script type="text/javascript" src="jayus/jayusLoader.js">&lt;/script>
         &lt;script type="text/javascript">
 
             // This function will be called when the page(and jayus) is done loading
@@ -50,7 +50,7 @@ title: Jayus
                 jayus.addHandler('frame', function(event){
 
 
-                    // Any code you put here will be executed every frame
+                    // Code here will be executed every frame
 
 
                 });
@@ -64,7 +64,7 @@ title: Jayus
         &lt;/script>
     &lt;/head>
     &lt;body onload="init()">
-        &lt;center id="jayus"> &lt;!-- Our display container --> &lt;/center>
+        &lt;center id="jayus"> &lt;!-- Our display canvas will be put here --> &lt;/center>
     &lt;/body>
 &lt;/html>
     </pre>

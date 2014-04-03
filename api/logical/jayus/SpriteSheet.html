@@ -90,12 +90,12 @@ An entity that describes a number of sprites and animations for an image.
                     <div class="summaryItem">
                                                 <div class="summaryItemDef">
         <span class="modifiers"></span>
-        <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
-        <a href="logical/jayus/SpriteSheet.html#___margin"><span class="elementName">margin</span></a>
+        <span class="type">Object</span>
+        <a href="logical/jayus/SpriteSheet.html#___animations"><span class="elementName">animations</span></a>
     </div> 
     <div class="summaryItemDesc">
         
-	Initial offset from where the sprites begin.    </div>  
+	An object of data for defined animations.    </div>  
                             </div>
                     <div class="summaryItem">
                                                 <div class="summaryItemDef">
@@ -116,6 +116,16 @@ An entity that describes a number of sprites and animations for an image.
     <div class="summaryItemDesc">
         
 	The initial horizontal space before the sprites begin.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Object</span>
+        <a href="logical/jayus/SpriteSheet.html#___namedSprites"><span class="elementName">namedSprites</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	An object of data for the named sprites, indexed by their name.    </div>  
                             </div>
                     <div class="summaryItem">
                                                 <div class="summaryItemDef">
@@ -168,7 +178,7 @@ An entity that describes a number of sprites and animations for an image.
                                                                     <div class="summaryItemDef">
                 <span class="modifiers"></span>
                 <span class="type"></span>
-                <a href="logical/jayus/SpriteSheet.html#___init"><span class="elementName">init</span></a>
+                <a href="logical/jayus/SpriteSheet.html#___SpriteSheet"><span class="elementName">SpriteSheet</span></a>
                 (<span class="type">String</span>
  filepath)
             </div>          
@@ -195,7 +205,7 @@ An entity that describes a number of sprites and animations for an image.
             </div>          
                 <div class="summaryItemDesc">
         
-	Defines a named animation using sprites within the spritesheet.    </div>  
+	Defines an animation for the spritesheet.    </div>  
                             </div>
                     <div class="summaryItem">
                                                                     <div class="summaryItemDef">
@@ -208,6 +218,22 @@ An entity that describes a number of sprites and animations for an image.
                 <div class="summaryItemDesc">
         
 	Reteurns whether the spritesheet has the given animation.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/SpriteSheet.html#___nameSprite"><span class="elementName">nameSprite</span></a>
+                (<span class="type">String</span>
+ name, <span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y, <span class="type">Number</span>
+ width, <span class="type">Number</span>
+ height)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Defines a named sprite.    </div>  
                             </div>
                     <div class="summaryItem">
                                                                     <div class="summaryItemDef">
@@ -241,7 +267,7 @@ An entity that describes a number of sprites and animations for an image.
                 <span class="modifiers"></span>
                 <span class="type">Self</span>
                 <a href="logical/jayus/SpriteSheet.html#___setMargin"><span class="elementName">setMargin</span></a>
-                (<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                (<span class="type">Point</span>
  point)
             </div>          
                     <div class="summaryItemDef">
@@ -261,7 +287,7 @@ An entity that describes a number of sprites and animations for an image.
                 <span class="modifiers"></span>
                 <span class="type">Self</span>
                 <a href="logical/jayus/SpriteSheet.html#___setSpacing"><span class="elementName">setSpacing</span></a>
-                (<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                (<span class="type">Point</span>
  point)
             </div>          
                     <div class="summaryItemDef">
@@ -275,6 +301,20 @@ An entity that describes a number of sprites and animations for an image.
                 <div class="summaryItemDesc">
         
 	Sets the spacing property.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/SpriteSheet.html#___setSpriteFlipping"><span class="elementName">setSpriteFlipping</span></a>
+                (<span class="type">String</span>
+ name, <span class="type">Boolean</span>
+ flipX, <span class="type">Boolean</span>
+ flipY)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Sets the horizontal and vertical flipping properties of a named sprite.    </div>  
                             </div>
                     <div class="summaryItem">
                                                                     <div class="summaryItemDef">
@@ -304,15 +344,15 @@ An entity that describes a number of sprites and animations for an image.
             <h2 class="sectionHeader">Property Details</h2>
                                                             
             <h3>
-        <a name="___margin">
+        <a name="___animations">
             <span class="objType">property</span> <span class="modifiers"></span>
-            <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
-            <span class="objName">margin</span>         
+            <span class="type">Object</span>
+            <span class="objName">animations</span>         
         </a>
     </h3>
     <div class="comment">
         
-	Initial offset from where the sprites begin.
+	An object of data for defined animations.
 	    </div>    
                                         <hr />  
                                                                             
@@ -341,6 +381,20 @@ An entity that describes a number of sprites and animations for an image.
         
 	The initial horizontal space before the sprites begin.
 	<br> Default is 0.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___namedSprites">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Object</span>
+            <span class="objName">namedSprites</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	An object of data for the named sprites, indexed by their name.
+	<br> It is generally safe to modify this object directly.
 	    </div>    
                                         <hr />  
                                                                             
@@ -403,16 +457,16 @@ An entity that describes a number of sprites and animations for an image.
     	            <div class="details constructor">
             <h2 class="sectionHeader">Constructor Details</h2>
                                                                     <h3>
-        <a name="___init">
+        <a name="___SpriteSheet">
             <span class="objType">constructor</span>
-            <span class="objName">init</span>            
+            <span class="objName">SpriteSheet</span>            
         </a> 
     </h3>
                         <div>
                 <code>
                     <span class="modifiers"></span>
                     <span class="type"></span>
-                    init(<span class="type">String</span>
+                    SpriteSheet(<span class="type">String</span>
  filepath)
                 </code> 
             </div>          
@@ -454,8 +508,9 @@ An entity that describes a number of sprites and animations for an image.
             </div>          
                 <div class="comment">
         
-	Defines a named animation using sprites within the spritesheet.
-	<br> Default duration is 1 second.
+	Defines an animation for the spritesheet.
+	<br> The animation must be give a name and must be composed of sprites within this spritesheet.
+	<br> Default duration is 1000 milliseconds.
 	    </div>
         	<div class="parameters">
         <span class="descSection">Parameters:</span><br/>
@@ -504,6 +559,57 @@ An entity that describes a number of sprites and animations for an image.
                                                 <div class="param paddedDetails">
         <code>
             name        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___nameSprite">
+            <span class="objType">function</span>
+            <span class="objName">nameSprite</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    nameSprite(<span class="type">String</span>
+ name, <span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y, <span class="type">Number</span>
+ width, <span class="type">Number</span>
+ height)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Defines a named sprite.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            name        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            x        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            y        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            width        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            height        </code>
                     </div>   
                                         </div>
                 </div>
@@ -596,7 +702,7 @@ An entity that describes a number of sprites and animations for an image.
                 <code>
                     <span class="modifiers"></span>
                     <span class="type">Self</span>
-                    setMargin(<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    setMargin(<span class="type">Point</span>
  point)
                 </code> 
             </div>          
@@ -651,7 +757,7 @@ An entity that describes a number of sprites and animations for an image.
                 <code>
                     <span class="modifiers"></span>
                     <span class="type">Self</span>
-                    setSpacing(<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    setSpacing(<span class="type">Point</span>
  point)
                 </code> 
             </div>          
@@ -691,6 +797,47 @@ An entity that describes a number of sprites and animations for an image.
                                                 <div class="param paddedDetails">
         <code>
             y        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___setSpriteFlipping">
+            <span class="objType">function</span>
+            <span class="objName">setSpriteFlipping</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    setSpriteFlipping(<span class="type">String</span>
+ name, <span class="type">Boolean</span>
+ flipX, <span class="type">Boolean</span>
+ flipY)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Sets the horizontal and vertical flipping properties of a named sprite.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            name        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            flipX        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            flipY        </code>
                     </div>   
                                         </div>
                 </div>
@@ -813,9 +960,6 @@ An entity that describes a number of sprites and animations for an image.
                                 <a href="physical/file-EditableFrame.js.html">EditableFrame.js</a>
                             </div>                              
                                                                                                             <div>
-                                <a href="physical/file-Entity/Group.js.html">Entity.Group.js</a>
-                            </div>                              
-                                                                                                            <div>
                                 <a href="physical/file-Entity/Rect.js.html">Entity.Rect.js</a>
                             </div>                              
                                                                                                             <div>
@@ -901,9 +1045,6 @@ An entity that describes a number of sprites and animations for an image.
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-Wrapper.js.html">Wrapper.js</a>
-                            </div>                              
-                                                                                                            <div>
-                                <a href="physical/file-argumentOverloading/min.js.html">argumentOverloading.min.js</a>
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-easing.js.html">easing.js</a>

@@ -163,14 +163,14 @@ A two-dimensional transformation matrix.
                     <div class="summaryItem">
                                                                     <div class="summaryItemDef">
                 <span class="modifiers"></span>
-                <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                <span class="type">Point</span>
                 <a href="logical/jayus/Matrix.html#___inverseTransformPoint"><span class="elementName">inverseTransformPoint</span></a>
                 (<span class="type">Number</span>
  point)
             </div>          
                     <div class="summaryItemDef">
                 <span class="modifiers"></span>
-                <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                <span class="type">Point</span>
                 <a href="logical/jayus/Matrix.html#___inverseTransformPoint"><span class="elementName">inverseTransformPoint</span></a>
                 (<span class="type">Number</span>
  x, <span class="type">Number</span>
@@ -187,7 +187,7 @@ A two-dimensional transformation matrix.
                 <a href="logical/jayus/Matrix.html#___inverseTransformPointOnto"><span class="elementName">inverseTransformPointOnto</span></a>
                 (<span class="type">Number</span>
  x, <span class="type">Number</span>
- y, <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+ y, <span class="type">Point</span>
  ret)
             </div>          
                 <div class="summaryItemDesc">
@@ -241,14 +241,14 @@ A two-dimensional transformation matrix.
                     <div class="summaryItem">
                                                                     <div class="summaryItemDef">
                 <span class="modifiers"></span>
-                <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                <span class="type">Point</span>
                 <a href="logical/jayus/Matrix.html#___transformPoint"><span class="elementName">transformPoint</span></a>
                 (<span class="type">Number</span>
  point)
             </div>          
                     <div class="summaryItemDef">
                 <span class="modifiers"></span>
-                <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                <span class="type">Point</span>
                 <a href="logical/jayus/Matrix.html#___transformPoint"><span class="elementName">transformPoint</span></a>
                 (<span class="type">Number</span>
  x, <span class="type">Number</span>
@@ -265,7 +265,7 @@ A two-dimensional transformation matrix.
                 <a href="logical/jayus/Matrix.html#___transformPointOnto"><span class="elementName">transformPointOnto</span></a>
                 (<span class="type">Number</span>
  x, <span class="type">Number</span>
- y, <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+ y, <span class="type">Point</span>
  ret)
             </div>          
                 <div class="summaryItemDesc">
@@ -277,7 +277,7 @@ A two-dimensional transformation matrix.
                 <span class="modifiers"></span>
                 <span class="type">Self</span>
                 <a href="logical/jayus/Matrix.html#___translate"><span class="elementName">translate</span></a>
-                (<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                (<span class="type">Point</span>
  point)
             </div>          
                     <div class="summaryItemDef">
@@ -482,7 +482,7 @@ A two-dimensional transformation matrix.
                         <div>
                 <code>
                     <span class="modifiers"></span>
-                    <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    <span class="type">Point</span>
                     inverseTransformPoint(<span class="type">Number</span>
  point)
                 </code> 
@@ -490,7 +490,7 @@ A two-dimensional transformation matrix.
                     <div>
                 <code>
                     <span class="modifiers"></span>
-                    <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    <span class="type">Point</span>
                     inverseTransformPoint(<span class="type">Number</span>
  x, <span class="type">Number</span>
  y)
@@ -499,6 +499,7 @@ A two-dimensional transformation matrix.
                 <div class="comment">
         
 	Inverse transforms the given coordinate.
+	<br> This method does not modify the point sent.
 	    </div>
         	<div class="parameters">
         <span class="descSection">Parameters:</span><br/>
@@ -540,13 +541,14 @@ A two-dimensional transformation matrix.
                     <span class="type"></span>
                     inverseTransformPointOnto(<span class="type">Number</span>
  x, <span class="type">Number</span>
- y, <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+ y, <span class="type">Point</span>
  ret)
                 </code> 
             </div>          
                 <div class="comment">
         
 	Inverse transforms the given coordinate, storing the result into the ret parameter.
+	<br> This method does not modify the point sent.
 	    </div>
         	<div class="parameters">
         <span class="descSection">Parameters:</span><br/>
@@ -695,7 +697,7 @@ A two-dimensional transformation matrix.
                         <div>
                 <code>
                     <span class="modifiers"></span>
-                    <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    <span class="type">Point</span>
                     transformPoint(<span class="type">Number</span>
  point)
                 </code> 
@@ -703,7 +705,7 @@ A two-dimensional transformation matrix.
                     <div>
                 <code>
                     <span class="modifiers"></span>
-                    <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    <span class="type">Point</span>
                     transformPoint(<span class="type">Number</span>
  x, <span class="type">Number</span>
  y)
@@ -753,7 +755,7 @@ A two-dimensional transformation matrix.
                     <span class="type"></span>
                     transformPointOnto(<span class="type">Number</span>
  x, <span class="type">Number</span>
- y, <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+ y, <span class="type">Point</span>
  ret)
                 </code> 
             </div>          
@@ -792,7 +794,7 @@ A two-dimensional transformation matrix.
                 <code>
                     <span class="modifiers"></span>
                     <span class="type">Self</span>
-                    translate(<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    translate(<span class="type">Point</span>
  point)
                 </code> 
             </div>          
@@ -899,9 +901,6 @@ A two-dimensional transformation matrix.
                                 <a href="physical/file-EditableFrame.js.html">EditableFrame.js</a>
                             </div>                              
                                                                                                             <div>
-                                <a href="physical/file-Entity/Group.js.html">Entity.Group.js</a>
-                            </div>                              
-                                                                                                            <div>
                                 <a href="physical/file-Entity/Rect.js.html">Entity.Rect.js</a>
                             </div>                              
                                                                                                             <div>
@@ -987,9 +986,6 @@ A two-dimensional transformation matrix.
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-Wrapper.js.html">Wrapper.js</a>
-                            </div>                              
-                                                                                                            <div>
-                                <a href="physical/file-argumentOverloading/min.js.html">argumentOverloading.min.js</a>
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-easing.js.html">easing.js</a>

@@ -198,7 +198,7 @@ Constructs a Polygon representing a star.    </div>
                 <span class="modifiers"></span>
                 <span class="type">Self</span>
                 <a href="logical/jayus/Polygon.html#___addPoint"><span class="elementName">addPoint</span></a>
-                (<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                (<span class="type">Point</span>
  point)
             </div>          
                     <div class="summaryItemDef">
@@ -238,12 +238,6 @@ Constructs a Polygon representing a star.    </div>
                 <span class="modifiers"></span>
                 <span class="type"></span>
                 <a href="logical/jayus/Polygon.html#___init"><span class="elementName">init</span></a>
-                ()
-            </div>          
-                    <div class="summaryItemDef">
-                <span class="modifiers"></span>
-                <span class="type"></span>
-                <a href="logical/jayus/Polygon.html#___init"><span class="elementName">init</span></a>
                 (<span class="type">Array<Point></span>
  points)
             </div>          
@@ -265,7 +259,7 @@ Constructs a Polygon representing a star.    </div>
                 <span class="type">Self</span>
                 <a href="logical/jayus/Polygon.html#___insertPoint"><span class="elementName">insertPoint</span></a>
                 (<span class="type">Number</span>
- index, <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+ index, <span class="type">Point</span>
  point)
             </div>          
                     <div class="summaryItemDef">
@@ -299,7 +293,7 @@ Constructs a Polygon representing a star.    </div>
                 <span class="type">Self</span>
                 <a href="logical/jayus/Polygon.html#___setPoint"><span class="elementName">setPoint</span></a>
                 (<span class="type">Number</span>
- index, <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+ index, <span class="type">Point</span>
  point)
             </div>          
                     <div class="summaryItemDef">
@@ -334,7 +328,7 @@ Constructs a Polygon representing a star.    </div>
                    Functions inherited from <a href="logical/jayus/Shape.html">jayus.Shape</a> 
                 </div>
                 <div class="inheritanceSummary">
-                    <a href="logical/jayus/Shape.html#___alignToCanvas">alignToCanvas</a>, <a href="logical/jayus/Shape.html#___clone">clone</a>, <a href="logical/jayus/Shape.html#___cloneOnto">cloneOnto</a>, <a href="logical/jayus/Shape.html#___getScope">getScope</a>, <a href="logical/jayus/Shape.html#___getTransformed">getTransformed</a>, <a href="logical/jayus/Shape.html#___intersectsAt">intersectsAt</a>, <a href="logical/jayus/Shape.html#___paintedWith">paintedWith</a>, <a href="logical/jayus/Shape.html#___translate">translate</a>                </div>
+                    <a href="logical/jayus/Shape.html#___alignToCanvas">alignToCanvas</a>, <a href="logical/jayus/Shape.html#___clone">clone</a>, <a href="logical/jayus/Shape.html#___cloneOnto">cloneOnto</a>, <a href="logical/jayus/Shape.html#___getScope">getScope</a>, <a href="logical/jayus/Shape.html#___getTransformed">getTransformed</a>, <a href="logical/jayus/Shape.html#___intersectsAt">intersectsAt</a>, <a href="logical/jayus/Shape.html#___paintedWith">paintedWith</a>, <a href="logical/jayus/Shape.html#___toPolygon">toPolygon</a>, <a href="logical/jayus/Shape.html#___translate">translate</a>                </div>
              </div>
              <br/>          
                 
@@ -604,7 +598,7 @@ Constructs a Polygon representing a star.
                 <code>
                     <span class="modifiers"></span>
                     <span class="type">Self</span>
-                    addPoint(<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    addPoint(<span class="type">Point</span>
  point)
                 </code> 
             </div>          
@@ -714,13 +708,6 @@ Constructs a Polygon representing a star.
                 <code>
                     <span class="modifiers"></span>
                     <span class="type"></span>
-                    init()
-                </code> 
-            </div>          
-                    <div>
-                <code>
-                    <span class="modifiers"></span>
-                    <span class="type"></span>
                     init(<span class="type">Array<Point></span>
  points)
                 </code> 
@@ -737,15 +724,10 @@ Constructs a Polygon representing a star.
                 <div class="comment">
         
 	Initializes the Polygon.
+	<br> Arguments are optional, will initialize as an empty polygon if not given.
 	    </div>
         	<div class="parameters">
         <span class="descSection">Parameters:</span><br/>
-                            <div>
-                    <div class="paramset"> 0
-	</div>
-                    <div>
-                                        </div>
-                </div>
                             <div>
                     <div class="paramset"> 1
 	</div>
@@ -783,7 +765,7 @@ Constructs a Polygon representing a star.
                     <span class="modifiers"></span>
                     <span class="type">Self</span>
                     insertPoint(<span class="type">Number</span>
- index, <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+ index, <span class="type">Point</span>
  point)
                 </code> 
             </div>          
@@ -879,7 +861,7 @@ Constructs a Polygon representing a star.
                     <span class="modifiers"></span>
                     <span class="type">Self</span>
                     setPoint(<span class="type">Number</span>
- index, <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+ index, <span class="type">Point</span>
  point)
                 </code> 
             </div>          
@@ -1026,9 +1008,6 @@ Constructs a Polygon representing a star.
                                 <a href="physical/file-EditableFrame.js.html">EditableFrame.js</a>
                             </div>                              
                                                                                                             <div>
-                                <a href="physical/file-Entity/Group.js.html">Entity.Group.js</a>
-                            </div>                              
-                                                                                                            <div>
                                 <a href="physical/file-Entity/Rect.js.html">Entity.Rect.js</a>
                             </div>                              
                                                                                                             <div>
@@ -1114,9 +1093,6 @@ Constructs a Polygon representing a star.
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-Wrapper.js.html">Wrapper.js</a>
-                            </div>                              
-                                                                                                            <div>
-                                <a href="physical/file-argumentOverloading/min.js.html">argumentOverloading.min.js</a>
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-easing.js.html">easing.js</a>

@@ -90,7 +90,7 @@ The base class for an entity that is enclosed in a rectangular frame.
     
             	
                                 
-                                                                    
+                                                        
     
                 <div class="summaryTable property">
             <div class="summaryTableHeader">
@@ -129,12 +129,22 @@ The base class for an entity that is enclosed in a rectangular frame.
                     <div class="summaryItem">
                                                 <div class="summaryItemDef">
         <span class="modifiers"></span>
-        <span class="type">Boolean</span>
-        <a href="logical/jayus/RectEntity.html#___hasBg"><span class="elementName">hasBg</span></a>
+        <span class="type">HTMLCanvasElement</span>
+        <a href="logical/jayus/RectEntity.html#___canvas"><span class="elementName">canvas</span></a>
     </div> 
     <div class="summaryItemDesc">
         
-	Whether a background brush as been set.    </div>  
+	When buffered, the canvas element that serves as the buffer.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">CanvasRenderingContext2D</span>
+        <a href="logical/jayus/RectEntity.html#___context"><span class="elementName">context</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	Whether the contents of the entity are buffered as an image or not.    </div>  
                             </div>
                     <div class="summaryItem">
                                                 <div class="summaryItemDef">
@@ -145,6 +155,36 @@ The base class for an entity that is enclosed in a rectangular frame.
     <div class="summaryItemDesc">
         
 	The height of the Entity.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Boolean</span>
+        <a href="logical/jayus/RectEntity.html#___negateBlur"><span class="elementName">negateBlur</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	Enables manually rendering the buffer of the entity to negate the blurring effect when scaled up.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Boolean</span>
+        <a href="logical/jayus/RectEntity.html#___roundX"><span class="elementName">roundX</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	Whether to attempt to keep the Entity horizontally aligned to the pixel-grid.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Boolean</span>
+        <a href="logical/jayus/RectEntity.html#___roundY"><span class="elementName">roundY</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	Whether to attempt to keep the Entity vertically aligned to the pixel-grid.    </div>  
                             </div>
                     <div class="summaryItem">
                                                 <div class="summaryItemDef">
@@ -183,7 +223,7 @@ The base class for an entity that is enclosed in a rectangular frame.
                    Properties inherited from <a href="logical/jayus/Entity.html">jayus.Entity</a> 
                 </div>
                 <div class="inheritanceSummary">
-                    <a href="logical/jayus/Entity.html#___canAcceptCursor">canAcceptCursor</a>, <a href="logical/jayus/Entity.html#___canReleaseCursor">canReleaseCursor</a>, <a href="logical/jayus/Entity.html#___dirtied">dirtied</a>, <a href="logical/jayus/Entity.html#___dragButton">dragButton</a>, <a href="logical/jayus/Entity.html#___draggable">draggable</a>, <a href="logical/jayus/Entity.html#___dragging">dragging</a>, <a href="logical/jayus/Entity.html#___frozen">frozen</a>, <a href="logical/jayus/Entity.html#___hasCursor">hasCursor</a>, <a href="logical/jayus/Entity.html#___hasParent">hasParent</a>, <a href="logical/jayus/Entity.html#___id">id</a>, <a href="logical/jayus/Entity.html#___isEntity">isEntity</a>, <a href="logical/jayus/Entity.html#___isParent">isParent</a>, <a href="logical/jayus/Entity.html#___isRect">isRect</a>, <a href="logical/jayus/Entity.html#___isTransformed">isTransformed</a>, <a href="logical/jayus/Entity.html#___parent">parent</a>, <a href="logical/jayus/Entity.html#___trackCursor">trackCursor</a>, <a href="logical/jayus/Entity.html#___underCursor">underCursor</a>, <a href="logical/jayus/Entity.html#___visible">visible</a>                </div>
+                    <a href="logical/jayus/Entity.html#___angle">angle</a>, <a href="logical/jayus/Entity.html#___canAcceptCursor">canAcceptCursor</a>, <a href="logical/jayus/Entity.html#___canReleaseCursor">canReleaseCursor</a>, <a href="logical/jayus/Entity.html#___cursorX">cursorX</a>, <a href="logical/jayus/Entity.html#___cursorY">cursorY</a>, <a href="logical/jayus/Entity.html#___dragButton">dragButton</a>, <a href="logical/jayus/Entity.html#___dragging">dragging</a>, <a href="logical/jayus/Entity.html#___flipX">flipX</a>, <a href="logical/jayus/Entity.html#___flipY">flipY</a>, <a href="logical/jayus/Entity.html#___hasCursor">hasCursor</a>, <a href="logical/jayus/Entity.html#___included">included</a>, <a href="logical/jayus/Entity.html#___isParent">isParent</a>, <a href="logical/jayus/Entity.html#___parent">parent</a>, <a href="logical/jayus/Entity.html#___parentDisplay">parentDisplay</a>, <a href="logical/jayus/Entity.html#___underCursor">underCursor</a>, <a href="logical/jayus/Entity.html#___visible">visible</a>, <a href="logical/jayus/Entity.html#___xAnchor">xAnchor</a>, <a href="logical/jayus/Entity.html#___xScale">xScale</a>, <a href="logical/jayus/Entity.html#___yAnchor">yAnchor</a>, <a href="logical/jayus/Entity.html#___yScale">yScale</a>                </div>
              </div>
              <br/>          
                                 <div class="summaryTable">
@@ -191,7 +231,7 @@ The base class for an entity that is enclosed in a rectangular frame.
                    Properties inherited from <a href="logical/jayus/Dependency.html">jayus.Dependency</a> 
                 </div>
                 <div class="inheritanceSummary">
-                    <a href="logical/jayus/Dependency.html#___dependentCount">dependentCount</a>, <a href="logical/jayus/Dependency.html#___dependents">dependents</a>                </div>
+                    <a href="logical/jayus/Dependency.html#___dependentCount">dependentCount</a>, <a href="logical/jayus/Dependency.html#___dependents">dependents</a>, <a href="logical/jayus/Dependency.html#___frozen">frozen</a>, <a href="logical/jayus/Dependency.html#___id">id</a>                </div>
              </div>
              <br/>          
                                 <div class="summaryTable">
@@ -202,7 +242,7 @@ The base class for an entity that is enclosed in a rectangular frame.
                     <a href="logical/jayus/Responder.html#___handlers">handlers</a>, <a href="logical/jayus/Responder.html#___hasHandlers">hasHandlers</a>, <a href="logical/jayus/Responder.html#___isHandler">isHandler</a>                </div>
              </div>
              <br/>          
-                            
+                
             
                 <div class="summaryTable function">
             <div class="summaryTableHeader">
@@ -271,7 +311,7 @@ The base class for an entity that is enclosed in a rectangular frame.
                     <div class="summaryItem">
                                                            <div class="summaryItemDef">
                 <span class="modifiers"></span>
-                <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                <span class="type">Point</span>
                 <a href="logical/jayus/RectEntity.html#___getOrigin"><span class="elementName">getOrigin</span></a>()
             </div>
         <div class="summaryItemDesc">
@@ -281,7 +321,7 @@ The base class for an entity that is enclosed in a rectangular frame.
                     <div class="summaryItem">
                                                                     <div class="summaryItemDef">
                 <span class="modifiers"></span>
-                <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                <span class="type">Point</span>
                 <a href="logical/jayus/RectEntity.html#___getPosAt"><span class="elementName">getPosAt</span></a>
                 (<span class="type">Number</span>
  anchorX, <span class="type">Number</span>
@@ -326,7 +366,7 @@ The base class for an entity that is enclosed in a rectangular frame.
                 <span class="modifiers"></span>
                 <span class="type">Self</span>
                 <a href="logical/jayus/RectEntity.html#___setBg"><span class="elementName">setBg</span></a>
-                (<span class="type"><a href="logical/jayus/Brush.html">Brush</a></span>
+                (<span class="type">String|Object|Brush</span>
  brush)
             </div>          
                 <div class="summaryItemDesc">
@@ -362,7 +402,7 @@ The base class for an entity that is enclosed in a rectangular frame.
                 <span class="modifiers"></span>
                 <span class="type">Self</span>
                 <a href="logical/jayus/RectEntity.html#___setBounds"><span class="elementName">setBounds</span></a>
-                (<span class="type"><a href="logical/jayus/Shape.html">Shape</a></span>
+                (<span class="type">String|Object|Shape</span>
  bounds)
             </div>          
                 <div class="summaryItemDesc">
@@ -410,7 +450,7 @@ The base class for an entity that is enclosed in a rectangular frame.
                 <span class="modifiers"></span>
                 <span class="type">Self</span>
                 <a href="logical/jayus/RectEntity.html#___setOrigin"><span class="elementName">setOrigin</span></a>
-                (<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                (<span class="type">Point</span>
  point)
             </div>          
                     <div class="summaryItemDef">
@@ -430,24 +470,44 @@ The base class for an entity that is enclosed in a rectangular frame.
                 <span class="modifiers"></span>
                 <span class="type">Self</span>
                 <a href="logical/jayus/RectEntity.html#___setPosAt"><span class="elementName">setPosAt</span></a>
-                (<span class="type">Number</span>
+                (<span class="type">Point</span>
+ position, <span class="type">Number</span>
  anchorX, <span class="type">Number</span>
- anchorY, <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
- position)
+ anchorY)
             </div>          
                     <div class="summaryItemDef">
                 <span class="modifiers"></span>
                 <span class="type">Self</span>
                 <a href="logical/jayus/RectEntity.html#___setPosAt"><span class="elementName">setPosAt</span></a>
                 (<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y, <span class="type">Number</span>
  anchorX, <span class="type">Number</span>
- anchorY, <span class="type">Number</span>
+ anchorY)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Sets the position of the entity at the specified anchor point.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/RectEntity.html#___setRelativeAnchor"><span class="elementName">setRelativeAnchor</span></a>
+                (<span class="type">Point</span>
+ point)
+            </div>          
+                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/RectEntity.html#___setRelativeAnchor"><span class="elementName">setRelativeAnchor</span></a>
+                (<span class="type">Number</span>
  x, <span class="type">Number</span>
  y)
             </div>          
                 <div class="summaryItemDesc">
         
-	Sets the position of the entity at the specified anchor point.    </div>  
+	Sets the transformation anchor point relative to the current size of the entity.    </div>  
                             </div>
                     <div class="summaryItem">
                                                                     <div class="summaryItemDef">
@@ -460,6 +520,26 @@ The base class for an entity that is enclosed in a rectangular frame.
                 <div class="summaryItemDesc">
         
 	Sets the x coordinate of the right side of the entity.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/RectEntity.html#___setRounding"><span class="elementName">setRounding</span></a>
+                (<span class="type">Boolean</span>
+ enabled)
+            </div>          
+                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/RectEntity.html#___setRounding"><span class="elementName">setRounding</span></a>
+                (<span class="type">Boolean</span>
+ x, <span class="type">Boolean</span>
+ y)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Sets the horizontal and vertical rounding flags on the Entity.    </div>  
                             </div>
                     <div class="summaryItem">
                                                                     <div class="summaryItemDef">
@@ -534,7 +614,7 @@ The base class for an entity that is enclosed in a rectangular frame.
                 <span class="modifiers"></span>
                 <span class="type">Self</span>
                 <a href="logical/jayus/RectEntity.html#___translate"><span class="elementName">translate</span></a>
-                (<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                (<span class="type">Point</span>
  point)
             </div>          
                     <div class="summaryItemDef">
@@ -566,7 +646,7 @@ The base class for an entity that is enclosed in a rectangular frame.
                    Functions inherited from <a href="logical/jayus/Entity.html">jayus.Entity</a> 
                 </div>
                 <div class="inheritanceSummary">
-                    <a href="logical/jayus/Entity.html#___applyTransforms">applyTransforms</a>, <a href="logical/jayus/Entity.html#___drawOnto">drawOnto</a>, <a href="logical/jayus/Entity.html#___drawOntoContext">drawOntoContext</a>, <a href="logical/jayus/Entity.html#___getAbsoluteParent">getAbsoluteParent</a>, <a href="logical/jayus/Entity.html#___getMatrix">getMatrix</a>, <a href="logical/jayus/Entity.html#___hide">hide</a>, <a href="logical/jayus/Entity.html#___intersectCount">intersectCount</a>, <a href="logical/jayus/Entity.html#___intersects">intersects</a>, <a href="logical/jayus/Entity.html#___intersectsAll">intersectsAll</a>, <a href="logical/jayus/Entity.html#___intersectsAny">intersectsAny</a>, <a href="logical/jayus/Entity.html#___intersectsAt">intersectsAt</a>, <a href="logical/jayus/Entity.html#___intersectsWhich">intersectsWhich</a>, <a href="logical/jayus/Entity.html#___localToParent">localToParent</a>, <a href="logical/jayus/Entity.html#___localToScreen">localToScreen</a>, <a href="logical/jayus/Entity.html#___parentToLocal">parentToLocal</a>, <a href="logical/jayus/Entity.html#___rasterize">rasterize</a>, <a href="logical/jayus/Entity.html#___rotate">rotate</a>, <a href="logical/jayus/Entity.html#___scale">scale</a>, <a href="logical/jayus/Entity.html#___screenToLocal">screenToLocal</a>, <a href="logical/jayus/Entity.html#___setAlpha">setAlpha</a>, <a href="logical/jayus/Entity.html#___setAnchor">setAnchor</a>, <a href="logical/jayus/Entity.html#___setAngle">setAngle</a>, <a href="logical/jayus/Entity.html#___setDraggable">setDraggable</a>, <a href="logical/jayus/Entity.html#___setId">setId</a>, <a href="logical/jayus/Entity.html#___setScale">setScale</a>, <a href="logical/jayus/Entity.html#___setVisible">setVisible</a>, <a href="logical/jayus/Entity.html#___show">show</a>, <a href="logical/jayus/Entity.html#___tick">tick</a>                </div>
+                    <a href="logical/jayus/Entity.html#___animate">animate</a>, <a href="logical/jayus/Entity.html#___applyTransforms">applyTransforms</a>, <a href="logical/jayus/Entity.html#___clearVelocity">clearVelocity</a>, <a href="logical/jayus/Entity.html#___drawOnto">drawOnto</a>, <a href="logical/jayus/Entity.html#___drawOntoContext">drawOntoContext</a>, <a href="logical/jayus/Entity.html#___exclude">exclude</a>, <a href="logical/jayus/Entity.html#___getAbsoluteParent">getAbsoluteParent</a>, <a href="logical/jayus/Entity.html#___getMatrix">getMatrix</a>, <a href="logical/jayus/Entity.html#___hide">hide</a>, <a href="logical/jayus/Entity.html#___include">include</a>, <a href="logical/jayus/Entity.html#___intersectCount">intersectCount</a>, <a href="logical/jayus/Entity.html#___intersects">intersects</a>, <a href="logical/jayus/Entity.html#___intersectsAll">intersectsAll</a>, <a href="logical/jayus/Entity.html#___intersectsAny">intersectsAny</a>, <a href="logical/jayus/Entity.html#___intersectsAt">intersectsAt</a>, <a href="logical/jayus/Entity.html#___intersectsWhich">intersectsWhich</a>, <a href="logical/jayus/Entity.html#___localToParent">localToParent</a>, <a href="logical/jayus/Entity.html#___localToScreen">localToScreen</a>, <a href="logical/jayus/Entity.html#___parentToLocal">parentToLocal</a>, <a href="logical/jayus/Entity.html#___rasterize">rasterize</a>, <a href="logical/jayus/Entity.html#___rotate">rotate</a>, <a href="logical/jayus/Entity.html#___scale">scale</a>, <a href="logical/jayus/Entity.html#___screenToLocal">screenToLocal</a>, <a href="logical/jayus/Entity.html#___setAlpha">setAlpha</a>, <a href="logical/jayus/Entity.html#___setAnchor">setAnchor</a>, <a href="logical/jayus/Entity.html#___setAngle">setAngle</a>, <a href="logical/jayus/Entity.html#___setConstraint">setConstraint</a>, <a href="logical/jayus/Entity.html#___setConstraints">setConstraints</a>, <a href="logical/jayus/Entity.html#___setDragButton">setDragButton</a>, <a href="logical/jayus/Entity.html#___setFlipX">setFlipX</a>, <a href="logical/jayus/Entity.html#___setFlipY">setFlipY</a>, <a href="logical/jayus/Entity.html#___setFlipping">setFlipping</a>, <a href="logical/jayus/Entity.html#___setIncluded">setIncluded</a>, <a href="logical/jayus/Entity.html#___setScale">setScale</a>, <a href="logical/jayus/Entity.html#___setVelocity">setVelocity</a>, <a href="logical/jayus/Entity.html#___setVisible">setVisible</a>, <a href="logical/jayus/Entity.html#___setXScale">setXScale</a>, <a href="logical/jayus/Entity.html#___setXVelocity">setXVelocity</a>, <a href="logical/jayus/Entity.html#___setYScale">setYScale</a>, <a href="logical/jayus/Entity.html#___setYVelocity">setYVelocity</a>, <a href="logical/jayus/Entity.html#___show">show</a>                </div>
              </div>
              <br/>          
                                 <div class="summaryTable">
@@ -574,7 +654,7 @@ The base class for an entity that is enclosed in a rectangular frame.
                    Functions inherited from <a href="logical/jayus/Dependency.html">jayus.Dependency</a> 
                 </div>
                 <div class="inheritanceSummary">
-                    <a href="logical/jayus/Dependency.html#___attach">attach</a>, <a href="logical/jayus/Dependency.html#___detach">detach</a>, <a href="logical/jayus/Dependency.html#___dirty">dirty</a>, <a href="logical/jayus/Dependency.html#___informDependents">informDependents</a>                </div>
+                    <a href="logical/jayus/Dependency.html#___attach">attach</a>, <a href="logical/jayus/Dependency.html#___clearDependents">clearDependents</a>, <a href="logical/jayus/Dependency.html#___detach">detach</a>, <a href="logical/jayus/Dependency.html#___dirty">dirty</a>, <a href="logical/jayus/Dependency.html#___informDependents">informDependents</a>, <a href="logical/jayus/Dependency.html#___setId">setId</a>                </div>
              </div>
              <br/>          
                                 <div class="summaryTable">
@@ -582,15 +662,7 @@ The base class for an entity that is enclosed in a rectangular frame.
                    Functions inherited from <a href="logical/jayus/Responder.html">jayus.Responder</a> 
                 </div>
                 <div class="inheritanceSummary">
-                    <a href="logical/jayus/Responder.html#___addHandler">addHandler</a>, <a href="logical/jayus/Responder.html#___fire">fire</a>, <a href="logical/jayus/Responder.html#___handle">handle</a>, <a href="logical/jayus/Responder.html#___interceptNextEvent">interceptNextEvent</a>, <a href="logical/jayus/Responder.html#___removeAllHandlers">removeAllHandlers</a>, <a href="logical/jayus/Responder.html#___removeHandler">removeHandler</a>, <a href="logical/jayus/Responder.html#___removeHandlers">removeHandlers</a>                </div>
-             </div>
-             <br/>          
-                                <div class="summaryTable">
-                <div class="summaryTableHeader">
-                   Functions inherited from <a href="logical/jayus/Animatable.html">jayus.Animatable</a> 
-                </div>
-                <div class="inheritanceSummary">
-                    <a href="logical/jayus/Animatable.html#___animate">animate</a>                </div>
+                    <a href="logical/jayus/Responder.html#___addHandler">addHandler</a>, <a href="logical/jayus/Responder.html#___fire">fire</a>, <a href="logical/jayus/Responder.html#___handle">handle</a>, <a href="logical/jayus/Responder.html#___removeAllHandlers">removeAllHandlers</a>, <a href="logical/jayus/Responder.html#___removeHandler">removeHandler</a>, <a href="logical/jayus/Responder.html#___removeHandlers">removeHandlers</a>                </div>
              </div>
              <br/>          
                 
@@ -641,15 +713,31 @@ The base class for an entity that is enclosed in a rectangular frame.
                                         <hr />  
                                                                             
             <h3>
-        <a name="___hasBg">
+        <a name="___canvas">
             <span class="objType">property</span> <span class="modifiers"></span>
-            <span class="type">Boolean</span>
-            <span class="objName">hasBg</span>         
+            <span class="type">HTMLCanvasElement</span>
+            <span class="objName">canvas</span>         
         </a>
     </h3>
     <div class="comment">
         
-	Whether a background brush as been set.
+	When buffered, the canvas element that serves as the buffer.
+	<br> Do not modify.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___context">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">CanvasRenderingContext2D</span>
+            <span class="objName">context</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	Whether the contents of the entity are buffered as an image or not.
+	<br> Enabling buffering can 
+	<br> Do not modify.
 	    </div>    
                                         <hr />  
                                                                             
@@ -664,6 +752,57 @@ The base class for an entity that is enclosed in a rectangular frame.
         
 	The height of the Entity.
 	<br> Do not modify.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___negateBlur">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Boolean</span>
+            <span class="objName">negateBlur</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	Enables manually rendering the buffer of the entity to negate the blurring effect when scaled up.
+	<br> If enabled, the buffer for the entity will be drawn pixel-by-pixel.
+	<br> This serves to negate the blurring effect that occurs when drawing a scaled-up entity.
+	<br> This alternate rendering method is MUCH slower as each pixel is drawn individually.
+	<br> Default is false.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___roundX">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Boolean</span>
+            <span class="objName">roundX</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	Whether to attempt to keep the Entity horizontally aligned to the pixel-grid.
+	<br> This will keep images/shapes from being rendered at fractions of a pixel.
+	<br> This property applies to the translation of the entity(and thus its children).
+	<br> This may not force alignment on the background or any child entities.
+	<br> Default is false.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___roundY">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Boolean</span>
+            <span class="objName">roundY</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	Whether to attempt to keep the Entity vertically aligned to the pixel-grid.
+	<br> This will keep images/shapes from being rendered at fractions of a pixel.
+	<br> This property applies to the translation of the entity(and thus its children).
+	<br> This may not force alignment on the background or any child entities.
+	<br> Default is false.
 	    </div>    
                                         <hr />  
                                                                             
@@ -830,7 +969,7 @@ The base class for an entity that is enclosed in a rectangular frame.
                 <div>
                 <code>
                     <span class="modifiers"></span>
-                    <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    <span class="type">Point</span>
                     getOrigin()
                 </code>
             </div>    
@@ -848,7 +987,7 @@ The base class for an entity that is enclosed in a rectangular frame.
                         <div>
                 <code>
                     <span class="modifiers"></span>
-                    <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    <span class="type">Point</span>
                     getPosAt(<span class="type">Number</span>
  anchorX, <span class="type">Number</span>
  anchorY)
@@ -939,7 +1078,7 @@ The base class for an entity that is enclosed in a rectangular frame.
                 <code>
                     <span class="modifiers"></span>
                     <span class="type">Self</span>
-                    setBg(<span class="type"><a href="logical/jayus/Brush.html">Brush</a></span>
+                    setBg(<span class="type">String|Object|Brush</span>
  brush)
                 </code> 
             </div>          
@@ -1033,7 +1172,7 @@ The base class for an entity that is enclosed in a rectangular frame.
                 <code>
                     <span class="modifiers"></span>
                     <span class="type">Self</span>
-                    setBounds(<span class="type"><a href="logical/jayus/Shape.html">Shape</a></span>
+                    setBounds(<span class="type">String|Object|Shape</span>
  bounds)
                 </code> 
             </div>          
@@ -1159,7 +1298,7 @@ The base class for an entity that is enclosed in a rectangular frame.
                 <code>
                     <span class="modifiers"></span>
                     <span class="type">Self</span>
-                    setOrigin(<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    setOrigin(<span class="type">Point</span>
  point)
                 </code> 
             </div>          
@@ -1214,10 +1353,10 @@ The base class for an entity that is enclosed in a rectangular frame.
                 <code>
                     <span class="modifiers"></span>
                     <span class="type">Self</span>
-                    setPosAt(<span class="type">Number</span>
+                    setPosAt(<span class="type">Point</span>
+ position, <span class="type">Number</span>
  anchorX, <span class="type">Number</span>
- anchorY, <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
- position)
+ anchorY)
                 </code> 
             </div>          
                     <div>
@@ -1225,10 +1364,10 @@ The base class for an entity that is enclosed in a rectangular frame.
                     <span class="modifiers"></span>
                     <span class="type">Self</span>
                     setPosAt(<span class="type">Number</span>
- anchorX, <span class="type">Number</span>
- anchorY, <span class="type">Number</span>
  x, <span class="type">Number</span>
- y)
+ y, <span class="type">Number</span>
+ anchorX, <span class="type">Number</span>
+ anchorY)
                 </code> 
             </div>          
                 <div class="comment">
@@ -1244,15 +1383,15 @@ The base class for an entity that is enclosed in a rectangular frame.
                     <div>
                                                 <div class="param paddedDetails">
         <code>
+            position        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
             anchorX        </code>
                     </div>   
                                                 <div class="param paddedDetails">
         <code>
             anchorY        </code>
-                    </div>   
-                                                <div class="param paddedDetails">
-        <code>
-            position        </code>
                     </div>   
                                         </div>
                 </div>
@@ -1262,12 +1401,68 @@ The base class for an entity that is enclosed in a rectangular frame.
                     <div>
                                                 <div class="param paddedDetails">
         <code>
+            x        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            y        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
             anchorX        </code>
                     </div>   
                                                 <div class="param paddedDetails">
         <code>
             anchorY        </code>
                     </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___setRelativeAnchor">
+            <span class="objType">function</span>
+            <span class="objName">setRelativeAnchor</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    setRelativeAnchor(<span class="type">Point</span>
+ point)
+                </code> 
+            </div>          
+                    <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    setRelativeAnchor(<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Sets the transformation anchor point relative to the current size of the entity.
+	<br> A shortcut for:
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"> Syntax 1
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            point        </code>
+                    </div>   
+                                        </div>
+                </div>
+                            <div>
+                    <div class="paramset"> Syntax 2
+	</div>
+                    <div>
                                                 <div class="param paddedDetails">
         <code>
             x        </code>
@@ -1306,6 +1501,61 @@ The base class for an entity that is enclosed in a rectangular frame.
                                                 <div class="param paddedDetails">
         <code>
             right        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___setRounding">
+            <span class="objType">function</span>
+            <span class="objName">setRounding</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    setRounding(<span class="type">Boolean</span>
+ enabled)
+                </code> 
+            </div>          
+                    <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    setRounding(<span class="type">Boolean</span>
+ x, <span class="type">Boolean</span>
+ y)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Sets the horizontal and vertical rounding flags on the Entity.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"> 1
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            enabled        </code>
+                    </div>   
+                                        </div>
+                </div>
+                            <div>
+                    <div class="paramset"> 2
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            x        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            y        </code>
                     </div>   
                                         </div>
                 </div>
@@ -1502,7 +1752,7 @@ The base class for an entity that is enclosed in a rectangular frame.
                 <code>
                     <span class="modifiers"></span>
                     <span class="type">Self</span>
-                    translate(<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    translate(<span class="type">Point</span>
  point)
                 </code> 
             </div>          
@@ -1629,9 +1879,6 @@ The base class for an entity that is enclosed in a rectangular frame.
                                 <a href="physical/file-EditableFrame.js.html">EditableFrame.js</a>
                             </div>                              
                                                                                                             <div>
-                                <a href="physical/file-Entity/Group.js.html">Entity.Group.js</a>
-                            </div>                              
-                                                                                                            <div>
                                 <a href="physical/file-Entity/Rect.js.html">Entity.Rect.js</a>
                             </div>                              
                                                                                                             <div>
@@ -1717,9 +1964,6 @@ The base class for an entity that is enclosed in a rectangular frame.
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-Wrapper.js.html">Wrapper.js</a>
-                            </div>                              
-                                                                                                            <div>
-                                <a href="physical/file-argumentOverloading/min.js.html">argumentOverloading.min.js</a>
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-easing.js.html">easing.js</a>

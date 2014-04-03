@@ -132,21 +132,21 @@ Standard Circle shape.
                                                                     <div class="summaryItemDef">
                 <span class="modifiers"></span>
                 <span class="type"></span>
-                <a href="logical/jayus/Circle.html#___init"><span class="elementName">init</span></a>
+                <a href="logical/jayus/Circle.html#___Circle"><span class="elementName">Circle</span></a>
                 ()
             </div>          
                     <div class="summaryItemDef">
                 <span class="modifiers"></span>
                 <span class="type"></span>
-                <a href="logical/jayus/Circle.html#___init"><span class="elementName">init</span></a>
-                (<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                <a href="logical/jayus/Circle.html#___Circle"><span class="elementName">Circle</span></a>
+                (<span class="type">Point</span>
  center, <span class="type">Number</span>
  radius)
             </div>          
                     <div class="summaryItemDef">
                 <span class="modifiers"></span>
                 <span class="type"></span>
-                <a href="logical/jayus/Circle.html#___init"><span class="elementName">init</span></a>
+                <a href="logical/jayus/Circle.html#___Circle"><span class="elementName">Circle</span></a>
                 (<span class="type">Number</span>
  x, <span class="type">Number</span>
  y, <span class="type">Number</span>
@@ -166,7 +166,7 @@ Standard Circle shape.
                     <div class="summaryItem">
                                                            <div class="summaryItemDef">
                 <span class="modifiers"></span>
-                <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                <span class="type">Point</span>
                 <a href="logical/jayus/Circle.html#___getCenter"><span class="elementName">getCenter</span></a>()
             </div>
         <div class="summaryItemDesc">
@@ -188,7 +188,7 @@ Standard Circle shape.
                 <span class="modifiers"></span>
                 <span class="type">Self</span>
                 <a href="logical/jayus/Circle.html#___setCenter"><span class="elementName">setCenter</span></a>
-                (<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                (<span class="type">Point</span>
  point)
             </div>          
                     <div class="summaryItemDef">
@@ -238,6 +238,18 @@ Standard Circle shape.
                 <div class="summaryItemDesc">
         
 	Sets the y coordinate of the center.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"><a href="logical/jayus/Polygon.html">Polygon</a></span>
+                <a href="logical/jayus/Circle.html#___toPolygon"><span class="elementName">toPolygon</span></a>
+                (<span class="type">Number</span>
+ detail)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Returns a polygon approximating this circle.    </div>  
                             </div>
                 </div>
         <p/>
@@ -299,23 +311,23 @@ Standard Circle shape.
     	            <div class="details constructor">
             <h2 class="sectionHeader">Constructor Details</h2>
                                                                     <h3>
-        <a name="___init">
+        <a name="___Circle">
             <span class="objType">constructor</span>
-            <span class="objName">init</span>            
+            <span class="objName">Circle</span>            
         </a> 
     </h3>
                         <div>
                 <code>
                     <span class="modifiers"></span>
                     <span class="type"></span>
-                    init()
+                    Circle()
                 </code> 
             </div>          
                     <div>
                 <code>
                     <span class="modifiers"></span>
                     <span class="type"></span>
-                    init(<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    Circle(<span class="type">Point</span>
  center, <span class="type">Number</span>
  radius)
                 </code> 
@@ -324,7 +336,7 @@ Standard Circle shape.
                 <code>
                     <span class="modifiers"></span>
                     <span class="type"></span>
-                    init(<span class="type">Number</span>
+                    Circle(<span class="type">Number</span>
  x, <span class="type">Number</span>
  y, <span class="type">Number</span>
  radius)
@@ -388,7 +400,7 @@ Standard Circle shape.
                 <div>
                 <code>
                     <span class="modifiers"></span>
-                    <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    <span class="type">Point</span>
                     getCenter()
                 </code>
             </div>    
@@ -425,7 +437,7 @@ Standard Circle shape.
                 <code>
                     <span class="modifiers"></span>
                     <span class="type">Self</span>
-                    setCenter(<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    setCenter(<span class="type">Point</span>
  point)
                 </code> 
             </div>          
@@ -567,6 +579,37 @@ Standard Circle shape.
                 </div>
                     </div>
                                                     <hr/>       
+                                                                                    <h3>
+        <a name="___toPolygon">
+            <span class="objType">function</span>
+            <span class="objName">toPolygon</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"><a href="logical/jayus/Polygon.html">Polygon</a></span>
+                    toPolygon(<span class="type">Number</span>
+ detail)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Returns a polygon approximating this circle.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            detail        </code>
+         Number of faces, default is 10            </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
                                     </div>
     	    	                                    						        </div>
         		          </div>			                    
@@ -627,9 +670,6 @@ Standard Circle shape.
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-EditableFrame.js.html">EditableFrame.js</a>
-                            </div>                              
-                                                                                                            <div>
-                                <a href="physical/file-Entity/Group.js.html">Entity.Group.js</a>
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-Entity/Rect.js.html">Entity.Rect.js</a>
@@ -717,9 +757,6 @@ Standard Circle shape.
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-Wrapper.js.html">Wrapper.js</a>
-                            </div>                              
-                                                                                                            <div>
-                                <a href="physical/file-argumentOverloading/min.js.html">argumentOverloading.min.js</a>
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-easing.js.html">easing.js</a>

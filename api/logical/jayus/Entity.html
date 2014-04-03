@@ -90,12 +90,22 @@ The base class for any drawable object.
     
             	
                                 
-                                                        
+                                            
     
                 <div class="summaryTable property">
             <div class="summaryTableHeader">
                 <span class="objType">Property</span> Summary
             </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Number</span>
+        <a href="logical/jayus/Entity.html#___angle"><span class="elementName">angle</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	The entity's rotation, in radians.    </div>  
+                            </div>
                     <div class="summaryItem">
                                                 <div class="summaryItemDef">
         <span class="modifiers"></span>
@@ -119,12 +129,22 @@ The base class for any drawable object.
                     <div class="summaryItem">
                                                 <div class="summaryItemDef">
         <span class="modifiers"></span>
-        <span class="type">Boolean</span>
-        <a href="logical/jayus/Entity.html#___dirtied"><span class="elementName">dirtied</span></a>
+        <span class="type">Number</span>
+        <a href="logical/jayus/Entity.html#___cursorX"><span class="elementName">cursorX</span></a>
     </div> 
     <div class="summaryItemDesc">
         
-	A flag determining whether or not the entity has changed since it was last drawn onto the screen.    </div>  
+	The cursor's local x position within the entity.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Number</span>
+        <a href="logical/jayus/Entity.html#___cursorY"><span class="elementName">cursorY</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	The cursor's local y position within the entity.    </div>  
                             </div>
                     <div class="summaryItem">
                                                 <div class="summaryItemDef">
@@ -134,17 +154,7 @@ The base class for any drawable object.
     </div> 
     <div class="summaryItemDesc">
         
-	The mouse button used to drag the entity.    </div>  
-                            </div>
-                    <div class="summaryItem">
-                                                <div class="summaryItemDef">
-        <span class="modifiers"></span>
-        <span class="type">Boolean</span>
-        <a href="logical/jayus/Entity.html#___draggable"><span class="elementName">draggable</span></a>
-    </div> 
-    <div class="summaryItemDesc">
-        
-	Whether the object can be moved by dragging it with the cursor.    </div>  
+	The mouse button that can be pressed to drag the entity.    </div>  
                             </div>
                     <div class="summaryItem">
                                                 <div class="summaryItemDef">
@@ -154,17 +164,27 @@ The base class for any drawable object.
     </div> 
     <div class="summaryItemDesc">
         
-	Whether the object is currently being dragged.    </div>  
+	Whether to enable support for the drag events.    </div>  
                             </div>
                     <div class="summaryItem">
                                                 <div class="summaryItemDef">
         <span class="modifiers"></span>
         <span class="type">Number</span>
-        <a href="logical/jayus/Entity.html#___frozen"><span class="elementName">frozen</span></a>
+        <a href="logical/jayus/Entity.html#___flipX"><span class="elementName">flipX</span></a>
     </div> 
     <div class="summaryItemDesc">
         
-	The number of functions in the callstack that have "locked" this entity from reforming itself after being displaced.    </div>  
+	Whether the entity is horizontally flipped.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Number</span>
+        <a href="logical/jayus/Entity.html#___flipY"><span class="elementName">flipY</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	Whether the entity is vertically flipped.    </div>  
                             </div>
                     <div class="summaryItem">
                                                 <div class="summaryItemDef">
@@ -180,31 +200,11 @@ The base class for any drawable object.
                                                 <div class="summaryItemDef">
         <span class="modifiers"></span>
         <span class="type">Boolean</span>
-        <a href="logical/jayus/Entity.html#___hasParent"><span class="elementName">hasParent</span></a>
+        <a href="logical/jayus/Entity.html#___included"><span class="elementName">included</span></a>
     </div> 
     <div class="summaryItemDesc">
         
-	Whether or not the entity has a parent.    </div>  
-                            </div>
-                    <div class="summaryItem">
-                                                <div class="summaryItemDef">
-        <span class="modifiers"></span>
-        <span class="type">String</span>
-        <a href="logical/jayus/Entity.html#___id"><span class="elementName">id</span></a>
-    </div> 
-    <div class="summaryItemDesc">
-        
-	The entity's id.    </div>  
-                            </div>
-                    <div class="summaryItem">
-                                                <div class="summaryItemDef">
-        <span class="modifiers"></span>
-        <span class="type">Boolean</span>
-        <a href="logical/jayus/Entity.html#___isEntity"><span class="elementName">isEntity</span></a>
-    </div> 
-    <div class="summaryItemDesc">
-        
-	Denotes this object as an entity.    </div>  
+	Whether or not the entity is included in its parent's organization system, if applicable.    </div>  
                             </div>
                     <div class="summaryItem">
                                                 <div class="summaryItemDef">
@@ -219,27 +219,7 @@ The base class for any drawable object.
                     <div class="summaryItem">
                                                 <div class="summaryItemDef">
         <span class="modifiers"></span>
-        <span class="type">Boolean</span>
-        <a href="logical/jayus/Entity.html#___isRect"><span class="elementName">isRect</span></a>
-    </div> 
-    <div class="summaryItemDesc">
-        
-	Denotes this object as a rect-like entity.    </div>  
-                            </div>
-                    <div class="summaryItem">
-                                                <div class="summaryItemDef">
-        <span class="modifiers"></span>
-        <span class="type">Boolean</span>
-        <a href="logical/jayus/Entity.html#___isTransformed"><span class="elementName">isTransformed</span></a>
-    </div> 
-    <div class="summaryItemDesc">
-        
-	Whether the entity has an attached transforms object.    </div>  
-                            </div>
-                    <div class="summaryItem">
-                                                <div class="summaryItemDef">
-        <span class="modifiers"></span>
-        <span class="type"><a href="logical/jayus/Entity.html">Entity</a></span>
+        <span class="type"><a href="logical/jayus/Entity.html#___Entity">Entity</a></span>
         <a href="logical/jayus/Entity.html#___parent"><span class="elementName">parent</span></a>
     </div> 
     <div class="summaryItemDesc">
@@ -249,12 +229,12 @@ The base class for any drawable object.
                     <div class="summaryItem">
                                                 <div class="summaryItemDef">
         <span class="modifiers"></span>
-        <span class="type">Boolean</span>
-        <a href="logical/jayus/Entity.html#___trackCursor"><span class="elementName">trackCursor</span></a>
+        <span class="type">Display</span>
+        <a href="logical/jayus/Entity.html#___parentDisplay"><span class="elementName">parentDisplay</span></a>
     </div> 
     <div class="summaryItemDesc">
         
-	Whether or not this entity will be kept aware of cursor events.    </div>  
+	The entity's parent display.    </div>  
                             </div>
                     <div class="summaryItem">
                                                 <div class="summaryItemDef">
@@ -276,6 +256,46 @@ The base class for any drawable object.
         
 	Whether or not the entity is visible.    </div>  
                             </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Number</span>
+        <a href="logical/jayus/Entity.html#___xAnchor"><span class="elementName">xAnchor</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	The x position of the transforms anchor.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Number</span>
+        <a href="logical/jayus/Entity.html#___xScale"><span class="elementName">xScale</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	The horizontal scale of the entity.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Number</span>
+        <a href="logical/jayus/Entity.html#___yAnchor"><span class="elementName">yAnchor</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	The y position of the transforms anchor.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Number</span>
+        <a href="logical/jayus/Entity.html#___yScale"><span class="elementName">yScale</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	The vertical scale of the entity.    </div>  
+                            </div>
                 </div>
         <p/>
                                 <div class="summaryTable">
@@ -283,7 +303,7 @@ The base class for any drawable object.
                    Properties inherited from <a href="logical/jayus/Dependency.html">jayus.Dependency</a> 
                 </div>
                 <div class="inheritanceSummary">
-                    <a href="logical/jayus/Dependency.html#___dependentCount">dependentCount</a>, <a href="logical/jayus/Dependency.html#___dependents">dependents</a>                </div>
+                    <a href="logical/jayus/Dependency.html#___dependentCount">dependentCount</a>, <a href="logical/jayus/Dependency.html#___dependents">dependents</a>, <a href="logical/jayus/Dependency.html#___frozen">frozen</a>, <a href="logical/jayus/Dependency.html#___id">id</a>                </div>
              </div>
              <br/>          
                                 <div class="summaryTable">
@@ -294,7 +314,7 @@ The base class for any drawable object.
                     <a href="logical/jayus/Responder.html#___handlers">handlers</a>, <a href="logical/jayus/Responder.html#___hasHandlers">hasHandlers</a>, <a href="logical/jayus/Responder.html#___isHandler">isHandler</a>                </div>
              </div>
              <br/>          
-                            
+                
                 <div class="summaryTable constructor">
             <div class="summaryTableHeader">
                 <span class="objType">Constructor</span> Summary
@@ -303,7 +323,7 @@ The base class for any drawable object.
                                                            <div class="summaryItemDef">
                 <span class="modifiers"></span>
                 <span class="type"></span>
-                <a href="logical/jayus/Entity.html#___init"><span class="elementName">init</span></a>()
+                <a href="logical/jayus/Entity.html#___Entity"><span class="elementName">Entity</span></a>()
             </div>
         <div class="summaryItemDesc">
         
@@ -317,6 +337,16 @@ The base class for any drawable object.
                 <span class="objType">Function</span> Summary
             </div>
                     <div class="summaryItem">
+                                                           <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Entity.html#___animate"><span class="elementName">animate</span></a>()
+            </div>
+        <div class="summaryItemDesc">
+        
+	Sets the next action performed on the entity to be animated.    </div>  
+                            </div>
+                    <div class="summaryItem">
                                                                     <div class="summaryItemDef">
                 <span class="modifiers"></span>
                 <span class="type">Self</span>
@@ -327,6 +357,16 @@ The base class for any drawable object.
                 <div class="summaryItemDesc">
         
 	Applies the entities transforms to the given context or matrix.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                           <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Entity.html#___clearVelocity"><span class="elementName">clearVelocity</span></a>()
+            </div>
+        <div class="summaryItemDesc">
+        
+	Clears the entity's velocity.    </div>  
                             </div>
                     <div class="summaryItem">
                                                            <div class="summaryItemDef">
@@ -353,7 +393,17 @@ The base class for any drawable object.
                     <div class="summaryItem">
                                                            <div class="summaryItemDef">
                 <span class="modifiers"></span>
-                <span class="type"><a href="logical/jayus/Entity.html">Entity</a></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Entity.html#___exclude"><span class="elementName">exclude</span></a>()
+            </div>
+        <div class="summaryItemDesc">
+        
+	Sets the object as excluded.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                           <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"><a href="logical/jayus/Entity.html#___Entity">Entity</a></span>
                 <a href="logical/jayus/Entity.html#___getAbsoluteParent"><span class="elementName">getAbsoluteParent</span></a>()
             </div>
         <div class="summaryItemDesc">
@@ -379,6 +429,16 @@ The base class for any drawable object.
         <div class="summaryItemDesc">
         
 	Sets the object as hidden.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                           <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Entity.html#___include"><span class="elementName">include</span></a>()
+            </div>
+        <div class="summaryItemDesc">
+        
+	Sets the object as included.    </div>  
                             </div>
                     <div class="summaryItem">
                                                                     <div class="summaryItemDef">
@@ -409,14 +469,7 @@ The base class for any drawable object.
                 <span class="modifiers"></span>
                 <span class="type">Boolean</span>
                 <a href="logical/jayus/Entity.html#___intersectsAll"><span class="elementName">intersectsAll</span></a>
-                (<span class="type">Array</span>
- entities)
-            </div>          
-                    <div class="summaryItemDef">
-                <span class="modifiers"></span>
-                <span class="type">Boolean</span>
-                <a href="logical/jayus/Entity.html#___intersectsAll"><span class="elementName">intersectsAll</span></a>
-                (<span class="type"><a href="logical/jayus/List.html">List</a></span>
+                (<span class="type">Array|List</span>
  entities)
             </div>          
                 <div class="summaryItemDesc">
@@ -428,14 +481,7 @@ The base class for any drawable object.
                 <span class="modifiers"></span>
                 <span class="type">Boolean</span>
                 <a href="logical/jayus/Entity.html#___intersectsAny"><span class="elementName">intersectsAny</span></a>
-                (<span class="type">Array</span>
- entities)
-            </div>          
-                    <div class="summaryItemDef">
-                <span class="modifiers"></span>
-                <span class="type">Boolean</span>
-                <a href="logical/jayus/Entity.html#___intersectsAny"><span class="elementName">intersectsAny</span></a>
-                (<span class="type"><a href="logical/jayus/List.html">List</a></span>
+                (<span class="type">Array|List</span>
  entities)
             </div>          
                 <div class="summaryItemDesc">
@@ -460,31 +506,24 @@ The base class for any drawable object.
                 <span class="modifiers"></span>
                 <span class="type">Array</span>
                 <a href="logical/jayus/Entity.html#___intersectsWhich"><span class="elementName">intersectsWhich</span></a>
-                (<span class="type">Array</span>
- entities)
-            </div>          
-                    <div class="summaryItemDef">
-                <span class="modifiers"></span>
-                <span class="type">Array</span>
-                <a href="logical/jayus/Entity.html#___intersectsWhich"><span class="elementName">intersectsWhich</span></a>
-                (<span class="type"><a href="logical/jayus/List.html">List</a></span>
+                (<span class="type">Array|List</span>
  entities)
             </div>          
                 <div class="summaryItemDesc">
         
-	Returns the entites of the sent entities that intersect this one.    </div>  
+	Returns the entities out of the sent entities that intersect this one.    </div>  
                             </div>
                     <div class="summaryItem">
                                                                     <div class="summaryItemDef">
                 <span class="modifiers"></span>
-                <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                <span class="type">Point</span>
                 <a href="logical/jayus/Entity.html#___localToParent"><span class="elementName">localToParent</span></a>
-                (<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                (<span class="type">Point</span>
  point)
             </div>          
                     <div class="summaryItemDef">
                 <span class="modifiers"></span>
-                <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                <span class="type">Point</span>
                 <a href="logical/jayus/Entity.html#___localToParent"><span class="elementName">localToParent</span></a>
                 (<span class="type">Number</span>
  x, <span class="type">Number</span>
@@ -497,14 +536,14 @@ The base class for any drawable object.
                     <div class="summaryItem">
                                                                     <div class="summaryItemDef">
                 <span class="modifiers"></span>
-                <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                <span class="type">Point</span>
                 <a href="logical/jayus/Entity.html#___localToScreen"><span class="elementName">localToScreen</span></a>
-                (<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                (<span class="type">Point</span>
  point)
             </div>          
                     <div class="summaryItemDef">
                 <span class="modifiers"></span>
-                <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                <span class="type">Point</span>
                 <a href="logical/jayus/Entity.html#___localToScreen"><span class="elementName">localToScreen</span></a>
                 (<span class="type">Number</span>
  x, <span class="type">Number</span>
@@ -517,14 +556,14 @@ The base class for any drawable object.
                     <div class="summaryItem">
                                                                     <div class="summaryItemDef">
                 <span class="modifiers"></span>
-                <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                <span class="type">Point</span>
                 <a href="logical/jayus/Entity.html#___parentToLocal"><span class="elementName">parentToLocal</span></a>
-                (<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                (<span class="type">Point</span>
  point)
             </div>          
                     <div class="summaryItemDef">
                 <span class="modifiers"></span>
-                <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                <span class="type">Point</span>
                 <a href="logical/jayus/Entity.html#___parentToLocal"><span class="elementName">parentToLocal</span></a>
                 (<span class="type">Number</span>
  x, <span class="type">Number</span>
@@ -537,7 +576,7 @@ The base class for any drawable object.
                     <div class="summaryItem">
                                                            <div class="summaryItemDef">
                 <span class="modifiers"></span>
-                <span class="type"><a href="logical/jayus/Surface.html">Surface</a></span>
+                <span class="type">Surface</span>
                 <a href="logical/jayus/Entity.html#___rasterize"><span class="elementName">rasterize</span></a>()
             </div>
         <div class="summaryItemDesc">
@@ -579,14 +618,14 @@ The base class for any drawable object.
                     <div class="summaryItem">
                                                                     <div class="summaryItemDef">
                 <span class="modifiers"></span>
-                <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                <span class="type">Point</span>
                 <a href="logical/jayus/Entity.html#___screenToLocal"><span class="elementName">screenToLocal</span></a>
-                (<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                (<span class="type">Point</span>
  point)
             </div>          
                     <div class="summaryItemDef">
                 <span class="modifiers"></span>
-                <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                <span class="type">Point</span>
                 <a href="logical/jayus/Entity.html#___screenToLocal"><span class="elementName">screenToLocal</span></a>
                 (<span class="type">Number</span>
  x, <span class="type">Number</span>
@@ -613,7 +652,7 @@ The base class for any drawable object.
                 <span class="modifiers"></span>
                 <span class="type">Self</span>
                 <a href="logical/jayus/Entity.html#___setAnchor"><span class="elementName">setAnchor</span></a>
-                (<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                (<span class="type">Point</span>
  point)
             </div>          
                     <div class="summaryItemDef">
@@ -644,25 +683,86 @@ The base class for any drawable object.
                                                                     <div class="summaryItemDef">
                 <span class="modifiers"></span>
                 <span class="type">Self</span>
-                <a href="logical/jayus/Entity.html#___setDraggable"><span class="elementName">setDraggable</span></a>
-                (<span class="type">Boolean</span>
- on)
+                <a href="logical/jayus/Entity.html#___setConstraint"><span class="elementName">setConstraint</span></a>
+                (<span class="type">String</span>
+ property, <span class="type">String</span>
+ formula)
             </div>          
                 <div class="summaryItemDesc">
         
-	Sets the draggable flag on the entity.    </div>  
+	Constrains the specified property with the given formula.    </div>  
                             </div>
                     <div class="summaryItem">
                                                                     <div class="summaryItemDef">
                 <span class="modifiers"></span>
                 <span class="type">Self</span>
-                <a href="logical/jayus/Entity.html#___setId"><span class="elementName">setId</span></a>
-                (<span class="type">*</span>
- id)
+                <a href="logical/jayus/Entity.html#___setConstraints"><span class="elementName">setConstraints</span></a>
+                (<span class="type">Object</span>
+ constraints)
             </div>          
                 <div class="summaryItemDesc">
         
-	Sets the entity's id.    </div>  
+	Sets the constrained properties.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Entity.html#___setDragButton"><span class="elementName">setDragButton</span></a>
+                (<span class="type">String</span>
+ button)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Sets the mouse button used to drag the entity, or null to disable it.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Entity.html#___setFlipX"><span class="elementName">setFlipX</span></a>
+                (<span class="type">Boolean</span>
+ on)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Sets the horizontal flipping of the entity.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Entity.html#___setFlipY"><span class="elementName">setFlipY</span></a>
+                (<span class="type">Boolean</span>
+ on)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Sets the horizontal flipping of the entity.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Entity.html#___setFlipping"><span class="elementName">setFlipping</span></a>
+                (<span class="type">Boolean</span>
+ on)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Sets the horizontal and vertical flipping of the entity.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Entity.html#___setIncluded"><span class="elementName">setIncluded</span></a>
+                (<span class="type">Boolean</span>
+ on)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Sets the included flag.    </div>  
                             </div>
                     <div class="summaryItem">
                                                                     <div class="summaryItemDef">
@@ -688,6 +788,26 @@ The base class for any drawable object.
                                                                     <div class="summaryItemDef">
                 <span class="modifiers"></span>
                 <span class="type">Self</span>
+                <a href="logical/jayus/Entity.html#___setVelocity"><span class="elementName">setVelocity</span></a>
+                (<span class="type">Point</span>
+ point)
+            </div>          
+                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Entity.html#___setVelocity"><span class="elementName">setVelocity</span></a>
+                (<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Sets the velocity of the entity.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
                 <a href="logical/jayus/Entity.html#___setVisible"><span class="elementName">setVisible</span></a>
                 (<span class="type">Boolean</span>
  on)
@@ -695,6 +815,54 @@ The base class for any drawable object.
                 <div class="summaryItemDesc">
         
 	Sets the visible flag.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Entity.html#___setXScale"><span class="elementName">setXScale</span></a>
+                (<span class="type">Number</span>
+ scale)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Sets the horizontal scale of the entity.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Entity.html#___setXVelocity"><span class="elementName">setXVelocity</span></a>
+                (<span class="type">Number</span>
+ x)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Sets the x velocity of the entity.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Entity.html#___setYScale"><span class="elementName">setYScale</span></a>
+                (<span class="type">Number</span>
+ scale)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Sets the vertical scale of the entity.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Entity.html#___setYVelocity"><span class="elementName">setYVelocity</span></a>
+                (<span class="type">Number</span>
+ y)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Sets the y velocity of the entity.    </div>  
                             </div>
                     <div class="summaryItem">
                                                            <div class="summaryItemDef">
@@ -706,19 +874,6 @@ The base class for any drawable object.
         
 	Sets the object as visible.    </div>  
                             </div>
-                    <div class="summaryItem">
-                                                                    <div class="summaryItemDef">
-                <span class="modifiers"></span>
-                <span class="type"></span>
-                <a href="logical/jayus/Entity.html#___tick"><span class="elementName">tick</span></a>
-                (<span class="type">Number</span>
- time, <span class="type">Number</span>
- elapsed)
-            </div>          
-                <div class="summaryItemDesc">
-        
-	Ticks the point.    </div>  
-                            </div>
                 </div>
         <p/>
                                 <div class="summaryTable">
@@ -726,7 +881,7 @@ The base class for any drawable object.
                    Functions inherited from <a href="logical/jayus/Dependency.html">jayus.Dependency</a> 
                 </div>
                 <div class="inheritanceSummary">
-                    <a href="logical/jayus/Dependency.html#___attach">attach</a>, <a href="logical/jayus/Dependency.html#___detach">detach</a>, <a href="logical/jayus/Dependency.html#___dirty">dirty</a>, <a href="logical/jayus/Dependency.html#___informDependents">informDependents</a>                </div>
+                    <a href="logical/jayus/Dependency.html#___attach">attach</a>, <a href="logical/jayus/Dependency.html#___clearDependents">clearDependents</a>, <a href="logical/jayus/Dependency.html#___detach">detach</a>, <a href="logical/jayus/Dependency.html#___dirty">dirty</a>, <a href="logical/jayus/Dependency.html#___informDependents">informDependents</a>, <a href="logical/jayus/Dependency.html#___setId">setId</a>                </div>
              </div>
              <br/>          
                                 <div class="summaryTable">
@@ -734,15 +889,7 @@ The base class for any drawable object.
                    Functions inherited from <a href="logical/jayus/Responder.html">jayus.Responder</a> 
                 </div>
                 <div class="inheritanceSummary">
-                    <a href="logical/jayus/Responder.html#___addHandler">addHandler</a>, <a href="logical/jayus/Responder.html#___fire">fire</a>, <a href="logical/jayus/Responder.html#___handle">handle</a>, <a href="logical/jayus/Responder.html#___interceptNextEvent">interceptNextEvent</a>, <a href="logical/jayus/Responder.html#___removeAllHandlers">removeAllHandlers</a>, <a href="logical/jayus/Responder.html#___removeHandler">removeHandler</a>, <a href="logical/jayus/Responder.html#___removeHandlers">removeHandlers</a>                </div>
-             </div>
-             <br/>          
-                                <div class="summaryTable">
-                <div class="summaryTableHeader">
-                   Functions inherited from <a href="logical/jayus/Animatable.html">jayus.Animatable</a> 
-                </div>
-                <div class="inheritanceSummary">
-                    <a href="logical/jayus/Animatable.html#___animate">animate</a>                </div>
+                    <a href="logical/jayus/Responder.html#___addHandler">addHandler</a>, <a href="logical/jayus/Responder.html#___fire">fire</a>, <a href="logical/jayus/Responder.html#___handle">handle</a>, <a href="logical/jayus/Responder.html#___removeAllHandlers">removeAllHandlers</a>, <a href="logical/jayus/Responder.html#___removeHandler">removeHandler</a>, <a href="logical/jayus/Responder.html#___removeHandlers">removeHandlers</a>                </div>
              </div>
              <br/>          
                 
@@ -750,6 +897,20 @@ The base class for any drawable object.
     	    	            <div class="details property">
             <h2 class="sectionHeader">Property Details</h2>
                                                             
+            <h3>
+        <a name="___angle">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Number</span>
+            <span class="objName">angle</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	The entity's rotation, in radians.
+	<br> Do not modify.
+	    </div>    
+                                        <hr />  
+                                                                            
             <h3>
         <a name="___canAcceptCursor">
             <span class="objType">property</span> <span class="modifiers"></span>
@@ -782,15 +943,29 @@ The base class for any drawable object.
                                         <hr />  
                                                                             
             <h3>
-        <a name="___dirtied">
+        <a name="___cursorX">
             <span class="objType">property</span> <span class="modifiers"></span>
-            <span class="type">Boolean</span>
-            <span class="objName">dirtied</span>         
+            <span class="type">Number</span>
+            <span class="objName">cursorX</span>         
         </a>
     </h3>
     <div class="comment">
         
-	A flag determining whether or not the entity has changed since it was last drawn onto the screen.
+	The cursor's local x position within the entity.
+	<br> Do not modify.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___cursorY">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Number</span>
+            <span class="objName">cursorY</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	The cursor's local y position within the entity.
 	<br> Do not modify.
 	    </div>    
                                         <hr />  
@@ -804,25 +979,9 @@ The base class for any drawable object.
     </h3>
     <div class="comment">
         
-	The mouse button used to drag the entity.
-	<br> Applies only when draggable is set to true.
-	<br> Can be 'left', 'middle', or 'right'.
-	<br> Default is 'left'.
-	<br> Do not modify.
-	    </div>    
-                                        <hr />  
-                                                                            
-            <h3>
-        <a name="___draggable">
-            <span class="objType">property</span> <span class="modifiers"></span>
-            <span class="type">Boolean</span>
-            <span class="objName">draggable</span>         
-        </a>
-    </h3>
-    <div class="comment">
-        
-	Whether the object can be moved by dragging it with the cursor.
-	<br> Default is false.
+	The mouse button that can be pressed to drag the entity.
+	<br> Can be 'left', 'middle', 'right', or null.
+	<br> Default is null, so the entity is not draggable.
 	<br> Do not modify.
 	    </div>    
                                         <hr />  
@@ -836,22 +995,40 @@ The base class for any drawable object.
     </h3>
     <div class="comment">
         
-	Whether the object is currently being dragged.
+	Whether to enable support for the drag events.
+	<br> This feature is separate from enabling the entity to be dragged by the cursor.
+	<br> This property must be set to true before the entity is created, so change the value on the prototype.
+	<br> The events are "<button>DragStart", "<button>Drag", and "<button>DragEnd", where button is "left", "middle", or "right".
+	<br> These events are experimental, and enabling them requires that the entity track the cursor.
 	<br> Do not modify.
 	    </div>    
                                         <hr />  
                                                                             
             <h3>
-        <a name="___frozen">
+        <a name="___flipX">
             <span class="objType">property</span> <span class="modifiers"></span>
             <span class="type">Number</span>
-            <span class="objName">frozen</span>         
+            <span class="objName">flipX</span>         
         </a>
     </h3>
     <div class="comment">
         
-	The number of functions in the callstack that have "locked" this entity from reforming itself after being displaced.
-	<br> Used internally to avoid unnecessary displacements, and endless loops.
+	Whether the entity is horizontally flipped.
+	<br> Do not modify.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___flipY">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Number</span>
+            <span class="objName">flipY</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	Whether the entity is vertically flipped.
+	<br> Do not modify.
 	    </div>    
                                         <hr />  
                                                                             
@@ -871,44 +1048,17 @@ The base class for any drawable object.
                                         <hr />  
                                                                             
             <h3>
-        <a name="___hasParent">
+        <a name="___included">
             <span class="objType">property</span> <span class="modifiers"></span>
             <span class="type">Boolean</span>
-            <span class="objName">hasParent</span>         
+            <span class="objName">included</span>         
         </a>
     </h3>
     <div class="comment">
         
-	Whether or not the entity has a parent.
-	<br> Do not modify.
-	    </div>    
-                                        <hr />  
-                                                                            
-            <h3>
-        <a name="___id">
-            <span class="objType">property</span> <span class="modifiers"></span>
-            <span class="type">String</span>
-            <span class="objName">id</span>         
-        </a>
-    </h3>
-    <div class="comment">
-        
-	The entity's id.
-	<br> Default is ''.
-	    </div>    
-                                        <hr />  
-                                                                            
-            <h3>
-        <a name="___isEntity">
-            <span class="objType">property</span> <span class="modifiers"></span>
-            <span class="type">Boolean</span>
-            <span class="objName">isEntity</span>         
-        </a>
-    </h3>
-    <div class="comment">
-        
-	Denotes this object as an entity.
-	<br> Do not modify.
+	Whether or not the entity is included in its parent's organization system, if applicable.
+	<br> Default is true.
+	<br> Do not modify, use <a href="logical/jayus/Entity.html#___setIncluded">Entity.setIncluded()</a>.
 	    </div>    
                                         <hr />  
                                                                             
@@ -927,36 +1077,9 @@ The base class for any drawable object.
                                         <hr />  
                                                                             
             <h3>
-        <a name="___isRect">
-            <span class="objType">property</span> <span class="modifiers"></span>
-            <span class="type">Boolean</span>
-            <span class="objName">isRect</span>         
-        </a>
-    </h3>
-    <div class="comment">
-        
-	Denotes this object as a rect-like entity.
-	<br> Do not modify.
-	    </div>    
-                                        <hr />  
-                                                                            
-            <h3>
-        <a name="___isTransformed">
-            <span class="objType">property</span> <span class="modifiers"></span>
-            <span class="type">Boolean</span>
-            <span class="objName">isTransformed</span>         
-        </a>
-    </h3>
-    <div class="comment">
-        
-	Whether the entity has an attached transforms object.
-	    </div>    
-                                        <hr />  
-                                                                            
-            <h3>
         <a name="___parent">
             <span class="objType">property</span> <span class="modifiers"></span>
-            <span class="type"><a href="logical/jayus/Entity.html">Entity</a></span>
+            <span class="type"><a href="logical/jayus/Entity.html#___Entity">Entity</a></span>
             <span class="objName">parent</span>         
         </a>
     </h3>
@@ -971,17 +1094,16 @@ The base class for any drawable object.
                                         <hr />  
                                                                             
             <h3>
-        <a name="___trackCursor">
+        <a name="___parentDisplay">
             <span class="objType">property</span> <span class="modifiers"></span>
-            <span class="type">Boolean</span>
-            <span class="objName">trackCursor</span>         
+            <span class="type">Display</span>
+            <span class="objName">parentDisplay</span>         
         </a>
     </h3>
     <div class="comment">
         
-	Whether or not this entity will be kept aware of cursor events.
-	<br> If false then the underCursor and hasCursor flags will not be updated and no cursor events will be fired.
-	<br> Default is true.
+	The entity's parent display.
+	<br> Do not modify.
 	    </div>    
                                         <hr />  
                                                                             
@@ -1015,20 +1137,76 @@ The base class for any drawable object.
 	<br> Do not modify, use <a href="logical/jayus/Entity.html#___setVisible">Entity.setVisible()</a>.
 	    </div>    
                                         <hr />  
+                                                                            
+            <h3>
+        <a name="___xAnchor">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Number</span>
+            <span class="objName">xAnchor</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	The x position of the transforms anchor.
+	<br> Do not modify.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___xScale">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Number</span>
+            <span class="objName">xScale</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	The horizontal scale of the entity.
+	<br> Do not modify.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___yAnchor">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Number</span>
+            <span class="objName">yAnchor</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	The y position of the transforms anchor.
+	<br> Do not modify.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___yScale">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Number</span>
+            <span class="objName">yScale</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	The vertical scale of the entity.
+	<br> Do not modify.
+	    </div>    
+                                        <hr />  
                                     </div>
     	            <div class="details constructor">
             <h2 class="sectionHeader">Constructor Details</h2>
                                                                     <h3>
-        <a name="___init">
+        <a name="___Entity">
             <span class="objType">constructor</span>
-            <span class="objName">init</span>            
+            <span class="objName">Entity</span>            
         </a> 
     </h3>
                 <div>
                 <code>
                     <span class="modifiers"></span>
                     <span class="type"></span>
-                    init()
+                    Entity()
                 </code>
             </div>    
         <div class="comment">
@@ -1040,6 +1218,26 @@ The base class for any drawable object.
     	            <div class="details function">
             <h2 class="sectionHeader">Function Details</h2>
                                                                     <h3>
+        <a name="___animate">
+            <span class="objType">function</span>
+            <span class="objName">animate</span>            
+        </a> 
+    </h3>
+                <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    animate()
+                </code>
+            </div>    
+        <div class="comment">
+        
+	Sets the next action performed on the entity to be animated.
+	<br> Only applies to animatable methods.
+	<br> When a function is set to be animated, instead of performing the action the method will return an animator that will perform that action when started.
+	    </div>
+                                                    <hr/>       
+                                                                                    <h3>
         <a name="___applyTransforms">
             <span class="objType">function</span>
             <span class="objName">applyTransforms</span>            
@@ -1069,6 +1267,24 @@ The base class for any drawable object.
                                         </div>
                 </div>
                     </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___clearVelocity">
+            <span class="objType">function</span>
+            <span class="objName">clearVelocity</span>            
+        </a> 
+    </h3>
+                <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    clearVelocity()
+                </code>
+            </div>    
+        <div class="comment">
+        
+	Clears the entity's velocity.
+	    </div>
                                                     <hr/>       
                                                                                     <h3>
         <a name="___drawOnto">
@@ -1122,6 +1338,26 @@ The base class for any drawable object.
                     </div>
                                                     <hr/>       
                                                                                     <h3>
+        <a name="___exclude">
+            <span class="objType">function</span>
+            <span class="objName">exclude</span>            
+        </a> 
+    </h3>
+                <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    exclude()
+                </code>
+            </div>    
+        <div class="comment">
+        
+	Sets the object as excluded.
+	<br> An alias for setIncluded(false).
+	<br> Sets the entity as dirty.
+	    </div>
+                                                    <hr/>       
+                                                                                    <h3>
         <a name="___getAbsoluteParent">
             <span class="objType">function</span>
             <span class="objName">getAbsoluteParent</span>            
@@ -1130,7 +1366,7 @@ The base class for any drawable object.
                 <div>
                 <code>
                     <span class="modifiers"></span>
-                    <span class="type"><a href="logical/jayus/Entity.html">Entity</a></span>
+                    <span class="type"><a href="logical/jayus/Entity.html#___Entity">Entity</a></span>
                     getAbsoluteParent()
                 </code>
             </div>    
@@ -1176,6 +1412,26 @@ The base class for any drawable object.
         
 	Sets the object as hidden.
 	<br> An alias for setVisible(false).
+	<br> Sets the entity as dirty.
+	    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___include">
+            <span class="objType">function</span>
+            <span class="objName">include</span>            
+        </a> 
+    </h3>
+                <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    include()
+                </code>
+            </div>    
+        <div class="comment">
+        
+	Sets the object as included.
+	<br> An alias for setIncluded(true).
 	<br> Sets the entity as dirty.
 	    </div>
                                                     <hr/>       
@@ -1255,15 +1511,7 @@ The base class for any drawable object.
                 <code>
                     <span class="modifiers"></span>
                     <span class="type">Boolean</span>
-                    intersectsAll(<span class="type">Array</span>
- entities)
-                </code> 
-            </div>          
-                    <div>
-                <code>
-                    <span class="modifiers"></span>
-                    <span class="type">Boolean</span>
-                    intersectsAll(<span class="type"><a href="logical/jayus/List.html">List</a></span>
+                    intersectsAll(<span class="type">Array|List</span>
  entities)
                 </code> 
             </div>          
@@ -1275,18 +1523,7 @@ The base class for any drawable object.
         	<div class="parameters">
         <span class="descSection">Parameters:</span><br/>
                             <div>
-                    <div class="paramset"> 1
-	</div>
-                    <div>
-                                                <div class="param paddedDetails">
-        <code>
-            entities        </code>
-                    </div>   
-                                        </div>
-                </div>
-                            <div>
-                    <div class="paramset"> 2
-	</div>
+                    <div class="paramset"></div>
                     <div>
                                                 <div class="param paddedDetails">
         <code>
@@ -1306,15 +1543,7 @@ The base class for any drawable object.
                 <code>
                     <span class="modifiers"></span>
                     <span class="type">Boolean</span>
-                    intersectsAny(<span class="type">Array</span>
- entities)
-                </code> 
-            </div>          
-                    <div>
-                <code>
-                    <span class="modifiers"></span>
-                    <span class="type">Boolean</span>
-                    intersectsAny(<span class="type"><a href="logical/jayus/List.html">List</a></span>
+                    intersectsAny(<span class="type">Array|List</span>
  entities)
                 </code> 
             </div>          
@@ -1327,18 +1556,7 @@ The base class for any drawable object.
         	<div class="parameters">
         <span class="descSection">Parameters:</span><br/>
                             <div>
-                    <div class="paramset"> 1
-	</div>
-                    <div>
-                                                <div class="param paddedDetails">
-        <code>
-            entities        </code>
-                    </div>   
-                                        </div>
-                </div>
-                            <div>
-                    <div class="paramset"> 2
-	</div>
+                    <div class="paramset"></div>
                     <div>
                                                 <div class="param paddedDetails">
         <code>
@@ -1394,38 +1612,19 @@ The base class for any drawable object.
                 <code>
                     <span class="modifiers"></span>
                     <span class="type">Array</span>
-                    intersectsWhich(<span class="type">Array</span>
- entities)
-                </code> 
-            </div>          
-                    <div>
-                <code>
-                    <span class="modifiers"></span>
-                    <span class="type">Array</span>
-                    intersectsWhich(<span class="type"><a href="logical/jayus/List.html">List</a></span>
+                    intersectsWhich(<span class="type">Array|List</span>
  entities)
                 </code> 
             </div>          
                 <div class="comment">
         
-	Returns the entites of the sent entities that intersect this one.
+	Returns the entities out of the sent entities that intersect this one.
 	<br> Bounds are used to test for intersection.
 	    </div>
         	<div class="parameters">
         <span class="descSection">Parameters:</span><br/>
                             <div>
-                    <div class="paramset"> 1
-	</div>
-                    <div>
-                                                <div class="param paddedDetails">
-        <code>
-            entities        </code>
-                    </div>   
-                                        </div>
-                </div>
-                            <div>
-                    <div class="paramset"> 2
-	</div>
+                    <div class="paramset"></div>
                     <div>
                                                 <div class="param paddedDetails">
         <code>
@@ -1444,15 +1643,15 @@ The base class for any drawable object.
                         <div>
                 <code>
                     <span class="modifiers"></span>
-                    <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
-                    localToParent(<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    <span class="type">Point</span>
+                    localToParent(<span class="type">Point</span>
  point)
                 </code> 
             </div>          
                     <div>
                 <code>
                     <span class="modifiers"></span>
-                    <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    <span class="type">Point</span>
                     localToParent(<span class="type">Number</span>
  x, <span class="type">Number</span>
  y)
@@ -1499,15 +1698,15 @@ The base class for any drawable object.
                         <div>
                 <code>
                     <span class="modifiers"></span>
-                    <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
-                    localToScreen(<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    <span class="type">Point</span>
+                    localToScreen(<span class="type">Point</span>
  point)
                 </code> 
             </div>          
                     <div>
                 <code>
                     <span class="modifiers"></span>
-                    <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    <span class="type">Point</span>
                     localToScreen(<span class="type">Number</span>
  x, <span class="type">Number</span>
  y)
@@ -1554,15 +1753,15 @@ The base class for any drawable object.
                         <div>
                 <code>
                     <span class="modifiers"></span>
-                    <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
-                    parentToLocal(<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    <span class="type">Point</span>
+                    parentToLocal(<span class="type">Point</span>
  point)
                 </code> 
             </div>          
                     <div>
                 <code>
                     <span class="modifiers"></span>
-                    <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    <span class="type">Point</span>
                     parentToLocal(<span class="type">Number</span>
  x, <span class="type">Number</span>
  y)
@@ -1609,7 +1808,7 @@ The base class for any drawable object.
                 <div>
                 <code>
                     <span class="modifiers"></span>
-                    <span class="type"><a href="logical/jayus/Surface.html">Surface</a></span>
+                    <span class="type">Surface</span>
                     rasterize()
                 </code>
             </div>    
@@ -1719,15 +1918,15 @@ The base class for any drawable object.
                         <div>
                 <code>
                     <span class="modifiers"></span>
-                    <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
-                    screenToLocal(<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    <span class="type">Point</span>
+                    screenToLocal(<span class="type">Point</span>
  point)
                 </code> 
             </div>          
                     <div>
                 <code>
                     <span class="modifiers"></span>
-                    <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    <span class="type">Point</span>
                     screenToLocal(<span class="type">Number</span>
  x, <span class="type">Number</span>
  y)
@@ -1809,7 +2008,7 @@ The base class for any drawable object.
                 <code>
                     <span class="modifiers"></span>
                     <span class="type">Self</span>
-                    setAnchor(<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    setAnchor(<span class="type">Point</span>
  point)
                 </code> 
             </div>          
@@ -1888,22 +2087,122 @@ The base class for any drawable object.
                     </div>
                                                     <hr/>       
                                                                                     <h3>
-        <a name="___setDraggable">
+        <a name="___setConstraint">
             <span class="objType">function</span>
-            <span class="objName">setDraggable</span>            
+            <span class="objName">setConstraint</span>            
         </a> 
     </h3>
                         <div>
                 <code>
                     <span class="modifiers"></span>
                     <span class="type">Self</span>
-                    setDraggable(<span class="type">Boolean</span>
+                    setConstraint(<span class="type">String</span>
+ property, <span class="type">String</span>
+ formula)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Constrains the specified property with the given formula.
+	<br> Properties supported are: x, y, width, height
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            property        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            formula        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___setConstraints">
+            <span class="objType">function</span>
+            <span class="objName">setConstraints</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    setConstraints(<span class="type">Object</span>
+ constraints)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Sets the constrained properties.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            constraints        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___setDragButton">
+            <span class="objType">function</span>
+            <span class="objName">setDragButton</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    setDragButton(<span class="type">String</span>
+ button)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Sets the mouse button used to drag the entity, or null to disable it.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            button        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___setFlipX">
+            <span class="objType">function</span>
+            <span class="objName">setFlipX</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    setFlipX(<span class="type">Boolean</span>
  on)
                 </code> 
             </div>          
                 <div class="comment">
         
-	Sets the draggable flag on the entity.
+	Sets the horizontal flipping of the entity.
+	<br> Sets the entity as dirty.
 	    </div>
         	<div class="parameters">
         <span class="descSection">Parameters:</span><br/>
@@ -1919,23 +2218,23 @@ The base class for any drawable object.
                     </div>
                                                     <hr/>       
                                                                                     <h3>
-        <a name="___setId">
+        <a name="___setFlipY">
             <span class="objType">function</span>
-            <span class="objName">setId</span>            
+            <span class="objName">setFlipY</span>            
         </a> 
     </h3>
                         <div>
                 <code>
                     <span class="modifiers"></span>
                     <span class="type">Self</span>
-                    setId(<span class="type">*</span>
- id)
+                    setFlipY(<span class="type">Boolean</span>
+ on)
                 </code> 
             </div>          
                 <div class="comment">
         
-	Sets the entity's id.
-	<br> Using strings(or numbers) for id's is recommended.
+	Sets the horizontal flipping of the entity.
+	<br> Sets the entity as dirty.
 	    </div>
         	<div class="parameters">
         <span class="descSection">Parameters:</span><br/>
@@ -1944,7 +2243,72 @@ The base class for any drawable object.
                     <div>
                                                 <div class="param paddedDetails">
         <code>
-            id        </code>
+            on        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___setFlipping">
+            <span class="objType">function</span>
+            <span class="objName">setFlipping</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    setFlipping(<span class="type">Boolean</span>
+ on)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Sets the horizontal and vertical flipping of the entity.
+	<br> Sets the entity as dirty.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            on        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___setIncluded">
+            <span class="objType">function</span>
+            <span class="objName">setIncluded</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    setIncluded(<span class="type">Boolean</span>
+ on)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Sets the included flag.
+	<br> Sets the entity as dirty.
+	<br> Ensures that the entity is treated as not being there, for sizing purposes.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            on        </code>
                     </div>   
                                         </div>
                 </div>
@@ -2008,6 +2372,61 @@ The base class for any drawable object.
                     </div>
                                                     <hr/>       
                                                                                     <h3>
+        <a name="___setVelocity">
+            <span class="objType">function</span>
+            <span class="objName">setVelocity</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    setVelocity(<span class="type">Point</span>
+ point)
+                </code> 
+            </div>          
+                    <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    setVelocity(<span class="type">Number</span>
+ x, <span class="type">Number</span>
+ y)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Sets the velocity of the entity.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"> Syntax 1
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            point        </code>
+                    </div>   
+                                        </div>
+                </div>
+                            <div>
+                    <div class="paramset"> Syntax 2
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            x        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            y        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
         <a name="___setVisible">
             <span class="objType">function</span>
             <span class="objName">setVisible</span>            
@@ -2041,6 +2460,134 @@ The base class for any drawable object.
                     </div>
                                                     <hr/>       
                                                                                     <h3>
+        <a name="___setXScale">
+            <span class="objType">function</span>
+            <span class="objName">setXScale</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    setXScale(<span class="type">Number</span>
+ scale)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Sets the horizontal scale of the entity.
+	<br> Can be animated.
+	<br> Sets the entity as dirty.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            scale        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___setXVelocity">
+            <span class="objType">function</span>
+            <span class="objName">setXVelocity</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    setXVelocity(<span class="type">Number</span>
+ x)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Sets the x velocity of the entity.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            x        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___setYScale">
+            <span class="objType">function</span>
+            <span class="objName">setYScale</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    setYScale(<span class="type">Number</span>
+ scale)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Sets the vertical scale of the entity.
+	<br> Can be animated.
+	<br> Sets the entity as dirty.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            scale        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___setYVelocity">
+            <span class="objType">function</span>
+            <span class="objName">setYVelocity</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    setYVelocity(<span class="type">Number</span>
+ y)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Sets the y velocity of the entity.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            y        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
         <a name="___show">
             <span class="objType">function</span>
             <span class="objName">show</span>            
@@ -2059,44 +2606,6 @@ The base class for any drawable object.
 	<br> An alias for setVisible(true).
 	<br> Sets the entity as dirty.
 	    </div>
-                                                    <hr/>       
-                                                                                    <h3>
-        <a name="___tick">
-            <span class="objType">function</span>
-            <span class="objName">tick</span>            
-        </a> 
-    </h3>
-                        <div>
-                <code>
-                    <span class="modifiers"></span>
-                    <span class="type"></span>
-                    tick(<span class="type">Number</span>
- time, <span class="type">Number</span>
- elapsed)
-                </code> 
-            </div>          
-                <div class="comment">
-        
-	Ticks the point.
-	<br> Updates the entity's position from its velocity.
-	<br> Used only by jayus.step.
-	    </div>
-        	<div class="parameters">
-        <span class="descSection">Parameters:</span><br/>
-                            <div>
-                    <div class="paramset"></div>
-                    <div>
-                                                <div class="param paddedDetails">
-        <code>
-            time        </code>
-         Current epoch time            </div>   
-                                                <div class="param paddedDetails">
-        <code>
-            elapsed        </code>
-         Seconds elapsed since last frame            </div>   
-                                        </div>
-                </div>
-                    </div>
                                                     <hr/>       
                                     </div>
     	    	                                    						        </div>
@@ -2158,9 +2667,6 @@ The base class for any drawable object.
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-EditableFrame.js.html">EditableFrame.js</a>
-                            </div>                              
-                                                                                                            <div>
-                                <a href="physical/file-Entity/Group.js.html">Entity.Group.js</a>
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-Entity/Rect.js.html">Entity.Rect.js</a>
@@ -2248,9 +2754,6 @@ The base class for any drawable object.
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-Wrapper.js.html">Wrapper.js</a>
-                            </div>                              
-                                                                                                            <div>
-                                <a href="physical/file-argumentOverloading/min.js.html">argumentOverloading.min.js</a>
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-easing.js.html">easing.js</a>

@@ -49,8 +49,20 @@ display.children.add(paintedLine);
 
 // Create items to move around the display
 
-addObject = function(text, x, y){
-	text = new jayus.Text(text, '60px sans-serif').setBrush({ fill: 'black' });
+addObject = function(text, x, y) {
+
+	text = jayus.Text.fromObject({
+		text: text,
+		font: '60px sans-serif',
+		brush: {
+			fill: 'black'
+		},
+		bg: {
+			fill: 'aqua',
+			alpha: 0.4,
+			stroke: 'blue'
+		}
+	});
 
 	fixDef.shape = new Box2D.Collision.Shapes.b2PolygonShape();
 	fixDef.shape.SetAsBox(text.width*jayus.box2d.scale, text.height*jayus.box2d.scale);
@@ -60,15 +72,13 @@ addObject = function(text, x, y){
 	body.CreateFixture(fixDef);
 
 	text.setBody(body);
-	text.setBg({ fill: 'aqua', alpha: 0.4, stroke: 'blue' });
 
 	display.children.add(text);
-}
+};
 
 addObject('Hello!', 80, 80);
 
-getBodyAtMouse = function(x, y){
-	var includeStatic = false;
+getBodyAtMouse = function(x, y) {
 	var mouseVec = new Box2D.Common.Math.b2Vec2(x, y);
 	var aabb = new Box2D.Collision.b2AABB();
 	aabb.lowerBound.Set(x - 0.001, y - 0.001);
@@ -77,11 +87,11 @@ getBodyAtMouse = function(x, y){
 	var fixture = new Box2D.Dynamics.b2Fixture();
 	
 	// Query the world for overlapping shapes
-	function GetBodyCallback(fixture){
+	function GetBodyCallback(fixture) {
 		var shape = fixture.GetShape();
-		if(fixture.GetBody().GetType() !== Box2D.Dynamics.b2Body.b2_staticBody || includeStatic){
+		if(fixture.GetBody().GetType() !== Box2D.Dynamics.b2Body.b2_staticBody) {
 			var inside = shape.TestPoint(fixture.GetBody().GetTransform(), mouseVec);
-			if(inside){
+			if(inside) {
 				body = fixture.GetBody();
 				return false;
 			}
@@ -95,9 +105,9 @@ getBodyAtMouse = function(x, y){
 
 mouseJoint = null;
 
-display.addHandler('leftPress', function(e){
+display.addHandler('leftPress', function(e) {
 	var body = getBodyAtMouse(display.cursor.x, display.cursor.y);
-	if(body !== null){
+	if(body !== null) {
 		var md = new Box2D.Dynamics.Joints.b2MouseJointDef();
 		md.bodyA = world.GetGroundBody();
 		md.bodyB = body;
@@ -108,8 +118,8 @@ display.addHandler('leftPress', function(e){
 		body.SetAwake(true);
 		paintedLine.shape.setPoint(1, e.x, e.y);
 		paintedLine.show();
-		body.entity.addHandler('dirty', function(type){
-			if(type & jayus.DIRTY.POSITION){
+		body.entity.addHandler('dirty', function(type) {
+			if(type & jayus.DIRTY.POSITION) {
 				var pos = this.getUnFrame().getOrigin();
 				pos.translate(this.width/2, this.height/2);
 				paintedLine.shape.setPoint(0, pos);
@@ -122,17 +132,16 @@ display.addHandler('leftPress', function(e){
 	}
 });
 
-display.addHandler('rightPress', function(e){
+display.addHandler('rightPress', function(e) {
 	var body = getBodyAtMouse(display.cursor.x, display.cursor.y);
-	if(body !== null){
-		var entity = body.entity;
+	if(body !== null) {
 		world.DestroyBody(body);
-		entity.parent.children.remove(entity);
+		display.children.remove(body.entity);
 	}
 });
 
-display.addHandler('leftRelease', function(e){
-	if(mouseJoint){
+display.addHandler('leftRelease', function(e) {
+	if(mouseJoint) {
 		draggedBody.entity.removeHandlers('dirty');
 		paintedLine.hide();
 		world.DestroyJoint(mouseJoint);
@@ -140,8 +149,8 @@ display.addHandler('leftRelease', function(e){
 	}
 });
 
-display.addHandler('cursorMove', function(e){
-	if(mouseJoint){
+display.addHandler('cursorMove', function(e) {
+	if(mouseJoint) {
 		paintedLine.shape.setPoint(1, e.x, e.y);
 		var p2 = new Box2D.Common.Math.b2Vec2(display.cursor.x, display.cursor.y);
 		mouseJoint.SetTarget(p2);

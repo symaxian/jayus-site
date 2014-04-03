@@ -9,23 +9,28 @@ linearGradient = new jayus.LinearGradient(startPoint, endPoint).
 	addColorStop(0.8, 'blue').
 	addColorStop(1, 'purple');
 
-brush = { stroke: 'white', lineWidth: 2 };
+brush = { stroke: '#BBB', lineWidth: 3 };
 
 handle1 = new jayus.Circle(startPoint, 12).paintedWith(brush);
 handle2 = new jayus.Circle(endPoint, 12).paintedWith(brush);
 
-handle1.canAcceptCursor = true;
-handle2.canAcceptCursor = true;
-
 display.setBg({ fill: linearGradient }).children.add(handle1, handle2);
 
+handle1.addHandler('dirty', function(type) {
+	linearGradient.start.set(this.shape.x, this.shape.y);
+});
+
+handle2.addHandler('dirty', function(type) {
+	linearGradient.end.set(this.shape.x, this.shape.y);
+});
+
 display.children.forEach(function(){
-	this.setDraggable(true);
+	this.setDragButton('left');
 	this.addHandler('cursorEnter',function(){
-		this.brush.setLineWidth(4);
+		this.brush.setLineWidth(8);
 	});
 	this.addHandler('cursorLeave',function(){
-		this.brush.setLineWidth(2);
+		this.brush.setLineWidth(3);
 	});
 });
 

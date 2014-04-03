@@ -185,6 +185,16 @@ The base class for any drawable object.    </div>
                     <div class="summaryItem">
                                         <div class="summaryItemDef">
         <span class="elementName">
+            <a href="logical/jayus/FlexibleFrame.html">jayus.FlexibleFrame</a>
+        </span>
+    </div>
+    <div class="summaryItemDesc">
+        
+A flexible version of the Frame entity.    </div>
+                            </div>
+                    <div class="summaryItem">
+                                        <div class="summaryItemDef">
+        <span class="elementName">
             <a href="logical/jayus/FlowLayout.html">jayus.FlowLayout</a>
         </span>
     </div>
@@ -200,7 +210,7 @@ Arranges children in a manner similar to that of word-wrapped text.    </div>
     </div>
     <div class="summaryItemDesc">
         
-Represents padded border around an Entity.    </div>
+An entity that serves as a padded border around an entity.    </div>
                             </div>
                     <div class="summaryItem">
                                         <div class="summaryItemDef">
@@ -286,6 +296,16 @@ A two-dimensional transformation matrix.    </div>
                                         <div class="summaryItemDef">
         <span class="elementName">
             <a href="logical/jayus/MethodAnimator.html">jayus.MethodAnimator</a>
+        </span>
+    </div>
+    <div class="summaryItemDesc">
+        
+An animator that continually calls a method on an object with numeric properties.    </div>
+                            </div>
+                    <div class="summaryItem">
+                                        <div class="summaryItemDef">
+        <span class="elementName">
+            <a href="logical/jayus/MethodAnimatorBy.html">jayus.MethodAnimatorBy</a>
         </span>
     </div>
     <div class="summaryItemDesc">
@@ -535,16 +555,6 @@ A widget that organizes child widgets into a vertical column.    </div>
                                                 <div class="summaryItemDef">
         <span class="modifiers"></span>
         <span class="type">Object</span>
-        <a href="logical/jayus.html#___SHAPES"><span class="elementName">SHAPES</span></a>
-    </div> 
-    <div class="summaryItemDesc">
-        
-	An enumeration of the types that the jayus.intersectTest() method can check against.    </div>  
-                            </div>
-                    <div class="summaryItem">
-                                                <div class="summaryItemDef">
-        <span class="modifiers"></span>
-        <span class="type">Object</span>
         <a href="logical/jayus.html#___TYPES"><span class="elementName">TYPES</span></a>
     </div> 
     <div class="summaryItemDesc">
@@ -570,6 +580,16 @@ A widget that organizes child widgets into a vertical column.    </div>
     <div class="summaryItemDesc">
         
 	The Entity that has cursor focus.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Boolean</span>
+        <a href="logical/jayus.html#___declareChildrenAsProperties"><span class="elementName">declareChildrenAsProperties</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	Determines whether children will be mapped onto their parent object as properties, using their ID as the key.    </div>  
                             </div>
                     <div class="summaryItem">
                                                 <div class="summaryItemDef">
@@ -614,16 +634,6 @@ A widget that organizes child widgets into a vertical column.    </div>
                     <div class="summaryItem">
                                                 <div class="summaryItemDef">
         <span class="modifiers"></span>
-        <span class="type">Boolean</span>
-        <a href="logical/jayus.html#___frameIntervalRunning"><span class="elementName">frameIntervalRunning</span></a>
-    </div> 
-    <div class="summaryItemDesc">
-        
-	Whether an upcoming call to jayus.step() is expected.    </div>  
-                            </div>
-                    <div class="summaryItem">
-                                                <div class="summaryItemDef">
-        <span class="modifiers"></span>
         <span class="type">Number</span>
         <a href="logical/jayus.html#___framerate"><span class="elementName">framerate</span></a>
     </div> 
@@ -644,12 +654,22 @@ A widget that organizes child widgets into a vertical column.    </div>
                     <div class="summaryItem">
                                                 <div class="summaryItemDef">
         <span class="modifiers"></span>
-        <span class="type">Number</span>
-        <a href="logical/jayus.html#___interval"><span class="elementName">interval</span></a>
+        <span class="type">Array</span>
+        <a href="logical/jayus.html#___identifiedObjects"><span class="elementName">identifiedObjects</span></a>
     </div> 
     <div class="summaryItemDesc">
         
-	The id for the main frame loop interval.    </div>  
+	An array of identified objects.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Boolean</span>
+        <a href="logical/jayus.html#___keepTrackOfObjects"><span class="elementName">keepTrackOfObjects</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	Determines whether identified entities will be stored in jayus.identifiedObjects or not.    </div>  
                             </div>
                     <div class="summaryItem">
                                                 <div class="summaryItemDef">
@@ -659,7 +679,17 @@ A widget that organizes child widgets into a vertical column.    </div>
     </div> 
     <div class="summaryItemDesc">
         
-	The time(in epoch time) when the previous frame began, used in calculating frames per second.    </div>  
+	The time(in epoch time) when the previous frame was drawn, used in calculating frames per second.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Number</span>
+        <a href="logical/jayus.html#___lastStepTime"><span class="elementName">lastStepTime</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	The time(in epoch time) when jayus was previously stepped(updated).    </div>  
                             </div>
                     <div class="summaryItem">
                                                 <div class="summaryItemDef">
@@ -670,6 +700,16 @@ A widget that organizes child widgets into a vertical column.    </div>
     <div class="summaryItemDesc">
         
 	Whether jayus is runnning or not.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Number</span>
+        <a href="logical/jayus.html#___steprate"><span class="elementName">steprate</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	The desired animation steps per second.    </div>  
                             </div>
                     <div class="summaryItem">
                                                 <div class="summaryItemDef">
@@ -761,17 +801,14 @@ A widget that organizes child widgets into a vertical column.    </div>
 	Returns browser and OS info.    </div>  
                             </div>
                     <div class="summaryItem">
-                                                                    <div class="summaryItemDef">
+                                                           <div class="summaryItemDef">
                 <span class="modifiers"></span>
-                <span class="type">Number</span>
-                <a href="logical/jayus.html#___distance"><span class="elementName">distance</span></a>
-                (<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
- a, <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
- b)
-            </div>          
-                <div class="summaryItemDesc">
+                <span class="type"></span>
+                <a href="logical/jayus.html#___frame"><span class="elementName">frame</span></a>()
+            </div>
+        <div class="summaryItemDesc">
         
-	Returns the distance between the points a and b.    </div>  
+	Refreshes the displays.    </div>  
                             </div>
                     <div class="summaryItem">
                                                            <div class="summaryItemDef">
@@ -798,6 +835,41 @@ A widget that organizes child widgets into a vertical column.    </div>
                     <div class="summaryItem">
                                                                     <div class="summaryItemDef">
                 <span class="modifiers"></span>
+                <span class="type">Object</span>
+                <a href="logical/jayus.html#___getObject"><span class="elementName">getObject</span></a>
+                (<span class="type">String|Number</span>
+ id)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Returns the object with the specified id, or null.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"></span>
+                <a href="logical/jayus.html#___getTextMetrics"><span class="elementName">getTextMetrics</span></a>
+                (<span class="type">String</span>
+ text, <span class="type">String</span>
+ font)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Returns an object holding the dimensions of the given text in the given font.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                           <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Object</span>
+                <a href="logical/jayus.html#___getUrlParameters"><span class="elementName">getUrlParameters</span></a>()
+            </div>
+        <div class="summaryItemDesc">
+        
+	Returns an object holding the parameters extracted from the current URL.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
                 <span class="type"></span>
                 <a href="logical/jayus.html#___getVerticalFontMetrics"><span class="elementName">getVerticalFontMetrics</span></a>
                 (<span class="type">String</span>
@@ -818,16 +890,6 @@ A widget that organizes child widgets into a vertical column.    </div>
 	Initializes Jayus.    </div>  
                             </div>
                     <div class="summaryItem">
-                                                           <div class="summaryItemDef">
-                <span class="modifiers"></span>
-                <span class="type">Boolean</span>
-                <a href="logical/jayus.html#___intersectTest"><span class="elementName">intersectTest</span></a>()
-            </div>
-        <div class="summaryItemDesc">
-        
-	Tests for the intersection of two Entities or Shape objects.    </div>  
-                            </div>
-                    <div class="summaryItem">
                                                                     <div class="summaryItemDef">
                 <span class="modifiers"></span>
                 <span class="type">Boolean</span>
@@ -842,15 +904,26 @@ A widget that organizes child widgets into a vertical column.    </div>
                     <div class="summaryItem">
                                                                     <div class="summaryItemDef">
                 <span class="modifiers"></span>
-                <span class="type"></span>
-                <a href="logical/jayus.html#___measureText"><span class="elementName">measureText</span></a>
-                (<span class="type">String</span>
- text, <span class="type">String</span>
- font)
+                <span class="type">Object</span>
+                <a href="logical/jayus.html#___mustGetObject"><span class="elementName">mustGetObject</span></a>
+                (<span class="type">String|Number</span>
+ id)
             </div>          
                 <div class="summaryItemDesc">
         
-	Returns an object holding the dimensions of the given text in the given font.    </div>  
+	Returns the object with the specified id, or throws an error if not found.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"><a href="logical/jayus/Entity.html">Entity</a></span>
+                <a href="logical/jayus.html#___parse"><span class="elementName">parse</span></a>
+                (<span class="type">Object</span>
+ obj)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Returns the scenegraph described by the given object.    </div>  
                             </div>
                     <div class="summaryItem">
                                                            <div class="summaryItemDef">
@@ -870,7 +943,7 @@ A widget that organizes child widgets into a vertical column.    </div>
             </div>
         <div class="summaryItemDesc">
         
-	Calls the main client function, updates any running animations, and refreshes the displays.    </div>  
+	Updates any animations.    </div>  
                             </div>
                     <div class="summaryItem">
                                                            <div class="summaryItemDef">
@@ -889,27 +962,6 @@ A widget that organizes child widgets into a vertical column.    </div>
     	    	            <div class="details property">
             <h2 class="sectionHeader">Property Details</h2>
                                                             
-            <h3>
-        <a name="___SHAPES">
-            <span class="objType">property</span> <span class="modifiers"></span>
-            <span class="type">Object</span>
-            <span class="objName">SHAPES</span>         
-        </a>
-    </h3>
-    <div class="comment">
-        
-	An enumeration of the types that the jayus.intersectTest() method can check against.
-	<br> Values are:
-		LIST,
-		CUSTOM,
-		POINT,
-		CIRCLE,
-		RECTANGLE,
-		POLYGON,
-		PATH.
-	    </div>    
-                                        <hr />  
-                                                                            
             <h3>
         <a name="___TYPES">
             <span class="objType">property</span> <span class="modifiers"></span>
@@ -979,6 +1031,22 @@ A widget that organizes child widgets into a vertical column.    </div>
                                         <hr />  
                                                                             
             <h3>
+        <a name="___declareChildrenAsProperties">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Boolean</span>
+            <span class="objName">declareChildrenAsProperties</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	Determines whether children will be mapped onto their parent object as properties, using their ID as the key.
+	<br> The child must have an ID and it may not collide with any pre-existing property, else an error will be displayed if using the 'debug' version of jayus.
+	<br> One way ensure there are never any collisions with built-in properties is to capitalize all of your entity ID's.
+	<br> Default is true.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
         <a name="___displays">
             <span class="objType">property</span> <span class="modifiers"></span>
             <span class="type">Array<Display></span>
@@ -1035,20 +1103,6 @@ A widget that organizes child widgets into a vertical column.    </div>
                                         <hr />  
                                                                             
             <h3>
-        <a name="___frameIntervalRunning">
-            <span class="objType">property</span> <span class="modifiers"></span>
-            <span class="type">Boolean</span>
-            <span class="objName">frameIntervalRunning</span>         
-        </a>
-    </h3>
-    <div class="comment">
-        
-	Whether an upcoming call to jayus.step() is expected.
-	<br> Do not modify.
-	    </div>    
-                                        <hr />  
-                                                                            
-            <h3>
         <a name="___framerate">
             <span class="objType">property</span> <span class="modifiers"></span>
             <span class="type">Number</span>
@@ -1058,6 +1112,8 @@ A widget that organizes child widgets into a vertical column.    </div>
     <div class="comment">
         
 	The desired framerate.
+	<br> This framerate is only used if the browsers requestAnimationFrame() function is unavailable.
+	<br> After changing this property jayus must be restarted if it is running.
 	<br> Default is 60
 	    </div>    
                                         <hr />  
@@ -1076,15 +1132,29 @@ A widget that organizes child widgets into a vertical column.    </div>
                                         <hr />  
                                                                             
             <h3>
-        <a name="___interval">
+        <a name="___identifiedObjects">
             <span class="objType">property</span> <span class="modifiers"></span>
-            <span class="type">Number</span>
-            <span class="objName">interval</span>         
+            <span class="type">Array</span>
+            <span class="objName">identifiedObjects</span>         
         </a>
     </h3>
     <div class="comment">
         
-	The id for the main frame loop interval.
+	An array of identified objects.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___keepTrackOfObjects">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Boolean</span>
+            <span class="objName">keepTrackOfObjects</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	Determines whether identified entities will be stored in jayus.identifiedObjects or not.
+	<br> Default is false.
 	    </div>    
                                         <hr />  
                                                                             
@@ -1097,7 +1167,20 @@ A widget that organizes child widgets into a vertical column.    </div>
     </h3>
     <div class="comment">
         
-	The time(in epoch time) when the previous frame began, used in calculating frames per second.
+	The time(in epoch time) when the previous frame was drawn, used in calculating frames per second.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___lastStepTime">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Number</span>
+            <span class="objName">lastStepTime</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	The time(in epoch time) when jayus was previously stepped(updated).
 	    </div>    
                                         <hr />  
                                                                             
@@ -1112,6 +1195,21 @@ A widget that organizes child widgets into a vertical column.    </div>
         
 	Whether jayus is runnning or not.
 	<br> Do not modify, use jayus.start() and jayus.stop().
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___steprate">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Number</span>
+            <span class="objName">steprate</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	The desired animation steps per second.
+	<br> After changing this property jayus must be restarted if it is running.
+	<br> Default is 60
 	    </div>    
                                         <hr />  
                                                                             
@@ -1316,40 +1414,26 @@ A widget that organizes child widgets into a vertical column.    </div>
 	    </div>
                                                     <hr/>       
                                                                                     <h3>
-        <a name="___distance">
+        <a name="___frame">
             <span class="objType">function</span>
-            <span class="objName">distance</span>            
+            <span class="objName">frame</span>            
         </a> 
     </h3>
-                        <div>
+                <div>
                 <code>
                     <span class="modifiers"></span>
-                    <span class="type">Number</span>
-                    distance(<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
- a, <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
- b)
-                </code> 
-            </div>          
-                <div class="comment">
+                    <span class="type"></span>
+                    frame()
+                </code>
+            </div>    
+        <div class="comment">
         
-	Returns the distance between the points a and b.
+	Refreshes the displays.
+	<br> Procedure:
+	<br> - Fire the frame event
+	<br> - Update the fps
+	<br> - Refresh the displays
 	    </div>
-        	<div class="parameters">
-        <span class="descSection">Parameters:</span><br/>
-                            <div>
-                    <div class="paramset"></div>
-                    <div>
-                                                <div class="param paddedDetails">
-        <code>
-            a        </code>
-                    </div>   
-                                                <div class="param paddedDetails">
-        <code>
-            b        </code>
-                    </div>   
-                                        </div>
-                </div>
-                    </div>
                                                     <hr/>       
                                                                                     <h3>
         <a name="___getContext">
@@ -1401,6 +1485,129 @@ A widget that organizes child widgets into a vertical column.    </div>
                                         </div>
                 </div>
                     </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___getObject">
+            <span class="objType">function</span>
+            <span class="objName">getObject</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Object</span>
+                    getObject(<span class="type">String|Number</span>
+ id)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Returns the object with the specified id, or null.
+	<br> Only works if jayus.keepTrackOfObjects is true.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            id        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___getTextMetrics">
+            <span class="objType">function</span>
+            <span class="objName">getTextMetrics</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"></span>
+                    getTextMetrics(<span class="type">String</span>
+ text, <span class="type">String</span>
+ font)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Returns an object holding the dimensions of the given text in the given font.
+	<br> The font dimensions are cached if not already.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            text        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            font        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+            	<div class="returns">
+	        <span class="descSection">Returns:</span><br/>
+	        <div class="paddedDetails">
+	            	             {Object}
+		            	                <ul class="paramoption">
+	                    	                            <li>
+        <code>
+                        <span class="modifiers"></span>
+            <span class="type">Number</span>
+            width
+                    </code> 
+            </li>
+	                    	                            <li>
+        <code>
+                        <span class="modifiers"></span>
+            <span class="type">Number</span>
+            height
+                    </code> 
+            </li>
+	                    	                            <li>
+        <code>
+                        <span class="modifiers"></span>
+            <span class="type">Number</span>
+            ascent
+                    </code> 
+            </li>
+	                    	                            <li>
+        <code>
+                        <span class="modifiers"></span>
+            <span class="type">Number</span>
+            descent
+                    </code> 
+            </li>
+	                    	                </ul>
+	            	        </div>
+        </div>      
+                                                <hr/>       
+                                                                                    <h3>
+        <a name="___getUrlParameters">
+            <span class="objType">function</span>
+            <span class="objName">getUrlParameters</span>            
+        </a> 
+    </h3>
+                <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Object</span>
+                    getUrlParameters()
+                </code>
+            </div>    
+        <div class="comment">
+        
+	Returns an object holding the parameters extracted from the current URL.
+	    </div>
                                                     <hr/>       
                                                                                     <h3>
         <a name="___getVerticalFontMetrics">
@@ -1483,25 +1690,6 @@ A widget that organizes child widgets into a vertical column.    </div>
 	    </div>
                                                     <hr/>       
                                                                                     <h3>
-        <a name="___intersectTest">
-            <span class="objType">function</span>
-            <span class="objName">intersectTest</span>            
-        </a> 
-    </h3>
-                <div>
-                <code>
-                    <span class="modifiers"></span>
-                    <span class="type">Boolean</span>
-                    intersectTest()
-                </code>
-            </div>    
-        <div class="comment">
-        
-	Tests for the intersection of two Entities or Shape objects.
-	<br> Each object must have a shapeType property corresponding to one found in jayus.SHAPES.
-	    </div>
-                                                    <hr/>       
-                                                                                    <h3>
         <a name="___isFontCached">
             <span class="objType">function</span>
             <span class="objName">isFontCached</span>            
@@ -1533,24 +1721,23 @@ A widget that organizes child widgets into a vertical column.    </div>
                     </div>
                                                     <hr/>       
                                                                                     <h3>
-        <a name="___measureText">
+        <a name="___mustGetObject">
             <span class="objType">function</span>
-            <span class="objName">measureText</span>            
+            <span class="objName">mustGetObject</span>            
         </a> 
     </h3>
                         <div>
                 <code>
                     <span class="modifiers"></span>
-                    <span class="type"></span>
-                    measureText(<span class="type">String</span>
- text, <span class="type">String</span>
- font)
+                    <span class="type">Object</span>
+                    mustGetObject(<span class="type">String|Number</span>
+ id)
                 </code> 
             </div>          
                 <div class="comment">
         
-	Returns an object holding the dimensions of the given text in the given font.
-	<br> The font dimensions are cached if not already.
+	Returns the object with the specified id, or throws an error if not found.
+	<br> Only works if jayus.keepTrackOfObjects is true.
 	    </div>
         	<div class="parameters">
         <span class="descSection">Parameters:</span><br/>
@@ -1559,52 +1746,43 @@ A widget that organizes child widgets into a vertical column.    </div>
                     <div>
                                                 <div class="param paddedDetails">
         <code>
-            text        </code>
-                    </div>   
-                                                <div class="param paddedDetails">
-        <code>
-            font        </code>
+            id        </code>
                     </div>   
                                         </div>
                 </div>
                     </div>
-            	<div class="returns">
-	        <span class="descSection">Returns:</span><br/>
-	        <div class="paddedDetails">
-	            	             {Object}
-		            	                <ul class="paramoption">
-	                    	                            <li>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___parse">
+            <span class="objType">function</span>
+            <span class="objName">parse</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"><a href="logical/jayus/Entity.html">Entity</a></span>
+                    parse(<span class="type">Object</span>
+ obj)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Returns the scenegraph described by the given object.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
         <code>
-                        <span class="modifiers"></span>
-            <span class="type">Number</span>
-            width
-                    </code> 
-            </li>
-	                    	                            <li>
-        <code>
-                        <span class="modifiers"></span>
-            <span class="type">Number</span>
-            height
-                    </code> 
-            </li>
-	                    	                            <li>
-        <code>
-                        <span class="modifiers"></span>
-            <span class="type">Number</span>
-            ascent
-                    </code> 
-            </li>
-	                    	                            <li>
-        <code>
-                        <span class="modifiers"></span>
-            <span class="type">Number</span>
-            descent
-                    </code> 
-            </li>
-	                    	                </ul>
-	            	        </div>
-        </div>      
-                                                <hr/>       
+            obj        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
                                                                                     <h3>
         <a name="___start">
             <span class="objType">function</span>
@@ -1638,14 +1816,11 @@ A widget that organizes child widgets into a vertical column.    </div>
             </div>    
         <div class="comment">
         
-	Calls the main client function, updates any running animations, and refreshes the displays.
+	Updates any animations.
 	<br> Procedure:
-	<br> - Fire the frame event
-	<br> - Update the fps
-	<br> - Process any pending events
+	<br> - Fire the step event
+	<br> - Process any pending cursor events
 	<br> - Tick the running animators
-	<br> - Step Box2D, if enabled
-	<br> - Refresh the displays
 	    </div>
                                                     <hr/>       
                                                                                     <h3>
@@ -1727,9 +1902,6 @@ A widget that organizes child widgets into a vertical column.    </div>
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-EditableFrame.js.html">EditableFrame.js</a>
-                            </div>                              
-                                                                                                            <div>
-                                <a href="physical/file-Entity/Group.js.html">Entity.Group.js</a>
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-Entity/Rect.js.html">Entity.Rect.js</a>
@@ -1817,9 +1989,6 @@ A widget that organizes child widgets into a vertical column.    </div>
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-Wrapper.js.html">Wrapper.js</a>
-                            </div>                              
-                                                                                                            <div>
-                                <a href="physical/file-argumentOverloading/min.js.html">argumentOverloading.min.js</a>
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-easing.js.html">easing.js</a>

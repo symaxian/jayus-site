@@ -6,7 +6,7 @@ title: Jayus
 <h1 class="page-header">Terminology</h1>
 
 <p>
-	Many of the terms used on this website are defined below.
+	Some of the more uncommon terms used on this website are defined below.
 </p>
 
 <dl class="dl-horizontal">
@@ -14,16 +14,19 @@ title: Jayus
 	<dt>scenegraph</dt>
 	<dd>A structure that arranges the logical and often (but not necessarily) spatial representation of a graphical scene. - <a href="http://en.wikipedia.org/wiki/Scene_graph" target="_newtab">Wikipedia</a></dd>
 
-	<dt>tile<a name="tile"></a></dt>
+	<dt>tile<a id="tile"></a></dt>
 	<dd>A small image that usually forms part of a background in a game. Used almost interchangeably with <a href="#sprite">sprite</a>, though a sprite is used more generally.</dd>
 
-	<dt>sprite<a name="sprite"></a></dt>
-	<dd>A small image, usually one included in a game. A sprite used in the background is also referred to as a <a href="#tile">tile</a>.</dd>
+	<dt>sprite<a id="sprite"></a></dt>
+	<dd>A small image, usually one used in a game. A sprite used in the background is also referred to as a <a href="#tile">tile</a>.</dd>
 
-	<dt>scope</dt>
+	<dt>scope<a id="scope"></a></dt>
 	<dd>The rectangular area encompassing all visual changes that would result from rendering an entity, also known as a dirty rect or region.</dd>
 
-	<dt>entity</dt>
+	<dt>entity<a id="entity"></a></dt>
 	<dd>A node in the scenegraph. An object that has a direct visual representation. Entities in jayus are meant to represent the logical and spatial relationships between objects on the screen.</dd>
+
+	<dt>bounds<a id="bounds"></a></dt>
+	<dd>The "physical" shape of the entity, which determines cursor intersection and intersections with other entities. Most entities use their rectangular frame as their bounds but many can have their bounds set to any shape.</dd>
 
 </dl>

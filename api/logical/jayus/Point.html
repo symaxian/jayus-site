@@ -119,7 +119,7 @@ Represents a point in two dimensional space.
                                                                     <div class="summaryItemDef">
                 <span class="modifiers"></span>
                 <span class="type"></span>
-                <a href="logical/jayus/Point.html#___init"><span class="elementName">init</span></a>
+                <a href="logical/jayus/Point.html#___Point"><span class="elementName">Point</span></a>
                 (<span class="type">Number</span>
  x, <span class="type">Number</span>
  y)
@@ -138,7 +138,7 @@ Represents a point in two dimensional space.
                     <div class="summaryItem">
                                                            <div class="summaryItemDef">
                 <span class="modifiers"></span>
-                <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                <span class="type"><a href="logical/jayus/Point.html#___Point">Point</a></span>
                 <a href="logical/jayus/Point.html#___clone"><span class="elementName">clone</span></a>()
             </div>
         <div class="summaryItemDesc">
@@ -148,9 +148,21 @@ Represents a point in two dimensional space.
                     <div class="summaryItem">
                                                                     <div class="summaryItemDef">
                 <span class="modifiers"></span>
+                <span class="type"><a href="logical/jayus/Point.html#___Point">Point</a></span>
+                <a href="logical/jayus/Point.html#___cloneOnto"><span class="elementName">cloneOnto</span></a>
+                (<span class="type"><a href="logical/jayus/Point.html#___Point">Point</a></span>
+ ret)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Clones this point onto the sent one.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
                 <span class="type">Boolean</span>
                 <a href="logical/jayus/Point.html#___equals"><span class="elementName">equals</span></a>
-                (<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                (<span class="type"><a href="logical/jayus/Point.html#___Point">Point</a></span>
  point)
             </div>          
                     <div class="summaryItemDef">
@@ -167,13 +179,6 @@ Represents a point in two dimensional space.
                             </div>
                     <div class="summaryItem">
                                                                     <div class="summaryItemDef">
-                <span class="modifiers"></span>
-                <span class="type">Self</span>
-                <a href="logical/jayus/Point.html#___set"><span class="elementName">set</span></a>
-                (<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
- point)
-            </div>          
-                    <div class="summaryItemDef">
                 <span class="modifiers"></span>
                 <span class="type">Self</span>
                 <a href="logical/jayus/Point.html#___set"><span class="elementName">set</span></a>
@@ -214,7 +219,7 @@ Represents a point in two dimensional space.
                 <span class="modifiers"></span>
                 <span class="type">Self</span>
                 <a href="logical/jayus/Point.html#___translate"><span class="elementName">translate</span></a>
-                (<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                (<span class="type"><a href="logical/jayus/Point.html#___Point">Point</a></span>
  point)
             </div>          
                     <div class="summaryItemDef">
@@ -267,16 +272,16 @@ Represents a point in two dimensional space.
     	            <div class="details constructor">
             <h2 class="sectionHeader">Constructor Details</h2>
                                                                     <h3>
-        <a name="___init">
+        <a name="___Point">
             <span class="objType">constructor</span>
-            <span class="objName">init</span>            
+            <span class="objName">Point</span>            
         </a> 
     </h3>
                         <div>
                 <code>
                     <span class="modifiers"></span>
                     <span class="type"></span>
-                    init(<span class="type">Number</span>
+                    Point(<span class="type">Number</span>
  x, <span class="type">Number</span>
  y)
                 </code> 
@@ -314,7 +319,7 @@ Represents a point in two dimensional space.
                 <div>
                 <code>
                     <span class="modifiers"></span>
-                    <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    <span class="type"><a href="logical/jayus/Point.html#___Point">Point</a></span>
                     clone()
                 </code>
             </div>    
@@ -322,6 +327,38 @@ Represents a point in two dimensional space.
         
 	Returns a clone of this point.
 	    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___cloneOnto">
+            <span class="objType">function</span>
+            <span class="objName">cloneOnto</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"><a href="logical/jayus/Point.html#___Point">Point</a></span>
+                    cloneOnto(<span class="type"><a href="logical/jayus/Point.html#___Point">Point</a></span>
+ ret)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Clones this point onto the sent one.
+	<br> Does not dirty the sent point.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            ret        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
                                                     <hr/>       
                                                                                     <h3>
         <a name="___equals">
@@ -333,7 +370,7 @@ Represents a point in two dimensional space.
                 <code>
                     <span class="modifiers"></span>
                     <span class="type">Boolean</span>
-                    equals(<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    equals(<span class="type"><a href="logical/jayus/Point.html#___Point">Point</a></span>
  point)
                 </code> 
             </div>          
@@ -388,14 +425,6 @@ Represents a point in two dimensional space.
                 <code>
                     <span class="modifiers"></span>
                     <span class="type">Self</span>
-                    set(<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
- point)
-                </code> 
-            </div>          
-                    <div>
-                <code>
-                    <span class="modifiers"></span>
-                    <span class="type">Self</span>
                     set(<span class="type">Number</span>
  x, <span class="type">Number</span>
  y)
@@ -409,18 +438,7 @@ Represents a point in two dimensional space.
         	<div class="parameters">
         <span class="descSection">Parameters:</span><br/>
                             <div>
-                    <div class="paramset"> 1
-	</div>
-                    <div>
-                                                <div class="param paddedDetails">
-        <code>
-            point        </code>
-                    </div>   
-                                        </div>
-                </div>
-                            <div>
-                    <div class="paramset"> 2
-	</div>
+                    <div class="paramset"></div>
                     <div>
                                                 <div class="param paddedDetails">
         <code>
@@ -508,7 +526,7 @@ Represents a point in two dimensional space.
                 <code>
                     <span class="modifiers"></span>
                     <span class="type">Self</span>
-                    translate(<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    translate(<span class="type"><a href="logical/jayus/Point.html#___Point">Point</a></span>
  point)
                 </code> 
             </div>          
@@ -616,9 +634,6 @@ Represents a point in two dimensional space.
                                 <a href="physical/file-EditableFrame.js.html">EditableFrame.js</a>
                             </div>                              
                                                                                                             <div>
-                                <a href="physical/file-Entity/Group.js.html">Entity.Group.js</a>
-                            </div>                              
-                                                                                                            <div>
                                 <a href="physical/file-Entity/Rect.js.html">Entity.Rect.js</a>
                             </div>                              
                                                                                                             <div>
@@ -704,9 +719,6 @@ Represents a point in two dimensional space.
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-Wrapper.js.html">Wrapper.js</a>
-                            </div>                              
-                                                                                                            <div>
-                                <a href="physical/file-argumentOverloading/min.js.html">argumentOverloading.min.js</a>
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-easing.js.html">easing.js</a>

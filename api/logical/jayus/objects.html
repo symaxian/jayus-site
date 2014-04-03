@@ -118,7 +118,7 @@ The objects module, used for preloading JSON files.
                 <span class="modifiers"></span>
                 <span class="type">Object</span>
                 <a href="logical/jayus/objects.html#___get"><span class="elementName">get</span></a>
-                (<span class="type">String</span>
+                (<span class="type">String|Array<String></span>
  filepath)
             </div>          
                 <div class="summaryItemDesc">
@@ -129,8 +129,8 @@ The objects module, used for preloading JSON files.
                                                                     <div class="summaryItemDef">
                 <span class="modifiers"></span>
                 <span class="type">Object</span>
-                <a href="logical/jayus/objects.html#___has"><span class="elementName">has</span></a>
-                (<span class="type">String</span>
+                <a href="logical/jayus/objects.html#___isLoaded"><span class="elementName">isLoaded</span></a>
+                (<span class="type">String|Array<String></span>
  filepath)
             </div>          
                 <div class="summaryItemDesc">
@@ -142,9 +142,8 @@ The objects module, used for preloading JSON files.
                 <span class="modifiers"></span>
                 <span class="type"></span>
                 <a href="logical/jayus/objects.html#___load"><span class="elementName">load</span></a>
-                (<span class="type">String</span>
- filepath, <span class="type">Function</span>
- handler)
+                (<span class="type">String|Array<String></span>
+ filepath)
             </div>          
                 <div class="summaryItemDesc">
         
@@ -153,15 +152,15 @@ The objects module, used for preloading JSON files.
                     <div class="summaryItem">
                                                                     <div class="summaryItemDef">
                 <span class="modifiers"></span>
-                <span class="type"></span>
-                <a href="logical/jayus/objects.html#___loadAll"><span class="elementName">loadAll</span></a>
-                (<span class="type">Array<String></span>
- filepaths, <span class="type">Function</span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/objects.html#___whenLoaded"><span class="elementName">whenLoaded</span></a>
+                (<span class="type">String|Array<String></span>
+ filepath, <span class="type">Function</span>
  handler)
             </div>          
                 <div class="summaryItemDesc">
         
-	Loads the specified objects.    </div>  
+	Runs the callback handler when the object is loaded.    </div>  
                             </div>
                 </div>
         <p/>
@@ -210,7 +209,7 @@ The objects module, used for preloading JSON files.
                 <code>
                     <span class="modifiers"></span>
                     <span class="type">Object</span>
-                    get(<span class="type">String</span>
+                    get(<span class="type">String|Array<String></span>
  filepath)
                 </code> 
             </div>          
@@ -233,16 +232,16 @@ The objects module, used for preloading JSON files.
                     </div>
                                                     <hr/>       
                                                                                     <h3>
-        <a name="___has">
+        <a name="___isLoaded">
             <span class="objType">function</span>
-            <span class="objName">has</span>            
+            <span class="objName">isLoaded</span>            
         </a> 
     </h3>
                         <div>
                 <code>
                     <span class="modifiers"></span>
                     <span class="type">Object</span>
-                    has(<span class="type">String</span>
+                    isLoaded(<span class="type">String|Array<String></span>
  filepath)
                 </code> 
             </div>          
@@ -273,9 +272,8 @@ The objects module, used for preloading JSON files.
                 <code>
                     <span class="modifiers"></span>
                     <span class="type"></span>
-                    load(<span class="type">String</span>
- filepath, <span class="type">Function</span>
- handler)
+                    load(<span class="type">String|Array<String></span>
+ filepath)
                 </code> 
             </div>          
                 <div class="comment">
@@ -294,33 +292,30 @@ The objects module, used for preloading JSON files.
         <code>
             filepath        </code>
                     </div>   
-                                                <div class="param paddedDetails">
-        <code>
-            handler        </code>
-         Optional            </div>   
                                         </div>
                 </div>
                     </div>
                                                     <hr/>       
                                                                                     <h3>
-        <a name="___loadAll">
+        <a name="___whenLoaded">
             <span class="objType">function</span>
-            <span class="objName">loadAll</span>            
+            <span class="objName">whenLoaded</span>            
         </a> 
     </h3>
                         <div>
                 <code>
                     <span class="modifiers"></span>
-                    <span class="type"></span>
-                    loadAll(<span class="type">Array<String></span>
- filepaths, <span class="type">Function</span>
+                    <span class="type">Self</span>
+                    whenLoaded(<span class="type">String|Array<String></span>
+ filepath, <span class="type">Function</span>
  handler)
                 </code> 
             </div>          
                 <div class="comment">
         
-	Loads the specified objects.
-	<br> The optional callback handler will be executed when all the objects have been loaded, or immediately if they have all already been loaded.
+	Runs the callback handler when the object is loaded.
+	<br> Attaches a handler for the 'loaded' event, or the object is already loaded it calls the function immediately.
+	<br> The context for the handler is the global scope.
 	    </div>
         	<div class="parameters">
         <span class="descSection">Parameters:</span><br/>
@@ -329,12 +324,12 @@ The objects module, used for preloading JSON files.
                     <div>
                                                 <div class="param paddedDetails">
         <code>
-            filepaths        </code>
+            filepath        </code>
                     </div>   
                                                 <div class="param paddedDetails">
         <code>
             handler        </code>
-         Optional            </div>   
+                    </div>   
                                         </div>
                 </div>
                     </div>
@@ -399,9 +394,6 @@ The objects module, used for preloading JSON files.
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-EditableFrame.js.html">EditableFrame.js</a>
-                            </div>                              
-                                                                                                            <div>
-                                <a href="physical/file-Entity/Group.js.html">Entity.Group.js</a>
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-Entity/Rect.js.html">Entity.Rect.js</a>
@@ -489,9 +481,6 @@ The objects module, used for preloading JSON files.
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-Wrapper.js.html">Wrapper.js</a>
-                            </div>                              
-                                                                                                            <div>
-                                <a href="physical/file-argumentOverloading/min.js.html">argumentOverloading.min.js</a>
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-easing.js.html">easing.js</a>

@@ -23,11 +23,12 @@
 	float: right;
 }
 
-#logo {
+#name {
 	font-family: "Andale Mono", monospace;
 	font-size: 36pt;
 	color: #444;
 	text-decoration: none;
+	line-height: 44pt;
 }
 
 /* Sidebar */

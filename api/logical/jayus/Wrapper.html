@@ -96,6 +96,16 @@ An abstract class, inherited by entities that hold and manage one child.
                     <div class="summaryItem">
                                                 <div class="summaryItemDef">
         <span class="modifiers"></span>
+        <span class="type">Entity</span>
+        <a href="logical/jayus/Wrapper.html#___child"><span class="elementName">child</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	The sole child of the wrapper.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
         <span class="type">Boolean</span>
         <a href="logical/jayus/Wrapper.html#___propagateCursor"><span class="elementName">propagateCursor</span></a>
     </div> 
@@ -114,8 +124,8 @@ An abstract class, inherited by entities that hold and manage one child.
                     <div class="summaryItem">
                                                                     <div class="summaryItemDef">
                 <span class="modifiers"></span>
-                <span class="type"><a href="logical/jayus/Entity.html">Entity</a></span>
-                <a href="logical/jayus/Wrapper.html#___findChild"><span class="elementName">findChild</span></a>
+                <span class="type">Entity</span>
+                <a href="logical/jayus/Wrapper.html#___find"><span class="elementName">find</span></a>
                 (<span class="type">String</span>
  id)
             </div>          
@@ -163,24 +173,17 @@ An abstract class, inherited by entities that hold and manage one child.
 	Calls the given function on the child in the container with the given arguments.    </div>  
                             </div>
                     <div class="summaryItem">
-                                                           <div class="summaryItemDef">
+                                                                    <div class="summaryItemDef">
                 <span class="modifiers"></span>
-                <span class="type"><a href="logical/jayus/Entity.html">Entity</a></span>
-                <a href="logical/jayus/Wrapper.html#___getChild"><span class="elementName">getChild</span></a>()
-            </div>
-        <div class="summaryItemDesc">
+                <span class="type">*</span>
+                <a href="logical/jayus/Wrapper.html#___forEveryChild"><span class="elementName">forEveryChild</span></a>
+                (<span class="type">Function</span>
+ func, <span class="type">Array</span>
+ args)
+            </div>          
+                <div class="summaryItemDesc">
         
-	Returns the child.    </div>  
-                            </div>
-                    <div class="summaryItem">
-                                                           <div class="summaryItemDef">
-                <span class="modifiers"></span>
-                <span class="type">Boolean</span>
-                <a href="logical/jayus/Wrapper.html#___hasChild"><span class="elementName">hasChild</span></a>()
-            </div>
-        <div class="summaryItemDesc">
-        
-	Returns whether the container is holding a child.    </div>  
+	Calls the given function on every child under the container with the given arguments.    </div>  
                             </div>
                     <div class="summaryItem">
                                                                     <div class="summaryItemDef">
@@ -210,7 +213,7 @@ An abstract class, inherited by entities that hold and manage one child.
                 <span class="modifiers"></span>
                 <span class="type">Self</span>
                 <a href="logical/jayus/Wrapper.html#___setChild"><span class="elementName">setChild</span></a>
-                (<span class="type"><a href="logical/jayus/Entity.html">Entity</a></span>
+                (<span class="type">Entity</span>
  child)
             </div>          
                 <div class="summaryItemDesc">
@@ -224,6 +227,20 @@ An abstract class, inherited by entities that hold and manage one child.
     	    	            <div class="details property">
             <h2 class="sectionHeader">Property Details</h2>
                                                             
+            <h3>
+        <a name="___child">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Entity</span>
+            <span class="objName">child</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	The sole child of the wrapper.
+	<br> Do not modify.
+	    </div>    
+                                        <hr />  
+                                                                            
             <h3>
         <a name="___propagateCursor">
             <span class="objType">property</span> <span class="modifiers"></span>
@@ -241,16 +258,16 @@ An abstract class, inherited by entities that hold and manage one child.
     	    	            <div class="details function">
             <h2 class="sectionHeader">Function Details</h2>
                                                                     <h3>
-        <a name="___findChild">
+        <a name="___find">
             <span class="objType">function</span>
-            <span class="objName">findChild</span>            
+            <span class="objName">find</span>            
         </a> 
     </h3>
                         <div>
                 <code>
                     <span class="modifiers"></span>
-                    <span class="type"><a href="logical/jayus/Entity.html">Entity</a></span>
-                    findChild(<span class="type">String</span>
+                    <span class="type">Entity</span>
+                    find(<span class="type">String</span>
  id)
                 </code> 
             </div>          
@@ -383,40 +400,41 @@ An abstract class, inherited by entities that hold and manage one child.
                     </div>
                                                     <hr/>       
                                                                                     <h3>
-        <a name="___getChild">
+        <a name="___forEveryChild">
             <span class="objType">function</span>
-            <span class="objName">getChild</span>            
+            <span class="objName">forEveryChild</span>            
         </a> 
     </h3>
-                <div>
+                        <div>
                 <code>
                     <span class="modifiers"></span>
-                    <span class="type"><a href="logical/jayus/Entity.html">Entity</a></span>
-                    getChild()
-                </code>
-            </div>    
-        <div class="comment">
+                    <span class="type">*</span>
+                    forEveryChild(<span class="type">Function</span>
+ func, <span class="type">Array</span>
+ args)
+                </code> 
+            </div>          
+                <div class="comment">
         
-	Returns the child.
+	Calls the given function on every child under the container with the given arguments.
+	<br> The argument array is optional.
 	    </div>
-                                                    <hr/>       
-                                                                                    <h3>
-        <a name="___hasChild">
-            <span class="objType">function</span>
-            <span class="objName">hasChild</span>            
-        </a> 
-    </h3>
-                <div>
-                <code>
-                    <span class="modifiers"></span>
-                    <span class="type">Boolean</span>
-                    hasChild()
-                </code>
-            </div>    
-        <div class="comment">
-        
-	Returns whether the container is holding a child.
-	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            func        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            args        </code>
+         Optional            </div>   
+                                        </div>
+                </div>
+                    </div>
                                                     <hr/>       
                                                                                     <h3>
         <a name="___onEachChild">
@@ -483,7 +501,7 @@ An abstract class, inherited by entities that hold and manage one child.
                 <code>
                     <span class="modifiers"></span>
                     <span class="type">Self</span>
-                    setChild(<span class="type"><a href="logical/jayus/Entity.html">Entity</a></span>
+                    setChild(<span class="type">Entity</span>
  child)
                 </code> 
             </div>          
@@ -564,9 +582,6 @@ An abstract class, inherited by entities that hold and manage one child.
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-EditableFrame.js.html">EditableFrame.js</a>
-                            </div>                              
-                                                                                                            <div>
-                                <a href="physical/file-Entity/Group.js.html">Entity.Group.js</a>
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-Entity/Rect.js.html">Entity.Rect.js</a>
@@ -654,9 +669,6 @@ An abstract class, inherited by entities that hold and manage one child.
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-Wrapper.js.html">Wrapper.js</a>
-                            </div>                              
-                                                                                                            <div>
-                                <a href="physical/file-argumentOverloading/min.js.html">argumentOverloading.min.js</a>
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-easing.js.html">easing.js</a>

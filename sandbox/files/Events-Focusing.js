@@ -1,8 +1,14 @@
 display.setBg({ fill: 'white' });
 
-label = new jayus.Text('', '32px sans-serif', { fill: 'black' });
-label.setOrigin(50, 50);
-display.children.add(label);
+label = jayus.Text.fromObject({
+	text: '',
+	font: '32px sans-serif',
+	brush: {
+		fill: 'black'
+	},
+	x: 50,
+	y: 50
+});
 
 display.handle({
 
@@ -15,6 +21,8 @@ display.handle({
 	}
 
 });
+
+display.children.add(label);
 
 display.focus();
 

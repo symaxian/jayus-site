@@ -9,23 +9,27 @@ radialGradient = new jayus.RadialGradient(start, end).
 	addColorStop(0.8, 'blue').
 	addColorStop(1, 'purple');
 
-brush = { stroke: 'white', lineWidth: 2 };
+brush = { stroke: '#BBB', lineWidth: 3 };
 
 handle1 = start.paintedWith(brush);
 handle2 = end.paintedWith(brush);
 
-handle1.canAcceptCursor=true;
-handle2.canAcceptCursor=true;
+handle1.canAcceptCursor = true;
+handle2.canAcceptCursor = true;
 
-display.setBg({ fill: radialGradient }).children.add(handle2, handle1);
+display.setBg({ fill: radialGradient });
+display.children.add(handle2, handle1);
 
-display.children.forEach(function(){
-	this.setDraggable(true);
-	this.addHandler('cursorEnter',function(){
-		this.brush.setLineWidth(4);
+display.children.forEach(function() {
+	this.setDragButton('left');
+	this.addHandler('cursorEnter',function() {
+		this.brush.setLineWidth(8);
 	});
-	this.addHandler('cursorLeave',function(){
-		this.brush.setLineWidth(2);
+	this.addHandler('cursorLeave',function() {
+		this.brush.setLineWidth(3);
+	});
+	this.addHandler('scroll', function(e) {
+		this.shape.setRadius(Math.max(10, this.shape.radius - 2*e.scroll));
 	});
 });
 

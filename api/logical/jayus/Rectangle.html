@@ -102,11 +102,21 @@ Represents an axis-aligned rectangle.
                                                 <div class="summaryItemDef">
         <span class="modifiers"></span>
         <span class="type">Boolean</span>
-        <a href="logical/jayus/Rectangle.html#___keepAligned"><span class="elementName">keepAligned</span></a>
+        <a href="logical/jayus/Rectangle.html#___roundX"><span class="elementName">roundX</span></a>
     </div> 
     <div class="summaryItemDesc">
         
-	Whether to draw the rectangle to be aligned with the pixel grid of canvas.    </div>  
+	Whether to attempt to keep the Rectangle horizontally aligned to the pixel-grid.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Boolean</span>
+        <a href="logical/jayus/Rectangle.html#___roundY"><span class="elementName">roundY</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	Whether to attempt to keep the Rectangle vertically aligned to the pixel-grid.    </div>  
                             </div>
                     <div class="summaryItem">
                                                 <div class="summaryItemDef">
@@ -149,14 +159,14 @@ Represents an axis-aligned rectangle.
                                                                     <div class="summaryItemDef">
                 <span class="modifiers"></span>
                 <span class="type"></span>
-                <a href="logical/jayus/Rectangle.html#___init"><span class="elementName">init</span></a>
+                <a href="logical/jayus/Rectangle.html#___Rectangle"><span class="elementName">Rectangle</span></a>
                 ()
             </div>          
                     <div class="summaryItemDef">
                 <span class="modifiers"></span>
                 <span class="type"></span>
-                <a href="logical/jayus/Rectangle.html#___init"><span class="elementName">init</span></a>
-                (<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                <a href="logical/jayus/Rectangle.html#___Rectangle"><span class="elementName">Rectangle</span></a>
+                (<span class="type">Point</span>
  origin, <span class="type">Number</span>
  width, <span class="type">Number</span>
  height)
@@ -164,7 +174,7 @@ Represents an axis-aligned rectangle.
                     <div class="summaryItemDef">
                 <span class="modifiers"></span>
                 <span class="type"></span>
-                <a href="logical/jayus/Rectangle.html#___init"><span class="elementName">init</span></a>
+                <a href="logical/jayus/Rectangle.html#___Rectangle"><span class="elementName">Rectangle</span></a>
                 (<span class="type">Number</span>
  x, <span class="type">Number</span>
  y, <span class="type">Number</span>
@@ -218,7 +228,7 @@ Represents an axis-aligned rectangle.
                     <div class="summaryItem">
                                                            <div class="summaryItemDef">
                 <span class="modifiers"></span>
-                <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                <span class="type">Point</span>
                 <a href="logical/jayus/Rectangle.html#___getOrigin"><span class="elementName">getOrigin</span></a>()
             </div>
         <div class="summaryItemDesc">
@@ -250,7 +260,7 @@ Represents an axis-aligned rectangle.
                 <span class="modifiers"></span>
                 <span class="type">Self</span>
                 <a href="logical/jayus/Rectangle.html#___includePoint"><span class="elementName">includePoint</span></a>
-                (<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                (<span class="type">Point</span>
  point)
             </div>          
                     <div class="summaryItemDef">
@@ -270,7 +280,7 @@ Represents an axis-aligned rectangle.
                 <span class="modifiers"></span>
                 <span class="type">Self</span>
                 <a href="logical/jayus/Rectangle.html#___includeRectangle"><span class="elementName">includeRectangle</span></a>
-                (<span class="type">Rectangle</span>
+                (<span class="type"><a href="logical/jayus/Rectangle.html#___Rectangle">Rectangle</a></span>
  rect)
             </div>          
                 <div class="summaryItemDesc">
@@ -294,7 +304,7 @@ Represents an axis-aligned rectangle.
                 <span class="modifiers"></span>
                 <span class="type">Self</span>
                 <a href="logical/jayus/Rectangle.html#___setFrame"><span class="elementName">setFrame</span></a>
-                (<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                (<span class="type">Point</span>
  origin, <span class="type">Number</span>
  width, <span class="type">Number</span>
  height)
@@ -342,7 +352,7 @@ Represents an axis-aligned rectangle.
                 <span class="modifiers"></span>
                 <span class="type">Self</span>
                 <a href="logical/jayus/Rectangle.html#___setOrigin"><span class="elementName">setOrigin</span></a>
-                (<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                (<span class="type">Point</span>
  point)
             </div>          
                     <div class="summaryItemDef">
@@ -373,8 +383,28 @@ Represents an axis-aligned rectangle.
                                                                     <div class="summaryItemDef">
                 <span class="modifiers"></span>
                 <span class="type">Self</span>
+                <a href="logical/jayus/Rectangle.html#___setRounding"><span class="elementName">setRounding</span></a>
+                (<span class="type">Boolean</span>
+ enabled)
+            </div>          
+                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Rectangle.html#___setRounding"><span class="elementName">setRounding</span></a>
+                (<span class="type">Boolean</span>
+ x, <span class="type">Boolean</span>
+ y)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Sets the horizontal and vertical rounding flags on the Entity.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
                 <a href="logical/jayus/Rectangle.html#___setSize"><span class="elementName">setSize</span></a>
-                (<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                (<span class="type">Point</span>
  size)
             </div>          
                     <div class="summaryItemDef">
@@ -437,16 +467,6 @@ Represents an axis-aligned rectangle.
         
 	Sets the y coordinate of the origin.    </div>  
                             </div>
-                    <div class="summaryItem">
-                                                           <div class="summaryItemDef">
-                <span class="modifiers"></span>
-                <span class="type"><a href="logical/jayus/Polygon.html">Polygon</a></span>
-                <a href="logical/jayus/Rectangle.html#___toPolygon"><span class="elementName">toPolygon</span></a>()
-            </div>
-        <div class="summaryItemDesc">
-        
-	Returns a polygon representing the rectangle.    </div>  
-                            </div>
                 </div>
         <p/>
                 
@@ -470,18 +490,32 @@ Represents an axis-aligned rectangle.
                                         <hr />  
                                                                             
             <h3>
-        <a name="___keepAligned">
+        <a name="___roundX">
             <span class="objType">property</span> <span class="modifiers"></span>
             <span class="type">Boolean</span>
-            <span class="objName">keepAligned</span>         
+            <span class="objName">roundX</span>         
         </a>
     </h3>
     <div class="comment">
         
-	Whether to draw the rectangle to be aligned with the pixel grid of canvas.
-	<br> Under ideal conditions(drawing a simple non-transformed rectangle) this property should turn blurry rectangles into pixel-sharp ones.
-	<br> Default is true.
-	<br> Do not modify.
+	Whether to attempt to keep the Rectangle horizontally aligned to the pixel-grid.
+	<br> This will keep the rectangle from being etched/drawn at fractions of a pixel.
+	<br> Default is false.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___roundY">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Boolean</span>
+            <span class="objName">roundY</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	Whether to attempt to keep the Rectangle vertically aligned to the pixel-grid.
+	<br> This will keep the rectangle from being etched/drawn at fractions of a pixel.
+	<br> Default is false.
 	    </div>    
                                         <hr />  
                                                                             
@@ -533,23 +567,23 @@ Represents an axis-aligned rectangle.
     	            <div class="details constructor">
             <h2 class="sectionHeader">Constructor Details</h2>
                                                                     <h3>
-        <a name="___init">
+        <a name="___Rectangle">
             <span class="objType">constructor</span>
-            <span class="objName">init</span>            
+            <span class="objName">Rectangle</span>            
         </a> 
     </h3>
                         <div>
                 <code>
                     <span class="modifiers"></span>
                     <span class="type"></span>
-                    init()
+                    Rectangle()
                 </code> 
             </div>          
                     <div>
                 <code>
                     <span class="modifiers"></span>
                     <span class="type"></span>
-                    init(<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    Rectangle(<span class="type">Point</span>
  origin, <span class="type">Number</span>
  width, <span class="type">Number</span>
  height)
@@ -559,7 +593,7 @@ Represents an axis-aligned rectangle.
                 <code>
                     <span class="modifiers"></span>
                     <span class="type"></span>
-                    init(<span class="type">Number</span>
+                    Rectangle(<span class="type">Number</span>
  x, <span class="type">Number</span>
  y, <span class="type">Number</span>
  width, <span class="type">Number</span>
@@ -569,7 +603,6 @@ Represents an axis-aligned rectangle.
                 <div class="comment">
         
 	Initiates the rectangle.
-	<br> Note that while the rectangle can be initiated directly from an origin and size, the rectangle will copy rather than rely on the given instances.
 	    </div>
         	<div class="parameters">
         <span class="descSection">Parameters:</span><br/>
@@ -706,7 +739,7 @@ Represents an axis-aligned rectangle.
                 <div>
                 <code>
                     <span class="modifiers"></span>
-                    <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    <span class="type">Point</span>
                     getOrigin()
                 </code>
             </div>    
@@ -761,7 +794,7 @@ Represents an axis-aligned rectangle.
                 <code>
                     <span class="modifiers"></span>
                     <span class="type">Self</span>
-                    includePoint(<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    includePoint(<span class="type">Point</span>
  point)
                 </code> 
             </div>          
@@ -817,7 +850,7 @@ Represents an axis-aligned rectangle.
                 <code>
                     <span class="modifiers"></span>
                     <span class="type">Self</span>
-                    includeRectangle(<span class="type">Rectangle</span>
+                    includeRectangle(<span class="type"><a href="logical/jayus/Rectangle.html#___Rectangle">Rectangle</a></span>
  rect)
                 </code> 
             </div>          
@@ -881,7 +914,7 @@ Represents an axis-aligned rectangle.
                 <code>
                     <span class="modifiers"></span>
                     <span class="type">Self</span>
-                    setFrame(<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    setFrame(<span class="type">Point</span>
  origin, <span class="type">Number</span>
  width, <span class="type">Number</span>
  height)
@@ -1021,7 +1054,7 @@ Represents an axis-aligned rectangle.
                 <code>
                     <span class="modifiers"></span>
                     <span class="type">Self</span>
-                    setOrigin(<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    setOrigin(<span class="type">Point</span>
  point)
                 </code> 
             </div>          
@@ -1100,6 +1133,61 @@ Represents an axis-aligned rectangle.
                     </div>
                                                     <hr/>       
                                                                                     <h3>
+        <a name="___setRounding">
+            <span class="objType">function</span>
+            <span class="objName">setRounding</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    setRounding(<span class="type">Boolean</span>
+ enabled)
+                </code> 
+            </div>          
+                    <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    setRounding(<span class="type">Boolean</span>
+ x, <span class="type">Boolean</span>
+ y)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Sets the horizontal and vertical rounding flags on the Entity.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"> 1
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            enabled        </code>
+                    </div>   
+                                        </div>
+                </div>
+                            <div>
+                    <div class="paramset"> 2
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            x        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            y        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
         <a name="___setSize">
             <span class="objType">function</span>
             <span class="objName">setSize</span>            
@@ -1109,7 +1197,7 @@ Represents an axis-aligned rectangle.
                 <code>
                     <span class="modifiers"></span>
                     <span class="type">Self</span>
-                    setSize(<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    setSize(<span class="type">Point</span>
  size)
                 </code> 
             </div>          
@@ -1283,24 +1371,6 @@ Represents an axis-aligned rectangle.
                 </div>
                     </div>
                                                     <hr/>       
-                                                                                    <h3>
-        <a name="___toPolygon">
-            <span class="objType">function</span>
-            <span class="objName">toPolygon</span>            
-        </a> 
-    </h3>
-                <div>
-                <code>
-                    <span class="modifiers"></span>
-                    <span class="type"><a href="logical/jayus/Polygon.html">Polygon</a></span>
-                    toPolygon()
-                </code>
-            </div>    
-        <div class="comment">
-        
-	Returns a polygon representing the rectangle.
-	    </div>
-                                                    <hr/>       
                                     </div>
     	    	                                    						        </div>
         		          </div>			                    
@@ -1361,9 +1431,6 @@ Represents an axis-aligned rectangle.
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-EditableFrame.js.html">EditableFrame.js</a>
-                            </div>                              
-                                                                                                            <div>
-                                <a href="physical/file-Entity/Group.js.html">Entity.Group.js</a>
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-Entity/Rect.js.html">Entity.Rect.js</a>
@@ -1451,9 +1518,6 @@ Represents an axis-aligned rectangle.
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-Wrapper.js.html">Wrapper.js</a>
-                            </div>                              
-                                                                                                            <div>
-                                <a href="physical/file-argumentOverloading/min.js.html">argumentOverloading.min.js</a>
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-easing.js.html">easing.js</a>

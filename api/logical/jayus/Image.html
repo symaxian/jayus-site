@@ -92,12 +92,22 @@ An entity that represents a single image.
     
             	
                                 
-                                                                                
+                                                                    
     
                 <div class="summaryTable property">
             <div class="summaryTableHeader">
                 <span class="objType">Property</span> Summary
             </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">String</span>
+        <a href="logical/jayus/Image.html#___filepath"><span class="elementName">filepath</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	The filepath for the image, if specified.    </div>  
+                            </div>
                     <div class="summaryItem">
                                                 <div class="summaryItemDef">
         <span class="modifiers"></span>
@@ -122,16 +132,6 @@ An entity that represents a single image.
                                                 <div class="summaryItemDef">
         <span class="modifiers"></span>
         <span class="type">Boolean</span>
-        <a href="logical/jayus/Image.html#___keepAligned"><span class="elementName">keepAligned</span></a>
-    </div> 
-    <div class="summaryItemDesc">
-        
-	Whether to keep the image from being anti-aliased by canvas.    </div>  
-                            </div>
-                    <div class="summaryItem">
-                                                <div class="summaryItemDef">
-        <span class="modifiers"></span>
-        <span class="type">Boolean</span>
         <a href="logical/jayus/Image.html#___loaded"><span class="elementName">loaded</span></a>
     </div> 
     <div class="summaryItemDesc">
@@ -141,12 +141,32 @@ An entity that represents a single image.
                     <div class="summaryItem">
                                                 <div class="summaryItemDef">
         <span class="modifiers"></span>
-        <span class="type">Rectangle</span>
-        <a href="logical/jayus/Image.html#___section"><span class="elementName">section</span></a>
+        <span class="type">Boolean</span>
+        <a href="logical/jayus/Image.html#___pendingLoad"><span class="elementName">pendingLoad</span></a>
     </div> 
     <div class="summaryItemDesc">
         
-	The rectanglular region of the source image that this image represents.    </div>  
+	Whether the entity is awaiting on its image file to be loaded.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Number</span>
+        <a href="logical/jayus/Image.html#___sectionX"><span class="elementName">sectionX</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	The X coordinate of the section of the full image that this one represents.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Number</span>
+        <a href="logical/jayus/Image.html#___sectionY"><span class="elementName">sectionY</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	The X coordinate of the section of the full image that this one represents.    </div>  
                             </div>
                 </div>
         <p/>
@@ -155,7 +175,7 @@ An entity that represents a single image.
                    Properties inherited from <a href="logical/jayus/RectEntity.html">jayus.RectEntity</a> 
                 </div>
                 <div class="inheritanceSummary">
-                    <a href="logical/jayus/RectEntity.html#___bg">bg</a>, <a href="logical/jayus/RectEntity.html#___body">body</a>, <a href="logical/jayus/RectEntity.html#___bounds">bounds</a>, <a href="logical/jayus/RectEntity.html#___hasBg">hasBg</a>, <a href="logical/jayus/RectEntity.html#___height">height</a>, <a href="logical/jayus/RectEntity.html#___width">width</a>, <a href="logical/jayus/RectEntity.html#___x">x</a>, <a href="logical/jayus/RectEntity.html#___y">y</a>                </div>
+                    <a href="logical/jayus/RectEntity.html#___bg">bg</a>, <a href="logical/jayus/RectEntity.html#___body">body</a>, <a href="logical/jayus/RectEntity.html#___bounds">bounds</a>, <a href="logical/jayus/RectEntity.html#___canvas">canvas</a>, <a href="logical/jayus/RectEntity.html#___context">context</a>, <a href="logical/jayus/RectEntity.html#___height">height</a>, <a href="logical/jayus/RectEntity.html#___negateBlur">negateBlur</a>, <a href="logical/jayus/RectEntity.html#___roundX">roundX</a>, <a href="logical/jayus/RectEntity.html#___roundY">roundY</a>, <a href="logical/jayus/RectEntity.html#___width">width</a>, <a href="logical/jayus/RectEntity.html#___x">x</a>, <a href="logical/jayus/RectEntity.html#___y">y</a>                </div>
              </div>
              <br/>          
                                 <div class="summaryTable">
@@ -163,7 +183,7 @@ An entity that represents a single image.
                    Properties inherited from <a href="logical/jayus/Entity.html">jayus.Entity</a> 
                 </div>
                 <div class="inheritanceSummary">
-                    <a href="logical/jayus/Entity.html#___canAcceptCursor">canAcceptCursor</a>, <a href="logical/jayus/Entity.html#___canReleaseCursor">canReleaseCursor</a>, <a href="logical/jayus/Entity.html#___dirtied">dirtied</a>, <a href="logical/jayus/Entity.html#___dragButton">dragButton</a>, <a href="logical/jayus/Entity.html#___draggable">draggable</a>, <a href="logical/jayus/Entity.html#___dragging">dragging</a>, <a href="logical/jayus/Entity.html#___frozen">frozen</a>, <a href="logical/jayus/Entity.html#___hasCursor">hasCursor</a>, <a href="logical/jayus/Entity.html#___hasParent">hasParent</a>, <a href="logical/jayus/Entity.html#___id">id</a>, <a href="logical/jayus/Entity.html#___isEntity">isEntity</a>, <a href="logical/jayus/Entity.html#___isParent">isParent</a>, <a href="logical/jayus/Entity.html#___isRect">isRect</a>, <a href="logical/jayus/Entity.html#___isTransformed">isTransformed</a>, <a href="logical/jayus/Entity.html#___parent">parent</a>, <a href="logical/jayus/Entity.html#___trackCursor">trackCursor</a>, <a href="logical/jayus/Entity.html#___underCursor">underCursor</a>, <a href="logical/jayus/Entity.html#___visible">visible</a>                </div>
+                    <a href="logical/jayus/Entity.html#___angle">angle</a>, <a href="logical/jayus/Entity.html#___canAcceptCursor">canAcceptCursor</a>, <a href="logical/jayus/Entity.html#___canReleaseCursor">canReleaseCursor</a>, <a href="logical/jayus/Entity.html#___cursorX">cursorX</a>, <a href="logical/jayus/Entity.html#___cursorY">cursorY</a>, <a href="logical/jayus/Entity.html#___dragButton">dragButton</a>, <a href="logical/jayus/Entity.html#___dragging">dragging</a>, <a href="logical/jayus/Entity.html#___flipX">flipX</a>, <a href="logical/jayus/Entity.html#___flipY">flipY</a>, <a href="logical/jayus/Entity.html#___hasCursor">hasCursor</a>, <a href="logical/jayus/Entity.html#___included">included</a>, <a href="logical/jayus/Entity.html#___isParent">isParent</a>, <a href="logical/jayus/Entity.html#___parent">parent</a>, <a href="logical/jayus/Entity.html#___parentDisplay">parentDisplay</a>, <a href="logical/jayus/Entity.html#___underCursor">underCursor</a>, <a href="logical/jayus/Entity.html#___visible">visible</a>, <a href="logical/jayus/Entity.html#___xAnchor">xAnchor</a>, <a href="logical/jayus/Entity.html#___xScale">xScale</a>, <a href="logical/jayus/Entity.html#___yAnchor">yAnchor</a>, <a href="logical/jayus/Entity.html#___yScale">yScale</a>                </div>
              </div>
              <br/>          
                                 <div class="summaryTable">
@@ -171,7 +191,7 @@ An entity that represents a single image.
                    Properties inherited from <a href="logical/jayus/Dependency.html">jayus.Dependency</a> 
                 </div>
                 <div class="inheritanceSummary">
-                    <a href="logical/jayus/Dependency.html#___dependentCount">dependentCount</a>, <a href="logical/jayus/Dependency.html#___dependents">dependents</a>                </div>
+                    <a href="logical/jayus/Dependency.html#___dependentCount">dependentCount</a>, <a href="logical/jayus/Dependency.html#___dependents">dependents</a>, <a href="logical/jayus/Dependency.html#___frozen">frozen</a>, <a href="logical/jayus/Dependency.html#___id">id</a>                </div>
              </div>
              <br/>          
                                 <div class="summaryTable">
@@ -182,7 +202,7 @@ An entity that represents a single image.
                     <a href="logical/jayus/Responder.html#___handlers">handlers</a>, <a href="logical/jayus/Responder.html#___hasHandlers">hasHandlers</a>, <a href="logical/jayus/Responder.html#___isHandler">isHandler</a>                </div>
              </div>
              <br/>          
-                            
+                
                 <div class="summaryTable constructor">
             <div class="summaryTableHeader">
                 <span class="objType">Constructor</span> Summary
@@ -191,15 +211,15 @@ An entity that represents a single image.
                                                                     <div class="summaryItemDef">
                 <span class="modifiers"></span>
                 <span class="type"></span>
-                <a href="logical/jayus/Image.html#___init"><span class="elementName">init</span></a>
+                <a href="logical/jayus/Image.html#___Image"><span class="elementName">Image</span></a>
                 (<span class="type">String</span>
  filepath)
             </div>          
                     <div class="summaryItemDef">
                 <span class="modifiers"></span>
                 <span class="type"></span>
-                <a href="logical/jayus/Image.html#___init"><span class="elementName">init</span></a>
-                (<span class="type"><a href="logical/jayus/Surface.html">Surface</a></span>
+                <a href="logical/jayus/Image.html#___Image"><span class="elementName">Image</span></a>
+                (<span class="type">Surface</span>
  image)
             </div>          
                 <div class="summaryItemDesc">
@@ -235,7 +255,7 @@ An entity that represents a single image.
                 <span class="modifiers"></span>
                 <span class="type">Self</span>
                 <a href="logical/jayus/Image.html#___setSection"><span class="elementName">setSection</span></a>
-                (<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                (<span class="type">Point</span>
  origin, <span class="type">Number</span>
  width, <span class="type">Number</span>
  height)
@@ -266,7 +286,7 @@ An entity that represents a single image.
                 <span class="modifiers"></span>
                 <span class="type">Self</span>
                 <a href="logical/jayus/Image.html#___setSource"><span class="elementName">setSource</span></a>
-                (<span class="type"><a href="logical/jayus/Surface.html">Surface</a></span>
+                (<span class="type">Surface</span>
  image)
             </div>          
                 <div class="summaryItemDesc">
@@ -285,6 +305,18 @@ An entity that represents a single image.
         
 	Returns a CanvasPattern representing the image.    </div>  
                             </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Image.html#___whenLoaded"><span class="elementName">whenLoaded</span></a>
+                (<span class="type">Function</span>
+ handler)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Runs the callback handler once the image is loaded.    </div>  
+                            </div>
                 </div>
         <p/>
                                 <div class="summaryTable">
@@ -292,7 +324,7 @@ An entity that represents a single image.
                    Functions inherited from <a href="logical/jayus/RectEntity.html">jayus.RectEntity</a> 
                 </div>
                 <div class="inheritanceSummary">
-                    <a href="logical/jayus/RectEntity.html#___clearBg">clearBg</a>, <a href="logical/jayus/RectEntity.html#___clearBounds">clearBounds</a>, <a href="logical/jayus/RectEntity.html#___getBottom">getBottom</a>, <a href="logical/jayus/RectEntity.html#___getBounds">getBounds</a>, <a href="logical/jayus/RectEntity.html#___getFrame">getFrame</a>, <a href="logical/jayus/RectEntity.html#___getLeft">getLeft</a>, <a href="logical/jayus/RectEntity.html#___getOrigin">getOrigin</a>, <a href="logical/jayus/RectEntity.html#___getPosAt">getPosAt</a>, <a href="logical/jayus/RectEntity.html#___getRight">getRight</a>, <a href="logical/jayus/RectEntity.html#___getTop">getTop</a>, <a href="logical/jayus/RectEntity.html#___removeBody">removeBody</a>, <a href="logical/jayus/RectEntity.html#___setBg">setBg</a>, <a href="logical/jayus/RectEntity.html#___setBody">setBody</a>, <a href="logical/jayus/RectEntity.html#___setBottom">setBottom</a>, <a href="logical/jayus/RectEntity.html#___setBounds">setBounds</a>, <a href="logical/jayus/RectEntity.html#___setBuffering">setBuffering</a>, <a href="logical/jayus/RectEntity.html#___setHeight">setHeight</a>, <a href="logical/jayus/RectEntity.html#___setLeft">setLeft</a>, <a href="logical/jayus/RectEntity.html#___setOrigin">setOrigin</a>, <a href="logical/jayus/RectEntity.html#___setPosAt">setPosAt</a>, <a href="logical/jayus/RectEntity.html#___setRight">setRight</a>, <a href="logical/jayus/RectEntity.html#___setSize">setSize</a>, <a href="logical/jayus/RectEntity.html#___setTop">setTop</a>, <a href="logical/jayus/RectEntity.html#___setWidth">setWidth</a>, <a href="logical/jayus/RectEntity.html#___setX">setX</a>, <a href="logical/jayus/RectEntity.html#___setY">setY</a>, <a href="logical/jayus/RectEntity.html#___translate">translate</a>, <a href="logical/jayus/RectEntity.html#___updateFromBody">updateFromBody</a>                </div>
+                    <a href="logical/jayus/RectEntity.html#___clearBg">clearBg</a>, <a href="logical/jayus/RectEntity.html#___clearBounds">clearBounds</a>, <a href="logical/jayus/RectEntity.html#___getBottom">getBottom</a>, <a href="logical/jayus/RectEntity.html#___getBounds">getBounds</a>, <a href="logical/jayus/RectEntity.html#___getFrame">getFrame</a>, <a href="logical/jayus/RectEntity.html#___getLeft">getLeft</a>, <a href="logical/jayus/RectEntity.html#___getOrigin">getOrigin</a>, <a href="logical/jayus/RectEntity.html#___getPosAt">getPosAt</a>, <a href="logical/jayus/RectEntity.html#___getRight">getRight</a>, <a href="logical/jayus/RectEntity.html#___getTop">getTop</a>, <a href="logical/jayus/RectEntity.html#___removeBody">removeBody</a>, <a href="logical/jayus/RectEntity.html#___setBg">setBg</a>, <a href="logical/jayus/RectEntity.html#___setBody">setBody</a>, <a href="logical/jayus/RectEntity.html#___setBottom">setBottom</a>, <a href="logical/jayus/RectEntity.html#___setBounds">setBounds</a>, <a href="logical/jayus/RectEntity.html#___setBuffering">setBuffering</a>, <a href="logical/jayus/RectEntity.html#___setHeight">setHeight</a>, <a href="logical/jayus/RectEntity.html#___setLeft">setLeft</a>, <a href="logical/jayus/RectEntity.html#___setOrigin">setOrigin</a>, <a href="logical/jayus/RectEntity.html#___setPosAt">setPosAt</a>, <a href="logical/jayus/RectEntity.html#___setRelativeAnchor">setRelativeAnchor</a>, <a href="logical/jayus/RectEntity.html#___setRight">setRight</a>, <a href="logical/jayus/RectEntity.html#___setRounding">setRounding</a>, <a href="logical/jayus/RectEntity.html#___setSize">setSize</a>, <a href="logical/jayus/RectEntity.html#___setTop">setTop</a>, <a href="logical/jayus/RectEntity.html#___setWidth">setWidth</a>, <a href="logical/jayus/RectEntity.html#___setX">setX</a>, <a href="logical/jayus/RectEntity.html#___setY">setY</a>, <a href="logical/jayus/RectEntity.html#___translate">translate</a>, <a href="logical/jayus/RectEntity.html#___updateFromBody">updateFromBody</a>                </div>
              </div>
              <br/>          
                                 <div class="summaryTable">
@@ -300,7 +332,7 @@ An entity that represents a single image.
                    Functions inherited from <a href="logical/jayus/Entity.html">jayus.Entity</a> 
                 </div>
                 <div class="inheritanceSummary">
-                    <a href="logical/jayus/Entity.html#___applyTransforms">applyTransforms</a>, <a href="logical/jayus/Entity.html#___drawOnto">drawOnto</a>, <a href="logical/jayus/Entity.html#___drawOntoContext">drawOntoContext</a>, <a href="logical/jayus/Entity.html#___getAbsoluteParent">getAbsoluteParent</a>, <a href="logical/jayus/Entity.html#___getMatrix">getMatrix</a>, <a href="logical/jayus/Entity.html#___hide">hide</a>, <a href="logical/jayus/Entity.html#___intersectCount">intersectCount</a>, <a href="logical/jayus/Entity.html#___intersects">intersects</a>, <a href="logical/jayus/Entity.html#___intersectsAll">intersectsAll</a>, <a href="logical/jayus/Entity.html#___intersectsAny">intersectsAny</a>, <a href="logical/jayus/Entity.html#___intersectsAt">intersectsAt</a>, <a href="logical/jayus/Entity.html#___intersectsWhich">intersectsWhich</a>, <a href="logical/jayus/Entity.html#___localToParent">localToParent</a>, <a href="logical/jayus/Entity.html#___localToScreen">localToScreen</a>, <a href="logical/jayus/Entity.html#___parentToLocal">parentToLocal</a>, <a href="logical/jayus/Entity.html#___rasterize">rasterize</a>, <a href="logical/jayus/Entity.html#___rotate">rotate</a>, <a href="logical/jayus/Entity.html#___scale">scale</a>, <a href="logical/jayus/Entity.html#___screenToLocal">screenToLocal</a>, <a href="logical/jayus/Entity.html#___setAlpha">setAlpha</a>, <a href="logical/jayus/Entity.html#___setAnchor">setAnchor</a>, <a href="logical/jayus/Entity.html#___setAngle">setAngle</a>, <a href="logical/jayus/Entity.html#___setDraggable">setDraggable</a>, <a href="logical/jayus/Entity.html#___setId">setId</a>, <a href="logical/jayus/Entity.html#___setScale">setScale</a>, <a href="logical/jayus/Entity.html#___setVisible">setVisible</a>, <a href="logical/jayus/Entity.html#___show">show</a>, <a href="logical/jayus/Entity.html#___tick">tick</a>                </div>
+                    <a href="logical/jayus/Entity.html#___animate">animate</a>, <a href="logical/jayus/Entity.html#___applyTransforms">applyTransforms</a>, <a href="logical/jayus/Entity.html#___clearVelocity">clearVelocity</a>, <a href="logical/jayus/Entity.html#___drawOnto">drawOnto</a>, <a href="logical/jayus/Entity.html#___drawOntoContext">drawOntoContext</a>, <a href="logical/jayus/Entity.html#___exclude">exclude</a>, <a href="logical/jayus/Entity.html#___getAbsoluteParent">getAbsoluteParent</a>, <a href="logical/jayus/Entity.html#___getMatrix">getMatrix</a>, <a href="logical/jayus/Entity.html#___hide">hide</a>, <a href="logical/jayus/Entity.html#___include">include</a>, <a href="logical/jayus/Entity.html#___intersectCount">intersectCount</a>, <a href="logical/jayus/Entity.html#___intersects">intersects</a>, <a href="logical/jayus/Entity.html#___intersectsAll">intersectsAll</a>, <a href="logical/jayus/Entity.html#___intersectsAny">intersectsAny</a>, <a href="logical/jayus/Entity.html#___intersectsAt">intersectsAt</a>, <a href="logical/jayus/Entity.html#___intersectsWhich">intersectsWhich</a>, <a href="logical/jayus/Entity.html#___localToParent">localToParent</a>, <a href="logical/jayus/Entity.html#___localToScreen">localToScreen</a>, <a href="logical/jayus/Entity.html#___parentToLocal">parentToLocal</a>, <a href="logical/jayus/Entity.html#___rasterize">rasterize</a>, <a href="logical/jayus/Entity.html#___rotate">rotate</a>, <a href="logical/jayus/Entity.html#___scale">scale</a>, <a href="logical/jayus/Entity.html#___screenToLocal">screenToLocal</a>, <a href="logical/jayus/Entity.html#___setAlpha">setAlpha</a>, <a href="logical/jayus/Entity.html#___setAnchor">setAnchor</a>, <a href="logical/jayus/Entity.html#___setAngle">setAngle</a>, <a href="logical/jayus/Entity.html#___setConstraint">setConstraint</a>, <a href="logical/jayus/Entity.html#___setConstraints">setConstraints</a>, <a href="logical/jayus/Entity.html#___setDragButton">setDragButton</a>, <a href="logical/jayus/Entity.html#___setFlipX">setFlipX</a>, <a href="logical/jayus/Entity.html#___setFlipY">setFlipY</a>, <a href="logical/jayus/Entity.html#___setFlipping">setFlipping</a>, <a href="logical/jayus/Entity.html#___setIncluded">setIncluded</a>, <a href="logical/jayus/Entity.html#___setScale">setScale</a>, <a href="logical/jayus/Entity.html#___setVelocity">setVelocity</a>, <a href="logical/jayus/Entity.html#___setVisible">setVisible</a>, <a href="logical/jayus/Entity.html#___setXScale">setXScale</a>, <a href="logical/jayus/Entity.html#___setXVelocity">setXVelocity</a>, <a href="logical/jayus/Entity.html#___setYScale">setYScale</a>, <a href="logical/jayus/Entity.html#___setYVelocity">setYVelocity</a>, <a href="logical/jayus/Entity.html#___show">show</a>                </div>
              </div>
              <br/>          
                                 <div class="summaryTable">
@@ -308,7 +340,7 @@ An entity that represents a single image.
                    Functions inherited from <a href="logical/jayus/Dependency.html">jayus.Dependency</a> 
                 </div>
                 <div class="inheritanceSummary">
-                    <a href="logical/jayus/Dependency.html#___attach">attach</a>, <a href="logical/jayus/Dependency.html#___detach">detach</a>, <a href="logical/jayus/Dependency.html#___dirty">dirty</a>, <a href="logical/jayus/Dependency.html#___informDependents">informDependents</a>                </div>
+                    <a href="logical/jayus/Dependency.html#___attach">attach</a>, <a href="logical/jayus/Dependency.html#___clearDependents">clearDependents</a>, <a href="logical/jayus/Dependency.html#___detach">detach</a>, <a href="logical/jayus/Dependency.html#___dirty">dirty</a>, <a href="logical/jayus/Dependency.html#___informDependents">informDependents</a>, <a href="logical/jayus/Dependency.html#___setId">setId</a>                </div>
              </div>
              <br/>          
                                 <div class="summaryTable">
@@ -316,15 +348,7 @@ An entity that represents a single image.
                    Functions inherited from <a href="logical/jayus/Responder.html">jayus.Responder</a> 
                 </div>
                 <div class="inheritanceSummary">
-                    <a href="logical/jayus/Responder.html#___addHandler">addHandler</a>, <a href="logical/jayus/Responder.html#___fire">fire</a>, <a href="logical/jayus/Responder.html#___handle">handle</a>, <a href="logical/jayus/Responder.html#___interceptNextEvent">interceptNextEvent</a>, <a href="logical/jayus/Responder.html#___removeAllHandlers">removeAllHandlers</a>, <a href="logical/jayus/Responder.html#___removeHandler">removeHandler</a>, <a href="logical/jayus/Responder.html#___removeHandlers">removeHandlers</a>                </div>
-             </div>
-             <br/>          
-                                <div class="summaryTable">
-                <div class="summaryTableHeader">
-                   Functions inherited from <a href="logical/jayus/Animatable.html">jayus.Animatable</a> 
-                </div>
-                <div class="inheritanceSummary">
-                    <a href="logical/jayus/Animatable.html#___animate">animate</a>                </div>
+                    <a href="logical/jayus/Responder.html#___addHandler">addHandler</a>, <a href="logical/jayus/Responder.html#___fire">fire</a>, <a href="logical/jayus/Responder.html#___handle">handle</a>, <a href="logical/jayus/Responder.html#___removeAllHandlers">removeAllHandlers</a>, <a href="logical/jayus/Responder.html#___removeHandler">removeHandler</a>, <a href="logical/jayus/Responder.html#___removeHandlers">removeHandlers</a>                </div>
              </div>
              <br/>          
                 
@@ -332,6 +356,20 @@ An entity that represents a single image.
     	    	            <div class="details property">
             <h2 class="sectionHeader">Property Details</h2>
                                                             
+            <h3>
+        <a name="___filepath">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">String</span>
+            <span class="objName">filepath</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	The filepath for the image, if specified.
+	<br> Do not modify.
+	    </div>    
+                                        <hr />  
+                                                                            
             <h3>
         <a name="___hasSection">
             <span class="objType">property</span> <span class="modifiers"></span>
@@ -361,20 +399,6 @@ An entity that represents a single image.
                                         <hr />  
                                                                             
             <h3>
-        <a name="___keepAligned">
-            <span class="objType">property</span> <span class="modifiers"></span>
-            <span class="type">Boolean</span>
-            <span class="objName">keepAligned</span>         
-        </a>
-    </h3>
-    <div class="comment">
-        
-	Whether to keep the image from being anti-aliased by canvas.
-	<br> Default is false.
-	    </div>    
-                                        <hr />  
-                                                                            
-            <h3>
         <a name="___loaded">
             <span class="objType">property</span> <span class="modifiers"></span>
             <span class="type">Boolean</span>
@@ -384,37 +408,65 @@ An entity that represents a single image.
     <div class="comment">
         
 	Whether the image is loaded or not.
+	<br> Do not modify.
 	    </div>    
                                         <hr />  
                                                                             
             <h3>
-        <a name="___section">
+        <a name="___pendingLoad">
             <span class="objType">property</span> <span class="modifiers"></span>
-            <span class="type">Rectangle</span>
-            <span class="objName">section</span>         
+            <span class="type">Boolean</span>
+            <span class="objName">pendingLoad</span>         
         </a>
     </h3>
     <div class="comment">
         
-	The rectanglular region of the source image that this image represents.
-	<br> Default is null, use Image.setSection(new jayus.Rectangle()) to initialize it.
-	<br> Do not replace, use Image.setSection().
+	Whether the entity is awaiting on its image file to be loaded.
+	<br> Do not modify.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___sectionX">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Number</span>
+            <span class="objName">sectionX</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	The X coordinate of the section of the full image that this one represents.
+	<br> Do not modify.
+	    </div>    
+                                        <hr />  
+                                                                            
+            <h3>
+        <a name="___sectionY">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Number</span>
+            <span class="objName">sectionY</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	The X coordinate of the section of the full image that this one represents.
+	<br> Do not modify.
 	    </div>    
                                         <hr />  
                                     </div>
     	            <div class="details constructor">
             <h2 class="sectionHeader">Constructor Details</h2>
                                                                     <h3>
-        <a name="___init">
+        <a name="___Image">
             <span class="objType">constructor</span>
-            <span class="objName">init</span>            
+            <span class="objName">Image</span>            
         </a> 
     </h3>
                         <div>
                 <code>
                     <span class="modifiers"></span>
                     <span class="type"></span>
-                    init(<span class="type">String</span>
+                    Image(<span class="type">String</span>
  filepath)
                 </code> 
             </div>          
@@ -422,7 +474,7 @@ An entity that represents a single image.
                 <code>
                     <span class="modifiers"></span>
                     <span class="type"></span>
-                    init(<span class="type"><a href="logical/jayus/Surface.html">Surface</a></span>
+                    Image(<span class="type">Surface</span>
  image)
                 </code> 
             </div>          
@@ -493,7 +545,7 @@ An entity that represents a single image.
                 <code>
                     <span class="modifiers"></span>
                     <span class="type">Self</span>
-                    setSection(<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    setSection(<span class="type">Point</span>
  origin, <span class="type">Number</span>
  width, <span class="type">Number</span>
  height)
@@ -586,13 +638,14 @@ An entity that represents a single image.
                 <code>
                     <span class="modifiers"></span>
                     <span class="type">Self</span>
-                    setSource(<span class="type"><a href="logical/jayus/Surface.html">Surface</a></span>
+                    setSource(<span class="type">Surface</span>
  image)
                 </code> 
             </div>          
                 <div class="comment">
         
 	Sets the source image.
+	<br> Fires the loaded event either immediately or whenever the image is loaded.
 	    </div>
         	<div class="parameters">
         <span class="descSection">Parameters:</span><br/>
@@ -647,6 +700,39 @@ An entity that represents a single image.
         <code>
             repetition        </code>
          Optional            </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___whenLoaded">
+            <span class="objType">function</span>
+            <span class="objName">whenLoaded</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    whenLoaded(<span class="type">Function</span>
+ handler)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Runs the callback handler once the image is loaded.
+	<br> Attaches a handler for the 'loaded' event, or the image is already loaded it calls the function immediately.
+	<br> The context for the handler is this entity.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            handler        </code>
+                    </div>   
                                         </div>
                 </div>
                     </div>
@@ -711,9 +797,6 @@ An entity that represents a single image.
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-EditableFrame.js.html">EditableFrame.js</a>
-                            </div>                              
-                                                                                                            <div>
-                                <a href="physical/file-Entity/Group.js.html">Entity.Group.js</a>
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-Entity/Rect.js.html">Entity.Rect.js</a>
@@ -801,9 +884,6 @@ An entity that represents a single image.
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-Wrapper.js.html">Wrapper.js</a>
-                            </div>                              
-                                                                                                            <div>
-                                <a href="physical/file-argumentOverloading/min.js.html">argumentOverloading.min.js</a>
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-easing.js.html">easing.js</a>

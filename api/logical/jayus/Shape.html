@@ -178,9 +178,21 @@ An abstract class that represents a geometric shape.
                     <div class="summaryItem">
                                                                     <div class="summaryItemDef">
                 <span class="modifiers"></span>
+                <span class="type"><a href="logical/jayus/Polygon.html">Polygon</a></span>
+                <a href="logical/jayus/Shape.html#___toPolygon"><span class="elementName">toPolygon</span></a>
+                (<span class="type">Number</span>
+ detail)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Returns a polygon representing the shape.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
                 <span class="type">Self</span>
                 <a href="logical/jayus/Shape.html#___translate"><span class="elementName">translate</span></a>
-                (<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                (<span class="type">Point</span>
  point)
             </div>          
                     <div class="summaryItemDef">
@@ -255,6 +267,7 @@ An abstract class that represents a geometric shape.
                 <div class="comment">
         
 	Clones the shape onto the given shape(of the same type).
+	<br> Does not dirty the given shape.
 	    </div>
         	<div class="parameters">
         <span class="descSection">Parameters:</span><br/>
@@ -389,6 +402,38 @@ An abstract class that represents a geometric shape.
                     </div>
                                                     <hr/>       
                                                                                     <h3>
+        <a name="___toPolygon">
+            <span class="objType">function</span>
+            <span class="objName">toPolygon</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"><a href="logical/jayus/Polygon.html">Polygon</a></span>
+                    toPolygon(<span class="type">Number</span>
+ detail)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Returns a polygon representing the shape.
+	<br> The circle and path versions of this method also accept a detail function.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            detail        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
         <a name="___translate">
             <span class="objType">function</span>
             <span class="objName">translate</span>            
@@ -398,7 +443,7 @@ An abstract class that represents a geometric shape.
                 <code>
                     <span class="modifiers"></span>
                     <span class="type">Self</span>
-                    translate(<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    translate(<span class="type">Point</span>
  point)
                 </code> 
             </div>          
@@ -505,9 +550,6 @@ An abstract class that represents a geometric shape.
                                 <a href="physical/file-EditableFrame.js.html">EditableFrame.js</a>
                             </div>                              
                                                                                                             <div>
-                                <a href="physical/file-Entity/Group.js.html">Entity.Group.js</a>
-                            </div>                              
-                                                                                                            <div>
                                 <a href="physical/file-Entity/Rect.js.html">Entity.Rect.js</a>
                             </div>                              
                                                                                                             <div>
@@ -593,9 +635,6 @@ An abstract class that represents a geometric shape.
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-Wrapper.js.html">Wrapper.js</a>
-                            </div>                              
-                                                                                                            <div>
-                                <a href="physical/file-argumentOverloading/min.js.html">argumentOverloading.min.js</a>
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-easing.js.html">easing.js</a>

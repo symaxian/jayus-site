@@ -123,6 +123,16 @@ An abstract class for helper objects that Entities depend on, such as styling an
         
 	Whether to inform dependents of dirty events.    </div>  
                             </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Number|String</span>
+        <a href="logical/jayus/Dependency.html#___id"><span class="elementName">id</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	The object's id.    </div>  
+                            </div>
                 </div>
         <p/>
                 
@@ -142,6 +152,16 @@ An abstract class for helper objects that Entities depend on, such as styling an
                 <div class="summaryItemDesc">
         
 	Attaches a dependent.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                           <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"></span>
+                <a href="logical/jayus/Dependency.html#___clearDependents"><span class="elementName">clearDependents</span></a>()
+            </div>
+        <div class="summaryItemDesc">
+        
+	Detaches all dependents.    </div>  
                             </div>
                     <div class="summaryItem">
                                                                     <div class="summaryItemDef">
@@ -176,6 +196,18 @@ An abstract class for helper objects that Entities depend on, such as styling an
         <div class="summaryItemDesc">
         
 	Informs all dependents the object has been modified.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/Dependency.html#___setId"><span class="elementName">setId</span></a>
+                (<span class="type">Number|String</span>
+ id)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Sets the entity's id.    </div>  
                             </div>
                 </div>
         <p/>
@@ -225,6 +257,20 @@ An abstract class for helper objects that Entities depend on, such as styling an
 	<br> Do not modify.
 	    </div>    
                                         <hr />  
+                                                                            
+            <h3>
+        <a name="___id">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Number|String</span>
+            <span class="objName">id</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	The object's id.
+	<br> Default is ''.
+	    </div>    
+                                        <hr />  
                                     </div>
     	    	            <div class="details function">
             <h2 class="sectionHeader">Function Details</h2>
@@ -258,6 +304,25 @@ An abstract class for helper objects that Entities depend on, such as styling an
                                         </div>
                 </div>
                     </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___clearDependents">
+            <span class="objType">function</span>
+            <span class="objName">clearDependents</span>            
+        </a> 
+    </h3>
+                <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"></span>
+                    clearDependents()
+                </code>
+            </div>    
+        <div class="comment">
+        
+	Detaches all dependents.
+	<br> Detaching dependents can provide performance benefits in many cases, so long as you manually update the dependencies.
+	    </div>
                                                     <hr/>       
                                                                                     <h3>
         <a name="___detach">
@@ -339,6 +404,37 @@ An abstract class for helper objects that Entities depend on, such as styling an
 	Informs all dependents the object has been modified.
 	    </div>
                                                     <hr/>       
+                                                                                    <h3>
+        <a name="___setId">
+            <span class="objType">function</span>
+            <span class="objName">setId</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    setId(<span class="type">Number|String</span>
+ id)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Sets the entity's id.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            id        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
                                     </div>
     	    	                                    						        </div>
         		          </div>			                    
@@ -399,9 +495,6 @@ An abstract class for helper objects that Entities depend on, such as styling an
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-EditableFrame.js.html">EditableFrame.js</a>
-                            </div>                              
-                                                                                                            <div>
-                                <a href="physical/file-Entity/Group.js.html">Entity.Group.js</a>
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-Entity/Rect.js.html">Entity.Rect.js</a>
@@ -489,9 +582,6 @@ An abstract class for helper objects that Entities depend on, such as styling an
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-Wrapper.js.html">Wrapper.js</a>
-                            </div>                              
-                                                                                                            <div>
-                                <a href="physical/file-argumentOverloading/min.js.html">argumentOverloading.min.js</a>
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-easing.js.html">easing.js</a>

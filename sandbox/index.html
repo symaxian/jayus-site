@@ -8,8 +8,7 @@
 	<!-- CSS -->
 		<!-- Bootstrap -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
-	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap-responsive.css">
+	<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
 		<!-- CodeMirror -->
 	<link rel="stylesheet" href="assets/codemirror-2.36/lib/codemirror.css">
 	<link rel="stylesheet" href="assets/codemirror-2.36/theme/lesser-dark.css">
@@ -20,16 +19,20 @@
 		<!-- jQuery -->
 	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 		<!-- Bootstrap -->
-	<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
 		<!-- CodeMirror -->
 	<script type="text/javascript" src="assets/codemirror-2.36/lib/codemirror.js"></script>
 	<script type="text/javascript" src="assets/codemirror-2.36/mode/javascript/javascript.js"></script>
 		<!-- Jayus -->
-	<!-- <script type="text/javascript" src="../../jayus/jayusLoader.js"></script> -->
+	<!-- // <script type="text/javascript" src="../../../jayus/jayusLoader.js"></script> -->
 	<script type="text/javascript" src="http://symaxian.github.io/jayus/compiled/jayus-latest-debug.min.js"></script>
 	<script type="text/javascript" src="http://symaxian.github.io/jayus/compiled/Box2dWeb-2.1.a.3.min.js"></script>
 		<!-- Sandbox -->
 	<script type="text/javascript" src="sandbox.js"></script>
+
+	<script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="http://codeorigin.jquery.com/ui/1.9.2/themes/ui-darkness/jquery-ui.css"></link>
 
 </head>
 <body onload="sandbox.init();">
@@ -48,8 +51,9 @@
 							<option>Paths</option>
 						</optgroup>
 						<optgroup label="Styling">
-							<option>Linear Gradient</option>
-							<option>Radial Gradient</option>
+							<option>Basic</option>
+							<option>LinearGradient</option>
+							<option>RadialGradient</option>
 						</optgroup>
 						<optgroup label="Text">
 							<option>Text</option>
@@ -64,9 +68,12 @@
 							<option>Sprite Sheets</option>
 						</optgroup>
 						<optgroup label="Events">
+							<option>Focusing</option>
 							<option>Click Events</option>
 							<option>Input Events</option>
-							<option>Focusing</option>
+						</optgroup>
+						<optgroup label="Animation">
+							<option>Easing</option>
 						</optgroup>
 						<optgroup label="Layouts">
 							<option>Layers</option>
@@ -75,7 +82,10 @@
 							<option>Boxes</option>
 							<!-- <option>Weighting</option> -->
 						</optgroup>
-						<option>Box2D</option>
+						<optgroup label="Etc">
+							<option>Rounding and Aligning</option>
+							<option>Box2D</option>
+						</optgroup>
 					</select>
 				</div>
 			</div>

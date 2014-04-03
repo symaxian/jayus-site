@@ -101,6 +101,16 @@ Represents a path.
         
 	An array of the path segments.    </div>  
                             </div>
+                    <div class="summaryItem">
+                                                <div class="summaryItemDef">
+        <span class="modifiers"></span>
+        <span class="type">Number</span>
+        <a href="logical/jayus/Path.html#___toPolygonDetail"><span class="elementName">toPolygonDetail</span></a>
+    </div> 
+    <div class="summaryItemDesc">
+        
+	How closely the toPolygon method approximates curves on the path.    </div>  
+                            </div>
                 </div>
         <p/>
                             
@@ -114,7 +124,7 @@ Represents a path.
                 <span class="modifiers"></span>
                 <span class="type"><a href="logical/jayus/Path.html">Path</a></span>
                 <a href="logical/jayus/Path.html#___Circle"><span class="elementName">Circle</span></a>
-                (<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                (<span class="type">Point</span>
  center, <span class="type">Number</span>
  radius)
             </div>          
@@ -136,7 +146,7 @@ Returns a path comprised of the specified circle.    </div>
                 <span class="modifiers"></span>
                 <span class="type"><a href="logical/jayus/Path.html">Path</a></span>
                 <a href="logical/jayus/Path.html#___Rectangle"><span class="elementName">Rectangle</span></a>
-                (<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                (<span class="type">Point</span>
  origin, <span class="type">Number</span>
  width, <span class="type">Number</span>
  height)
@@ -285,7 +295,7 @@ Returns a path comprised of the specified rectangle.    </div>
                     <div class="summaryItem">
                                                            <div class="summaryItemDef">
                 <span class="modifiers"></span>
-                <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                <span class="type">Point</span>
                 <a href="logical/jayus/Path.html#___getCurrentPoint"><span class="elementName">getCurrentPoint</span></a>()
             </div>
         <div class="summaryItemDesc">
@@ -295,7 +305,7 @@ Returns a path comprised of the specified rectangle.    </div>
                     <div class="summaryItem">
                                                            <div class="summaryItemDef">
                 <span class="modifiers"></span>
-                <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                <span class="type">Point</span>
                 <a href="logical/jayus/Path.html#___getInitialPoint"><span class="elementName">getInitialPoint</span></a>()
             </div>
         <div class="summaryItemDesc">
@@ -305,7 +315,7 @@ Returns a path comprised of the specified rectangle.    </div>
                     <div class="summaryItem">
                                                                     <div class="summaryItemDef">
                 <span class="modifiers"></span>
-                <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                <span class="type">Point</span>
                 <a href="logical/jayus/Path.html#___getPoint"><span class="elementName">getPoint</span></a>
                 (<span class="type">Number</span>
  index)
@@ -508,7 +518,7 @@ Returns a path comprised of the specified rectangle.    </div>
                    Functions inherited from <a href="logical/jayus/Shape.html">jayus.Shape</a> 
                 </div>
                 <div class="inheritanceSummary">
-                    <a href="logical/jayus/Shape.html#___alignToCanvas">alignToCanvas</a>, <a href="logical/jayus/Shape.html#___clone">clone</a>, <a href="logical/jayus/Shape.html#___cloneOnto">cloneOnto</a>, <a href="logical/jayus/Shape.html#___getScope">getScope</a>, <a href="logical/jayus/Shape.html#___getTransformed">getTransformed</a>, <a href="logical/jayus/Shape.html#___intersectsAt">intersectsAt</a>, <a href="logical/jayus/Shape.html#___paintedWith">paintedWith</a>, <a href="logical/jayus/Shape.html#___translate">translate</a>                </div>
+                    <a href="logical/jayus/Shape.html#___alignToCanvas">alignToCanvas</a>, <a href="logical/jayus/Shape.html#___clone">clone</a>, <a href="logical/jayus/Shape.html#___cloneOnto">cloneOnto</a>, <a href="logical/jayus/Shape.html#___getScope">getScope</a>, <a href="logical/jayus/Shape.html#___getTransformed">getTransformed</a>, <a href="logical/jayus/Shape.html#___intersectsAt">intersectsAt</a>, <a href="logical/jayus/Shape.html#___paintedWith">paintedWith</a>, <a href="logical/jayus/Shape.html#___toPolygon">toPolygon</a>, <a href="logical/jayus/Shape.html#___translate">translate</a>                </div>
              </div>
              <br/>          
                 
@@ -530,6 +540,20 @@ Returns a path comprised of the specified rectangle.    </div>
 	<br> Do not modify.
 	    </div>    
                                         <hr />  
+                                                                            
+            <h3>
+        <a name="___toPolygonDetail">
+            <span class="objType">property</span> <span class="modifiers"></span>
+            <span class="type">Number</span>
+            <span class="objName">toPolygonDetail</span>         
+        </a>
+    </h3>
+    <div class="comment">
+        
+	How closely the toPolygon method approximates curves on the path.
+	<br> Default is 10.
+	    </div>    
+                                        <hr />  
                                     </div>
     	    	            <div class="details function">
             <h2 class="sectionHeader">Function Details</h2>
@@ -543,7 +567,7 @@ Returns a path comprised of the specified rectangle.    </div>
                 <code>
                     <span class="modifiers"></span>
                     <span class="type"><a href="logical/jayus/Path.html">Path</a></span>
-                    Circle(<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    Circle(<span class="type">Point</span>
  center, <span class="type">Number</span>
  radius)
                 </code> 
@@ -608,7 +632,7 @@ Returns a path comprised of the specified circle.
                 <code>
                     <span class="modifiers"></span>
                     <span class="type"><a href="logical/jayus/Path.html">Path</a></span>
-                    Rectangle(<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    Rectangle(<span class="type">Point</span>
  origin, <span class="type">Number</span>
  width, <span class="type">Number</span>
  height)
@@ -1089,7 +1113,7 @@ Returns a path comprised of the specified rectangle.
                 <div>
                 <code>
                     <span class="modifiers"></span>
-                    <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    <span class="type">Point</span>
                     getCurrentPoint()
                 </code>
             </div>    
@@ -1107,7 +1131,7 @@ Returns a path comprised of the specified rectangle.
                 <div>
                 <code>
                     <span class="modifiers"></span>
-                    <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    <span class="type">Point</span>
                     getInitialPoint()
                 </code>
             </div>    
@@ -1125,7 +1149,7 @@ Returns a path comprised of the specified rectangle.
                         <div>
                 <code>
                     <span class="modifiers"></span>
-                    <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    <span class="type">Point</span>
                     getPoint(<span class="type">Number</span>
  index)
                 </code> 
@@ -1718,9 +1742,6 @@ Returns a path comprised of the specified rectangle.
                                 <a href="physical/file-EditableFrame.js.html">EditableFrame.js</a>
                             </div>                              
                                                                                                             <div>
-                                <a href="physical/file-Entity/Group.js.html">Entity.Group.js</a>
-                            </div>                              
-                                                                                                            <div>
                                 <a href="physical/file-Entity/Rect.js.html">Entity.Rect.js</a>
                             </div>                              
                                                                                                             <div>
@@ -1806,9 +1827,6 @@ Returns a path comprised of the specified rectangle.
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-Wrapper.js.html">Wrapper.js</a>
-                            </div>                              
-                                                                                                            <div>
-                                <a href="physical/file-argumentOverloading/min.js.html">argumentOverloading.min.js</a>
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-easing.js.html">easing.js</a>

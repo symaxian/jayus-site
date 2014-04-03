@@ -20,6 +20,51 @@
            elementType : "logical_container"
        } ,         
        {
+           localName : "distance",
+           fullName : "distance",
+           summary : "function Number distance(Point a, Point b)",
+           ref : "logical/GLOBAL.html#___distance",
+           parent : "GLOBAL",
+           type : "function",
+           elementType : "function"
+       } ,         
+       {
+           localName : "intersectLineLine",
+           fullName : "intersectLineLine",
+           summary : "function Boolean intersectLineLine(Point a1, Point a2, Point b1, Point b2)",
+           ref : "logical/GLOBAL.html#___intersectLineLine",
+           parent : "GLOBAL",
+           type : "function",
+           elementType : "function"
+       } ,         
+       {
+           localName : "intersectLinePolygon",
+           fullName : "intersectLinePolygon",
+           summary : "function Boolean intersectLinePolygon(Point a1, Point a2, Polygon poly)",
+           ref : "logical/GLOBAL.html#___intersectLinePolygon",
+           parent : "GLOBAL",
+           type : "function",
+           elementType : "function"
+       } ,         
+       {
+           localName : "intersectPolygonPolygon",
+           fullName : "intersectPolygonPolygon",
+           summary : "function Boolean intersectPolygonPolygon(Polygon poly1, Polygon poly2)",
+           ref : "logical/GLOBAL.html#___intersectPolygonPolygon",
+           parent : "GLOBAL",
+           type : "function",
+           elementType : "function"
+       } ,         
+       {
+           localName : "intersectTest",
+           fullName : "intersectTest",
+           summary : "function Boolean intersectTest()",
+           ref : "logical/GLOBAL.html#___intersectTest",
+           parent : "GLOBAL",
+           type : "function",
+           elementType : "function"
+       } ,         
+       {
            localName : "jayus",
            fullName : "jayus",
            summary : "namespace jayus",
@@ -578,6 +623,15 @@
            elementType : "logical_container"
        } ,         
        {
+           localName : "Circle",
+           fullName : "jayus.Circle.Circle",
+           summary : "constructor Circle()\nCircle(Point center, Number radius)\nCircle(Number x, Number y, Number radius)",
+           ref : "logical/jayus/Circle.html#___Circle",
+           parent : "jayus.Circle",
+           type : "constructor",
+           elementType : "function"
+       } ,         
+       {
            localName : "getCenter",
            fullName : "jayus.Circle.getCenter",
            summary : "function Point getCenter()",
@@ -593,15 +647,6 @@
            ref : "logical/jayus/Circle.html#___getRadius",
            parent : "jayus.Circle",
            type : "function",
-           elementType : "function"
-       } ,         
-       {
-           localName : "init",
-           fullName : "jayus.Circle.init",
-           summary : "constructor init()\ninit(Point center, Number radius)\ninit(Number x, Number y, Number radius)",
-           ref : "logical/jayus/Circle.html#___init",
-           parent : "jayus.Circle",
-           type : "constructor",
            elementType : "function"
        } ,         
        {
@@ -650,6 +695,15 @@
            elementType : "function"
        } ,         
        {
+           localName : "toPolygon",
+           fullName : "jayus.Circle.toPolygon",
+           summary : "function Polygon toPolygon(Number detail)",
+           ref : "logical/jayus/Circle.html#___toPolygon",
+           parent : "jayus.Circle",
+           type : "function",
+           elementType : "function"
+       } ,         
+       {
            localName : "x",
            fullName : "jayus.Circle.x",
            summary : "property Number x",
@@ -675,6 +729,15 @@
            parent : "jayus",
            type : "class",
            elementType : "logical_container"
+       } ,         
+       {
+           localName : "Color",
+           fullName : "jayus.Color.Color",
+           summary : "constructor Color(String name, Number alpha)\nColor(Number r, Number g, Number b, Number a)",
+           ref : "logical/jayus/Color.html#___Color",
+           parent : "jayus.Color",
+           type : "constructor",
+           elementType : "function"
        } ,         
        {
            localName : "a",
@@ -710,15 +773,6 @@
            ref : "logical/jayus/Color.html#___getName",
            parent : "jayus.Color",
            type : "function",
-           elementType : "function"
-       } ,         
-       {
-           localName : "init",
-           fullName : "jayus.Color.init",
-           summary : "constructor init(String name, Number alpha)\ninit(Number r, Number g, Number b, Number a)",
-           ref : "logical/jayus/Color.html#___init",
-           parent : "jayus.Color",
-           type : "constructor",
            elementType : "function"
        } ,         
        {
@@ -794,6 +848,105 @@
            elementType : "function"
        } ,         
        {
+           localName : "DIRTY",
+           fullName : "jayus.DIRTY",
+           summary : "namespace DIRTY",
+           ref : "logical/jayus/DIRTY.html",
+           parent : "jayus",
+           type : "namespace",
+           elementType : "logical_container"
+       } ,         
+       {
+           localName : "ALL",
+           fullName : "jayus.DIRTY.ALL",
+           summary : "property Number ALL",
+           ref : "logical/jayus/DIRTY.html#___ALL",
+           parent : "jayus.DIRTY",
+           type : "property",
+           elementType : "variable"
+       } ,         
+       {
+           localName : "BACKGROUND",
+           fullName : "jayus.DIRTY.BACKGROUND",
+           summary : "property Number BACKGROUND",
+           ref : "logical/jayus/DIRTY.html#___BACKGROUND",
+           parent : "jayus.DIRTY",
+           type : "property",
+           elementType : "variable"
+       } ,         
+       {
+           localName : "CONTENT",
+           fullName : "jayus.DIRTY.CONTENT",
+           summary : "property Number CONTENT",
+           ref : "logical/jayus/DIRTY.html#___CONTENT",
+           parent : "jayus.DIRTY",
+           type : "property",
+           elementType : "variable"
+       } ,         
+       {
+           localName : "FRAME",
+           fullName : "jayus.DIRTY.FRAME",
+           summary : "property Number FRAME",
+           ref : "logical/jayus/DIRTY.html#___FRAME",
+           parent : "jayus.DIRTY",
+           type : "property",
+           elementType : "variable"
+       } ,         
+       {
+           localName : "POSITION",
+           fullName : "jayus.DIRTY.POSITION",
+           summary : "property Number POSITION",
+           ref : "logical/jayus/DIRTY.html#___POSITION",
+           parent : "jayus.DIRTY",
+           type : "property",
+           elementType : "variable"
+       } ,         
+       {
+           localName : "SCOPE",
+           fullName : "jayus.DIRTY.SCOPE",
+           summary : "property Number SCOPE",
+           ref : "logical/jayus/DIRTY.html#___SCOPE",
+           parent : "jayus.DIRTY",
+           type : "property",
+           elementType : "variable"
+       } ,         
+       {
+           localName : "SIZE",
+           fullName : "jayus.DIRTY.SIZE",
+           summary : "property Number SIZE",
+           ref : "logical/jayus/DIRTY.html#___SIZE",
+           parent : "jayus.DIRTY",
+           type : "property",
+           elementType : "variable"
+       } ,         
+       {
+           localName : "STYLE",
+           fullName : "jayus.DIRTY.STYLE",
+           summary : "property Number STYLE",
+           ref : "logical/jayus/DIRTY.html#___STYLE",
+           parent : "jayus.DIRTY",
+           type : "property",
+           elementType : "variable"
+       } ,         
+       {
+           localName : "TRANSFORMS",
+           fullName : "jayus.DIRTY.TRANSFORMS",
+           summary : "property Number TRANSFORMS",
+           ref : "logical/jayus/DIRTY.html#___TRANSFORMS",
+           parent : "jayus.DIRTY",
+           type : "property",
+           elementType : "variable"
+       } ,         
+       {
+           localName : "VISIBILITY",
+           fullName : "jayus.DIRTY.VISIBILITY",
+           summary : "property Number VISIBILITY",
+           ref : "logical/jayus/DIRTY.html#___VISIBILITY",
+           parent : "jayus.DIRTY",
+           type : "property",
+           elementType : "variable"
+       } ,         
+       {
            localName : "Dependency",
            fullName : "jayus.Dependency",
            summary : "class Dependency",
@@ -807,6 +960,15 @@
            fullName : "jayus.Dependency.attach",
            summary : "function attach(Object dependent)",
            ref : "logical/jayus/Dependency.html#___attach",
+           parent : "jayus.Dependency",
+           type : "function",
+           elementType : "function"
+       } ,         
+       {
+           localName : "clearDependents",
+           fullName : "jayus.Dependency.clearDependents",
+           summary : "function clearDependents()",
+           ref : "logical/jayus/Dependency.html#___clearDependents",
            parent : "jayus.Dependency",
            type : "function",
            elementType : "function"
@@ -857,10 +1019,28 @@
            elementType : "variable"
        } ,         
        {
+           localName : "id",
+           fullName : "jayus.Dependency.id",
+           summary : "property Number|String id",
+           ref : "logical/jayus/Dependency.html#___id",
+           parent : "jayus.Dependency",
+           type : "property",
+           elementType : "variable"
+       } ,         
+       {
            localName : "informDependents",
            fullName : "jayus.Dependency.informDependents",
            summary : "function informDependents()",
            ref : "logical/jayus/Dependency.html#___informDependents",
+           parent : "jayus.Dependency",
+           type : "function",
+           elementType : "function"
+       } ,         
+       {
+           localName : "setId",
+           fullName : "jayus.Dependency.setId",
+           summary : "function Self setId(Number|String id)",
+           ref : "logical/jayus/Dependency.html#___setId",
            parent : "jayus.Dependency",
            type : "function",
            elementType : "function"
@@ -873,6 +1053,15 @@
            parent : "jayus",
            type : "class",
            elementType : "logical_container"
+       } ,         
+       {
+           localName : "Display",
+           fullName : "jayus.Display.Display",
+           summary : "function Display()\nDisplay(HTMLCanvasElement canvas)\nDisplay(Number width, Number height)",
+           ref : "logical/jayus/Display.html#___Display",
+           parent : "jayus.Display",
+           type : "function",
+           elementType : "function"
        } ,         
        {
            localName : "blur",
@@ -927,15 +1116,6 @@
            parent : "jayus.Display",
            type : "property",
            elementType : "variable"
-       } ,         
-       {
-           localName : "init",
-           fullName : "jayus.Display.init",
-           summary : "function init()\ninit(HTMLCanvasElement canvas)\ninit(Number width, Number height)",
-           ref : "logical/jayus/Display.html#___init",
-           parent : "jayus.Display",
-           type : "function",
-           elementType : "function"
        } ,         
        {
            localName : "isFullScreen",
@@ -1028,6 +1208,15 @@
            elementType : "logical_container"
        } ,         
        {
+           localName : "EditableFrame",
+           fullName : "jayus.EditableFrame.EditableFrame",
+           summary : "constructor EditableFrame(Entity child)",
+           ref : "logical/jayus/EditableFrame.html#___EditableFrame",
+           parent : "jayus.EditableFrame",
+           type : "constructor",
+           elementType : "function"
+       } ,         
+       {
            localName : "cornerThreshold",
            fullName : "jayus.EditableFrame.cornerThreshold",
            summary : "property Number cornerThreshold",
@@ -1055,46 +1244,19 @@
            elementType : "variable"
        } ,         
        {
-           localName : "init",
-           fullName : "jayus.EditableFrame.init",
-           summary : "constructor init(Entity child)",
-           ref : "logical/jayus/EditableFrame.html#___init",
-           parent : "jayus.EditableFrame",
-           type : "constructor",
-           elementType : "function"
-       } ,         
-       {
-           localName : "maxH",
-           fullName : "jayus.EditableFrame.maxH",
-           summary : "property Number maxH",
-           ref : "logical/jayus/EditableFrame.html#___maxH",
+           localName : "maxHeight",
+           fullName : "jayus.EditableFrame.maxHeight",
+           summary : "property Number maxHeight",
+           ref : "logical/jayus/EditableFrame.html#___maxHeight",
            parent : "jayus.EditableFrame",
            type : "property",
            elementType : "variable"
        } ,         
        {
-           localName : "maxW",
-           fullName : "jayus.EditableFrame.maxW",
-           summary : "property Number maxW",
-           ref : "logical/jayus/EditableFrame.html#___maxW",
-           parent : "jayus.EditableFrame",
-           type : "property",
-           elementType : "variable"
-       } ,         
-       {
-           localName : "minH",
-           fullName : "jayus.EditableFrame.minH",
-           summary : "property Number minH",
-           ref : "logical/jayus/EditableFrame.html#___minH",
-           parent : "jayus.EditableFrame",
-           type : "property",
-           elementType : "variable"
-       } ,         
-       {
-           localName : "minW",
-           fullName : "jayus.EditableFrame.minW",
-           summary : "property Number minW",
-           ref : "logical/jayus/EditableFrame.html#___minW",
+           localName : "maxWidth",
+           fullName : "jayus.EditableFrame.maxWidth",
+           summary : "property Number maxWidth",
+           ref : "logical/jayus/EditableFrame.html#___maxWidth",
            parent : "jayus.EditableFrame",
            type : "property",
            elementType : "variable"
@@ -1116,6 +1278,33 @@
            parent : "jayus",
            type : "class",
            elementType : "logical_container"
+       } ,         
+       {
+           localName : "Entity",
+           fullName : "jayus.Entity.Entity",
+           summary : "constructor Entity()",
+           ref : "logical/jayus/Entity.html#___Entity",
+           parent : "jayus.Entity",
+           type : "constructor",
+           elementType : "function"
+       } ,         
+       {
+           localName : "angle",
+           fullName : "jayus.Entity.angle",
+           summary : "property Number angle",
+           ref : "logical/jayus/Entity.html#___angle",
+           parent : "jayus.Entity",
+           type : "property",
+           elementType : "variable"
+       } ,         
+       {
+           localName : "animate",
+           fullName : "jayus.Entity.animate",
+           summary : "function Self animate()",
+           ref : "logical/jayus/Entity.html#___animate",
+           parent : "jayus.Entity",
+           type : "function",
+           elementType : "function"
        } ,         
        {
            localName : "applyTransforms",
@@ -1145,10 +1334,28 @@
            elementType : "variable"
        } ,         
        {
-           localName : "dirtied",
-           fullName : "jayus.Entity.dirtied",
-           summary : "property Boolean dirtied",
-           ref : "logical/jayus/Entity.html#___dirtied",
+           localName : "clearVelocity",
+           fullName : "jayus.Entity.clearVelocity",
+           summary : "function Self clearVelocity()",
+           ref : "logical/jayus/Entity.html#___clearVelocity",
+           parent : "jayus.Entity",
+           type : "function",
+           elementType : "function"
+       } ,         
+       {
+           localName : "cursorX",
+           fullName : "jayus.Entity.cursorX",
+           summary : "property Number cursorX",
+           ref : "logical/jayus/Entity.html#___cursorX",
+           parent : "jayus.Entity",
+           type : "property",
+           elementType : "variable"
+       } ,         
+       {
+           localName : "cursorY",
+           fullName : "jayus.Entity.cursorY",
+           summary : "property Number cursorY",
+           ref : "logical/jayus/Entity.html#___cursorY",
            parent : "jayus.Entity",
            type : "property",
            elementType : "variable"
@@ -1158,15 +1365,6 @@
            fullName : "jayus.Entity.dragButton",
            summary : "property Boolean dragButton",
            ref : "logical/jayus/Entity.html#___dragButton",
-           parent : "jayus.Entity",
-           type : "property",
-           elementType : "variable"
-       } ,         
-       {
-           localName : "draggable",
-           fullName : "jayus.Entity.draggable",
-           summary : "property Boolean draggable",
-           ref : "logical/jayus/Entity.html#___draggable",
            parent : "jayus.Entity",
            type : "property",
            elementType : "variable"
@@ -1199,10 +1397,28 @@
            elementType : "function"
        } ,         
        {
-           localName : "frozen",
-           fullName : "jayus.Entity.frozen",
-           summary : "property Number frozen",
-           ref : "logical/jayus/Entity.html#___frozen",
+           localName : "exclude",
+           fullName : "jayus.Entity.exclude",
+           summary : "function Self exclude()",
+           ref : "logical/jayus/Entity.html#___exclude",
+           parent : "jayus.Entity",
+           type : "function",
+           elementType : "function"
+       } ,         
+       {
+           localName : "flipX",
+           fullName : "jayus.Entity.flipX",
+           summary : "property Number flipX",
+           ref : "logical/jayus/Entity.html#___flipX",
+           parent : "jayus.Entity",
+           type : "property",
+           elementType : "variable"
+       } ,         
+       {
+           localName : "flipY",
+           fullName : "jayus.Entity.flipY",
+           summary : "property Number flipY",
+           ref : "logical/jayus/Entity.html#___flipY",
            parent : "jayus.Entity",
            type : "property",
            elementType : "variable"
@@ -1235,15 +1451,6 @@
            elementType : "variable"
        } ,         
        {
-           localName : "hasParent",
-           fullName : "jayus.Entity.hasParent",
-           summary : "property Boolean hasParent",
-           ref : "logical/jayus/Entity.html#___hasParent",
-           parent : "jayus.Entity",
-           type : "property",
-           elementType : "variable"
-       } ,         
-       {
            localName : "hide",
            fullName : "jayus.Entity.hide",
            summary : "function Self hide()",
@@ -1253,22 +1460,22 @@
            elementType : "function"
        } ,         
        {
-           localName : "id",
-           fullName : "jayus.Entity.id",
-           summary : "property String id",
-           ref : "logical/jayus/Entity.html#___id",
+           localName : "include",
+           fullName : "jayus.Entity.include",
+           summary : "function Self include()",
+           ref : "logical/jayus/Entity.html#___include",
+           parent : "jayus.Entity",
+           type : "function",
+           elementType : "function"
+       } ,         
+       {
+           localName : "included",
+           fullName : "jayus.Entity.included",
+           summary : "property Boolean included",
+           ref : "logical/jayus/Entity.html#___included",
            parent : "jayus.Entity",
            type : "property",
            elementType : "variable"
-       } ,         
-       {
-           localName : "init",
-           fullName : "jayus.Entity.init",
-           summary : "constructor init()",
-           ref : "logical/jayus/Entity.html#___init",
-           parent : "jayus.Entity",
-           type : "constructor",
-           elementType : "function"
        } ,         
        {
            localName : "intersectCount",
@@ -1291,7 +1498,7 @@
        {
            localName : "intersectsAll",
            fullName : "jayus.Entity.intersectsAll",
-           summary : "function Boolean intersectsAll(Array entities)\nBoolean intersectsAll(List entities)",
+           summary : "function Boolean intersectsAll(Array|List entities)",
            ref : "logical/jayus/Entity.html#___intersectsAll",
            parent : "jayus.Entity",
            type : "function",
@@ -1300,7 +1507,7 @@
        {
            localName : "intersectsAny",
            fullName : "jayus.Entity.intersectsAny",
-           summary : "function Boolean intersectsAny(Array entities)\nBoolean intersectsAny(List entities)",
+           summary : "function Boolean intersectsAny(Array|List entities)",
            ref : "logical/jayus/Entity.html#___intersectsAny",
            parent : "jayus.Entity",
            type : "function",
@@ -1318,44 +1525,17 @@
        {
            localName : "intersectsWhich",
            fullName : "jayus.Entity.intersectsWhich",
-           summary : "function Array intersectsWhich(Array entities)\nArray intersectsWhich(List entities)",
+           summary : "function Array intersectsWhich(Array|List entities)",
            ref : "logical/jayus/Entity.html#___intersectsWhich",
            parent : "jayus.Entity",
            type : "function",
            elementType : "function"
        } ,         
        {
-           localName : "isEntity",
-           fullName : "jayus.Entity.isEntity",
-           summary : "property Boolean isEntity",
-           ref : "logical/jayus/Entity.html#___isEntity",
-           parent : "jayus.Entity",
-           type : "property",
-           elementType : "variable"
-       } ,         
-       {
            localName : "isParent",
            fullName : "jayus.Entity.isParent",
            summary : "property Boolean isParent",
            ref : "logical/jayus/Entity.html#___isParent",
-           parent : "jayus.Entity",
-           type : "property",
-           elementType : "variable"
-       } ,         
-       {
-           localName : "isRect",
-           fullName : "jayus.Entity.isRect",
-           summary : "property Boolean isRect",
-           ref : "logical/jayus/Entity.html#___isRect",
-           parent : "jayus.Entity",
-           type : "property",
-           elementType : "variable"
-       } ,         
-       {
-           localName : "isTransformed",
-           fullName : "jayus.Entity.isTransformed",
-           summary : "property Boolean isTransformed",
-           ref : "logical/jayus/Entity.html#___isTransformed",
            parent : "jayus.Entity",
            type : "property",
            elementType : "variable"
@@ -1383,6 +1563,15 @@
            fullName : "jayus.Entity.parent",
            summary : "property Entity parent",
            ref : "logical/jayus/Entity.html#___parent",
+           parent : "jayus.Entity",
+           type : "property",
+           elementType : "variable"
+       } ,         
+       {
+           localName : "parentDisplay",
+           fullName : "jayus.Entity.parentDisplay",
+           summary : "property Display parentDisplay",
+           ref : "logical/jayus/Entity.html#___parentDisplay",
            parent : "jayus.Entity",
            type : "property",
            elementType : "variable"
@@ -1460,19 +1649,64 @@
            elementType : "function"
        } ,         
        {
-           localName : "setDraggable",
-           fullName : "jayus.Entity.setDraggable",
-           summary : "function Self setDraggable(Boolean on)",
-           ref : "logical/jayus/Entity.html#___setDraggable",
+           localName : "setConstraint",
+           fullName : "jayus.Entity.setConstraint",
+           summary : "function Self setConstraint(String property, String formula)",
+           ref : "logical/jayus/Entity.html#___setConstraint",
            parent : "jayus.Entity",
            type : "function",
            elementType : "function"
        } ,         
        {
-           localName : "setId",
-           fullName : "jayus.Entity.setId",
-           summary : "function Self setId(* id)",
-           ref : "logical/jayus/Entity.html#___setId",
+           localName : "setConstraints",
+           fullName : "jayus.Entity.setConstraints",
+           summary : "function Self setConstraints(Object constraints)",
+           ref : "logical/jayus/Entity.html#___setConstraints",
+           parent : "jayus.Entity",
+           type : "function",
+           elementType : "function"
+       } ,         
+       {
+           localName : "setDragButton",
+           fullName : "jayus.Entity.setDragButton",
+           summary : "function Self setDragButton(String button)",
+           ref : "logical/jayus/Entity.html#___setDragButton",
+           parent : "jayus.Entity",
+           type : "function",
+           elementType : "function"
+       } ,         
+       {
+           localName : "setFlipX",
+           fullName : "jayus.Entity.setFlipX",
+           summary : "function Self setFlipX(Boolean on)",
+           ref : "logical/jayus/Entity.html#___setFlipX",
+           parent : "jayus.Entity",
+           type : "function",
+           elementType : "function"
+       } ,         
+       {
+           localName : "setFlipY",
+           fullName : "jayus.Entity.setFlipY",
+           summary : "function Self setFlipY(Boolean on)",
+           ref : "logical/jayus/Entity.html#___setFlipY",
+           parent : "jayus.Entity",
+           type : "function",
+           elementType : "function"
+       } ,         
+       {
+           localName : "setFlipping",
+           fullName : "jayus.Entity.setFlipping",
+           summary : "function Self setFlipping(Boolean on)",
+           ref : "logical/jayus/Entity.html#___setFlipping",
+           parent : "jayus.Entity",
+           type : "function",
+           elementType : "function"
+       } ,         
+       {
+           localName : "setIncluded",
+           fullName : "jayus.Entity.setIncluded",
+           summary : "function Self setIncluded(Boolean on)",
+           ref : "logical/jayus/Entity.html#___setIncluded",
            parent : "jayus.Entity",
            type : "function",
            elementType : "function"
@@ -1487,10 +1721,55 @@
            elementType : "function"
        } ,         
        {
+           localName : "setVelocity",
+           fullName : "jayus.Entity.setVelocity",
+           summary : "function Self setVelocity(Point point)\nSelf setVelocity(Number x, Number y)",
+           ref : "logical/jayus/Entity.html#___setVelocity",
+           parent : "jayus.Entity",
+           type : "function",
+           elementType : "function"
+       } ,         
+       {
            localName : "setVisible",
            fullName : "jayus.Entity.setVisible",
            summary : "function Self setVisible(Boolean on)",
            ref : "logical/jayus/Entity.html#___setVisible",
+           parent : "jayus.Entity",
+           type : "function",
+           elementType : "function"
+       } ,         
+       {
+           localName : "setXScale",
+           fullName : "jayus.Entity.setXScale",
+           summary : "function Self setXScale(Number scale)",
+           ref : "logical/jayus/Entity.html#___setXScale",
+           parent : "jayus.Entity",
+           type : "function",
+           elementType : "function"
+       } ,         
+       {
+           localName : "setXVelocity",
+           fullName : "jayus.Entity.setXVelocity",
+           summary : "function Self setXVelocity(Number x)",
+           ref : "logical/jayus/Entity.html#___setXVelocity",
+           parent : "jayus.Entity",
+           type : "function",
+           elementType : "function"
+       } ,         
+       {
+           localName : "setYScale",
+           fullName : "jayus.Entity.setYScale",
+           summary : "function Self setYScale(Number scale)",
+           ref : "logical/jayus/Entity.html#___setYScale",
+           parent : "jayus.Entity",
+           type : "function",
+           elementType : "function"
+       } ,         
+       {
+           localName : "setYVelocity",
+           fullName : "jayus.Entity.setYVelocity",
+           summary : "function Self setYVelocity(Number y)",
+           ref : "logical/jayus/Entity.html#___setYVelocity",
            parent : "jayus.Entity",
            type : "function",
            elementType : "function"
@@ -1503,24 +1782,6 @@
            parent : "jayus.Entity",
            type : "function",
            elementType : "function"
-       } ,         
-       {
-           localName : "tick",
-           fullName : "jayus.Entity.tick",
-           summary : "function tick(Number time, Number elapsed)",
-           ref : "logical/jayus/Entity.html#___tick",
-           parent : "jayus.Entity",
-           type : "function",
-           elementType : "function"
-       } ,         
-       {
-           localName : "trackCursor",
-           fullName : "jayus.Entity.trackCursor",
-           summary : "property Boolean trackCursor",
-           ref : "logical/jayus/Entity.html#___trackCursor",
-           parent : "jayus.Entity",
-           type : "property",
-           elementType : "variable"
        } ,         
        {
            localName : "underCursor",
@@ -1541,6 +1802,51 @@
            elementType : "variable"
        } ,         
        {
+           localName : "xAnchor",
+           fullName : "jayus.Entity.xAnchor",
+           summary : "property Number xAnchor",
+           ref : "logical/jayus/Entity.html#___xAnchor",
+           parent : "jayus.Entity",
+           type : "property",
+           elementType : "variable"
+       } ,         
+       {
+           localName : "xScale",
+           fullName : "jayus.Entity.xScale",
+           summary : "property Number xScale",
+           ref : "logical/jayus/Entity.html#___xScale",
+           parent : "jayus.Entity",
+           type : "property",
+           elementType : "variable"
+       } ,         
+       {
+           localName : "yAnchor",
+           fullName : "jayus.Entity.yAnchor",
+           summary : "property Number yAnchor",
+           ref : "logical/jayus/Entity.html#___yAnchor",
+           parent : "jayus.Entity",
+           type : "property",
+           elementType : "variable"
+       } ,         
+       {
+           localName : "yScale",
+           fullName : "jayus.Entity.yScale",
+           summary : "property Number yScale",
+           ref : "logical/jayus/Entity.html#___yScale",
+           parent : "jayus.Entity",
+           type : "property",
+           elementType : "variable"
+       } ,         
+       {
+           localName : "FlexibleFrame",
+           fullName : "jayus.FlexibleFrame",
+           summary : "class FlexibleFrame",
+           ref : "logical/jayus/FlexibleFrame.html",
+           parent : "jayus",
+           type : "class",
+           elementType : "logical_container"
+       } ,         
+       {
            localName : "FlowLayout",
            fullName : "jayus.FlowLayout",
            summary : "class FlowLayout",
@@ -1559,13 +1865,13 @@
            elementType : "variable"
        } ,         
        {
-           localName : "getAlignment",
-           fullName : "jayus.FlowLayout.getAlignment",
-           summary : "function Number getAlignment()",
-           ref : "logical/jayus/FlowLayout.html#___getAlignment",
+           localName : "contractHeight",
+           fullName : "jayus.FlowLayout.contractHeight",
+           summary : "property Boolean contractHeight",
+           ref : "logical/jayus/FlowLayout.html#___contractHeight",
            parent : "jayus.FlowLayout",
-           type : "function",
-           elementType : "function"
+           type : "property",
+           elementType : "variable"
        } ,         
        {
            localName : "setAlignment",
@@ -1586,39 +1892,21 @@
            elementType : "logical_container"
        } ,         
        {
-           localName : "brush",
-           fullName : "jayus.Frame.brush",
-           summary : "property Brush brush",
-           ref : "logical/jayus/Frame.html#___brush",
+           localName : "Frame",
+           fullName : "jayus.Frame.Frame",
+           summary : "constructor Frame(Entity child)",
+           ref : "logical/jayus/Frame.html#___Frame",
            parent : "jayus.Frame",
-           type : "property",
-           elementType : "variable"
-       } ,         
-       {
-           localName : "clearBrush",
-           fullName : "jayus.Frame.clearBrush",
-           summary : "function Self clearBrush()",
-           ref : "logical/jayus/Frame.html#___clearBrush",
-           parent : "jayus.Frame",
-           type : "function",
+           type : "constructor",
            elementType : "function"
        } ,         
        {
-           localName : "hasBrush",
-           fullName : "jayus.Frame.hasBrush",
-           summary : "property Boolean hasBrush",
-           ref : "logical/jayus/Frame.html#___hasBrush",
+           localName : "clearMarginBrush",
+           fullName : "jayus.Frame.clearMarginBrush",
+           summary : "function Self clearMarginBrush()",
+           ref : "logical/jayus/Frame.html#___clearMarginBrush",
            parent : "jayus.Frame",
-           type : "property",
-           elementType : "variable"
-       } ,         
-       {
-           localName : "init",
-           fullName : "jayus.Frame.init",
-           summary : "constructor init(Entity child)",
-           ref : "logical/jayus/Frame.html#___init",
-           parent : "jayus.Frame",
-           type : "constructor",
+           type : "function",
            elementType : "function"
        } ,         
        {
@@ -1626,6 +1914,15 @@
            fullName : "jayus.Frame.marginBottom",
            summary : "property Number marginBottom",
            ref : "logical/jayus/Frame.html#___marginBottom",
+           parent : "jayus.Frame",
+           type : "property",
+           elementType : "variable"
+       } ,         
+       {
+           localName : "marginBrush",
+           fullName : "jayus.Frame.marginBrush",
+           summary : "property Brush marginBrush",
+           ref : "logical/jayus/Frame.html#___marginBrush",
            parent : "jayus.Frame",
            type : "property",
            elementType : "variable"
@@ -1658,10 +1955,10 @@
            elementType : "variable"
        } ,         
        {
-           localName : "setBrush",
-           fullName : "jayus.Frame.setBrush",
-           summary : "function Self setBrush(Object brush)",
-           ref : "logical/jayus/Frame.html#___setBrush",
+           localName : "setChild",
+           fullName : "jayus.Frame.setChild",
+           summary : "function Self setChild(Entity child)",
+           ref : "logical/jayus/Frame.html#___setChild",
            parent : "jayus.Frame",
            type : "function",
            elementType : "function"
@@ -1680,6 +1977,15 @@
            fullName : "jayus.Frame.setMarginBottom",
            summary : "function Self setMarginBottom(Number margin)",
            ref : "logical/jayus/Frame.html#___setMarginBottom",
+           parent : "jayus.Frame",
+           type : "function",
+           elementType : "function"
+       } ,         
+       {
+           localName : "setMarginBrush",
+           fullName : "jayus.Frame.setMarginBrush",
+           summary : "function Self setMarginBrush(Object brush)",
+           ref : "logical/jayus/Frame.html#___setMarginBrush",
            parent : "jayus.Frame",
            type : "function",
            elementType : "function"
@@ -1775,6 +2081,15 @@
            elementType : "variable"
        } ,         
        {
+           localName : "translate",
+           fullName : "jayus.Gradient.translate",
+           summary : "function Self translate(Point point)\nSelf translate(Number x, Number y)",
+           ref : "logical/jayus/Gradient.html#___translate",
+           parent : "jayus.Gradient",
+           type : "function",
+           elementType : "function"
+       } ,         
+       {
            localName : "Grid",
            fullName : "jayus.Grid",
            summary : "class Grid",
@@ -1867,7 +2182,7 @@
        {
            localName : "getChild",
            fullName : "jayus.Grid.getChild",
-           summary : "function Entity|null getChild(Point index)\nEntity|null getChild(Number x, Number y)\nEntity|null getChild(String id)",
+           summary : "function Entity|null getChild(String id)",
            ref : "logical/jayus/Grid.html#___getChild",
            parent : "jayus.Grid",
            type : "function",
@@ -1876,8 +2191,17 @@
        {
            localName : "getChildAt",
            fullName : "jayus.Grid.getChildAt",
-           summary : "function Entity|null getChildAt(Point position)\nEntity|null getChildAt(Number x, Number y)",
+           summary : "function Entity|null getChildAt(Point index)\nEntity|null getChildAt(Number x, Number y)",
            ref : "logical/jayus/Grid.html#___getChildAt",
+           parent : "jayus.Grid",
+           type : "function",
+           elementType : "function"
+       } ,         
+       {
+           localName : "getChildUnder",
+           fullName : "jayus.Grid.getChildUnder",
+           summary : "function Entity|null getChildUnder(Point position)\nEntity|null getChildUnder(Number x, Number y)",
+           ref : "logical/jayus/Grid.html#___getChildUnder",
            parent : "jayus.Grid",
            type : "function",
            elementType : "function"
@@ -1901,15 +2225,6 @@
            elementType : "function"
        } ,         
        {
-           localName : "getSlotAt",
-           fullName : "jayus.Grid.getSlotAt",
-           summary : "function Slot getSlotAt(Point pos)\nSlot getSlotAt(Number x, Number y)",
-           ref : "logical/jayus/Grid.html#___getSlotAt",
-           parent : "jayus.Grid",
-           type : "function",
-           elementType : "function"
-       } ,         
-       {
            localName : "getSlotFrame",
            fullName : "jayus.Grid.getSlotFrame",
            summary : "function Rect|null getSlotFrame(Point index)\nRect|null getSlotFrame(Number x, Number y)",
@@ -1919,10 +2234,28 @@
            elementType : "function"
        } ,         
        {
+           localName : "getSlotUnder",
+           fullName : "jayus.Grid.getSlotUnder",
+           summary : "function Slot getSlotUnder(Point pos)\nSlot getSlotUnder(Number x, Number y)",
+           ref : "logical/jayus/Grid.html#___getSlotUnder",
+           parent : "jayus.Grid",
+           type : "function",
+           elementType : "function"
+       } ,         
+       {
            localName : "hasChild",
            fullName : "jayus.Grid.hasChild",
            summary : "function Boolean hasChild(Entity item)\nBoolean hasChild(* id)",
            ref : "logical/jayus/Grid.html#___hasChild",
+           parent : "jayus.Grid",
+           type : "function",
+           elementType : "function"
+       } ,         
+       {
+           localName : "hasChildAt",
+           fullName : "jayus.Grid.hasChildAt",
+           summary : "function Boolean hasChildAt(Point index)\nBoolean hasChildAt(Number x, Number y)",
+           ref : "logical/jayus/Grid.html#___hasChildAt",
            parent : "jayus.Grid",
            type : "function",
            elementType : "function"
@@ -1984,8 +2317,17 @@
        {
            localName : "removeChild",
            fullName : "jayus.Grid.removeChild",
-           summary : "function Self removeChild(Entity item)\nSelf removeChild(String id)\nSelf removeChild(Number row, Number col)",
+           summary : "function Self removeChild(Entity item)\nSelf removeChild(String id)",
            ref : "logical/jayus/Grid.html#___removeChild",
+           parent : "jayus.Grid",
+           type : "function",
+           elementType : "function"
+       } ,         
+       {
+           localName : "removeChildAt",
+           fullName : "jayus.Grid.removeChildAt",
+           summary : "function Self removeChildAt(Point index)\nSelf removeChildAt(Number x, Number y)",
+           ref : "logical/jayus/Grid.html#___removeChildAt",
            parent : "jayus.Grid",
            type : "function",
            elementType : "function"
@@ -2135,10 +2477,10 @@
            elementType : "logical_container"
        } ,         
        {
-           localName : "findChild",
-           fullName : "jayus.Group.findChild",
-           summary : "function Entity findChild(String id)",
-           ref : "logical/jayus/Group.html#___findChild",
+           localName : "find",
+           fullName : "jayus.Group.find",
+           summary : "function Entity find(String id)",
+           ref : "logical/jayus/Group.html#___find",
            parent : "jayus.Group",
            type : "function",
            elementType : "function"
@@ -2171,6 +2513,15 @@
            elementType : "function"
        } ,         
        {
+           localName : "forEveryChild",
+           fullName : "jayus.Group.forEveryChild",
+           summary : "function * forEveryChild(Function func, Array args)",
+           ref : "logical/jayus/Group.html#___forEveryChild",
+           parent : "jayus.Group",
+           type : "function",
+           elementType : "function"
+       } ,         
+       {
            localName : "getAllChildren",
            fullName : "jayus.Group.getAllChildren",
            summary : "function Array getAllChildren(Boolean parentsAfter)",
@@ -2178,15 +2529,6 @@
            parent : "jayus.Group",
            type : "function",
            elementType : "function"
-       } ,         
-       {
-           localName : "propagateCursor",
-           fullName : "jayus.Group.propagateCursor",
-           summary : "property Boolean propagateCursor",
-           ref : "logical/jayus/Group.html#___propagateCursor",
-           parent : "jayus.Group",
-           type : "property",
-           elementType : "variable"
        } ,         
        {
            localName : "Image",
@@ -2198,6 +2540,15 @@
            elementType : "logical_container"
        } ,         
        {
+           localName : "Image",
+           fullName : "jayus.Image.Image",
+           summary : "constructor Image(String filepath)\nImage(Surface image)",
+           ref : "logical/jayus/Image.html#___Image",
+           parent : "jayus.Image",
+           type : "constructor",
+           elementType : "function"
+       } ,         
+       {
            localName : "clearSection",
            fullName : "jayus.Image.clearSection",
            summary : "function Self clearSection()",
@@ -2205,6 +2556,15 @@
            parent : "jayus.Image",
            type : "function",
            elementType : "function"
+       } ,         
+       {
+           localName : "filepath",
+           fullName : "jayus.Image.filepath",
+           summary : "property String filepath",
+           ref : "logical/jayus/Image.html#___filepath",
+           parent : "jayus.Image",
+           type : "property",
+           elementType : "variable"
        } ,         
        {
            localName : "hasSection",
@@ -2225,24 +2585,6 @@
            elementType : "variable"
        } ,         
        {
-           localName : "init",
-           fullName : "jayus.Image.init",
-           summary : "constructor init(String filepath)\ninit(Surface image)",
-           ref : "logical/jayus/Image.html#___init",
-           parent : "jayus.Image",
-           type : "constructor",
-           elementType : "function"
-       } ,         
-       {
-           localName : "keepAligned",
-           fullName : "jayus.Image.keepAligned",
-           summary : "property Boolean keepAligned",
-           ref : "logical/jayus/Image.html#___keepAligned",
-           parent : "jayus.Image",
-           type : "property",
-           elementType : "variable"
-       } ,         
-       {
            localName : "loaded",
            fullName : "jayus.Image.loaded",
            summary : "property Boolean loaded",
@@ -2252,10 +2594,28 @@
            elementType : "variable"
        } ,         
        {
-           localName : "section",
-           fullName : "jayus.Image.section",
-           summary : "property Rectangle section",
-           ref : "logical/jayus/Image.html#___section",
+           localName : "pendingLoad",
+           fullName : "jayus.Image.pendingLoad",
+           summary : "property Boolean pendingLoad",
+           ref : "logical/jayus/Image.html#___pendingLoad",
+           parent : "jayus.Image",
+           type : "property",
+           elementType : "variable"
+       } ,         
+       {
+           localName : "sectionX",
+           fullName : "jayus.Image.sectionX",
+           summary : "property Number sectionX",
+           ref : "logical/jayus/Image.html#___sectionX",
+           parent : "jayus.Image",
+           type : "property",
+           elementType : "variable"
+       } ,         
+       {
+           localName : "sectionY",
+           fullName : "jayus.Image.sectionY",
+           summary : "property Number sectionY",
+           ref : "logical/jayus/Image.html#___sectionY",
            parent : "jayus.Image",
            type : "property",
            elementType : "variable"
@@ -2288,6 +2648,15 @@
            elementType : "function"
        } ,         
        {
+           localName : "whenLoaded",
+           fullName : "jayus.Image.whenLoaded",
+           summary : "function Self whenLoaded(Function handler)",
+           ref : "logical/jayus/Image.html#___whenLoaded",
+           parent : "jayus.Image",
+           type : "function",
+           elementType : "function"
+       } ,         
+       {
            localName : "Layer",
            fullName : "jayus.Layer",
            summary : "class Layer",
@@ -2297,12 +2666,84 @@
            elementType : "logical_container"
        } ,         
        {
-           localName : "init",
-           fullName : "jayus.Layer.init",
-           summary : "constructor init()\ninit(Number width, Number height)",
-           ref : "logical/jayus/Layer.html#___init",
+           localName : "Layer",
+           fullName : "jayus.Layer.Layer",
+           summary : "constructor Layer(Number width, Number height)",
+           ref : "logical/jayus/Layer.html#___Layer",
            parent : "jayus.Layer",
            type : "constructor",
+           elementType : "function"
+       } ,         
+       {
+           localName : "getOrigin",
+           fullName : "jayus.Layer.getOrigin",
+           summary : "function Point getOrigin()",
+           ref : "logical/jayus/Layer.html#___getOrigin",
+           parent : "jayus.Layer",
+           type : "function",
+           elementType : "function"
+       } ,         
+       {
+           localName : "roundX",
+           fullName : "jayus.Layer.roundX",
+           summary : "property Boolean roundX",
+           ref : "logical/jayus/Layer.html#___roundX",
+           parent : "jayus.Layer",
+           type : "property",
+           elementType : "variable"
+       } ,         
+       {
+           localName : "roundY",
+           fullName : "jayus.Layer.roundY",
+           summary : "property Boolean roundY",
+           ref : "logical/jayus/Layer.html#___roundY",
+           parent : "jayus.Layer",
+           type : "property",
+           elementType : "variable"
+       } ,         
+       {
+           localName : "setOrigin",
+           fullName : "jayus.Layer.setOrigin",
+           summary : "function Self setOrigin(Point point)\nSelf setOrigin(Number x, Number y)",
+           ref : "logical/jayus/Layer.html#___setOrigin",
+           parent : "jayus.Layer",
+           type : "function",
+           elementType : "function"
+       } ,         
+       {
+           localName : "setRounding",
+           fullName : "jayus.Layer.setRounding",
+           summary : "function Self setRounding(Boolean enabled)\nSelf setRounding(Boolean x, Boolean y)",
+           ref : "logical/jayus/Layer.html#___setRounding",
+           parent : "jayus.Layer",
+           type : "function",
+           elementType : "function"
+       } ,         
+       {
+           localName : "setX",
+           fullName : "jayus.Layer.setX",
+           summary : "function Self setX(Number x)",
+           ref : "logical/jayus/Layer.html#___setX",
+           parent : "jayus.Layer",
+           type : "function",
+           elementType : "function"
+       } ,         
+       {
+           localName : "setY",
+           fullName : "jayus.Layer.setY",
+           summary : "function Self setY(Number y)",
+           ref : "logical/jayus/Layer.html#___setY",
+           parent : "jayus.Layer",
+           type : "function",
+           elementType : "function"
+       } ,         
+       {
+           localName : "translate",
+           fullName : "jayus.Layer.translate",
+           summary : "function Self translate(Point point)\nSelf translate(Number x, Number y)",
+           ref : "logical/jayus/Layer.html#___translate",
+           parent : "jayus.Layer",
+           type : "function",
            elementType : "function"
        } ,         
        {
@@ -2331,6 +2772,15 @@
            parent : "jayus",
            type : "class",
            elementType : "logical_container"
+       } ,         
+       {
+           localName : "List",
+           fullName : "jayus.List.List",
+           summary : "constructor List()",
+           ref : "logical/jayus/List.html#___List",
+           parent : "jayus.List",
+           type : "constructor",
+           elementType : "function"
        } ,         
        {
            localName : "add",
@@ -2378,6 +2828,15 @@
            elementType : "function"
        } ,         
        {
+           localName : "forEvery",
+           fullName : "jayus.List.forEvery",
+           summary : "function Self forEvery(Function func, Array args)",
+           ref : "logical/jayus/List.html#___forEvery",
+           parent : "jayus.List",
+           type : "function",
+           elementType : "function"
+       } ,         
+       {
            localName : "get",
            fullName : "jayus.List.get",
            summary : "function Boolean get(* id)",
@@ -2402,15 +2861,6 @@
            ref : "logical/jayus/List.html#___indexOf",
            parent : "jayus.List",
            type : "function",
-           elementType : "function"
-       } ,         
-       {
-           localName : "init",
-           fullName : "jayus.List.init",
-           summary : "constructor init()",
-           ref : "logical/jayus/List.html#___init",
-           parent : "jayus.List",
-           type : "constructor",
            elementType : "function"
        } ,         
        {
@@ -2490,6 +2940,15 @@
            fullName : "jayus.List.replaceAt",
            summary : "function Self replaceAt(Number index, Object newItem)",
            ref : "logical/jayus/List.html#___replaceAt",
+           parent : "jayus.List",
+           type : "function",
+           elementType : "function"
+       } ,         
+       {
+           localName : "sort",
+           fullName : "jayus.List.sort",
+           summary : "function Self sort(Function comparator)",
+           ref : "logical/jayus/List.html#___sort",
            parent : "jayus.List",
            type : "function",
            elementType : "function"
@@ -2659,7 +3118,7 @@
        {
            localName : "init",
            fullName : "jayus.MethodAnimator.init",
-           summary : "constructor init(Object target, String property, Number|Array<Number> initialValue, Number|Array<Number> finalValue)",
+           summary : "constructor init(Object target, Function method, Number|Array<Number> initialValue, Number|Array<Number> finalValue)",
            ref : "logical/jayus/MethodAnimator.html#___init",
            parent : "jayus.MethodAnimator",
            type : "constructor",
@@ -2693,6 +3152,78 @@
            elementType : "variable"
        } ,         
        {
+           localName : "MethodAnimatorBy",
+           fullName : "jayus.MethodAnimatorBy",
+           summary : "class MethodAnimatorBy",
+           ref : "logical/jayus/MethodAnimatorBy.html",
+           parent : "jayus",
+           type : "class",
+           elementType : "logical_container"
+       } ,         
+       {
+           localName : "by",
+           fullName : "jayus.MethodAnimatorBy.by",
+           summary : "property Number by",
+           ref : "logical/jayus/MethodAnimatorBy.html#___by",
+           parent : "jayus.MethodAnimatorBy",
+           type : "property",
+           elementType : "variable"
+       } ,         
+       {
+           localName : "from",
+           fullName : "jayus.MethodAnimatorBy.from",
+           summary : "property Number from",
+           ref : "logical/jayus/MethodAnimatorBy.html#___from",
+           parent : "jayus.MethodAnimatorBy",
+           type : "property",
+           elementType : "variable"
+       } ,         
+       {
+           localName : "getter",
+           fullName : "jayus.MethodAnimatorBy.getter",
+           summary : "property Function getter",
+           ref : "logical/jayus/MethodAnimatorBy.html#___getter",
+           parent : "jayus.MethodAnimatorBy",
+           type : "property",
+           elementType : "variable"
+       } ,         
+       {
+           localName : "init",
+           fullName : "jayus.MethodAnimatorBy.init",
+           summary : "constructor init(Object target, Function getter, Function setter, Number by)",
+           ref : "logical/jayus/MethodAnimatorBy.html#___init",
+           parent : "jayus.MethodAnimatorBy",
+           type : "constructor",
+           elementType : "function"
+       } ,         
+       {
+           localName : "setter",
+           fullName : "jayus.MethodAnimatorBy.setter",
+           summary : "property Function setter",
+           ref : "logical/jayus/MethodAnimatorBy.html#___setter",
+           parent : "jayus.MethodAnimatorBy",
+           type : "property",
+           elementType : "variable"
+       } ,         
+       {
+           localName : "target",
+           fullName : "jayus.MethodAnimatorBy.target",
+           summary : "property Object target",
+           ref : "logical/jayus/MethodAnimatorBy.html#___target",
+           parent : "jayus.MethodAnimatorBy",
+           type : "property",
+           elementType : "variable"
+       } ,         
+       {
+           localName : "to",
+           fullName : "jayus.MethodAnimatorBy.to",
+           summary : "property Number to",
+           ref : "logical/jayus/MethodAnimatorBy.html#___to",
+           parent : "jayus.MethodAnimatorBy",
+           type : "property",
+           elementType : "variable"
+       } ,         
+       {
            localName : "PaintedShape",
            fullName : "jayus.PaintedShape",
            summary : "class PaintedShape",
@@ -2718,15 +3249,6 @@
            parent : "jayus.PaintedShape",
            type : "function",
            elementType : "function"
-       } ,         
-       {
-           localName : "hasBrush",
-           fullName : "jayus.PaintedShape.hasBrush",
-           summary : "property Boolean hasBrush",
-           ref : "logical/jayus/PaintedShape.html#___hasBrush",
-           parent : "jayus.PaintedShape",
-           type : "property",
-           elementType : "variable"
        } ,         
        {
            localName : "init",
@@ -3017,6 +3539,15 @@
            elementType : "variable"
        } ,         
        {
+           localName : "toPolygonDetail",
+           fullName : "jayus.Path.toPolygonDetail",
+           summary : "property Number toPolygonDetail",
+           ref : "logical/jayus/Path.html#___toPolygonDetail",
+           parent : "jayus.Path",
+           type : "property",
+           elementType : "variable"
+       } ,         
+       {
            localName : "verticalLineBy",
            fullName : "jayus.Path.verticalLineBy",
            summary : "function Self verticalLineBy(Number y)",
@@ -3044,10 +3575,28 @@
            elementType : "logical_container"
        } ,         
        {
+           localName : "Point",
+           fullName : "jayus.Point.Point",
+           summary : "constructor Point(Number x, Number y)",
+           ref : "logical/jayus/Point.html#___Point",
+           parent : "jayus.Point",
+           type : "constructor",
+           elementType : "function"
+       } ,         
+       {
            localName : "clone",
            fullName : "jayus.Point.clone",
            summary : "function Point clone()",
            ref : "logical/jayus/Point.html#___clone",
+           parent : "jayus.Point",
+           type : "function",
+           elementType : "function"
+       } ,         
+       {
+           localName : "cloneOnto",
+           fullName : "jayus.Point.cloneOnto",
+           summary : "function Point cloneOnto(Point ret)",
+           ref : "logical/jayus/Point.html#___cloneOnto",
            parent : "jayus.Point",
            type : "function",
            elementType : "function"
@@ -3062,18 +3611,9 @@
            elementType : "function"
        } ,         
        {
-           localName : "init",
-           fullName : "jayus.Point.init",
-           summary : "constructor init(Number x, Number y)",
-           ref : "logical/jayus/Point.html#___init",
-           parent : "jayus.Point",
-           type : "constructor",
-           elementType : "function"
-       } ,         
-       {
            localName : "set",
            fullName : "jayus.Point.set",
-           summary : "function Self set(Point point)\nSelf set(Number x, Number y)",
+           summary : "function Self set(Number x, Number y)",
            ref : "logical/jayus/Point.html#___set",
            parent : "jayus.Point",
            type : "function",
@@ -3190,7 +3730,7 @@
        {
            localName : "init",
            fullName : "jayus.Polygon.init",
-           summary : "function init()\ninit(Array<Point> points)\ninit(Array<Number> xPoints, Array<Number> yPoints)",
+           summary : "function init(Array<Point> points)\ninit(Array<Number> xPoints, Array<Number> yPoints)",
            ref : "logical/jayus/Polygon.html#___init",
            parent : "jayus.Polygon",
            type : "function",
@@ -3305,6 +3845,15 @@
            elementType : "variable"
        } ,         
        {
+           localName : "canvas",
+           fullName : "jayus.RectEntity.canvas",
+           summary : "property HTMLCanvasElement canvas",
+           ref : "logical/jayus/RectEntity.html#___canvas",
+           parent : "jayus.RectEntity",
+           type : "property",
+           elementType : "variable"
+       } ,         
+       {
            localName : "clearBg",
            fullName : "jayus.RectEntity.clearBg",
            summary : "function Self clearBg()",
@@ -3321,6 +3870,15 @@
            parent : "jayus.RectEntity",
            type : "function",
            elementType : "function"
+       } ,         
+       {
+           localName : "context",
+           fullName : "jayus.RectEntity.context",
+           summary : "property CanvasRenderingContext2D context",
+           ref : "logical/jayus/RectEntity.html#___context",
+           parent : "jayus.RectEntity",
+           type : "property",
+           elementType : "variable"
        } ,         
        {
            localName : "getBottom",
@@ -3395,19 +3953,19 @@
            elementType : "function"
        } ,         
        {
-           localName : "hasBg",
-           fullName : "jayus.RectEntity.hasBg",
-           summary : "property Boolean hasBg",
-           ref : "logical/jayus/RectEntity.html#___hasBg",
+           localName : "height",
+           fullName : "jayus.RectEntity.height",
+           summary : "property Number height",
+           ref : "logical/jayus/RectEntity.html#___height",
            parent : "jayus.RectEntity",
            type : "property",
            elementType : "variable"
        } ,         
        {
-           localName : "height",
-           fullName : "jayus.RectEntity.height",
-           summary : "property Number height",
-           ref : "logical/jayus/RectEntity.html#___height",
+           localName : "negateBlur",
+           fullName : "jayus.RectEntity.negateBlur",
+           summary : "property Boolean negateBlur",
+           ref : "logical/jayus/RectEntity.html#___negateBlur",
            parent : "jayus.RectEntity",
            type : "property",
            elementType : "variable"
@@ -3422,9 +3980,27 @@
            elementType : "function"
        } ,         
        {
+           localName : "roundX",
+           fullName : "jayus.RectEntity.roundX",
+           summary : "property Boolean roundX",
+           ref : "logical/jayus/RectEntity.html#___roundX",
+           parent : "jayus.RectEntity",
+           type : "property",
+           elementType : "variable"
+       } ,         
+       {
+           localName : "roundY",
+           fullName : "jayus.RectEntity.roundY",
+           summary : "property Boolean roundY",
+           ref : "logical/jayus/RectEntity.html#___roundY",
+           parent : "jayus.RectEntity",
+           type : "property",
+           elementType : "variable"
+       } ,         
+       {
            localName : "setBg",
            fullName : "jayus.RectEntity.setBg",
-           summary : "function Self setBg(Brush brush)",
+           summary : "function Self setBg(String|Object|Brush brush)",
            ref : "logical/jayus/RectEntity.html#___setBg",
            parent : "jayus.RectEntity",
            type : "function",
@@ -3451,7 +4027,7 @@
        {
            localName : "setBounds",
            fullName : "jayus.RectEntity.setBounds",
-           summary : "function Self setBounds(Shape bounds)",
+           summary : "function Self setBounds(String|Object|Shape bounds)",
            ref : "logical/jayus/RectEntity.html#___setBounds",
            parent : "jayus.RectEntity",
            type : "function",
@@ -3496,8 +4072,17 @@
        {
            localName : "setPosAt",
            fullName : "jayus.RectEntity.setPosAt",
-           summary : "function Self setPosAt(Number anchorX, Number anchorY, Point position)\nSelf setPosAt(Number anchorX, Number anchorY, Number x, Number y)",
+           summary : "function Self setPosAt(Point position, Number anchorX, Number anchorY)\nSelf setPosAt(Number x, Number y, Number anchorX, Number anchorY)",
            ref : "logical/jayus/RectEntity.html#___setPosAt",
+           parent : "jayus.RectEntity",
+           type : "function",
+           elementType : "function"
+       } ,         
+       {
+           localName : "setRelativeAnchor",
+           fullName : "jayus.RectEntity.setRelativeAnchor",
+           summary : "function Self setRelativeAnchor(Point point)\nSelf setRelativeAnchor(Number x, Number y)",
+           ref : "logical/jayus/RectEntity.html#___setRelativeAnchor",
            parent : "jayus.RectEntity",
            type : "function",
            elementType : "function"
@@ -3507,6 +4092,15 @@
            fullName : "jayus.RectEntity.setRight",
            summary : "function Self setRight(Number right)",
            ref : "logical/jayus/RectEntity.html#___setRight",
+           parent : "jayus.RectEntity",
+           type : "function",
+           elementType : "function"
+       } ,         
+       {
+           localName : "setRounding",
+           fullName : "jayus.RectEntity.setRounding",
+           summary : "function Self setRounding(Boolean enabled)\nSelf setRounding(Boolean x, Boolean y)",
+           ref : "logical/jayus/RectEntity.html#___setRounding",
            parent : "jayus.RectEntity",
            type : "function",
            elementType : "function"
@@ -3611,6 +4205,15 @@
            elementType : "logical_container"
        } ,         
        {
+           localName : "Rectangle",
+           fullName : "jayus.Rectangle.Rectangle",
+           summary : "constructor Rectangle()\nRectangle(Point origin, Number width, Number height)\nRectangle(Number x, Number y, Number width, Number height)",
+           ref : "logical/jayus/Rectangle.html#___Rectangle",
+           parent : "jayus.Rectangle",
+           type : "constructor",
+           elementType : "function"
+       } ,         
+       {
            localName : "expand",
            fullName : "jayus.Rectangle.expand",
            summary : "function Self expand(Number width, Number height)",
@@ -3692,19 +4295,19 @@
            elementType : "function"
        } ,         
        {
-           localName : "init",
-           fullName : "jayus.Rectangle.init",
-           summary : "constructor init()\ninit(Point origin, Number width, Number height)\ninit(Number x, Number y, Number width, Number height)",
-           ref : "logical/jayus/Rectangle.html#___init",
+           localName : "roundX",
+           fullName : "jayus.Rectangle.roundX",
+           summary : "property Boolean roundX",
+           ref : "logical/jayus/Rectangle.html#___roundX",
            parent : "jayus.Rectangle",
-           type : "constructor",
-           elementType : "function"
+           type : "property",
+           elementType : "variable"
        } ,         
        {
-           localName : "keepAligned",
-           fullName : "jayus.Rectangle.keepAligned",
-           summary : "property Boolean keepAligned",
-           ref : "logical/jayus/Rectangle.html#___keepAligned",
+           localName : "roundY",
+           fullName : "jayus.Rectangle.roundY",
+           summary : "property Boolean roundY",
+           ref : "logical/jayus/Rectangle.html#___roundY",
            parent : "jayus.Rectangle",
            type : "property",
            elementType : "variable"
@@ -3764,6 +4367,15 @@
            elementType : "function"
        } ,         
        {
+           localName : "setRounding",
+           fullName : "jayus.Rectangle.setRounding",
+           summary : "function Self setRounding(Boolean enabled)\nSelf setRounding(Boolean x, Boolean y)",
+           ref : "logical/jayus/Rectangle.html#___setRounding",
+           parent : "jayus.Rectangle",
+           type : "function",
+           elementType : "function"
+       } ,         
+       {
            localName : "setSize",
            fullName : "jayus.Rectangle.setSize",
            summary : "function Self setSize(Point size)\nSelf setSize(Number width, Number height)",
@@ -3804,15 +4416,6 @@
            fullName : "jayus.Rectangle.setY",
            summary : "function Self setY(Number y)",
            ref : "logical/jayus/Rectangle.html#___setY",
-           parent : "jayus.Rectangle",
-           type : "function",
-           elementType : "function"
-       } ,         
-       {
-           localName : "toPolygon",
-           fullName : "jayus.Rectangle.toPolygon",
-           summary : "function Polygon toPolygon()",
-           ref : "logical/jayus/Rectangle.html#___toPolygon",
            parent : "jayus.Rectangle",
            type : "function",
            elementType : "function"
@@ -3865,7 +4468,7 @@
        {
            localName : "fire",
            fullName : "jayus.Responder.fire",
-           summary : "function Boolean fire(String event, Object data)",
+           summary : "function Boolean fire(String event, * data)",
            ref : "logical/jayus/Responder.html#___fire",
            parent : "jayus.Responder",
            type : "function",
@@ -3899,15 +4502,6 @@
            elementType : "variable"
        } ,         
        {
-           localName : "interceptNextEvent",
-           fullName : "jayus.Responder.interceptNextEvent",
-           summary : "function Self interceptNextEvent(String event, Function handler, Object options)",
-           ref : "logical/jayus/Responder.html#___interceptNextEvent",
-           parent : "jayus.Responder",
-           type : "function",
-           elementType : "function"
-       } ,         
-       {
            localName : "isHandler",
            fullName : "jayus.Responder.isHandler",
            summary : "property null|Object isHandler",
@@ -3928,7 +4522,7 @@
        {
            localName : "removeHandler",
            fullName : "jayus.Responder.removeHandler",
-           summary : "function Self removeHandler(String event, Function handler)\nSelf removeHandler(String event, String id)",
+           summary : "function Self removeHandler(String event, Function|String handler)",
            ref : "logical/jayus/Responder.html#___removeHandler",
            parent : "jayus.Responder",
            type : "function",
@@ -3946,9 +4540,72 @@
        {
            localName : "SHAPES",
            fullName : "jayus.SHAPES",
-           summary : "property Object SHAPES",
-           ref : "logical/jayus.html#___SHAPES",
+           summary : "namespace SHAPES",
+           ref : "logical/jayus/SHAPES.html",
            parent : "jayus",
+           type : "namespace",
+           elementType : "logical_container"
+       } ,         
+       {
+           localName : "CIRCLE",
+           fullName : "jayus.SHAPES.CIRCLE",
+           summary : "property Number CIRCLE",
+           ref : "logical/jayus/SHAPES.html#___CIRCLE",
+           parent : "jayus.SHAPES",
+           type : "property",
+           elementType : "variable"
+       } ,         
+       {
+           localName : "CUSTOM",
+           fullName : "jayus.SHAPES.CUSTOM",
+           summary : "property Number CUSTOM",
+           ref : "logical/jayus/SHAPES.html#___CUSTOM",
+           parent : "jayus.SHAPES",
+           type : "property",
+           elementType : "variable"
+       } ,         
+       {
+           localName : "LIST",
+           fullName : "jayus.SHAPES.LIST",
+           summary : "property Number LIST",
+           ref : "logical/jayus/SHAPES.html#___LIST",
+           parent : "jayus.SHAPES",
+           type : "property",
+           elementType : "variable"
+       } ,         
+       {
+           localName : "PATH",
+           fullName : "jayus.SHAPES.PATH",
+           summary : "property Number PATH",
+           ref : "logical/jayus/SHAPES.html#___PATH",
+           parent : "jayus.SHAPES",
+           type : "property",
+           elementType : "variable"
+       } ,         
+       {
+           localName : "POINT",
+           fullName : "jayus.SHAPES.POINT",
+           summary : "property Number POINT",
+           ref : "logical/jayus/SHAPES.html#___POINT",
+           parent : "jayus.SHAPES",
+           type : "property",
+           elementType : "variable"
+       } ,         
+       {
+           localName : "POLYGON",
+           fullName : "jayus.SHAPES.POLYGON",
+           summary : "property Number POLYGON",
+           ref : "logical/jayus/SHAPES.html#___POLYGON",
+           parent : "jayus.SHAPES",
+           type : "property",
+           elementType : "variable"
+       } ,         
+       {
+           localName : "RECTANGLE",
+           fullName : "jayus.SHAPES.RECTANGLE",
+           summary : "property Number RECTANGLE",
+           ref : "logical/jayus/SHAPES.html#___RECTANGLE",
+           parent : "jayus.SHAPES",
            type : "property",
            elementType : "variable"
        } ,         
@@ -3962,22 +4619,31 @@
            elementType : "logical_container"
        } ,         
        {
-           localName : "hasWorld",
-           fullName : "jayus.Scene.hasWorld",
-           summary : "property Boolean hasWorld",
-           ref : "logical/jayus/Scene.html#___hasWorld",
+           localName : "Scene",
+           fullName : "jayus.Scene.Scene",
+           summary : "constructor Scene(Number width, Number height)",
+           ref : "logical/jayus/Scene.html#___Scene",
+           parent : "jayus.Scene",
+           type : "constructor",
+           elementType : "function"
+       } ,         
+       {
+           localName : "clipChildrenToFrame",
+           fullName : "jayus.Scene.clipChildrenToFrame",
+           summary : "property Boolean clipChildrenToFrame",
+           ref : "logical/jayus/Scene.html#___clipChildrenToFrame",
            parent : "jayus.Scene",
            type : "property",
            elementType : "variable"
        } ,         
        {
-           localName : "init",
-           fullName : "jayus.Scene.init",
-           summary : "constructor init(Number width, Number height)",
-           ref : "logical/jayus/Scene.html#___init",
+           localName : "redrawAll",
+           fullName : "jayus.Scene.redrawAll",
+           summary : "private property Boolean redrawAll",
+           ref : "logical/jayus/Scene.html#___redrawAll",
            parent : "jayus.Scene",
-           type : "constructor",
-           elementType : "function"
+           type : "property",
+           elementType : "variable"
        } ,         
        {
            localName : "setOptimizedBuffering",
@@ -3987,15 +4653,6 @@
            parent : "jayus.Scene",
            type : "function",
            elementType : "function"
-       } ,         
-       {
-           localName : "world",
-           fullName : "jayus.Scene.world",
-           summary : "property Object world",
-           ref : "logical/jayus/Scene.html#___world",
-           parent : "jayus.Scene",
-           type : "property",
-           elementType : "variable"
        } ,         
        {
            localName : "Shape",
@@ -4065,6 +4722,15 @@
            fullName : "jayus.Shape.paintedWith",
            summary : "function PaintedShape paintedWith(Object|Brush brush)",
            ref : "logical/jayus/Shape.html#___paintedWith",
+           parent : "jayus.Shape",
+           type : "function",
+           elementType : "function"
+       } ,         
+       {
+           localName : "toPolygon",
+           fullName : "jayus.Shape.toPolygon",
+           summary : "function Polygon toPolygon(Number detail)",
+           ref : "logical/jayus/Shape.html#___toPolygon",
            parent : "jayus.Shape",
            type : "function",
            elementType : "function"
@@ -4162,7 +4828,7 @@
        {
            localName : "setSprite",
            fullName : "jayus.Sprite.setSprite",
-           summary : "function Self setSprite(Point point)\nSelf setSprite(Number x, Number y)",
+           summary : "function Self setSprite(String name)\nSelf setSprite(Number x, Number y)\nSelf setSprite(Point point)\nSelf setSprite(Number index)",
            ref : "logical/jayus/Sprite.html#___setSprite",
            parent : "jayus.Sprite",
            type : "function",
@@ -4196,6 +4862,15 @@
            elementType : "variable"
        } ,         
        {
+           localName : "stopAnimation",
+           fullName : "jayus.Sprite.stopAnimation",
+           summary : "function Self stopAnimation()",
+           ref : "logical/jayus/Sprite.html#___stopAnimation",
+           parent : "jayus.Sprite",
+           type : "function",
+           elementType : "function"
+       } ,         
+       {
            localName : "SpriteSheet",
            fullName : "jayus.SpriteSheet",
            summary : "class SpriteSheet",
@@ -4203,6 +4878,15 @@
            parent : "jayus",
            type : "class",
            elementType : "logical_container"
+       } ,         
+       {
+           localName : "SpriteSheet",
+           fullName : "jayus.SpriteSheet.SpriteSheet",
+           summary : "constructor SpriteSheet(String filepath)",
+           ref : "logical/jayus/SpriteSheet.html#___SpriteSheet",
+           parent : "jayus.SpriteSheet",
+           type : "constructor",
+           elementType : "function"
        } ,         
        {
            localName : "addAnimation",
@@ -4214,6 +4898,15 @@
            elementType : "function"
        } ,         
        {
+           localName : "animations",
+           fullName : "jayus.SpriteSheet.animations",
+           summary : "property Object animations",
+           ref : "logical/jayus/SpriteSheet.html#___animations",
+           parent : "jayus.SpriteSheet",
+           type : "property",
+           elementType : "variable"
+       } ,         
+       {
            localName : "hasAnimation",
            fullName : "jayus.SpriteSheet.hasAnimation",
            summary : "function Boolean hasAnimation(String name)",
@@ -4221,24 +4914,6 @@
            parent : "jayus.SpriteSheet",
            type : "function",
            elementType : "function"
-       } ,         
-       {
-           localName : "init",
-           fullName : "jayus.SpriteSheet.init",
-           summary : "constructor init(String filepath)",
-           ref : "logical/jayus/SpriteSheet.html#___init",
-           parent : "jayus.SpriteSheet",
-           type : "constructor",
-           elementType : "function"
-       } ,         
-       {
-           localName : "margin",
-           fullName : "jayus.SpriteSheet.margin",
-           summary : "property Point margin",
-           ref : "logical/jayus/SpriteSheet.html#___margin",
-           parent : "jayus.SpriteSheet",
-           type : "property",
-           elementType : "variable"
        } ,         
        {
            localName : "marginX",
@@ -4254,6 +4929,24 @@
            fullName : "jayus.SpriteSheet.marginY",
            summary : "property Number marginY",
            ref : "logical/jayus/SpriteSheet.html#___marginY",
+           parent : "jayus.SpriteSheet",
+           type : "property",
+           elementType : "variable"
+       } ,         
+       {
+           localName : "nameSprite",
+           fullName : "jayus.SpriteSheet.nameSprite",
+           summary : "function Self nameSprite(String name, Number x, Number y, Number width, Number height)",
+           ref : "logical/jayus/SpriteSheet.html#___nameSprite",
+           parent : "jayus.SpriteSheet",
+           type : "function",
+           elementType : "function"
+       } ,         
+       {
+           localName : "namedSprites",
+           fullName : "jayus.SpriteSheet.namedSprites",
+           summary : "property Object namedSprites",
+           ref : "logical/jayus/SpriteSheet.html#___namedSprites",
            parent : "jayus.SpriteSheet",
            type : "property",
            elementType : "variable"
@@ -4290,6 +4983,15 @@
            fullName : "jayus.SpriteSheet.setSpacing",
            summary : "function Self setSpacing(Point point)\nSelf setSpacing(Number x, Number y)",
            ref : "logical/jayus/SpriteSheet.html#___setSpacing",
+           parent : "jayus.SpriteSheet",
+           type : "function",
+           elementType : "function"
+       } ,         
+       {
+           localName : "setSpriteFlipping",
+           fullName : "jayus.SpriteSheet.setSpriteFlipping",
+           summary : "function Self setSpriteFlipping(String name, Boolean flipX, Boolean flipY)",
+           ref : "logical/jayus/SpriteSheet.html#___setSpriteFlipping",
            parent : "jayus.SpriteSheet",
            type : "function",
            elementType : "function"
@@ -4349,6 +5051,15 @@
            elementType : "logical_container"
        } ,         
        {
+           localName : "reversed",
+           fullName : "jayus.Stack.reversed",
+           summary : "property Boolean reversed",
+           ref : "logical/jayus/Stack.html#___reversed",
+           parent : "jayus.Stack",
+           type : "property",
+           elementType : "variable"
+       } ,         
+       {
            localName : "setReversed",
            fullName : "jayus.Stack.setReversed",
            summary : "function Self setReversed(Boolean on)",
@@ -4385,6 +5096,15 @@
            elementType : "logical_container"
        } ,         
        {
+           localName : "Surface",
+           fullName : "jayus.Surface.Surface",
+           summary : "constructor Surface(Number width, Number height)",
+           ref : "logical/jayus/Surface.html#___Surface",
+           parent : "jayus.Surface",
+           type : "constructor",
+           elementType : "function"
+       } ,         
+       {
            localName : "blurImage",
            fullName : "jayus.Surface.blurImage",
            summary : "function Self blurImage(Number intensity)",
@@ -4394,15 +5114,6 @@
            elementType : "function"
        } ,         
        {
-           localName : "canvas",
-           fullName : "jayus.Surface.canvas",
-           summary : "property HTMLCanvasElement canvas",
-           ref : "logical/jayus/Surface.html#___canvas",
-           parent : "jayus.Surface",
-           type : "property",
-           elementType : "variable"
-       } ,         
-       {
            localName : "clear",
            fullName : "jayus.Surface.clear",
            summary : "function Self clear()",
@@ -4410,15 +5121,6 @@
            parent : "jayus.Surface",
            type : "function",
            elementType : "function"
-       } ,         
-       {
-           localName : "context",
-           fullName : "jayus.Surface.context",
-           summary : "property CanvasRenderingContext2D context",
-           ref : "logical/jayus/Surface.html#___context",
-           parent : "jayus.Surface",
-           type : "property",
-           elementType : "variable"
        } ,         
        {
            localName : "exportPNG",
@@ -4432,7 +5134,7 @@
        {
            localName : "fill",
            fullName : "jayus.Surface.fill",
-           summary : "function Self fill(Color color)\nSelf fill(Color color, Number alpha)\nSelf fill(Number r, Number g, Number b)\nSelf fill(Number r, Number g, Number b, Number a)",
+           summary : "function Self fill(Color color, Number alpha)\nSelf fill(Number r, Number g, Number b, Number a)",
            ref : "logical/jayus/Surface.html#___fill",
            parent : "jayus.Surface",
            type : "function",
@@ -4441,7 +5143,7 @@
        {
            localName : "getBuffer",
            fullName : "jayus.Surface.getBuffer",
-           summary : "function ImageData getBuffer()\nImageData getBuffer(Rectangle rect)\nImageData getBuffer(Point origin, Number width, Number height)\nImageData getBuffer(Number x, Number y, Number width, Number height)",
+           summary : "function ImageData getBuffer(Rectangle region)\nImageData getBuffer(Point origin, Number width, Number height)\nImageData getBuffer(Number x, Number y, Number width, Number height)",
            ref : "logical/jayus/Surface.html#___getBuffer",
            parent : "jayus.Surface",
            type : "function",
@@ -4475,18 +5177,9 @@
            elementType : "function"
        } ,         
        {
-           localName : "init",
-           fullName : "jayus.Surface.init",
-           summary : "constructor init(Number width, Number height)",
-           ref : "logical/jayus/Surface.html#___init",
-           parent : "jayus.Surface",
-           type : "constructor",
-           elementType : "function"
-       } ,         
-       {
            localName : "putBuffer",
            fullName : "jayus.Surface.putBuffer",
-           summary : "function Self putBuffer(ImageData buffer)\nSelf putBuffer(Point position, ImageData buffer)\nSelf putBuffer(Number x, Number y, ImageData buffer)",
+           summary : "function Self putBuffer(Point position, ImageData buffer)\nSelf putBuffer(Number x, Number y, ImageData buffer)",
            ref : "logical/jayus/Surface.html#___putBuffer",
            parent : "jayus.Surface",
            type : "function",
@@ -4529,6 +5222,15 @@
            elementType : "logical_container"
        } ,         
        {
+           localName : "Text",
+           fullName : "jayus.Text.Text",
+           summary : "constructor Text(String text, String font, Object brush)",
+           ref : "logical/jayus/Text.html#___Text",
+           parent : "jayus.Text",
+           type : "constructor",
+           elementType : "function"
+       } ,         
+       {
            localName : "alignment",
            fullName : "jayus.Text.alignment",
            summary : "property Number alignment",
@@ -4560,51 +5262,6 @@
            fullName : "jayus.Text.font",
            summary : "property String font",
            ref : "logical/jayus/Text.html#___font",
-           parent : "jayus.Text",
-           type : "property",
-           elementType : "variable"
-       } ,         
-       {
-           localName : "fontDesc",
-           fullName : "jayus.Text.fontDesc",
-           summary : "property Object fontDesc",
-           ref : "logical/jayus/Text.html#___fontDesc",
-           parent : "jayus.Text",
-           type : "property",
-           elementType : "variable"
-       } ,         
-       {
-           localName : "hasBrush",
-           fullName : "jayus.Text.hasBrush",
-           summary : "property Boolean hasBrush",
-           ref : "logical/jayus/Text.html#___hasBrush",
-           parent : "jayus.Text",
-           type : "property",
-           elementType : "variable"
-       } ,         
-       {
-           localName : "init",
-           fullName : "jayus.Text.init",
-           summary : "constructor init(String text)\ninit(String text, String font)\ninit(String text, String font, Object brush)",
-           ref : "logical/jayus/Text.html#___init",
-           parent : "jayus.Text",
-           type : "constructor",
-           elementType : "function"
-       } ,         
-       {
-           localName : "lineWidths",
-           fullName : "jayus.Text.lineWidths",
-           summary : "property Array lineWidths",
-           ref : "logical/jayus/Text.html#___lineWidths",
-           parent : "jayus.Text",
-           type : "property",
-           elementType : "variable"
-       } ,         
-       {
-           localName : "lines",
-           fullName : "jayus.Text.lines",
-           summary : "property Array lines",
-           ref : "logical/jayus/Text.html#___lines",
            parent : "jayus.Text",
            type : "property",
            elementType : "variable"
@@ -4673,10 +5330,10 @@
            elementType : "logical_container"
        } ,         
        {
-           localName : "filename",
-           fullName : "jayus.TiledMap.filename",
-           summary : "property String filename",
-           ref : "logical/jayus/TiledMap.html#___filename",
+           localName : "filepath",
+           fullName : "jayus.TiledMap.filepath",
+           summary : "property String filepath",
+           ref : "logical/jayus/TiledMap.html#___filepath",
            parent : "jayus.TiledMap",
            type : "property",
            elementType : "variable"
@@ -4711,7 +5368,7 @@
        {
            localName : "init",
            fullName : "jayus.TiledMap.init",
-           summary : "function init(String filename)",
+           summary : "function init(String filepath)\ninit(Object map)",
            ref : "logical/jayus/TiledMap.html#___init",
            parent : "jayus.TiledMap",
            type : "function",
@@ -4727,6 +5384,15 @@
            elementType : "function"
        } ,         
        {
+           localName : "layerVisibility",
+           fullName : "jayus.TiledMap.layerVisibility",
+           summary : "property Array layerVisibility",
+           ref : "logical/jayus/TiledMap.html#___layerVisibility",
+           parent : "jayus.TiledMap",
+           type : "property",
+           elementType : "variable"
+       } ,         
+       {
            localName : "loaded",
            fullName : "jayus.TiledMap.loaded",
            summary : "property Boolean loaded",
@@ -4740,6 +5406,24 @@
            fullName : "jayus.TiledMap.map",
            summary : "property Object map",
            ref : "logical/jayus/TiledMap.html#___map",
+           parent : "jayus.TiledMap",
+           type : "property",
+           elementType : "variable"
+       } ,         
+       {
+           localName : "mapLoaded",
+           fullName : "jayus.TiledMap.mapLoaded",
+           summary : "property Boolean mapLoaded",
+           ref : "logical/jayus/TiledMap.html#___mapLoaded",
+           parent : "jayus.TiledMap",
+           type : "property",
+           elementType : "variable"
+       } ,         
+       {
+           localName : "pendingLoad",
+           fullName : "jayus.TiledMap.pendingLoad",
+           summary : "property Boolean pendingLoad",
+           ref : "logical/jayus/TiledMap.html#___pendingLoad",
            parent : "jayus.TiledMap",
            type : "property",
            elementType : "variable"
@@ -4781,6 +5465,24 @@
            elementType : "variable"
        } ,         
        {
+           localName : "tilesetsLoaded",
+           fullName : "jayus.TiledMap.tilesetsLoaded",
+           summary : "property Boolean tilesetsLoaded",
+           ref : "logical/jayus/TiledMap.html#___tilesetsLoaded",
+           parent : "jayus.TiledMap",
+           type : "property",
+           elementType : "variable"
+       } ,         
+       {
+           localName : "whenLoaded",
+           fullName : "jayus.TiledMap.whenLoaded",
+           summary : "function Self whenLoaded(Function handler)",
+           ref : "logical/jayus/TiledMap.html#___whenLoaded",
+           parent : "jayus.TiledMap",
+           type : "function",
+           elementType : "function"
+       } ,         
+       {
            localName : "Wrapper",
            fullName : "jayus.Wrapper",
            summary : "class Wrapper",
@@ -4790,10 +5492,19 @@
            elementType : "logical_container"
        } ,         
        {
-           localName : "findChild",
-           fullName : "jayus.Wrapper.findChild",
-           summary : "function Entity findChild(String id)",
-           ref : "logical/jayus/Wrapper.html#___findChild",
+           localName : "child",
+           fullName : "jayus.Wrapper.child",
+           summary : "property Entity child",
+           ref : "logical/jayus/Wrapper.html#___child",
+           parent : "jayus.Wrapper",
+           type : "property",
+           elementType : "variable"
+       } ,         
+       {
+           localName : "find",
+           fullName : "jayus.Wrapper.find",
+           summary : "function Entity find(String id)",
+           ref : "logical/jayus/Wrapper.html#___find",
            parent : "jayus.Wrapper",
            type : "function",
            elementType : "function"
@@ -4826,19 +5537,10 @@
            elementType : "function"
        } ,         
        {
-           localName : "getChild",
-           fullName : "jayus.Wrapper.getChild",
-           summary : "function Entity getChild()",
-           ref : "logical/jayus/Wrapper.html#___getChild",
-           parent : "jayus.Wrapper",
-           type : "function",
-           elementType : "function"
-       } ,         
-       {
-           localName : "hasChild",
-           fullName : "jayus.Wrapper.hasChild",
-           summary : "function Boolean hasChild()",
-           ref : "logical/jayus/Wrapper.html#___hasChild",
+           localName : "forEveryChild",
+           fullName : "jayus.Wrapper.forEveryChild",
+           summary : "function * forEveryChild(Function func, Array args)",
+           ref : "logical/jayus/Wrapper.html#___forEveryChild",
            parent : "jayus.Wrapper",
            type : "function",
            elementType : "function"
@@ -5006,6 +5708,15 @@
            elementType : "variable"
        } ,         
        {
+           localName : "count",
+           fullName : "jayus.colors.count",
+           summary : "property Number count",
+           ref : "logical/jayus/colors.html#___count",
+           parent : "jayus.colors",
+           type : "property",
+           elementType : "variable"
+       } ,         
+       {
            localName : "cssNames",
            fullName : "jayus.colors.cssNames",
            summary : "property Array cssNames",
@@ -5105,6 +5816,15 @@
            elementType : "function"
        } ,         
        {
+           localName : "declareChildrenAsProperties",
+           fullName : "jayus.declareChildrenAsProperties",
+           summary : "property Boolean declareChildrenAsProperties",
+           ref : "logical/jayus.html#___declareChildrenAsProperties",
+           parent : "jayus",
+           type : "property",
+           elementType : "variable"
+       } ,         
+       {
            localName : "detectBrowser",
            fullName : "jayus.detectBrowser",
            summary : "function Object detectBrowser()",
@@ -5121,15 +5841,6 @@
            parent : "jayus",
            type : "property",
            elementType : "variable"
-       } ,         
-       {
-           localName : "distance",
-           fullName : "jayus.distance",
-           summary : "function Number distance(Point a, Point b)",
-           ref : "logical/jayus.html#___distance",
-           parent : "jayus",
-           type : "function",
-           elementType : "function"
        } ,         
        {
            localName : "easing",
@@ -5447,13 +6158,13 @@
            elementType : "variable"
        } ,         
        {
-           localName : "frameIntervalRunning",
-           fullName : "jayus.frameIntervalRunning",
-           summary : "property Boolean frameIntervalRunning",
-           ref : "logical/jayus.html#___frameIntervalRunning",
+           localName : "frame",
+           fullName : "jayus.frame",
+           summary : "function frame()",
+           ref : "logical/jayus.html#___frame",
            parent : "jayus",
-           type : "property",
-           elementType : "variable"
+           type : "function",
+           elementType : "function"
        } ,         
        {
            localName : "framerate",
@@ -5478,6 +6189,33 @@
            fullName : "jayus.getFontDescriptor",
            summary : "function getFontDescriptor(String font)",
            ref : "logical/jayus.html#___getFontDescriptor",
+           parent : "jayus",
+           type : "function",
+           elementType : "function"
+       } ,         
+       {
+           localName : "getObject",
+           fullName : "jayus.getObject",
+           summary : "function Object getObject(String|Number id)",
+           ref : "logical/jayus.html#___getObject",
+           parent : "jayus",
+           type : "function",
+           elementType : "function"
+       } ,         
+       {
+           localName : "getTextMetrics",
+           fullName : "jayus.getTextMetrics",
+           summary : "function getTextMetrics(String text, String font)",
+           ref : "logical/jayus.html#___getTextMetrics",
+           parent : "jayus",
+           type : "function",
+           elementType : "function"
+       } ,         
+       {
+           localName : "getUrlParameters",
+           fullName : "jayus.getUrlParameters",
+           summary : "function Object getUrlParameters()",
+           ref : "logical/jayus.html#___getUrlParameters",
            parent : "jayus",
            type : "function",
            elementType : "function"
@@ -5528,6 +6266,15 @@
            elementType : "variable"
        } ,         
        {
+           localName : "identifiedObjects",
+           fullName : "jayus.identifiedObjects",
+           summary : "property Array identifiedObjects",
+           ref : "logical/jayus.html#___identifiedObjects",
+           parent : "jayus",
+           type : "property",
+           elementType : "variable"
+       } ,         
+       {
            localName : "images",
            fullName : "jayus.images",
            summary : "namespace images",
@@ -5539,17 +6286,8 @@
        {
            localName : "get",
            fullName : "jayus.images.get",
-           summary : "function Image get(String filepath)",
+           summary : "function Image get(String|Array<String> filepath)",
            ref : "logical/jayus/images.html#___get",
-           parent : "jayus.images",
-           type : "function",
-           elementType : "function"
-       } ,         
-       {
-           localName : "has",
-           fullName : "jayus.images.has",
-           summary : "function Image has(String filepath)",
-           ref : "logical/jayus/images.html#___has",
            parent : "jayus.images",
            type : "function",
            elementType : "function"
@@ -5566,7 +6304,7 @@
        {
            localName : "isLoaded",
            fullName : "jayus.images.isLoaded",
-           summary : "function Boolean isLoaded(String filepath)",
+           summary : "function Boolean isLoaded(String|Array<String> filepath)",
            ref : "logical/jayus/images.html#___isLoaded",
            parent : "jayus.images",
            type : "function",
@@ -5575,17 +6313,8 @@
        {
            localName : "load",
            fullName : "jayus.images.load",
-           summary : "function load(String filepath, Function handler)",
+           summary : "function load(String filepath)\nload(Array filepaths)",
            ref : "logical/jayus/images.html#___load",
-           parent : "jayus.images",
-           type : "function",
-           elementType : "function"
-       } ,         
-       {
-           localName : "loadAll",
-           fullName : "jayus.images.loadAll",
-           summary : "function loadAll(Array<String> filepaths, Function handler)",
-           ref : "logical/jayus/images.html#___loadAll",
            parent : "jayus.images",
            type : "function",
            elementType : "function"
@@ -5600,6 +6329,24 @@
            elementType : "variable"
        } ,         
        {
+           localName : "setSubimage",
+           fullName : "jayus.images.setSubimage",
+           summary : "function Self setSubimage(String sourceImage, String image, Number sourceX, Number sourceY, Number sourceWidth, Number sourceHeight)",
+           ref : "logical/jayus/images.html#___setSubimage",
+           parent : "jayus.images",
+           type : "function",
+           elementType : "function"
+       } ,         
+       {
+           localName : "whenLoaded",
+           fullName : "jayus.images.whenLoaded",
+           summary : "function Self whenLoaded(String|Array<String> filepath, Function handler)",
+           ref : "logical/jayus/images.html#___whenLoaded",
+           parent : "jayus.images",
+           type : "function",
+           elementType : "function"
+       } ,         
+       {
            localName : "init",
            fullName : "jayus.init",
            summary : "function Self init()",
@@ -5609,24 +6356,6 @@
            elementType : "function"
        } ,         
        {
-           localName : "intersectTest",
-           fullName : "jayus.intersectTest",
-           summary : "function Boolean intersectTest()",
-           ref : "logical/jayus.html#___intersectTest",
-           parent : "jayus",
-           type : "function",
-           elementType : "function"
-       } ,         
-       {
-           localName : "interval",
-           fullName : "jayus.interval",
-           summary : "property Number interval",
-           ref : "logical/jayus.html#___interval",
-           parent : "jayus",
-           type : "property",
-           elementType : "variable"
-       } ,         
-       {
            localName : "isFontCached",
            fullName : "jayus.isFontCached",
            summary : "function Boolean isFontCached(String font)",
@@ -5634,6 +6363,15 @@
            parent : "jayus",
            type : "function",
            elementType : "function"
+       } ,         
+       {
+           localName : "keepTrackOfObjects",
+           fullName : "jayus.keepTrackOfObjects",
+           summary : "property Boolean keepTrackOfObjects",
+           ref : "logical/jayus.html#___keepTrackOfObjects",
+           parent : "jayus",
+           type : "property",
+           elementType : "variable"
        } ,         
        {
            localName : "keyboard",
@@ -5703,6 +6441,15 @@
            fullName : "jayus.lastFrameTime",
            summary : "property Number lastFrameTime",
            ref : "logical/jayus.html#___lastFrameTime",
+           parent : "jayus",
+           type : "property",
+           elementType : "variable"
+       } ,         
+       {
+           localName : "lastStepTime",
+           fullName : "jayus.lastStepTime",
+           summary : "property Number lastStepTime",
+           ref : "logical/jayus.html#___lastStepTime",
            parent : "jayus",
            type : "property",
            elementType : "variable"
@@ -5825,10 +6572,10 @@
            elementType : "function"
        } ,         
        {
-           localName : "measureText",
-           fullName : "jayus.measureText",
-           summary : "function measureText(String text, String font)",
-           ref : "logical/jayus.html#___measureText",
+           localName : "mustGetObject",
+           fullName : "jayus.mustGetObject",
+           summary : "function Object mustGetObject(String|Number id)",
+           ref : "logical/jayus.html#___mustGetObject",
            parent : "jayus",
            type : "function",
            elementType : "function"
@@ -5845,17 +6592,17 @@
        {
            localName : "get",
            fullName : "jayus.objects.get",
-           summary : "function Object get(String filepath)",
+           summary : "function Object get(String|Array<String> filepath)",
            ref : "logical/jayus/objects.html#___get",
            parent : "jayus.objects",
            type : "function",
            elementType : "function"
        } ,         
        {
-           localName : "has",
-           fullName : "jayus.objects.has",
-           summary : "function Object has(String filepath)",
-           ref : "logical/jayus/objects.html#___has",
+           localName : "isLoaded",
+           fullName : "jayus.objects.isLoaded",
+           summary : "function Object isLoaded(String|Array<String> filepath)",
+           ref : "logical/jayus/objects.html#___isLoaded",
            parent : "jayus.objects",
            type : "function",
            elementType : "function"
@@ -5863,17 +6610,8 @@
        {
            localName : "load",
            fullName : "jayus.objects.load",
-           summary : "function load(String filepath, Function handler)",
+           summary : "function load(String|Array<String> filepath)",
            ref : "logical/jayus/objects.html#___load",
-           parent : "jayus.objects",
-           type : "function",
-           elementType : "function"
-       } ,         
-       {
-           localName : "loadAll",
-           fullName : "jayus.objects.loadAll",
-           summary : "function loadAll(Array<String> filepaths, Function handler)",
-           ref : "logical/jayus/objects.html#___loadAll",
            parent : "jayus.objects",
            type : "function",
            elementType : "function"
@@ -5895,6 +6633,24 @@
            parent : "jayus.objects",
            type : "property",
            elementType : "variable"
+       } ,         
+       {
+           localName : "whenLoaded",
+           fullName : "jayus.objects.whenLoaded",
+           summary : "function Self whenLoaded(String|Array<String> filepath, Function handler)",
+           ref : "logical/jayus/objects.html#___whenLoaded",
+           parent : "jayus.objects",
+           type : "function",
+           elementType : "function"
+       } ,         
+       {
+           localName : "parse",
+           fullName : "jayus.parse",
+           summary : "function Entity parse(Object obj)",
+           ref : "logical/jayus.html#___parse",
+           parent : "jayus",
+           type : "function",
+           elementType : "function"
        } ,         
        {
            localName : "running",
@@ -5922,6 +6678,15 @@
            parent : "jayus",
            type : "function",
            elementType : "function"
+       } ,         
+       {
+           localName : "steprate",
+           fullName : "jayus.steprate",
+           summary : "property Number steprate",
+           ref : "logical/jayus.html#___steprate",
+           parent : "jayus",
+           type : "property",
+           elementType : "variable"
        } ,         
        {
            localName : "stop",

@@ -68,7 +68,7 @@
         <div class="descSection">
             Direct Known Subclasses:        </div>
         <div class="paddedDetails">
-            <a href="logical/jayus/Animator/Discrete.html">jayus.Animator.Discrete</a>, <a href="logical/jayus/Animator/Sequence.html">jayus.Animator.Sequence</a>, <a href="logical/jayus/MethodAnimator.html">jayus.MethodAnimator</a>        </div>
+            <a href="logical/jayus/Animator/Discrete.html">jayus.Animator.Discrete</a>, <a href="logical/jayus/Animator/Sequence.html">jayus.Animator.Sequence</a>, <a href="logical/jayus/MethodAnimator.html">jayus.MethodAnimator</a>, <a href="logical/jayus/MethodAnimatorBy.html">jayus.MethodAnimatorBy</a>        </div>
     </div>                                      
 
     <hr/>
@@ -336,7 +336,7 @@ Keeps a list of animators and can run them in sequence.    </div>
                    Functions inherited from <a href="logical/jayus/Responder.html">jayus.Responder</a> 
                 </div>
                 <div class="inheritanceSummary">
-                    <a href="logical/jayus/Responder.html#___addHandler">addHandler</a>, <a href="logical/jayus/Responder.html#___fire">fire</a>, <a href="logical/jayus/Responder.html#___handle">handle</a>, <a href="logical/jayus/Responder.html#___interceptNextEvent">interceptNextEvent</a>, <a href="logical/jayus/Responder.html#___removeAllHandlers">removeAllHandlers</a>, <a href="logical/jayus/Responder.html#___removeHandler">removeHandler</a>, <a href="logical/jayus/Responder.html#___removeHandlers">removeHandlers</a>                </div>
+                    <a href="logical/jayus/Responder.html#___addHandler">addHandler</a>, <a href="logical/jayus/Responder.html#___fire">fire</a>, <a href="logical/jayus/Responder.html#___handle">handle</a>, <a href="logical/jayus/Responder.html#___removeAllHandlers">removeAllHandlers</a>, <a href="logical/jayus/Responder.html#___removeHandler">removeHandler</a>, <a href="logical/jayus/Responder.html#___removeHandlers">removeHandlers</a>                </div>
              </div>
              <br/>          
                 
@@ -355,7 +355,7 @@ Keeps a list of animators and can run them in sequence.    </div>
         
 	The duration of the animation, in milliseconds.
 	<br> Default is 1000(one second).
-	<br> Do not modify.
+	<br> Do not modify, use the setDuration method.
 	    </div>    
                                         <hr />  
                                                                             
@@ -485,7 +485,7 @@ Keeps a list of animators and can run them in sequence.    </div>
         <div class="comment">
         
 	Finishes the animation.
-	<br> This method does set the target[s] to its final state
+	<br> This method does set the target[s] to its final state.
 	<br> Also fires the "finished" event.
 	    </div>
                                                     <hr/>       
@@ -651,6 +651,7 @@ Keeps a list of animators and can run them in sequence.    </div>
         
 	Starts the animator.
 	<br> Also fires the "started" event.
+	<br> Does not restart the event if already running.
 	    </div>
                                                     <hr/>       
                                                                                     <h3>
@@ -803,9 +804,6 @@ Keeps a list of animators and can run them in sequence.    </div>
                                 <a href="physical/file-EditableFrame.js.html">EditableFrame.js</a>
                             </div>                              
                                                                                                             <div>
-                                <a href="physical/file-Entity/Group.js.html">Entity.Group.js</a>
-                            </div>                              
-                                                                                                            <div>
                                 <a href="physical/file-Entity/Rect.js.html">Entity.Rect.js</a>
                             </div>                              
                                                                                                             <div>
@@ -891,9 +889,6 @@ Keeps a list of animators and can run them in sequence.    </div>
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-Wrapper.js.html">Wrapper.js</a>
-                            </div>                              
-                                                                                                            <div>
-                                <a href="physical/file-argumentOverloading/min.js.html">argumentOverloading.min.js</a>
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-easing.js.html">easing.js</a>

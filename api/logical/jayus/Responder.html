@@ -151,7 +151,7 @@ The base class for an object that uses the jayus event system.
                 <span class="type">Boolean</span>
                 <a href="logical/jayus/Responder.html#___fire"><span class="elementName">fire</span></a>
                 (<span class="type">String</span>
- event, <span class="type">Object</span>
+ event, <span class="type">*</span>
  data)
             </div>          
                 <div class="summaryItemDesc">
@@ -171,20 +171,6 @@ The base class for an object that uses the jayus event system.
 	Adds the given handlers to the responder.    </div>  
                             </div>
                     <div class="summaryItem">
-                                                                    <div class="summaryItemDef">
-                <span class="modifiers"></span>
-                <span class="type">Self</span>
-                <a href="logical/jayus/Responder.html#___interceptNextEvent"><span class="elementName">interceptNextEvent</span></a>
-                (<span class="type">String</span>
- event, <span class="type">Function</span>
- handler, <span class="type">Object</span>
- options)
-            </div>          
-                <div class="summaryItemDesc">
-        
-	Attaches a transient callback function to an event.    </div>  
-                            </div>
-                    <div class="summaryItem">
                                                            <div class="summaryItemDef">
                 <span class="modifiers"></span>
                 <span class="type">Self</span>
@@ -200,16 +186,8 @@ The base class for an object that uses the jayus event system.
                 <span class="type">Self</span>
                 <a href="logical/jayus/Responder.html#___removeHandler"><span class="elementName">removeHandler</span></a>
                 (<span class="type">String</span>
- event, <span class="type">Function</span>
+ event, <span class="type">Function|String</span>
  handler)
-            </div>          
-                    <div class="summaryItemDef">
-                <span class="modifiers"></span>
-                <span class="type">Self</span>
-                <a href="logical/jayus/Responder.html#___removeHandler"><span class="elementName">removeHandler</span></a>
-                (<span class="type">String</span>
- event, <span class="type">String</span>
- id)
             </div>          
                 <div class="summaryItemDesc">
         
@@ -351,7 +329,7 @@ The base class for an object that uses the jayus event system.
                     <span class="modifiers"></span>
                     <span class="type">Boolean</span>
                     fire(<span class="type">String</span>
- event, <span class="type">Object</span>
+ event, <span class="type">*</span>
  data)
                 </code> 
             </div>          
@@ -410,64 +388,6 @@ The base class for an object that uses the jayus event system.
                     </div>
                                                     <hr/>       
                                                                                     <h3>
-        <a name="___interceptNextEvent">
-            <span class="objType">function</span>
-            <span class="objName">interceptNextEvent</span>            
-        </a> 
-    </h3>
-                        <div>
-                <code>
-                    <span class="modifiers"></span>
-                    <span class="type">Self</span>
-                    interceptNextEvent(<span class="type">String</span>
- event, <span class="type">Function</span>
- handler, <span class="type">Object</span>
- options)
-                </code> 
-            </div>          
-                <div class="comment">
-        
-	Attaches a transient callback function to an event.
-	<br> A transient handler will only be called once in response to the event it's attached to, after which it is deleted.
-	    </div>
-        	<div class="parameters">
-        <span class="descSection">Parameters:</span><br/>
-                            <div>
-                    <div class="paramset"></div>
-                    <div>
-                                                <div class="param paddedDetails">
-        <code>
-            event        </code>
-                    </div>   
-                                                <div class="param paddedDetails">
-        <code>
-            handler        </code>
-                    </div>   
-                                                <div class="param paddedDetails">
-        <code>
-            options        </code>
-         Optional                    <ul class="paramoption">
-                                        <li>
-        <code>
-                        <span class="modifiers"></span>
-            <span class="type">String</span>
-            id
-                    </code> 
-         The handler id, for easy removal    </li>
-                                        <li>
-        <code>
-                        <span class="modifiers"></span>
-            <span class="type">Object</span>
-            context
-                    </code> 
-         The context the handler is executed in    </li>
-                            </ul>
-            </div>   
-                                        </div>
-                </div>
-                    </div>
-                                                    <hr/>       
-                                                                                    <h3>
         <a name="___removeAllHandlers">
             <span class="objType">function</span>
             <span class="objName">removeAllHandlers</span>            
@@ -496,17 +416,8 @@ The base class for an object that uses the jayus event system.
                     <span class="modifiers"></span>
                     <span class="type">Self</span>
                     removeHandler(<span class="type">String</span>
- event, <span class="type">Function</span>
+ event, <span class="type">Function|String</span>
  handler)
-                </code> 
-            </div>          
-                    <div>
-                <code>
-                    <span class="modifiers"></span>
-                    <span class="type">Self</span>
-                    removeHandler(<span class="type">String</span>
- event, <span class="type">String</span>
- id)
                 </code> 
             </div>          
                 <div class="comment">
@@ -517,8 +428,7 @@ The base class for an object that uses the jayus event system.
         	<div class="parameters">
         <span class="descSection">Parameters:</span><br/>
                             <div>
-                    <div class="paramset"> Syntax 1
-	</div>
+                    <div class="paramset"></div>
                     <div>
                                                 <div class="param paddedDetails">
         <code>
@@ -527,20 +437,6 @@ The base class for an object that uses the jayus event system.
                                                 <div class="param paddedDetails">
         <code>
             handler        </code>
-                    </div>   
-                                        </div>
-                </div>
-                            <div>
-                    <div class="paramset"> Syntax 2
-	</div>
-                    <div>
-                                                <div class="param paddedDetails">
-        <code>
-            event        </code>
-                    </div>   
-                                                <div class="param paddedDetails">
-        <code>
-            id        </code>
                     </div>   
                                         </div>
                 </div>
@@ -639,9 +535,6 @@ The base class for an object that uses the jayus event system.
                                 <a href="physical/file-EditableFrame.js.html">EditableFrame.js</a>
                             </div>                              
                                                                                                             <div>
-                                <a href="physical/file-Entity/Group.js.html">Entity.Group.js</a>
-                            </div>                              
-                                                                                                            <div>
                                 <a href="physical/file-Entity/Rect.js.html">Entity.Rect.js</a>
                             </div>                              
                                                                                                             <div>
@@ -727,9 +620,6 @@ The base class for an object that uses the jayus event system.
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-Wrapper.js.html">Wrapper.js</a>
-                            </div>                              
-                                                                                                            <div>
-                                <a href="physical/file-argumentOverloading/min.js.html">argumentOverloading.min.js</a>
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-easing.js.html">easing.js</a>

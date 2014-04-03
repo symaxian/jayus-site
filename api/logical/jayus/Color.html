@@ -137,7 +137,7 @@ Represents a 32 bit RGBA color.
                    Properties inherited from <a href="logical/jayus/Dependency.html">jayus.Dependency</a> 
                 </div>
                 <div class="inheritanceSummary">
-                    <a href="logical/jayus/Dependency.html#___dependentCount">dependentCount</a>, <a href="logical/jayus/Dependency.html#___dependents">dependents</a>, <a href="logical/jayus/Dependency.html#___frozen">frozen</a>                </div>
+                    <a href="logical/jayus/Dependency.html#___dependentCount">dependentCount</a>, <a href="logical/jayus/Dependency.html#___dependents">dependents</a>, <a href="logical/jayus/Dependency.html#___frozen">frozen</a>, <a href="logical/jayus/Dependency.html#___id">id</a>                </div>
              </div>
              <br/>          
                 
@@ -149,7 +149,7 @@ Represents a 32 bit RGBA color.
                                                                     <div class="summaryItemDef">
                 <span class="modifiers"></span>
                 <span class="type"></span>
-                <a href="logical/jayus/Color.html#___init"><span class="elementName">init</span></a>
+                <a href="logical/jayus/Color.html#___Color"><span class="elementName">Color</span></a>
                 (<span class="type">String</span>
  name, <span class="type">Number</span>
  alpha)
@@ -157,7 +157,7 @@ Represents a 32 bit RGBA color.
                     <div class="summaryItemDef">
                 <span class="modifiers"></span>
                 <span class="type"></span>
-                <a href="logical/jayus/Color.html#___init"><span class="elementName">init</span></a>
+                <a href="logical/jayus/Color.html#___Color"><span class="elementName">Color</span></a>
                 (<span class="type">Number</span>
  r, <span class="type">Number</span>
  g, <span class="type">Number</span>
@@ -183,7 +183,7 @@ Represents a 32 bit RGBA color.
             </div>
         <div class="summaryItemDesc">
         
-	Returns the human-readable name of the color.    </div>  
+	Returns the name of the color, if available.    </div>  
                             </div>
                     <div class="summaryItem">
                                                                     <div class="summaryItemDef">
@@ -283,7 +283,7 @@ Represents a 32 bit RGBA color.
                    Functions inherited from <a href="logical/jayus/Dependency.html">jayus.Dependency</a> 
                 </div>
                 <div class="inheritanceSummary">
-                    <a href="logical/jayus/Dependency.html#___attach">attach</a>, <a href="logical/jayus/Dependency.html#___detach">detach</a>, <a href="logical/jayus/Dependency.html#___dirty">dirty</a>, <a href="logical/jayus/Dependency.html#___informDependents">informDependents</a>                </div>
+                    <a href="logical/jayus/Dependency.html#___attach">attach</a>, <a href="logical/jayus/Dependency.html#___clearDependents">clearDependents</a>, <a href="logical/jayus/Dependency.html#___detach">detach</a>, <a href="logical/jayus/Dependency.html#___dirty">dirty</a>, <a href="logical/jayus/Dependency.html#___informDependents">informDependents</a>, <a href="logical/jayus/Dependency.html#___setId">setId</a>                </div>
              </div>
              <br/>          
                 
@@ -358,16 +358,16 @@ Represents a 32 bit RGBA color.
     	            <div class="details constructor">
             <h2 class="sectionHeader">Constructor Details</h2>
                                                                     <h3>
-        <a name="___init">
+        <a name="___Color">
             <span class="objType">constructor</span>
-            <span class="objName">init</span>            
+            <span class="objName">Color</span>            
         </a> 
     </h3>
                         <div>
                 <code>
                     <span class="modifiers"></span>
                     <span class="type"></span>
-                    init(<span class="type">String</span>
+                    Color(<span class="type">String</span>
  name, <span class="type">Number</span>
  alpha)
                 </code> 
@@ -376,7 +376,7 @@ Represents a 32 bit RGBA color.
                 <code>
                     <span class="modifiers"></span>
                     <span class="type"></span>
-                    init(<span class="type">Number</span>
+                    Color(<span class="type">Number</span>
  r, <span class="type">Number</span>
  g, <span class="type">Number</span>
  b, <span class="type">Number</span>
@@ -446,7 +446,7 @@ Represents a 32 bit RGBA color.
             </div>    
         <div class="comment">
         
-	Returns the human-readable name of the color.
+	Returns the name of the color, if available.
 	<br> Returns an empty string if the color is not a named color.
 	    </div>
                                                     <hr/>       
@@ -749,9 +749,6 @@ Represents a 32 bit RGBA color.
                                 <a href="physical/file-EditableFrame.js.html">EditableFrame.js</a>
                             </div>                              
                                                                                                             <div>
-                                <a href="physical/file-Entity/Group.js.html">Entity.Group.js</a>
-                            </div>                              
-                                                                                                            <div>
                                 <a href="physical/file-Entity/Rect.js.html">Entity.Rect.js</a>
                             </div>                              
                                                                                                             <div>
@@ -837,9 +834,6 @@ Represents a 32 bit RGBA color.
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-Wrapper.js.html">Wrapper.js</a>
-                            </div>                              
-                                                                                                            <div>
-                                <a href="physical/file-argumentOverloading/min.js.html">argumentOverloading.min.js</a>
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-easing.js.html">easing.js</a>

@@ -116,9 +116,9 @@ The images module, used for preloading image files.
                     <div class="summaryItem">
                                                                     <div class="summaryItemDef">
                 <span class="modifiers"></span>
-                <span class="type"><a href="logical/jayus/Image.html">Image</a></span>
+                <span class="type">Image</span>
                 <a href="logical/jayus/images.html#___get"><span class="elementName">get</span></a>
-                (<span class="type">String</span>
+                (<span class="type">String|Array<String></span>
  filepath)
             </div>          
                 <div class="summaryItemDesc">
@@ -128,21 +128,9 @@ The images module, used for preloading image files.
                     <div class="summaryItem">
                                                                     <div class="summaryItemDef">
                 <span class="modifiers"></span>
-                <span class="type"><a href="logical/jayus/Image.html">Image</a></span>
-                <a href="logical/jayus/images.html#___has"><span class="elementName">has</span></a>
-                (<span class="type">String</span>
- filepath)
-            </div>          
-                <div class="summaryItemDesc">
-        
-	Returns whether the specified image has been requested.    </div>  
-                            </div>
-                    <div class="summaryItem">
-                                                                    <div class="summaryItemDef">
-                <span class="modifiers"></span>
                 <span class="type">Boolean</span>
                 <a href="logical/jayus/images.html#___isLoaded"><span class="elementName">isLoaded</span></a>
-                (<span class="type">String</span>
+                (<span class="type">String|Array<String></span>
  filepath)
             </div>          
                 <div class="summaryItemDesc">
@@ -155,25 +143,48 @@ The images module, used for preloading image files.
                 <span class="type"></span>
                 <a href="logical/jayus/images.html#___load"><span class="elementName">load</span></a>
                 (<span class="type">String</span>
+ filepath)
+            </div>          
+                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type"></span>
+                <a href="logical/jayus/images.html#___load"><span class="elementName">load</span></a>
+                (<span class="type">Array</span>
+ filepaths)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Begins loading the specified image[s].    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/images.html#___setSubimage"><span class="elementName">setSubimage</span></a>
+                (<span class="type">String</span>
+ sourceImage, <span class="type">String</span>
+ image, <span class="type">Number</span>
+ sourceX, <span class="type">Number</span>
+ sourceY, <span class="type">Number</span>
+ sourceWidth, <span class="type">Number</span>
+ sourceHeight)
+            </div>          
+                <div class="summaryItemDesc">
+        
+	Defines an image from a section of another.    </div>  
+                            </div>
+                    <div class="summaryItem">
+                                                                    <div class="summaryItemDef">
+                <span class="modifiers"></span>
+                <span class="type">Self</span>
+                <a href="logical/jayus/images.html#___whenLoaded"><span class="elementName">whenLoaded</span></a>
+                (<span class="type">String|Array<String></span>
  filepath, <span class="type">Function</span>
  handler)
             </div>          
                 <div class="summaryItemDesc">
         
-	Loads the specified image.    </div>  
-                            </div>
-                    <div class="summaryItem">
-                                                                    <div class="summaryItemDef">
-                <span class="modifiers"></span>
-                <span class="type"></span>
-                <a href="logical/jayus/images.html#___loadAll"><span class="elementName">loadAll</span></a>
-                (<span class="type">Array<String></span>
- filepaths, <span class="type">Function</span>
- handler)
-            </div>          
-                <div class="summaryItemDesc">
-        
-	Loads the specified images.    </div>  
+	Runs the callback handler when the image is loaded.    </div>  
                             </div>
                 </div>
         <p/>
@@ -221,8 +232,8 @@ The images module, used for preloading image files.
                         <div>
                 <code>
                     <span class="modifiers"></span>
-                    <span class="type"><a href="logical/jayus/Image.html">Image</a></span>
-                    get(<span class="type">String</span>
+                    <span class="type">Image</span>
+                    get(<span class="type">String|Array<String></span>
  filepath)
                 </code> 
             </div>          
@@ -230,38 +241,6 @@ The images module, used for preloading image files.
         
 	Returns the specified image.
 	<br> The image will still be returned if it is not yet loaded.
-	    </div>
-        	<div class="parameters">
-        <span class="descSection">Parameters:</span><br/>
-                            <div>
-                    <div class="paramset"></div>
-                    <div>
-                                                <div class="param paddedDetails">
-        <code>
-            filepath        </code>
-                    </div>   
-                                        </div>
-                </div>
-                    </div>
-                                                    <hr/>       
-                                                                                    <h3>
-        <a name="___has">
-            <span class="objType">function</span>
-            <span class="objName">has</span>            
-        </a> 
-    </h3>
-                        <div>
-                <code>
-                    <span class="modifiers"></span>
-                    <span class="type"><a href="logical/jayus/Image.html">Image</a></span>
-                    has(<span class="type">String</span>
- filepath)
-                </code> 
-            </div>          
-                <div class="comment">
-        
-	Returns whether the specified image has been requested.
-	<br> Note that this does not mean that the image is loaded, only that the image object is available and that is has been requested.
 	    </div>
         	<div class="parameters">
         <span class="descSection">Parameters:</span><br/>
@@ -286,13 +265,14 @@ The images module, used for preloading image files.
                 <code>
                     <span class="modifiers"></span>
                     <span class="type">Boolean</span>
-                    isLoaded(<span class="type">String</span>
+                    isLoaded(<span class="type">String|Array<String></span>
  filepath)
                 </code> 
             </div>          
                 <div class="comment">
         
 	Returns whether the specified image is loaded or not.
+	<br> If an array is sent, returns true iff every image is loaded.
 	    </div>
         	<div class="parameters">
         <span class="descSection">Parameters:</span><br/>
@@ -318,15 +298,123 @@ The images module, used for preloading image files.
                     <span class="modifiers"></span>
                     <span class="type"></span>
                     load(<span class="type">String</span>
+ filepath)
+                </code> 
+            </div>          
+                    <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type"></span>
+                    load(<span class="type">Array</span>
+ filepaths)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Begins loading the specified image[s].
+	<br> If you want to perform an action after the image is loaded you should use the jayus.images.whenLoaded() method.
+	<br> An image will not be loaded twice.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"> Syntax 1
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            filepath        </code>
+                    </div>   
+                                        </div>
+                </div>
+                            <div>
+                    <div class="paramset"> Syntax 2
+	</div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            filepaths        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___setSubimage">
+            <span class="objType">function</span>
+            <span class="objName">setSubimage</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    setSubimage(<span class="type">String</span>
+ sourceImage, <span class="type">String</span>
+ image, <span class="type">Number</span>
+ sourceX, <span class="type">Number</span>
+ sourceY, <span class="type">Number</span>
+ sourceWidth, <span class="type">Number</span>
+ sourceHeight)
+                </code> 
+            </div>          
+                <div class="comment">
+        
+	Defines an image from a section of another.
+	    </div>
+        	<div class="parameters">
+        <span class="descSection">Parameters:</span><br/>
+                            <div>
+                    <div class="paramset"></div>
+                    <div>
+                                                <div class="param paddedDetails">
+        <code>
+            sourceImage        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            image        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            sourceX        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            sourceY        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            sourceWidth        </code>
+                    </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            sourceHeight        </code>
+                    </div>   
+                                        </div>
+                </div>
+                    </div>
+                                                    <hr/>       
+                                                                                    <h3>
+        <a name="___whenLoaded">
+            <span class="objType">function</span>
+            <span class="objName">whenLoaded</span>            
+        </a> 
+    </h3>
+                        <div>
+                <code>
+                    <span class="modifiers"></span>
+                    <span class="type">Self</span>
+                    whenLoaded(<span class="type">String|Array<String></span>
  filepath, <span class="type">Function</span>
  handler)
                 </code> 
             </div>          
                 <div class="comment">
         
-	Loads the specified image.
-	<br> An image will not be loaded twice.
-	<br> The optional callback handler will be executed when the image is loaded, or immediately if it is already loaded.
+	Runs the callback handler when the image is loaded.
+	<br> Attaches a handler for the 'loaded' event, or the image is already loaded it calls the function immediately.
+	<br> The context for the handler is the global scope.
 	    </div>
         	<div class="parameters">
         <span class="descSection">Parameters:</span><br/>
@@ -340,44 +428,7 @@ The images module, used for preloading image files.
                                                 <div class="param paddedDetails">
         <code>
             handler        </code>
-         Optional            </div>   
-                                        </div>
-                </div>
-                    </div>
-                                                    <hr/>       
-                                                                                    <h3>
-        <a name="___loadAll">
-            <span class="objType">function</span>
-            <span class="objName">loadAll</span>            
-        </a> 
-    </h3>
-                        <div>
-                <code>
-                    <span class="modifiers"></span>
-                    <span class="type"></span>
-                    loadAll(<span class="type">Array<String></span>
- filepaths, <span class="type">Function</span>
- handler)
-                </code> 
-            </div>          
-                <div class="comment">
-        
-	Loads the specified images.
-	<br> The optional callback handler will be executed when all the images have been loaded, or immediately if they have all already been loaded.
-	    </div>
-        	<div class="parameters">
-        <span class="descSection">Parameters:</span><br/>
-                            <div>
-                    <div class="paramset"></div>
-                    <div>
-                                                <div class="param paddedDetails">
-        <code>
-            filepaths        </code>
                     </div>   
-                                                <div class="param paddedDetails">
-        <code>
-            handler        </code>
-         Optional            </div>   
                                         </div>
                 </div>
                     </div>
@@ -442,9 +493,6 @@ The images module, used for preloading image files.
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-EditableFrame.js.html">EditableFrame.js</a>
-                            </div>                              
-                                                                                                            <div>
-                                <a href="physical/file-Entity/Group.js.html">Entity.Group.js</a>
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-Entity/Rect.js.html">Entity.Rect.js</a>
@@ -532,9 +580,6 @@ The images module, used for preloading image files.
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-Wrapper.js.html">Wrapper.js</a>
-                            </div>                              
-                                                                                                            <div>
-                                <a href="physical/file-argumentOverloading/min.js.html">argumentOverloading.min.js</a>
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-easing.js.html">easing.js</a>

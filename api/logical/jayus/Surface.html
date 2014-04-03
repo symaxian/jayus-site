@@ -84,33 +84,7 @@ An Entity that represents an editable image.
                                 
                     
     
-                <div class="summaryTable property">
-            <div class="summaryTableHeader">
-                <span class="objType">Property</span> Summary
-            </div>
-                    <div class="summaryItem">
-                                                <div class="summaryItemDef">
-        <span class="modifiers"></span>
-        <span class="type">HTMLCanvasElement</span>
-        <a href="logical/jayus/Surface.html#___canvas"><span class="elementName">canvas</span></a>
-    </div> 
-    <div class="summaryItemDesc">
-        
-	The underlying canvas that the surface represents.    </div>  
-                            </div>
-                    <div class="summaryItem">
-                                                <div class="summaryItemDef">
-        <span class="modifiers"></span>
-        <span class="type">CanvasRenderingContext2D</span>
-        <a href="logical/jayus/Surface.html#___context"><span class="elementName">context</span></a>
-    </div> 
-    <div class="summaryItemDesc">
-        
-	The context for the canvas.    </div>  
-                            </div>
-                </div>
-        <p/>
-                
+                    
                 <div class="summaryTable constructor">
             <div class="summaryTableHeader">
                 <span class="objType">Constructor</span> Summary
@@ -119,7 +93,7 @@ An Entity that represents an editable image.
                                                                     <div class="summaryItemDef">
                 <span class="modifiers"></span>
                 <span class="type"></span>
-                <a href="logical/jayus/Surface.html#___init"><span class="elementName">init</span></a>
+                <a href="logical/jayus/Surface.html#___Surface"><span class="elementName">Surface</span></a>
                 (<span class="type">Number</span>
  width, <span class="type">Number</span>
  height)
@@ -172,25 +146,9 @@ An Entity that represents an editable image.
                 <span class="modifiers"></span>
                 <span class="type">Self</span>
                 <a href="logical/jayus/Surface.html#___fill"><span class="elementName">fill</span></a>
-                (<span class="type"><a href="logical/jayus/Color.html">Color</a></span>
- color)
-            </div>          
-                    <div class="summaryItemDef">
-                <span class="modifiers"></span>
-                <span class="type">Self</span>
-                <a href="logical/jayus/Surface.html#___fill"><span class="elementName">fill</span></a>
-                (<span class="type"><a href="logical/jayus/Color.html">Color</a></span>
+                (<span class="type">Color</span>
  color, <span class="type">Number</span>
  alpha)
-            </div>          
-                    <div class="summaryItemDef">
-                <span class="modifiers"></span>
-                <span class="type">Self</span>
-                <a href="logical/jayus/Surface.html#___fill"><span class="elementName">fill</span></a>
-                (<span class="type">Number</span>
- r, <span class="type">Number</span>
- g, <span class="type">Number</span>
- b)
             </div>          
                     <div class="summaryItemDef">
                 <span class="modifiers"></span>
@@ -211,20 +169,14 @@ An Entity that represents an editable image.
                 <span class="modifiers"></span>
                 <span class="type">ImageData</span>
                 <a href="logical/jayus/Surface.html#___getBuffer"><span class="elementName">getBuffer</span></a>
-                ()
-            </div>          
-                    <div class="summaryItemDef">
-                <span class="modifiers"></span>
-                <span class="type">ImageData</span>
-                <a href="logical/jayus/Surface.html#___getBuffer"><span class="elementName">getBuffer</span></a>
                 (<span class="type">Rectangle</span>
- rect)
+ region)
             </div>          
                     <div class="summaryItemDef">
                 <span class="modifiers"></span>
                 <span class="type">ImageData</span>
                 <a href="logical/jayus/Surface.html#___getBuffer"><span class="elementName">getBuffer</span></a>
-                (<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                (<span class="type">Point</span>
  origin, <span class="type">Number</span>
  width, <span class="type">Number</span>
  height)
@@ -246,14 +198,14 @@ An Entity that represents an editable image.
                     <div class="summaryItem">
                                                                     <div class="summaryItemDef">
                 <span class="modifiers"></span>
-                <span class="type"><a href="logical/jayus/Color.html">Color</a></span>
+                <span class="type">Color</span>
                 <a href="logical/jayus/Surface.html#___getPixel"><span class="elementName">getPixel</span></a>
-                (<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                (<span class="type">Point</span>
  pixel)
             </div>          
                     <div class="summaryItemDef">
                 <span class="modifiers"></span>
-                <span class="type"><a href="logical/jayus/Color.html">Color</a></span>
+                <span class="type">Color</span>
                 <a href="logical/jayus/Surface.html#___getPixel"><span class="elementName">getPixel</span></a>
                 (<span class="type">Number</span>
  x, <span class="type">Number</span>
@@ -266,14 +218,14 @@ An Entity that represents an editable image.
                     <div class="summaryItem">
                                                                     <div class="summaryItemDef">
                 <span class="modifiers"></span>
-                <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                <span class="type">Point</span>
                 <a href="logical/jayus/Surface.html#___getPixelAt"><span class="elementName">getPixelAt</span></a>
-                (<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                (<span class="type">Point</span>
  point)
             </div>          
                     <div class="summaryItemDef">
                 <span class="modifiers"></span>
-                <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                <span class="type">Point</span>
                 <a href="logical/jayus/Surface.html#___getPixelAt"><span class="elementName">getPixelAt</span></a>
                 (<span class="type">Number</span>
  x, <span class="type">Number</span>
@@ -288,7 +240,7 @@ An Entity that represents an editable image.
                 <span class="modifiers"></span>
                 <span class="type">Rectangle</span>
                 <a href="logical/jayus/Surface.html#___getPixelFrame"><span class="elementName">getPixelFrame</span></a>
-                (<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                (<span class="type">Point</span>
  pixel)
             </div>          
                     <div class="summaryItemDef">
@@ -308,14 +260,7 @@ An Entity that represents an editable image.
                 <span class="modifiers"></span>
                 <span class="type">Self</span>
                 <a href="logical/jayus/Surface.html#___putBuffer"><span class="elementName">putBuffer</span></a>
-                (<span class="type">ImageData</span>
- buffer)
-            </div>          
-                    <div class="summaryItemDef">
-                <span class="modifiers"></span>
-                <span class="type">Self</span>
-                <a href="logical/jayus/Surface.html#___putBuffer"><span class="elementName">putBuffer</span></a>
-                (<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                (<span class="type">Point</span>
  position, <span class="type">ImageData</span>
  buffer)
             </div>          
@@ -337,8 +282,8 @@ An Entity that represents an editable image.
                 <span class="modifiers"></span>
                 <span class="type">Self</span>
                 <a href="logical/jayus/Surface.html#___setPixel"><span class="elementName">setPixel</span></a>
-                (<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
- pixel, <span class="type"><a href="logical/jayus/Color.html">Color</a></span>
+                (<span class="type">Point</span>
+ pixel, <span class="type">Color</span>
  color)
             </div>          
                     <div class="summaryItemDef">
@@ -347,14 +292,14 @@ An Entity that represents an editable image.
                 <a href="logical/jayus/Surface.html#___setPixel"><span class="elementName">setPixel</span></a>
                 (<span class="type">Number</span>
  x, <span class="type">Number</span>
- y, <span class="type"><a href="logical/jayus/Color.html">Color</a></span>
+ y, <span class="type">Color</span>
  color)
             </div>          
                     <div class="summaryItemDef">
                 <span class="modifiers"></span>
                 <span class="type">Self</span>
                 <a href="logical/jayus/Surface.html#___setPixel"><span class="elementName">setPixel</span></a>
-                (<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                (<span class="type">Point</span>
  pixel, <span class="type">Number</span>
  r, <span class="type">Number</span>
  g, <span class="type">Number</span>
@@ -403,50 +348,19 @@ An Entity that represents an editable image.
         <p/>
                 
                     <!-- ============== Details coming here =================== -->
-    	    	            <div class="details property">
-            <h2 class="sectionHeader">Property Details</h2>
-                                                            
-            <h3>
-        <a name="___canvas">
-            <span class="objType">property</span> <span class="modifiers"></span>
-            <span class="type">HTMLCanvasElement</span>
-            <span class="objName">canvas</span>         
-        </a>
-    </h3>
-    <div class="comment">
-        
-	The underlying canvas that the surface represents.
-	<br> Do not modify.
-	    </div>    
-                                        <hr />  
-                                                                            
-            <h3>
-        <a name="___context">
-            <span class="objType">property</span> <span class="modifiers"></span>
-            <span class="type">CanvasRenderingContext2D</span>
-            <span class="objName">context</span>         
-        </a>
-    </h3>
-    <div class="comment">
-        
-	The context for the canvas.
-	<br> Do not modify.
-	    </div>    
-                                        <hr />  
-                                    </div>
-    	            <div class="details constructor">
+    	    	    	            <div class="details constructor">
             <h2 class="sectionHeader">Constructor Details</h2>
                                                                     <h3>
-        <a name="___init">
+        <a name="___Surface">
             <span class="objType">constructor</span>
-            <span class="objName">init</span>            
+            <span class="objName">Surface</span>            
         </a> 
     </h3>
                         <div>
                 <code>
                     <span class="modifiers"></span>
                     <span class="type"></span>
-                    init(<span class="type">Number</span>
+                    Surface(<span class="type">Number</span>
  width, <span class="type">Number</span>
  height)
                 </code> 
@@ -557,27 +471,9 @@ An Entity that represents an editable image.
                 <code>
                     <span class="modifiers"></span>
                     <span class="type">Self</span>
-                    fill(<span class="type"><a href="logical/jayus/Color.html">Color</a></span>
- color)
-                </code> 
-            </div>          
-                    <div>
-                <code>
-                    <span class="modifiers"></span>
-                    <span class="type">Self</span>
-                    fill(<span class="type"><a href="logical/jayus/Color.html">Color</a></span>
+                    fill(<span class="type">Color</span>
  color, <span class="type">Number</span>
  alpha)
-                </code> 
-            </div>          
-                    <div>
-                <code>
-                    <span class="modifiers"></span>
-                    <span class="type">Self</span>
-                    fill(<span class="type">Number</span>
- r, <span class="type">Number</span>
- g, <span class="type">Number</span>
- b)
                 </code> 
             </div>          
                     <div>
@@ -606,42 +502,14 @@ An Entity that represents an editable image.
         <code>
             color        </code>
                     </div>   
+                                                <div class="param paddedDetails">
+        <code>
+            alpha        </code>
+         Optional            </div>   
                                         </div>
                 </div>
                             <div>
                     <div class="paramset"> Syntax 2
-	</div>
-                    <div>
-                                                <div class="param paddedDetails">
-        <code>
-            color        </code>
-                    </div>   
-                                                <div class="param paddedDetails">
-        <code>
-            alpha        </code>
-                    </div>   
-                                        </div>
-                </div>
-                            <div>
-                    <div class="paramset"> Syntax 3
-	</div>
-                    <div>
-                                                <div class="param paddedDetails">
-        <code>
-            r        </code>
-                    </div>   
-                                                <div class="param paddedDetails">
-        <code>
-            g        </code>
-                    </div>   
-                                                <div class="param paddedDetails">
-        <code>
-            b        </code>
-                    </div>   
-                                        </div>
-                </div>
-                            <div>
-                    <div class="paramset"> Syntax 4
 	</div>
                     <div>
                                                 <div class="param paddedDetails">
@@ -659,7 +527,7 @@ An Entity that represents an editable image.
                                                 <div class="param paddedDetails">
         <code>
             a        </code>
-                    </div>   
+         Optional            </div>   
                                         </div>
                 </div>
                     </div>
@@ -674,22 +542,15 @@ An Entity that represents an editable image.
                 <code>
                     <span class="modifiers"></span>
                     <span class="type">ImageData</span>
-                    getBuffer()
-                </code> 
-            </div>          
-                    <div>
-                <code>
-                    <span class="modifiers"></span>
-                    <span class="type">ImageData</span>
                     getBuffer(<span class="type">Rectangle</span>
- rect)
+ region)
                 </code> 
             </div>          
                     <div>
                 <code>
                     <span class="modifiers"></span>
                     <span class="type">ImageData</span>
-                    getBuffer(<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    getBuffer(<span class="type">Point</span>
  origin, <span class="type">Number</span>
  width, <span class="type">Number</span>
  height)
@@ -709,27 +570,22 @@ An Entity that represents an editable image.
                 <div class="comment">
         
 	Returns an ImageData object containing pixel data from the surface.
+	<br> The region is optional and defaults to the entire surface if not specified.
 	    </div>
         	<div class="parameters">
         <span class="descSection">Parameters:</span><br/>
                             <div>
-                    <div class="paramset"> Syntax 1 - Entire surface
-	</div>
-                    <div>
-                                        </div>
-                </div>
-                            <div>
-                    <div class="paramset"> Syntax 2 - Specified region
+                    <div class="paramset"> Syntax 1
 	</div>
                     <div>
                                                 <div class="param paddedDetails">
         <code>
-            rect        </code>
+            region        </code>
                     </div>   
                                         </div>
                 </div>
                             <div>
-                    <div class="paramset"> Syntax 3 - Specified region
+                    <div class="paramset"> Syntax 2
 	</div>
                     <div>
                                                 <div class="param paddedDetails">
@@ -747,7 +603,7 @@ An Entity that represents an editable image.
                                         </div>
                 </div>
                             <div>
-                    <div class="paramset"> Syntax 4 - Specified region
+                    <div class="paramset"> Syntax 3
 	</div>
                     <div>
                                                 <div class="param paddedDetails">
@@ -779,15 +635,15 @@ An Entity that represents an editable image.
                         <div>
                 <code>
                     <span class="modifiers"></span>
-                    <span class="type"><a href="logical/jayus/Color.html">Color</a></span>
-                    getPixel(<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    <span class="type">Color</span>
+                    getPixel(<span class="type">Point</span>
  pixel)
                 </code> 
             </div>          
                     <div>
                 <code>
                     <span class="modifiers"></span>
-                    <span class="type"><a href="logical/jayus/Color.html">Color</a></span>
+                    <span class="type">Color</span>
                     getPixel(<span class="type">Number</span>
  x, <span class="type">Number</span>
  y)
@@ -835,15 +691,15 @@ An Entity that represents an editable image.
                         <div>
                 <code>
                     <span class="modifiers"></span>
-                    <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
-                    getPixelAt(<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    <span class="type">Point</span>
+                    getPixelAt(<span class="type">Point</span>
  point)
                 </code> 
             </div>          
                     <div>
                 <code>
                     <span class="modifiers"></span>
-                    <span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    <span class="type">Point</span>
                     getPixelAt(<span class="type">Number</span>
  x, <span class="type">Number</span>
  y)
@@ -893,7 +749,7 @@ An Entity that represents an editable image.
                 <code>
                     <span class="modifiers"></span>
                     <span class="type">Rectangle</span>
-                    getPixelFrame(<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    getPixelFrame(<span class="type">Point</span>
  pixel)
                 </code> 
             </div>          
@@ -949,15 +805,7 @@ An Entity that represents an editable image.
                 <code>
                     <span class="modifiers"></span>
                     <span class="type">Self</span>
-                    putBuffer(<span class="type">ImageData</span>
- buffer)
-                </code> 
-            </div>          
-                    <div>
-                <code>
-                    <span class="modifiers"></span>
-                    <span class="type">Self</span>
-                    putBuffer(<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    putBuffer(<span class="type">Point</span>
  position, <span class="type">ImageData</span>
  buffer)
                 </code> 
@@ -975,21 +823,12 @@ An Entity that represents an editable image.
                 <div class="comment">
         
 	Places the image from an ImageData object onto the surface.
+	<br> The position is optional and defaults to (0, 0) if not specified.
 	    </div>
         	<div class="parameters">
         <span class="descSection">Parameters:</span><br/>
                             <div>
-                    <div class="paramset"> Syntax 1 - At (0, 0)
-	</div>
-                    <div>
-                                                <div class="param paddedDetails">
-        <code>
-            buffer        </code>
-                    </div>   
-                                        </div>
-                </div>
-                            <div>
-                    <div class="paramset"> Syntax 2
+                    <div class="paramset"> Syntax 1
 	</div>
                     <div>
                                                 <div class="param paddedDetails">
@@ -1003,7 +842,7 @@ An Entity that represents an editable image.
                                         </div>
                 </div>
                             <div>
-                    <div class="paramset"> Syntax 3
+                    <div class="paramset"> Syntax 2
 	</div>
                     <div>
                                                 <div class="param paddedDetails">
@@ -1032,8 +871,8 @@ An Entity that represents an editable image.
                 <code>
                     <span class="modifiers"></span>
                     <span class="type">Self</span>
-                    setPixel(<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
- pixel, <span class="type"><a href="logical/jayus/Color.html">Color</a></span>
+                    setPixel(<span class="type">Point</span>
+ pixel, <span class="type">Color</span>
  color)
                 </code> 
             </div>          
@@ -1043,7 +882,7 @@ An Entity that represents an editable image.
                     <span class="type">Self</span>
                     setPixel(<span class="type">Number</span>
  x, <span class="type">Number</span>
- y, <span class="type"><a href="logical/jayus/Color.html">Color</a></span>
+ y, <span class="type">Color</span>
  color)
                 </code> 
             </div>          
@@ -1051,7 +890,7 @@ An Entity that represents an editable image.
                 <code>
                     <span class="modifiers"></span>
                     <span class="type">Self</span>
-                    setPixel(<span class="type"><a href="logical/jayus/Point.html">Point</a></span>
+                    setPixel(<span class="type">Point</span>
  pixel, <span class="type">Number</span>
  r, <span class="type">Number</span>
  g, <span class="type">Number</span>
@@ -1219,7 +1058,7 @@ An Entity that represents an editable image.
         
 	Returns a CanvasPattern representing the image on the surface.
 	<br> The repetition string is optional and may be 'repeat', 'repeat-x', 'repeat-y', or 'no-repeat'.
-	<br> The default repptition mode is 'repeat'.
+	<br> The default repetition mode is 'repeat'.
 	    </div>
         	<div class="parameters">
         <span class="descSection">Parameters:</span><br/>
@@ -1294,9 +1133,6 @@ An Entity that represents an editable image.
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-EditableFrame.js.html">EditableFrame.js</a>
-                            </div>                              
-                                                                                                            <div>
-                                <a href="physical/file-Entity/Group.js.html">Entity.Group.js</a>
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-Entity/Rect.js.html">Entity.Rect.js</a>
@@ -1384,9 +1220,6 @@ An Entity that represents an editable image.
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-Wrapper.js.html">Wrapper.js</a>
-                            </div>                              
-                                                                                                            <div>
-                                <a href="physical/file-argumentOverloading/min.js.html">argumentOverloading.min.js</a>
                             </div>                              
                                                                                                             <div>
                                 <a href="physical/file-easing.js.html">easing.js</a>

@@ -42,7 +42,7 @@ jayus.addHandler('cursorMove',function(e){
 </pre>
 
 <ul>
-	<li><a href="#keyboardList">Cursor Event List</a></li>
+	<li><a href="#cursorList">Cursor Event List</a></li>
 </ul>
 
 
@@ -61,15 +61,6 @@ myRect.addHandler('keyPress',function(){
 <ul>
 	<li><a href="#keyboardList">Keyboard Event List</a></li>
 </ul>
-
-
-
-<h2>Touch Events</h2>
-<p>
-	Are in development.
-</p>
-
-<pre class="prettyprint linenums"></pre>
 
 
 
@@ -92,11 +83,11 @@ if(player.inCave && Math.random() < 0.1){
 
 
 
-<h2>Accepting an Event</h2>
+<h2>Cancelling an Event</h2>
 <p>
-	To cancel certain events from causing any further actions, an event handler can "accept" the event by returning a truthy value. When an event handler accepts the event, its propagation(if there is any) or default action is cancelled. This is useful for cursor events, which if not accepted, may fire on multiple entities and cause conflicting effects. Any event handler that is not passive should accept the event.
+	To cancel certain events from causing any further actions, an event handler can cancel the event by returning a truthy value. When an event handler accepts the event, its propagation(if there is any) and/or default action is cancelled. This is useful for cursor events, which if not accepted, may fire on multiple entities and cause conflicting effects. Any event handler that is not passive should accept the event.
 	<br>
-	<span class="label label-info">Note: Only certain events can be accepted</span>
+	<span class="label label-info">Note: Only some events can be accepted</span>
 </p>
 
 <pre class="prettyprint linenums">
@@ -131,198 +122,241 @@ function pauseDisplayUpdates(){
 </pre>
 
 <h2>Event List</h2>
+
+<h3>General Global Events</h3>
+
+<p>
+	Fired on the jayus object.
+</p>
+
 <table class="table table-striped table-bordered">
 	<thead>
 		<tr>
-			<th style="width: 20%">Event Type / Destination</th>
-			<th style="width: 20%">Event Name</th>
-			<th style="width: 20%">Fired When</th>
-			<th style="width: 20%">Properties</th>
-			<th style="width: 20%">Can be Accepted?</th>
+			<th style="width: 25%">Event Name</th>
+			<th style="width: 25%">Fired When</th>
+			<th style="width: 25%">Parameter</th>
+			<th style="width: 25%">Cancellable</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td rowspan="3">General<br><br>Fired on the jayus object</td>
+			<td>step</td>
+			<td>At the beginning of each animation step</td>
+			<td><strong>Number</strong> - The number of seconds that have passed since the previous step</td>
+			<td>Yes, if cancelled the animated entities and animators will not be updated</td>
+		</tr>
+		<tr>
 			<td>frame</td>
 			<td>At the beginning of each frame</td>
-			<td class="muted">None</td>
-			<td>Yes, if accepted the displays and animations will not be updated</td>
+			<td><strong>Number</strong> - The number of seconds that have passed since the previous frame</td>
+			<td>Yes, if cancelled the displays will not be refreshed</td>
 		</tr>
 		<tr>
 			<td>imageLoaded</td>
 			<td>Whenever an image is loaded</td>
-			<td>FIXME</td>
+			<td><strong>Object</strong>:<blockquote><dl class="dl">
+				<dt>filepath</dt><dd>The filepath for the image file</dd>
+				<dt>image</dt><dd>The image, may be a jayus.Image object or Canvas element</dd>
+			</dl></blockquote></td>
 			<td>No</td>
 		</tr>
 		<tr>
 			<td>imagesLoaded</td>
 			<td>When all requested images have been loaded</td>
-			<td class="muted">None</td>
+			<td class="muted">undefined</td>
 			<td>No</td>
 		</tr>
+	</tbody>
+</table>
+
+<h3>General Entity Events</h3>
+
+<p>
+	Fired on entities.
+</p>
+
+<table class="table table-striped table-bordered">
+	<thead>
 		<tr>
-			<td rowspan="3">General Entity<br><br>Fired on Entities</td>
+			<th style="width: 25%">Event Name</th>
+			<th style="width: 25%">Fired When</th>
+			<th style="width: 25%">Parameter</th>
+			<th style="width: 25%">Cancellable</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
 			<td>resized</td>
 			<td>Whenever the Entity is resized, scaling is not accounted for</td>
-			<td><dl class="dl">
+			<td><strong>Object</strong>:<blockquote><dl class="dl">
 				<dt>width</dt><dd>The change in width</dd>
 				<dt>height</dt><dd>The change in height</dd>
-			</dl></td>
-			<td>Yes, if accepted the entity will not be resized</td>
+			</dl></blockquote></td>
+			<td>Yes, if cancelled the entity will not be resized</td>
 		</tr>
 		<tr>
-			<td>displaced</td>
-			<td>Whenever the Entity is displaced</td>
-			<td class="muted">None</td>
-			<td>Yes, if accepted the entity will not be displaced or dirtied</td>
+			<td>dirtied</td>
+			<td>Whenever the Entity is dirtied</td>
+			<td><strong>Number</strong> - A bitset of the dirty modes, found in jayus.DIRTY</td>
+			<td>No</td>
 		</tr>
+	</tbody>
+</table>
+
+<a id="cursorList"></a>
+<h3>Cursor Events</h3>
+
+<p>
+	Event fires on the deepest entities first, bubbling upwards until cancelled.
+</p>
+
+<table class="table table-striped table-bordered">
+	<thead>
 		<tr>
-			<td>formed</td>
-			<td>Whenever the Entity has been reformed, this only applies Entities that must be reformed when displaced, primarily Widgets</td>
-			<td class="muted">None</td>
+			<th style="width: 25%">Event Name</th>
+			<th style="width: 25%">Fired When</th>
+			<th style="width: 25%">Parameter</th>
+			<th style="width: 25%">Cancellable</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>cursorEnter</td>
+			<td>After the entity gains control of the cursor. Whenever the cursor moves under the entity with no other entities "in the way".</td>
+			<td class="muted">undefined</td>
 			<td>No</td>
 		</tr>
 		<tr>
-			<td rowspan="16">
-				<a name="cursorList"></a>
-				Cursor
-				<br><br>Event fires on the deepest entities first, bubbling upwards until accepted
-			</td>
-			<td>cursorEnter</td>
-			<td>After the cursor enters the Entity.<br>
-				This event is also fired if the Entity moves under the cursor.</td>
-			<td class="muted">None</td>
+			<td>cursorLeave</td>
+			<td>After the entity loses control of the cursor. Can happen when the cursor moves out of the entity or when another entity assumes control of the cursor.</td>
+			<td class="muted">undefined</td>
+			<td>No</td>
+		</tr>
+		<tr>
+			<td>cursorOver</td>
+			<td>After the cursor moves onto the entity.</td>
+			<td><strong>Point</strong> - The local position of the cursor</td>
+			<td>No</td>
+		</tr>
+		<tr>
+			<td>cursorOut</td>
+			<td>After the cursor moves out of the entity.</td>
+			<td><strong>Point</strong> - The local position of the cursor</td>
 			<td>No</td>
 		</tr>
 		<tr>
 			<td>cursorMove</td>
 			<td>Whenever the cursor is moved over the Entity.</td>
-			<td><dl class="dl">
+			<td><strong>Object</strong>:<blockquote><dl class="dl">
 				<dt>event</dt><dd>The native event object</dd>
 				<dt>display</dt><dd>The relevant display</dd>
 				<dt>x</dt><dd>The x position of the cursor</dd>
 				<dt>y</dt><dd>The y position of the cursor</dd>
 				<dt>xDelta</dt><dd>The distance traveled across the x axis</dd>
 				<dt>yDelta</dt><dd>The distance traveled across the y axis</dd>
-			</dl></td>
+			</dl></blockquote></td>
 			<td>No</td>
 		</tr>
 		<tr>
-			<td>cursorLeave</td>
-			<td>After the cursor has left the Entity.<br>
-				This event is also fired if the Entity moves away from the cursor.</td>
-			<td class="muted">None</td>
-			<td>No</td>
+			<td>scroll</td>
+			<td>When the cursor scrolls over the display.<br>
+				Scrolling is two-dimensional, and the scroll values are not guaranteed to be integers. OSX for example deals with floating-point scroll values.
+			</td>
+			<td><strong>Object</strong>:<blockquote><dl class="dl">
+				<dt>event</dt><dd>The native event object</dd>
+				<dt>display</dt><dd>The relevant display</dd>
+				<dt>scroll</dt><dd>Same as yScroll</dd>
+				<dt>xScroll</dt><dd>The distance scrolled in the x direction</dd>
+				<dt>yScroll</dt><dd>The distance scrolled in the y direction</dd>
+			</dl></blockquote></td>
+			<td>Yes</td>
 		</tr>
 		<tr>
 			<td>leftPress</td>
 			<td>When the left mouse button is pressed over the Entity.</td>
-			<td><dl class="dl">
+			<td><strong>Object</strong>:<blockquote><dl class="dl">
 				<dt>event</dt><dd>The native event object</dd>
 				<dt>display</dt><dd>The relevant display</dd>
 				<dt>x</dt><dd>The x position of the cursor</dd>
 				<dt>y</dt><dd>The y position of the cursor</dd>
-			</dl></td>
+			</dl></blockquote></td>
 			<td>Yes</td>
 		</tr>
 		<tr>
-			<td>leftDepress</td>
+			<td>leftRelease</td>
 			<td>When the left mouse button is depressed over the Entity.</td>
-			<td><dl class="dl">
+			<td><strong>Object</strong>:<blockquote><dl class="dl">
 				<dt>event</dt><dd>The native event object</dd>
 				<dt>display</dt><dd>The relevant display</dd>
 				<dt>x</dt><dd>The x position of the cursor</dd>
 				<dt>y</dt><dd>The y position of the cursor</dd>
-			</dl></td>
+			</dl></blockquote></td>
 			<td>Yes</td>
 		</tr>
 		<tr>
 			<td>leftClick</td>
 			<td>When the left mouse button is used to click on the Entity.</td>
-			<td><dl class="dl">
+			<td><strong>Object</strong>:<blockquote><dl class="dl">
 				<dt>event</dt><dd>The native event object</dd>
 				<dt>display</dt><dd>The relevant display</dd>
 				<dt>x</dt><dd>The x position of the cursor</dd>
 				<dt>y</dt><dd>The y position of the cursor</dd>
-			</dl></td>
-			<td>Yes</td>
-		</tr>
-		<tr>
-			<td>leftDoubleClick</td>
-			<td>When the left mouse button is used to double click on the Entity.</td>
-			<td><dl class="dl">
-				<dt>event</dt><dd>The native event object</dd>
-				<dt>display</dt><dd>The relevant display</dd>
-				<dt>x</dt><dd>The x position of the cursor</dd>
-				<dt>y</dt><dd>The y position of the cursor</dd>
-			</dl></td>
-			<td>Yes</td>
+			</dl></blockquote></td>
+			<td>No</td>
 		</tr>
 		<tr>
 			<td>middlePress</td>
 			<td>When the middle mouse button is pressed over the Entity.</td>
-			<td><dl class="dl">
+			<td><strong>Object</strong>:<blockquote><dl class="dl">
 				<dt>event</dt><dd>The native event object</dd>
 				<dt>display</dt><dd>The relevant display</dd>
 				<dt>x</dt><dd>The x position of the cursor</dd>
 				<dt>y</dt><dd>The y position of the cursor</dd>
-			</dl></td>
+			</dl></blockquote></td>
 			<td>Yes</td>
 		</tr>
 		<tr>
-			<td>middleDepress</td>
+			<td>middleRelease</td>
 			<td>When the middle mouse button is depressed over the Entity.</td>
-			<td><dl class="dl">
+			<td><strong>Object</strong>:<blockquote><dl class="dl">
 				<dt>event</dt><dd>The native event object</dd>
 				<dt>display</dt><dd>The relevant display</dd>
 				<dt>x</dt><dd>The x position of the cursor</dd>
 				<dt>y</dt><dd>The y position of the cursor</dd>
-			</dl></td>
+			</dl></blockquote></td>
 			<td>Yes</td>
 		</tr>
 		<tr>
 			<td>middleClick</td>
 			<td>When the middle mouse button is used to click on the Entity.</td>
-			<td><dl class="dl">
+			<td><strong>Object</strong>:<blockquote><dl class="dl">
 				<dt>event</dt><dd>The native event object</dd>
 				<dt>display</dt><dd>The relevant display</dd>
 				<dt>x</dt><dd>The x position of the cursor</dd>
 				<dt>y</dt><dd>The y position of the cursor</dd>
-			</dl></td>
-			<td>Yes</td>
-		</tr>
-		<tr>
-			<td>middleDoubleClick</td>
-			<td>When the middle mouse button is used to double click on the Entity.</td>
-			<td><dl class="dl">
-				<dt>event</dt><dd>The native event object</dd>
-				<dt>display</dt><dd>The relevant display</dd>
-				<dt>x</dt><dd>The x position of the cursor</dd>
-				<dt>y</dt><dd>The y position of the cursor</dd>
-			</dl></td>
-			<td>Yes</td>
+			</dl></blockquote></td>
+			<td>No</td>
 		</tr>
 		<tr>
 			<td>rightPress</td>
 			<td>When the right mouse button is pressed over the Entity.</td>
-			<td><dl class="dl">
+			<td><strong>Object</strong>:<blockquote><dl class="dl">
 				<dt>event</dt><dd>The native event object</dd>
 				<dt>display</dt><dd>The relevant display</dd>
 				<dt>x</dt><dd>The x position of the cursor</dd>
 				<dt>y</dt><dd>The y position of the cursor</dd>
-			</dl></td>
+			</dl></blockquote></td>
 			<td>Yes</td>
 		</tr>
 		<tr>
-			<td>rightDepress</td>
+			<td>rightRelease</td>
 			<td>When the right mouse button is depressed over the Entity.</td>
-			<td><dl class="dl">
+			<td><strong>Object</strong>:<blockquote><dl class="dl">
 				<dt>event</dt><dd>The native event object</dd>
 				<dt>display</dt><dd>The relevant display</dd>
 				<dt>x</dt><dd>The x position of the cursor</dd>
 				<dt>y</dt><dd>The y position of the cursor</dd>
-			</dl></td>
+			</dl></blockquote></td>
 			<td>Yes</td>
 		</tr>
 		<tr>
@@ -331,72 +365,59 @@ function pauseDisplayUpdates(){
 				When the right mouse button is used to click on the Entity.<br>
 				This event is not usually detectable in JavaScript
 			</p></td>
-			<td><dl class="dl">
+			<td><strong>Object</strong>:<blockquote><dl class="dl">
 				<dt>event</dt><dd>The native event object</dd>
 				<dt>display</dt><dd>The relevant display</dd>
 				<dt>x</dt><dd>The x position of the cursor</dd>
 				<dt>y</dt><dd>The y position of the cursor</dd>
-			</dl></td>
-			<td>Yes</td>
+			</dl></blockquote></td>
+			<td>No</td>
 		</tr>
+	</tbody>
+</table>
+
+<a id="keyboardList"></a>
+<h3>Keyboard Events</h3>
+
+<p>
+	Fired on the jayus object.
+</p>
+
+<table class="table table-striped table-bordered">
+	<thead>
 		<tr>
-			<td>rightDoubleClick</td>
-			<td><p>
-				When the right mouse button is used to double click on the Entity.<br>
-				This event is not usually detectable in JavaScript
-			</p></td>
-			<td><dl class="dl">
-				<dt>event</dt><dd>The native event object</dd>
-				<dt>display</dt><dd>The relevant display</dd>
-				<dt>x</dt><dd>The x position of the cursor</dd>
-				<dt>y</dt><dd>The y position of the cursor</dd>
-			</dl></td>
-			<td>Yes</td>
+			<th style="width: 25%">Event Name</th>
+			<th style="width: 25%">Fired When</th>
+			<th style="width: 25%">Parameter</th>
+			<th style="width: 25%">Cancellable</th>
 		</tr>
+	</thead>
+	<tbody>
 		<tr>
-			<td>scroll</td>
-			<td>When the cursor scrolls over the display.<br>
-				Scrolling is two-dimensional, and the scroll values are not guaranteed to be integers.
-			</td>
-			<td><dl class="dl">
-				<dt>event</dt><dd>The native event object</dd>
-				<dt>display</dt><dd>The relevant display</dd>
-				<dt>scroll</dt><dd>Same as yScroll</dd>
-				<dt>xScroll</dt><dd>The distance scrolled in the x direction</dd>
-				<dt>yScroll</dt><dd>The distance scrolled in the y direction</dd>
-			</dl></td>
-			<td>Yes</td>
-		</tr>
-		<tr>
-			<td rowspan="4">
-				<a name="keyboardList"></a>
-				Keyboard
-				<br><br>Event is fired on jayus
-			</td>
 			<td>keyPress</td>
 			<td>When a key is pressed.</td>
-			<td><dl class="dl">
+			<td><strong>Object</strong>:<blockquote><dl class="dl">
 				<dt>event</dt><dd>The native event object</dd>
 				<dt>key</dt><dd>The key identifier</dd>
-			</dl></td>
+			</dl></blockquote></td>
 			<td>No</td>
 		</tr>
 		<tr>
 			<td>keyRelease</td>
 			<td>When a key is released.</td>
-			<td><dl class="dl">
+			<td><strong>Object</strong>:<blockquote><dl class="dl">
 				<dt>event</dt><dd>The native event object</dd>
 				<dt>key</dt><dd>The key identifier</dd>
-			</dl></td>
+			</dl></blockquote></td>
 			<td>No</td>
 		</tr>
 		<tr>
 			<td>keyTap</td>
 			<td>When a key is pressed, with repeat enabled.</td>
-			<td><dl class="dl">
+			<td><strong>Object</strong>:<blockquote><dl class="dl">
 				<dt>event</dt><dd>The native event object</dd>
 				<dt>key</dt><dd>The key identifier</dd>
-			</dl></td>
+			</dl></blockquote></td>
 			<td>No</td>
 		</tr>
 		<tr>
@@ -404,30 +425,13 @@ function pauseDisplayUpdates(){
 			<td>Whenever a character is typed, repeat is enabled.<br>
 				This event is similar to the keyPress event, but only fires for keys that would produce a character when pressed.
 			</td>
-			<td><dl class="dl">
+			<td><strong>Object</strong>:<blockquote><dl class="dl">
 				<dt>event</dt><dd>The native event object</dd>
 				<dt>char</dt><dd>The character</dd>
-			</dl></td>
+			</dl></blockquote></td>
 			<td>No</td>
 		</tr>
 	</tbody>
 </table>
 
 {% include prettyprint.html %}
-
-
-
-		//!Touch - Fired on intersecting responders/entitys
-
-			//!dragStart												Native in iOS, else must be custom implemented
-			//!dragMove													Native in iOS, else must be custom implemented
-			//!dragEnd													Native in iOS, else must be custom implemented
-
-			//!dragPinch												Native in iOS, possibly Android?
-			//!dragRotate												Native in iOS, possibly Android?
-
-		//!Collision - Fired on the responding entity
-
-			//!collision					When the entity collides with this one
-			//!separation					When the entity no longer collides with this one
-			//!distanceChanged				When the entity distance from this one changed
